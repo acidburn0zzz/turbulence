@@ -20,8 +20,6 @@ A roadmap of future changes that are planed are:
         -Interaction with touchpad KCM module
     -New stylesheets, such as Manjaro green and grey
     -Fix the Glaring radio boxes, and check boxes when not using the Ozone style sheet
-    
-.
 
 To install Turbulence, just run the following commands.
 
@@ -30,3 +28,8 @@ cd ~/turbulence
 git clone git@git.manjaro.org:community/turbulence.git
 chmod +x install.sh
 sudo bash install.sh
+
+To remove Turbulence, just CD to the turbulence directory and run the following command.
+
+cd /usr/share/turbulence
+sudo bash install.sh -r
