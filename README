@@ -26,6 +26,7 @@ To install Turbulence, just run the following commands.
 mkdir ~/turbulence
 cd ~/turbulence
 git clone git@git.manjaro.org:community/turbulence.git
+cd turbulence
 chmod +x install.sh
 sudo bash install.sh
 
