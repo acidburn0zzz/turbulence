@@ -1,1 +1,32 @@
-testing
+What is Turbulence?
+
+Turbulence is an utility similar to Chakra's kapudan, that
+configures multiple aspects of KDE at first boot. Some of it's
+features are:
+
+    -Sleak blue graphical layout
+    -Provides information of Manjaro to new users
+    -Can allow the user to easily select which Folders he wants in his home directory
+    -Allows users to select which theme they want for Kwin
+    -Allows users to select which wallpaper they want
+    -Can also allow people to open system settings after they've ran through everything else to set any last minute details
+    
+A roadmap of future changes that are planed are:
+
+    -Multi-Lingual support
+    -Multi-Resolution support
+    -new pages to access more settings such as:
+        -Interaction with firewall KCM module
+        -Interaction with touchpad KCM module
+    -New stylesheets, such as Manjaro green and grey
+    -Fix the Glaring radio boxes, and check boxes when not using the Ozone style sheet
+    
+.
+
+To install Turbulence, just run the following commands.
+
+mkdir ~/turbulence
+cd ~/turbulence
+git clone git@git.manjaro.org:community/turbulence.git
+chmod +x install.sh
+sudo bash install.sh
