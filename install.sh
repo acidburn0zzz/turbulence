@@ -1,6 +1,5 @@
 #!/usr/bin/bash
 
-#checks that user is root.
 if [ $EUID != 0 ]; then
     echo "This script needs to be ran as root! Exiting..."
     exit
@@ -8,6 +7,21 @@ fi
 
 if [ `printf '%s\n' "${PWD##*/}"` != "turbulence" ]; then
     echo "This scrip needs to be ran in the turbulence directory. Exiting..."
+    exit
+fi
+
+if [ "$1" == "--remove" ] || [ "$1" == "-r" ]; then
+    echo "Removing turbulence..."
+    rm -rf /usr/share/turbulence
+    rm -rf '/usr/share/wallpapers/Cherry Japan'
+    rm -rf '/usr/share/wallpapers/Dark Stairs'
+    rm -rf '/usr/share/wallpapers/Earth In Space'
+    rm -rf '/usr/share/wallpapers/Mountain Lake'
+    rm -rf '/usr/share/wallpapers/Orange Splash'
+    rm -rf '/usr/share/wallpapers/Ozone-Turbulence'
+    rm -rf '/usr/share/wallpapers/Sunset Plane'
+    rm -rf '/usr/share/wallpapers/White Tiger'
+    rm -f /usr/bin/turbulence
     exit
 fi
 
@@ -29,14 +43,15 @@ if [ ! -d "/usr/share/wallpapers" ]; then
     echo "Needed to create the /usr/share/wallpapers directory."
 fi
 echo "Copying the wallpapers into /usr/share/wallpapers..."
-mv wallpapers/* /usr/share/wallpapers
-rm -r /usr/share/wallpapers
+mv /usr/share/turbulence/wallpapers/* /usr/share/wallpapers
+rm -r /usr/share/turbulence/wallpapers
 
 echo "Copying the turbulence executable..."
 mv /usr/share/turbulence/turbulence /usr/bin
 
 if [ -d "/usr/share/apps/aurorae/themes/ghost-deco-2_2" ]; then
     echo "Ghost theme already installed. Skipping copying the Ghost theme."
+    sudo rm -r /usr/share/turbulence/themes
 else
     echo "Creating the themes directory for aurorae..."
     mkdir -p /usr/share/apps/aurorae/themes
