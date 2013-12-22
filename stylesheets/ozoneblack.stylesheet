@@ -296,6 +296,10 @@
     color: rgb(0, 191, 191);
     font: 14pt "Sans Serif";
 }
+#systemSettingsDesc {
+    color: rgb(0, 191, 191);
+    font: 10pt "Sans Serif";
+}
 #systemSettingsButton {
     color: rgb(0, 191, 191);
     font: 10pt "Sans Serif";
@@ -303,6 +307,10 @@
 #helpHead {
     color: rgb(0, 191, 191);
     font: 14pt "Sans Serif";
+}
+#helpDesc {
+    color: rgb(0, 191, 191);
+    font: 10pt "Sans Serif";
 }
 #helpButton {
     color: rgb(0, 191, 191);

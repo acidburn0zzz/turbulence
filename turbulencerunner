@@ -16,10 +16,20 @@ if geteuid() == 0:
 
 #Start turbulence
 if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "ozoneBlack":
+            ui = MainGui_ozoneBlack.Ui_MainWindow()
+        elif sys.argv[1] == "manjaroGrey":
+            ui = MainGui_manjaroGrey.Ui_MainWindow()
+        else:
+            ui = MainGui_ozoneBlack.Ui_MainWindow()
+    else:
+        ui = MainGui_ozoneBlack.Ui_MainWindow()
+  
     logger.writeLog('logHeader')
     app = QtGui.QApplication(sys.argv)
     MainWindow = QtGui.QMainWindow()
-    ui = MainGui.Ui_MainWindow()
+    #ui = MainGui.Ui_MainWindow()
     ui.setupUi(MainWindow)
     
     qr = MainWindow.frameGeometry()
