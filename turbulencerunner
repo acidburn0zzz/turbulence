@@ -22,9 +22,9 @@ if __name__ == "__main__":
         elif sys.argv[1] == "manjaroGrey":
             ui = MainGui_manjaroGrey.Ui_MainWindow()
         else:
-            ui = MainGui_ozoneBlack.Ui_MainWindow()
+            ui = MainGui_manjaroGrey.Ui_MainWindow()
     else:
-        ui = MainGui_ozoneBlack.Ui_MainWindow()
+        ui = MainGui_manjaroGrey.Ui_MainWindow()
   
     logger.writeLog('logHeader')
     app = QtGui.QApplication(sys.argv)
