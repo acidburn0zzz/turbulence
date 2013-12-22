@@ -39,7 +39,7 @@ def createStaticWidgets(parent):
     global footerBack; footerBack = QtGui.QLabel(parent)
     
     staticWidgets = {
-        "blackBackground": [blackBackground, -14, 73, 891, 551, "blackBackground", "/usr/share/turbulence/images/manjaro-grey/background.jpg"],
+        "blackBackground": [blackBackground, -14, 0, 891, 625, "blackBackground", "/usr/share/turbulence/images/manjaro-grey/background.jpg"],
         "headerBack": [headerBack, -20, 10, 921, 71, "headerBack", "/usr/share/turbulence/images/manjaro-grey/header.png"],
         "turbulenceLogo": [turbulenceLogo, 20, 20, 51, 51, "turbulenceLogo", "/usr/share/turbulence/images/manjaro-grey/turbulence.png"],
         "menuBackg": [menuBackg, -20, 90, 901, 41, "menuBackg", None],
@@ -189,8 +189,8 @@ class Ui_MainWindow(object):
         secondPageWidgets = {
             "header2": [self.header2, 80, 20, 111, 51, "header2", None],
             "foldersHead": [self.foldersHead, 20, 90, 91, 41, "foldersHead", None],
-            "arrow2": [self.arrow2, 110, 90, 31, 41, "arrow2", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-            "themes": [self.themes, 140, 90, 91, 41, "themes", None],
+            "arrow2": [self.arrow2, 120, 90, 31, 41, "arrow2", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
+            "themes": [self.themes, 150, 90, 91, 41, "themes", None],
             "cancel2": [self.cancel2, 20, 575, 91, 33, "cancel2", None],
             "forward2": [self.forward2, 740, 575, 101, 33, "forward2", None],
             "previous": [self.previous, 630, 575, 101, 33, "previous", None],
@@ -210,7 +210,7 @@ class Ui_MainWindow(object):
             "folderHeader3": [self.folderHeader3, 470, 370, 131, 21, "folderHeader3", None],
             "folderHeader4": [self.folderHeader4, 680, 370, 131, 21, "folderHeader4", None],
             "folderHeader5": [self.folderHeader5, 50, 520, 131, 21, "folderHeader5", None],
-            "folderHeader6": [self.folderHeader6, 260, 520, 131, 21, "holderHeader6", None],
+            "folderHeader6": [self.folderHeader6, 260, 520, 131, 21, "folderHeader6", None],
             "folderHeader7": [self.folderHeader7, 470, 520, 131, 21, "folderHeader7", None],
             "folderHeader8": [self.folderHeader8, 680, 520, 131, 21, "folderHeader8", None],
             "folderName1": [self.folderName1, 69, 270, 71, 21, "folderName1", None],
@@ -283,8 +283,8 @@ class Ui_MainWindow(object):
         thirdPageWidgets = {
             "header3": [self.header3, 80, 20, 111, 51, "header3", None],
             "themesMenu": [self.themesMenu, 20, 90, 91, 41, "themesMenu", None],
-            "arrow3": [self.arrow3, 110, 90, 31, 41, "arrow3", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-            "menuWallpapers": [self.menuWallpapers, 140, 90, 111, 41, "menuWallpapers", None],
+            "arrow3": [self.arrow3, 120, 90, 31, 41, "arrow3", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
+            "menuWallpapers": [self.menuWallpapers, 150, 90, 111, 41, "menuWallpapers", None],
             "cancel3": [self.cancel3, 20, 575, 91, 33, "cancel3", None],
             "forward3": [self.forward3, 740, 575, 101, 33, "forward3", None],
             "previous2": [self.previous2, 630, 575, 101, 33, "previous2", None],
@@ -360,8 +360,8 @@ class Ui_MainWindow(object):
         fourthPageWidgets = {
             "header4": [self.header4, 80, 20, 161, 51, "header4", None],
             "wallpapersMenu": [self.wallpapersMenu, 20, 90, 121, 41, "wallpapersMenu", None],
-            "arrow4": [self.arrow4, 140, 90, 31, 41, "arrow4", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-            "menuFinish": [self.menuFinish, 170, 90, 71, 41, "menuFinish", None],
+            "arrow4": [self.arrow4, 150, 90, 31, 41, "arrow4", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
+            "menuFinish": [self.menuFinish, 180, 90, 71, 41, "menuFinish", None],
             "wallpaperIcon": [self.wallpaperIcon, 40, 160, 61, 61, "wallpaperIcon", "/usr/share/turbulence/images/manjaro-grey/wallpapers/wallpapers.png"],
             "wallpaperDesc": [self.wallpaperDesc, 110, 160, 591, 51, "wallpaperDesc", None],
             "previous3": [self.previous3, 630, 575, 101, 33, "previous3", None],
@@ -431,8 +431,8 @@ class Ui_MainWindow(object):
         finalPageWidgets = {
             "header5": [self.header5, 80, 20, 231, 51, "header5", None],
             "wallpapersMenu2": [self.wallpapersMenu2, 20, 90, 111, 41, "wallpapersMenu2", None],
-            "finishMenu": [self.finishMenu, 160, 90, 81, 41, "finishMenu", None],
-            "arrow5": [self.arrow5, 130, 90, 31, 41, "arrow5", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
+            "arrow5": [self.arrow5, 140, 90, 31, 41, "arrow5", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
+            "finishMenu": [self.finishMenu, 170, 90, 81, 41, "finishMenu", None],
             "cancel5": [self.cancel5, 20, 575, 91, 33, "cancel5", None],
             "forward5": [self.forward5, 750, 575, 91, 33, "forward5", None],
             "previous4": [self.previous4, 640, 575, 101, 33, "previous4", None],

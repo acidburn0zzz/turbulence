@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 if [ "$1" == "-s" ] || [ "$1" == "--style" ]; then
-    python2 turbulencerunner $2
+    python2 /usr/share/turbulence/turbulencerunner $2
 elif [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
     echo """
 Usage:
