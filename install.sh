@@ -51,11 +51,20 @@ mv /usr/share/turbulence/turbulence /usr/bin
 
 if [ -d "/usr/share/apps/aurorae/themes/ghost-deco-2_2" ]; then
     echo "Ghost theme already installed. Skipping copying the Ghost theme."
-    sudo rm -r /usr/share/turbulence/themes
+    sudo rm -r /usr/share/turbulence/themes/ghost-deco-2_2
 else
     echo "Creating the themes directory for aurorae..."
     mkdir -p /usr/share/apps/aurorae/themes
     echo "Copying the Ghost theme..."
+    mv /usr/share/turbulence/themes/ghost-deco-2_2 /usr/share/apps/aurorae/themes
+    rm -r /usr/share/turbulence/themes/ghost-deco-2_2
+fi
+
+if [ -d "/usr/share/apps/aurorae/themes/cupertino-ish" ]; then
+    echo "Cupertino-ish theme already installed. Skipping Copying the Cupertino-ish theme."
+    rm -r /usr/share/turbulence/themes
+else
+    echo "Copying the Cupertino-ish theme"
     mv /usr/share/turbulence/themes/* /usr/share/apps/aurorae/themes
     rm -r /usr/share/turbulence/themes
 fi

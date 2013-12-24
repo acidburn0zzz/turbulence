@@ -292,11 +292,11 @@ class Ui_MainWindow(object):
             "folderDesc2": [self.folderDesc2, 110, 167, 591, 51, "folderDesc2", None],
             "themesHeader": [self.themesHeader, 50, 240, 91, 31, "themesHeader", None],
             "themePreview1": [self.themePreview1, 90, 280, 241, 81, "themePreview1", "/usr/share/turbulence/images/manjaro-grey/themes/ozone.png"],
-            "themePreview2": [self.themePreview2, 510, 280, 241, 81, "themePreview2", "/usr/share/turbulence/images/manjaro-grey/themes/laptop.png"],
+            "themePreview2": [self.themePreview2, 510, 280, 241, 81, "themePreview2", "/usr/share/turbulence/images/manjaro-grey/themes/cupertino-ish.png"],
             "themePreview3": [self.themePreview3, 90, 410, 241, 81, "themePreview3", "/usr/share/turbulence/images/manjaro-grey/themes/oxygen.png"],
             "themePreview4": [self.themePreview4, 510, 410, 241, 81, "themePreview4", "/usr/share/turbulence/images/manjaro-grey/themes/plastik.png"],
             "themeRadio1": [self.themeRadio1, 170, 370, 81, 21, "themeRadio1", None],
-            "themeRadio2": [self.themeRadio2, 590, 370, 81, 21, "themeRadio2", None],
+            "themeRadio2": [self.themeRadio2, 567, 370, 131, 21, "themeRadio2", None],
             "themeRadio3": [self.themeRadio3, 167, 500, 91, 21, "themeRadio3", None],
             "themeRadio4": [self.themeRadio4, 591, 510, 91, 21, "themeRadio4", None]
         }
@@ -575,7 +575,7 @@ class Ui_MainWindow(object):
         self.folderDesc2.setText(_translate("MainWindow", "Here you can choose what type of theme you want for your window decorations.\n", None))
         self.themesHeader.setText(_translate("MainWindow", "Themes", None))
         self.themeRadio1.setText(_translate("MainWindow", "Ozone", None))
-        self.themeRadio2.setText(_translate("MainWindow", "Laptop", None))
+        self.themeRadio2.setText(_translate("MainWindow", "Cupertino-ish", None))
         self.themeRadio3.setText(_translate("MainWindow", "Oxygen", None))
         self.themeRadio4.setText(_translate("MainWindow", "Plastik", None))
         self.header4.setText(_translate("MainWindow", "Wallpapers", None))
@@ -646,7 +646,7 @@ class Ui_MainWindow(object):
     def handleButtonNextThemes(self):
         kwinThemes = {
             "ozone": self.themeRadio1,
-            "laptop": self.themeRadio2,
+            "cupertino-ish": self.themeRadio2,
             "oxygen": self.themeRadio3,
             "plastik": self.themeRadio4,
         }
