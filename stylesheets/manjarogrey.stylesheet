@@ -134,26 +134,74 @@
 #folderActive1 {
     color: rgb(220, 220, 220);
 }
+#folderActive1::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#folderActive1::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
 #folderActive2 {
     color: rgb(220, 220, 220);
+}
+#folderActive2::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#folderActive2::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
 }
 #folderActive3 {
     color: rgb(220, 220, 220);
 }
+#folderActive3::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#folderActive3::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
 #folderActive4 {
     color: rgb(220, 220, 220);
+}
+#folderActive4::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#folderActive4::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
 }
 #folderActive5 {
     color: rgb(220, 220, 220);
 }
+#folderActive5::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#folderActive5::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
 #folderActive6 {
     color: rgb(220, 220, 220);
+}
+#folderActive6::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#folderActive6::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
 }
 #folderActive7 {
     color: rgb(220, 220, 220);
 }
+#folderActive7::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#folderActive7::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
 #folderActive8 {
     color: rgb(220, 220, 220);
+}
+#folderActive8::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#folderActive8::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
 }
 
 /*Third Page Elements*/
@@ -190,17 +238,42 @@
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
 }
+#themeRadio1::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#themeRadio1::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
+}
 #themeRadio2 {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
+}
+#themeRadio2::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#themeRadio2::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
 }
 #themeRadio3 {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
 }
+#themeRadio3::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#themeRadio3::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
+}
 #themeRadio4 {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
+}
+#themeRadio4::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+
+#themeRadio4::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
 }
 
 /*Fourth Page Elements*/
@@ -237,33 +310,81 @@
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
 }
+#wallpaperChoice1::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#wallpaperChoice1::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
+}
 #wallpaperChoice2 {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
+}
+#wallpaperChoice2::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#wallpaperChoice2::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
 }
 #wallpaperChoice3 {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
 }
+#wallpaperChoice3::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#wallpaperChoice3::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
+}
 #wallpaperChoice4 {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
+}
+#wallpaperChoice4::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#wallpaperChoice4::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
 }
 #wallpaperChoice5 {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
 }
+#wallpaperChoice5::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#wallpaperChoice5::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
+}
 #wallpaperChoice6 {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
+}
+#wallpaperChoice6::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#wallpaperChoice6::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
 }
 #wallpaperChoice7 {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
 }
+#wallpaperChoice7::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#wallpaperChoice7::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
+}
 #wallpaperChoice8 {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
+}
+#wallpaperChoice8::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#wallpaperChoice8::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
 }
 
 /*Fifth Page Elements*/
