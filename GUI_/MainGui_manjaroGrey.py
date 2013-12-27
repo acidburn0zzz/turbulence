@@ -646,7 +646,7 @@ class Ui_MainWindow(QtCore.QObject):
     def handleButtonNextThemes(self):
         kwinThemes = {
             "ozone": self.themeRadio1,
-            "laptop": self.themeRadio2,
+            "cupertino-ish": self.themeRadio2,
             "oxygen": self.themeRadio3,
             "plastik": self.themeRadio4,
         }
