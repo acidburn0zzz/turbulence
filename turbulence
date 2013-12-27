@@ -1,19 +1,9 @@
 #!/usr/bin/bash
 
-if [ "$1" == "-s" ] || [ "$1" == "--style" ]; then
-    python2 /usr/share/turbulence/turbulencerunner $2
-elif [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
+if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
     echo """
 Usage:
-turbulence -s <style>
-
-Flags:
--s -------------- Style sheet that you want to use.
-
-Options:
-<style> --------- Available options are
-                  ozoneBlack
-                  manjaroGrey
+turbulence
     """
 else
     python2 /usr/share/turbulence/turbulencerunner

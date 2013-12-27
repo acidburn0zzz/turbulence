@@ -1,1 +1,1 @@
-__all__ = ["MainGui_ozoneBlack", "MainGui_manjaroGrey"]
+__all__ = ["MainGui_manjaroGrey"]

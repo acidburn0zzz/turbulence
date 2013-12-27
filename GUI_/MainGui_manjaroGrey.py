@@ -12,7 +12,6 @@ except AttributeError:
     def _fromUtf8(s):
         return s
 
-
 try:
     _encoding = QtGui.QApplication.UnicodeUTF8
     def _translate(context, text, disambig):
@@ -20,6 +19,8 @@ try:
 except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
+
+
 
 def widgetConfigurer(widgetType, xPos, yPos, xSize, ySize, name, image=None, styleSheet=None):
     widgetType.setGeometry(QtCore.QRect(xPos, yPos, xSize, ySize))
@@ -53,7 +54,7 @@ def createStaticWidgets(parent):
 
 
 #Begins to main class
-class Ui_MainWindow(object):
+class Ui_MainWindow(QtCore.QObject):
     def setupUi(self, MainWindow):
       
         #Grabs the stylesheet
@@ -98,18 +99,18 @@ class Ui_MainWindow(object):
         
         #widget dictionary
         firstPageWidgets = {
-            "header": [self.header, 80, 20, 281, 51, "header", None],
+            "header": [self.header, 80, 20, 301, 51, "header", None],
             "welcomeButton": [self.welcomeButton, 20, 90, 111, 41, "welcomeButton", None],
             "arrow": [self.arrow, 140, 90, 111, 41, "arrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
             "folders2": [self.folders2, 170, 90, 81, 41, "folders2", None],
-            "whatIsManjaro": [self.whatIsManjaro, 30, 180, 351, 71, "whatIsManjaro", None],
-            "manjaroDesc": [self.manjaroDesc, 70, 260, 651, 261, "manjaroDesc", None],
+            "whatIsManjaro": [self.whatIsManjaro, 30, 180, 371, 71, "whatIsManjaro", None],
+            "manjaroDesc": [self.manjaroDesc, 70, 260, 750, 261, "manjaroDesc", None],
             "bullet1": [self.bullet1, 70, 365, 21, 21, "bullet1", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
             "bullet2": [self.bullet2, 70, 395, 21, 21, "bullet2", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
             "bullet3": [self.bullet3, 70, 425, 21, 21, "bullet3", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
             "bullet4": [self.bullet4, 70, 470, 21, 21, "bullet4", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
-            "forward": [self.forward, 740, 575, 101, 33, "forward", None],
-            "cancel": [self. cancel, 20, 575, 91, 33, "cancel", None],
+            "forward": [self.forward, 730, 575, 111, 33, "forward", None],
+            "cancel": [self. cancel, 20, 575, 110, 33, "cancel", None],
         }
         
         #defines all the widget parameters
@@ -191,9 +192,9 @@ class Ui_MainWindow(object):
             "foldersHead": [self.foldersHead, 20, 90, 91, 41, "foldersHead", None],
             "arrow2": [self.arrow2, 120, 90, 31, 41, "arrow2", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
             "themes": [self.themes, 150, 90, 91, 41, "themes", None],
-            "cancel2": [self.cancel2, 20, 575, 91, 33, "cancel2", None],
-            "forward2": [self.forward2, 740, 575, 101, 33, "forward2", None],
-            "previous": [self.previous, 630, 575, 101, 33, "previous", None],
+            "cancel2": [self.cancel2, 20, 575, 110, 33, "cancel2", None],
+            "forward2": [self.forward2, 730, 575, 111, 33, "forward2", None],
+            "previous": [self.previous, 620, 575, 101, 33, "previous", None],
             "folderIcon": [self.folderIcon, 40, 150, 61, 61, "folderIcon", "/usr/share/turbulence/images/manjaro-grey/foldericons/folder.png"],
             "folderDesc": [self.folderDesc, 110, 170, 591, 31, "folderDesc", None],
             "folderHeaderHead": [self.folderHeaderHead, 50, 240, 81, 31, "folderHeaderHead", None],
@@ -285,18 +286,18 @@ class Ui_MainWindow(object):
             "themesMenu": [self.themesMenu, 20, 90, 91, 41, "themesMenu", None],
             "arrow3": [self.arrow3, 120, 90, 31, 41, "arrow3", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
             "menuWallpapers": [self.menuWallpapers, 150, 90, 111, 41, "menuWallpapers", None],
-            "cancel3": [self.cancel3, 20, 575, 91, 33, "cancel3", None],
-            "forward3": [self.forward3, 740, 575, 101, 33, "forward3", None],
-            "previous2": [self.previous2, 630, 575, 101, 33, "previous2", None],
+            "cancel3": [self.cancel3, 20, 575, 110, 33, "cancel3", None],
+            "forward3": [self.forward3, 730, 575, 111, 33, "forward3", None],
+            "previous2": [self.previous2, 620, 575, 101, 33, "previous2", None],
             "themeIcon": [self.themeIcon, 40, 160, 61, 61, "themeIcon", "/usr/share/turbulence/images/manjaro-grey/themes/theme.png"],
             "folderDesc2": [self.folderDesc2, 110, 167, 591, 51, "folderDesc2", None],
             "themesHeader": [self.themesHeader, 50, 240, 91, 31, "themesHeader", None],
             "themePreview1": [self.themePreview1, 90, 280, 241, 81, "themePreview1", "/usr/share/turbulence/images/manjaro-grey/themes/ozone.png"],
-            "themePreview2": [self.themePreview2, 510, 280, 241, 81, "themePreview2", "/usr/share/turbulence/images/manjaro-grey/themes/cupertino-ish.png"],
+            "themePreview2": [self.themePreview2, 510, 280, 241, 81, "themePreview2", "/usr/share/turbulence/images/manjaro-grey/themes/laptop.png"],
             "themePreview3": [self.themePreview3, 90, 410, 241, 81, "themePreview3", "/usr/share/turbulence/images/manjaro-grey/themes/oxygen.png"],
             "themePreview4": [self.themePreview4, 510, 410, 241, 81, "themePreview4", "/usr/share/turbulence/images/manjaro-grey/themes/plastik.png"],
             "themeRadio1": [self.themeRadio1, 170, 370, 81, 21, "themeRadio1", None],
-            "themeRadio2": [self.themeRadio2, 567, 370, 131, 21, "themeRadio2", None],
+            "themeRadio2": [self.themeRadio2, 590, 370, 81, 21, "themeRadio2", None],
             "themeRadio3": [self.themeRadio3, 167, 500, 91, 21, "themeRadio3", None],
             "themeRadio4": [self.themeRadio4, 591, 510, 91, 21, "themeRadio4", None]
         }
@@ -364,9 +365,9 @@ class Ui_MainWindow(object):
             "menuFinish": [self.menuFinish, 180, 90, 71, 41, "menuFinish", None],
             "wallpaperIcon": [self.wallpaperIcon, 40, 160, 61, 61, "wallpaperIcon", "/usr/share/turbulence/images/manjaro-grey/wallpapers/wallpapers.png"],
             "wallpaperDesc": [self.wallpaperDesc, 110, 160, 591, 51, "wallpaperDesc", None],
-            "previous3": [self.previous3, 630, 575, 101, 33, "previous3", None],
-            "forward4": [self.forward4, 740, 575, 101, 33, "forward4", None],
-            "cancel4": [self.cancel4, 20, 575, 91, 33, "cancel4", None],
+            "previous3": [self.previous3, 620, 575, 101, 33, "previous3", None],
+            "forward4": [self.forward4, 730, 575, 111, 33, "forward4", None],
+            "cancel4": [self.cancel4, 20, 575, 110, 33, "cancel4", None],
             "wallpaperHeader": [self.wallpaperHeader, 50, 240, 121, 31, "wallpaperHeader", None],
             "wallpaper1": [self.wallpaper1, 40, 280, 141, 91, "wallpaper1", "/usr/share/turbulence/images/manjaro-grey/wallpapers/ozone.png"],
             "wallpaper2": [self.wallpaper2, 250, 280, 141, 91, "wallpaper2", "/usr/share/turbulence/images/manjaro-grey/wallpapers/orangesplash.png"],
@@ -433,18 +434,18 @@ class Ui_MainWindow(object):
             "wallpapersMenu2": [self.wallpapersMenu2, 20, 90, 111, 41, "wallpapersMenu2", None],
             "arrow5": [self.arrow5, 140, 90, 31, 41, "arrow5", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
             "finishMenu": [self.finishMenu, 170, 90, 81, 41, "finishMenu", None],
-            "cancel5": [self.cancel5, 20, 575, 91, 33, "cancel5", None],
+            "cancel5": [self.cancel5, 20, 575, 110, 33, "cancel5", None],
             "forward5": [self.forward5, 750, 575, 91, 33, "forward5", None],
             "previous4": [self.previous4, 640, 575, 101, 33, "previous4", None],
-            "finishDesc": [self.finishDesc, 30, 150, 711, 51, "finishDesc", None],
-            "systemSettings": [self.systemSettings, 40, 220, 161, 31, "systemSettings", None],
+            "finishDesc": [self.finishDesc, 30, 150, 781, 51, "finishDesc", None],
+            "systemSettings": [self.systemSettings, 40, 220, 250, 31, "systemSettings", None],
             "systemSettingsPic": [self.systemSettingsPic, 70, 260, 111, 101, "systemSettingsPic", "/usr/share/turbulence/images/manjaro-grey/finish/preferences-system.png"],
             "systemSettingsDesc": [self.systemSettingsDesc, 200, 280, 371, 31, "systemSettingsDesc", None],
-            "systemSettingsButton": [self.systemSettingsButton, 300, 310, 181, 31, "systemSettingsButton", None],
+            "systemSettingsButton": [self.systemSettingsButton, 300, 310, 181, 41, "systemSettingsButton", None],
             "helpHead": [self.helpHead, 40, 400, 51, 31, "helpHead", None, None],
             "helpPic": [self.helpPic, 70, 440, 111, 101, "helpPic", "/usr/share/turbulence/images/manjaro-grey/finish/help-icon.png"],
             "helpDesc": [self.helpDesc, 200, 440, 371, 51, "helpDesc", None],
-            "helpButton": [self.helpButton, 300, 491, 181, 31, "helpButton", None]
+            "helpButton": [self.helpButton, 300, 491, 181, 41, "helpButton", None]
         }
 
         #defines all the widget parameters
@@ -523,7 +524,6 @@ class Ui_MainWindow(object):
         QtCore.QObject.connect(self.previous4, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
         QtCore.QObject.connect(self.forward5, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
-        
     #Starts the translation function.
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "Turbulence", None))
@@ -575,7 +575,7 @@ class Ui_MainWindow(object):
         self.folderDesc2.setText(_translate("MainWindow", "Here you can choose what type of theme you want for your window decorations.\n", None))
         self.themesHeader.setText(_translate("MainWindow", "Themes", None))
         self.themeRadio1.setText(_translate("MainWindow", "Ozone", None))
-        self.themeRadio2.setText(_translate("MainWindow", "Cupertino-ish", None))
+        self.themeRadio2.setText(_translate("MainWindow", "Laptop", None))
         self.themeRadio3.setText(_translate("MainWindow", "Oxygen", None))
         self.themeRadio4.setText(_translate("MainWindow", "Plastik", None))
         self.header4.setText(_translate("MainWindow", "Wallpapers", None))
@@ -646,7 +646,7 @@ class Ui_MainWindow(object):
     def handleButtonNextThemes(self):
         kwinThemes = {
             "ozone": self.themeRadio1,
-            "cupertino-ish": self.themeRadio2,
+            "laptop": self.themeRadio2,
             "oxygen": self.themeRadio3,
             "plastik": self.themeRadio4,
         }
