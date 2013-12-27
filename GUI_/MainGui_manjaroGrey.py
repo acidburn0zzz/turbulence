@@ -99,7 +99,7 @@ class Ui_MainWindow(QtCore.QObject):
         
         #widget dictionary
         firstPageWidgets = {
-            "header": [self.header, 80, 20, 301, 51, "header", None],
+            "header": [self.header, 80, 20, 321, 51, "header", None],
             "welcomeButton": [self.welcomeButton, 20, 90, 111, 41, "welcomeButton", None],
             "arrow": [self.arrow, 140, 90, 111, 41, "arrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
             "folders2": [self.folders2, 170, 90, 81, 41, "folders2", None],
@@ -442,7 +442,7 @@ class Ui_MainWindow(QtCore.QObject):
             "systemSettingsPic": [self.systemSettingsPic, 70, 260, 111, 101, "systemSettingsPic", "/usr/share/turbulence/images/manjaro-grey/finish/preferences-system.png"],
             "systemSettingsDesc": [self.systemSettingsDesc, 200, 280, 371, 31, "systemSettingsDesc", None],
             "systemSettingsButton": [self.systemSettingsButton, 300, 310, 181, 41, "systemSettingsButton", None],
-            "helpHead": [self.helpHead, 40, 400, 51, 31, "helpHead", None, None],
+            "helpHead": [self.helpHead, 40, 400, 71, 31, "helpHead", None, None],
             "helpPic": [self.helpPic, 70, 440, 111, 101, "helpPic", "/usr/share/turbulence/images/manjaro-grey/finish/help-icon.png"],
             "helpDesc": [self.helpDesc, 200, 440, 371, 51, "helpDesc", None],
             "helpButton": [self.helpButton, 300, 491, 181, 41, "helpButton", None]
