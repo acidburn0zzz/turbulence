@@ -99,7 +99,7 @@ class Ui_MainWindow(QtCore.QObject):
         
         #widget dictionary
         firstPageWidgets = {
-            "header": [self.header, 80, 20, 321, 51, "header", None],
+            "header": [self.header, 80, 20, 361, 51, "header", None],
             "welcomeButton": [self.welcomeButton, 20, 90, 111, 41, "welcomeButton", None],
             "arrow": [self.arrow, 140, 90, 111, 41, "arrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
             "folders2": [self.folders2, 170, 90, 81, 41, "folders2", None],
