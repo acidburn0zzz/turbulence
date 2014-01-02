@@ -4,7 +4,7 @@
     <message>
         <location filename="MainGui_manjaroGrey.py" line="701"/>
         <source>Status: Active</source>
-        <translation>Durumu: Aktif</translation>
+        <translation>Durumu: Kullanılıyor</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="529"/>
@@ -98,7 +98,7 @@ ya da devam ederek varsayılan klasörleri oluşturmuş olursunuz.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="703"/>
         <source>Status: Deactivated</source>
-        <translation>Durum: Devre dışı</translation>
+        <translation>Durum: Kullanılmıyor</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="553"/>
@@ -143,7 +143,7 @@ ya da devam ederek varsayılan klasörleri oluşturmuş olursunuz.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="568"/>
         <source>Active</source>
-        <translation>Aktif</translation>
+        <translation>Etkinleştir</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="598"/>
@@ -173,8 +173,8 @@ ya da devam ederek varsayılan klasörleri oluşturmuş olursunuz.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="580"/>
-        <source>Plastik</source>
-        <translation>Plastik</translation>
+        <source>Cupertino-ish</source>
+        <translation>Cupertino-ish</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="601"/>
@@ -242,13 +242,14 @@ atabilirsiniz. Manjaro Topluluğu sizi bekliyor, hemen katılmalısınız.</tran
         <location filename="MainGui_manjaroGrey.py" line="605"/>
         <source>Control panel to edit various aspects of the KDE desktop, 
 and more.</source>
-        <translation>Kontrol panelinde KDE masaüstü ile birçok ayarlama,
-ve sayısız seçenek var.</translation>
+        <translation>Kontrol panelinde KDE Masaüstü ortamı ile ilgili 
+birçok ayarlama, ve sayısız seçenek bulacaksınız.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="606"/>
         <source>Launch System Settings</source>
-        <translation>Sistem Ayarlarını Çalıştır</translation>
+        <translation>Sistem Ayarlarını 
+Çalıştır</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="607"/>
@@ -259,13 +260,14 @@ ve sayısız seçenek var.</translation>
         <location filename="MainGui_manjaroGrey.py" line="608"/>
         <source>For help and support, you can visit Manjaro.org for access 
 to a terrific forum, wiki, and IRC!</source>
-        <translation>Yardım ve destek için manjaro.org bağlantısını ziyaret edin
-Forumlar, IRC ve Wiki size yeterince bilgilendirecek!</translation>
+        <translation>Yardım ve destek için manjaro.org bağlantısını ziyaret 
+edin Forumlar, IRC ve Wiki size yeterince bilgilendirecek!</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="609"/>
         <source>Launch Manjaro.org</source>
-        <translation>manjaro.org adresine git</translation>
+        <translation>manjaro.org adresine 
+git</translation>
     </message>
 </context>
 </TS>

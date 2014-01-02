@@ -1,5 +1,9 @@
 #!/usr/bin/bash
 
+if [ -f ~/.config/autostart/turbulence.desktop ]; then
+    rm ~/.config/autostart/turbulence.desktop
+fi
+
 if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
     echo """
 Usage:
