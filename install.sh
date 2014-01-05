@@ -69,6 +69,11 @@ else
     rm -r /usr/share/turbulence/themes
 fi
 
+echo "Generating translations..."
+cd /usr/share/turbulence/tr
+lrelease-qt4 /usr/share/turbulence/tr/*
+cd
+
 echo "Changing permissions..."
 chmod +x /usr/bin/turbulence
 chmod +x /usr/share/turbulence/turbulencerunner

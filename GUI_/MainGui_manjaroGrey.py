@@ -103,8 +103,8 @@ class Ui_MainWindow(QtCore.QObject):
             "welcomeButton": [self.welcomeButton, 20, 90, 111, 41, "welcomeButton", None],
             "arrow": [self.arrow, 140, 90, 111, 41, "arrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
             "folders2": [self.folders2, 170, 90, 81, 41, "folders2", None],
-            "whatIsManjaro": [self.whatIsManjaro, 30, 180, 371, 71, "whatIsManjaro", None],
-            "manjaroDesc": [self.manjaroDesc, 70, 260, 750, 261, "manjaroDesc", None],
+            "whatIsManjaro": [self.whatIsManjaro, 30, 180, 480, 71, "whatIsManjaro", None],
+            "manjaroDesc": [self.manjaroDesc, 70, 260, 760, 261, "manjaroDesc", None],
             "bullet1": [self.bullet1, 70, 365, 21, 21, "bullet1", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
             "bullet2": [self.bullet2, 70, 395, 21, 21, "bullet2", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
             "bullet3": [self.bullet3, 70, 425, 21, 21, "bullet3", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
@@ -222,14 +222,14 @@ class Ui_MainWindow(QtCore.QObject):
             "folderName6": [self.folderName6, 288, 420, 51, 21, "folderName6", None],
             "folderName7": [self.folderName7, 482, 420, 81, 21, "folderName7", None],
             "folderName8": [self.folderName8, 702, 420, 61, 20, "folderName8", None],
-            "folderActive1": [self.folderActive1, 50, 390, 71, 21, "folderActive1", None],
-            "folderActive2": [self.folderActive2, 260, 390, 71, 21, "folderActive2", None],
-            "folderActive3": [self.folderActive3, 470, 390, 71, 21, "folderActive3", None],
-            "folderActive4": [self.folderActive4, 680, 390, 71, 21, "folderActive4", None],
-            "folderActive5": [self.folderActive5, 50, 540, 71, 21, "folderActive5", None],
-            "folderActive6": [self.folderActive6, 260, 540, 71, 21, "folderActive6", None],
-            "folderActive7": [self.folderActive7, 470, 540, 71, 21, "folderActive7", None],
-            "folderActive8": [self.folderActive8, 680, 540, 71, 21, "folderActive8", None]
+            "folderActive1": [self.folderActive1, 50, 390, 100, 21, "folderActive1", None],
+            "folderActive2": [self.folderActive2, 260, 390, 100, 21, "folderActive2", None],
+            "folderActive3": [self.folderActive3, 470, 390, 100, 21, "folderActive3", None],
+            "folderActive4": [self.folderActive4, 680, 390, 100, 21, "folderActive4", None],
+            "folderActive5": [self.folderActive5, 50, 540, 100, 21, "folderActive5", None],
+            "folderActive6": [self.folderActive6, 260, 540, 100, 21, "folderActive6", None],
+            "folderActive7": [self.folderActive7, 470, 540, 100, 21, "folderActive7", None],
+            "folderActive8": [self.folderActive8, 680, 540, 100, 21, "folderActive8", None]
         }
         
         #defines all the widget parameters
@@ -444,7 +444,7 @@ class Ui_MainWindow(QtCore.QObject):
             "systemSettingsButton": [self.systemSettingsButton, 300, 310, 181, 41, "systemSettingsButton", None],
             "helpHead": [self.helpHead, 40, 400, 71, 31, "helpHead", None, None],
             "helpPic": [self.helpPic, 70, 440, 111, 101, "helpPic", "/usr/share/turbulence/images/manjaro-grey/finish/help-icon.png"],
-            "helpDesc": [self.helpDesc, 200, 440, 371, 51, "helpDesc", None],
+            "helpDesc": [self.helpDesc, 200, 440, 381, 51, "helpDesc", None],
             "helpButton": [self.helpButton, 300, 491, 181, 41, "helpButton", None]
         }
 
