@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pl" version="2.0">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="701"/>
         <source>Status: Active</source>
-        <translation>Status: Aktiv</translation>
+        <translation>Stan: Aktywny</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="529"/>
@@ -14,22 +14,22 @@
     <message>
         <location filename="MainGui_manjaroGrey.py" line="530"/>
         <source>Welcome To Manjaro</source>
-        <translation>Willkommen zu Manjaro</translation>
+        <translation>Witaj w Manjaro</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="531"/>
         <source>Welcome</source>
-        <translation>Willkommen</translation>
+        <translation>Witaj</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="544"/>
         <source>Folders</source>
-        <translation>Ordner</translation>
+        <translation>Katalogi</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="533"/>
         <source>What is Manjaro?</source>
-        <translation>Was ist Manjaro?</translation>
+        <translation>Czym jest Manjaro?</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="534"/>
@@ -50,119 +50,100 @@ Some of Manjaro's features are:
      Access to the Arch User Repository (AUR).
 
 Over these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.</source>
-        <translation>Hallo und willkommen zu Manjaro.
-
-Manjaro ist eine schnelle und schnittige Distribution, welche leicht zu bedienen ist, sowie das Beste
-aus dem populären Arch Linux herausholt. Entwickelt in Deutschland, Frankreich und Österreich, 
-Manjaro ist gedacht für Anfänger sowie Experten.
-
-Hier ein paar Funktionen von Manjaro:
-
-Geschwindigkeit, Leistung und Effizienz
-
-Zugang zu aktuell verfügbarer Software
-
-Ein &quot;Rolling Release&quot; Entwicklungsmodell welches aktuelles System bietet ohne das Betriebssystem
-neu installieren zu müssen.
-
-Zugriff auf das Arch Benutzerrepositorium (AUR)
-
-Mit den nächsten Schritten wird Turbulence Ihnen helfen Ihre neue Kopie von Manjaro nach Ihren
-Bedürfnissen anzupassen.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="600"/>
         <source>Cancel</source>
-        <translation>Abbrechen</translation>
+        <translation>Anuluj</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="586"/>
         <source>Forward</source>
-        <translation>Weiter</translation>
+        <translation>Dalej</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="576"/>
         <source>Themes</source>
-        <translation>Themen</translation>
+        <translation>Motywy</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="602"/>
         <source>Previous</source>
-        <translation>Zurück</translation>
+        <translation>Wstecz</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="543"/>
         <source>Here, you can choose which folders you want in your home directory. You have a choice from 
 some of the most commonly used folders.</source>
-        <translation>Hier können Sie die Ordner bestimmen, welche in Ihrem Home-Verzeichnis eingebunden
-werden sollen. Sie haben die Auswahl von allgemein üblichen Ordnern.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="703"/>
         <source>Status: Deactivated</source>
-        <translation>Status: Deaktiviert</translation>
+        <translation>Stan: Nieaktywny</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="553"/>
         <source>Desktop</source>
-        <translation>Arbeitsfläche</translation>
+        <translation>Pulpit</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="554"/>
         <source>Documents</source>
-        <translation>Dokumente</translation>
+        <translation>Dokumenty</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="555"/>
         <source>Downloads</source>
-        <translation>Download</translation>
+        <translation>Pobrane</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="556"/>
         <source>Music</source>
-        <translation>Musik</translation>
+        <translation>Muzyka</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="557"/>
         <source>Pictures</source>
-        <translation>Bilder</translation>
+        <translation>Obrazy</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="558"/>
         <source>Public</source>
-        <translation>Öffentlich</translation>
+        <translation>Publiczny</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="559"/>
         <source>Templates</source>
-        <translation>Vorlagen</translation>
+        <translation>Szablony</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="560"/>
         <source>Videos</source>
-        <translation>Videos</translation>
+        <translation>Wideo</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="568"/>
         <source>Active</source>
-        <translation>Aktiv</translation>
+        <translation>Aktywne</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="598"/>
         <source>Wallpapers</source>
-        <translation>Hintergründe</translation>
+        <translation>Tapety pulpitu</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="575"/>
         <source>Here you can choose what type of theme you want for your window decorations.
 </source>
-        <translation>Hier können Sie eine Auswahl für die Fensterdekoration treffen.
+        <translation>Tu możesz ustawić, który rodzaj motywu chcesz używać dla dekoracji okien.
 </translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="589"/>
         <source>Ozone</source>
-        <translation>Ozone</translation>
+        <translation>Ozon</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="578"/>
@@ -172,7 +153,7 @@ werden sollen. Sie haben die Auswahl von allgemein üblichen Ordnern.</translati
     <message>
         <location filename="MainGui_manjaroGrey.py" line="579"/>
         <source>Oxygen</source>
-        <translation>Oxygen</translation>
+        <translation>Tlen</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="580"/>
@@ -182,94 +163,92 @@ werden sollen. Sie haben die Auswahl von allgemein üblichen Ordnern.</translati
     <message>
         <location filename="MainGui_manjaroGrey.py" line="601"/>
         <source>Finish</source>
-        <translation>Beenden</translation>
+        <translation>Koniec</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="584"/>
         <source>Here you can set which wallpaper you want.</source>
-        <translation>Hier können Sie Ihren Hintergrund auswählen.</translation>
+        <translation>Tu możesz ustawić, którą tapetę pulpitu chcesz używać.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="590"/>
         <source>Orange Splash</source>
-        <translation>Orange Splash</translation>
+        <translation>Pomarańczowa plama</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="591"/>
         <source>Sunset Plane</source>
-        <translation>Sunset Plane</translation>
+        <translation>Równina zachodzącego słońca</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="592"/>
         <source>Mountain Lake</source>
-        <translation>Mountain Lake</translation>
+        <translation>Górskie jezioro</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="593"/>
         <source>Space</source>
-        <translation>Space</translation>
+        <translation>Kosmos</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="594"/>
         <source>Dark Stairs</source>
-        <translation>Dark Stairs</translation>
+        <translation>Ciemne schody</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="595"/>
         <source>Cherry Japan</source>
-        <translation>Cherry Japan</translation>
+        <translation>Japońska wiśnia</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="596"/>
         <source>White Tiger</source>
-        <translation>White Tiger</translation>
+        <translation>Biały tygrys</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="597"/>
         <source>Congratulations!</source>
-        <translation>Glückwunsch!</translation>
+        <translation>Gratulacje!</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="603"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs 
 and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
-        <translation>Alle Einstellungen wurden übernommen. Nun können Sie beginnen Manjaro zu benutzen. Es ist empfohlen
-der Manjaro-Gemeinschaft beitzutreten sowie sich die Programmverlinkungen weiter unten anzusehen.
-</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="604"/>
         <source>System Settings</source>
-        <translation>Systemeinstellungen</translation>
+        <translation>Ustawienia systemu</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="605"/>
         <source>Control panel to edit various aspects of the KDE desktop, 
 and more.</source>
-        <translation>Bedienfeld um verschiedene Aspekte des KDE Desktops
-anzupassen, sowie mehr.</translation>
+        <translation>Panel kontrolny do edycji różnych aspektów pulpitu KDE,
+oraz innych rzeczy.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="606"/>
         <source>Launch System Settings</source>
-        <translation>Systemeinstellungen bearbeiten</translation>
+        <translation>Uruchom Ustawienia systemu</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="607"/>
         <source>Help</source>
-        <translation>Hilfe</translation>
+        <translation>Pomoc</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="608"/>
         <source>For help and support, you can visit Manjaro.org for access 
 to a terrific forum, wiki, and IRC!</source>
-        <translation>Für Hilfe und Unterstützung können Sie Manjaro.org besuchen.
-Sie finden ein Forum, ein Wiki sowie IRC Kanäle.</translation>
+        <translation>Celem uzyskania pomocy i wsparcia odwiedź stronę Manjaro.org,
+aby uzyskać dostęp do niesamowitych forum, wiki i IRC!</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="609"/>
         <source>Launch Manjaro.org</source>
-        <translation>Öffne Manjaro.org</translation>
+        <translation>Uruchom Manjaro.org</translation>
     </message>
 </context>
 </TS>

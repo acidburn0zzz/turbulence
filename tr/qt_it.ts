@@ -19,12 +19,12 @@
     <message>
         <location filename="MainGui_manjaroGrey.py" line="531"/>
         <source>Welcome</source>
-        <translation>Welcome</translation>
+        <translation>Benvenuto</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="544"/>
         <source>Folders</source>
-        <translation>Folders</translation>
+        <translation>Cartelle</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="533"/>
@@ -64,7 +64,7 @@ Alcune caratteristiche di Manjaro sono:
      Un modello di sviluppo rolling release che offre il sistema più aggiornato possibile  senza
      la necessità di installare nuove versioni
 
-     L&apos;accesso al Arch User Repository (AUR).
+    L&apos;accesso al Arch User Repository (AUR).
 
 Durante i passi successivi, Turbulence ti guiderà nella personalizzazione della nuova copia di Manjaro.</translation>
     </message>
@@ -81,7 +81,7 @@ Durante i passi successivi, Turbulence ti guiderà nella personalizzazione della
     <message>
         <location filename="MainGui_manjaroGrey.py" line="576"/>
         <source>Themes</source>
-        <translation>Themes</translation>
+        <translation>Temi</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="602"/>
@@ -92,8 +92,8 @@ Durante i passi successivi, Turbulence ti guiderà nella personalizzazione della
         <location filename="MainGui_manjaroGrey.py" line="543"/>
         <source>Here, you can choose which folders you want in your home directory. You have a choice from 
 some of the most commonly used folders.</source>
-        <translation>Qui, è possibile scegliere quali cartelle volete nella vostra home directory. È possibile 
-scegliere alcune delle cartelle più utilizzate.</translation>
+        <translation>Qui, è possibile scegliere quali cartelle volete nella vostra home directory. È possibile scegliere 
+alcune delle cartelle più utilizzate.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="703"/>
@@ -103,42 +103,42 @@ scegliere alcune delle cartelle più utilizzate.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="553"/>
         <source>Desktop</source>
-        <translation>Desktop</translation>
+        <translation>Scrivania</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="554"/>
         <source>Documents</source>
-        <translation>Documents</translation>
+        <translation>Documenti</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="555"/>
         <source>Downloads</source>
-        <translation>Downloads</translation>
+        <translation>Scaricati</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="556"/>
         <source>Music</source>
-        <translation>Music</translation>
+        <translation>Musica</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="557"/>
         <source>Pictures</source>
-        <translation>Pictures</translation>
+        <translation>Immagini</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="558"/>
         <source>Public</source>
-        <translation>Public</translation>
+        <translation>Pubblici</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="559"/>
         <source>Templates</source>
-        <translation>Templates</translation>
+        <translation>Modelli</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="560"/>
         <source>Videos</source>
-        <translation>Videos</translation>
+        <translation>Video</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="568"/>
@@ -180,7 +180,7 @@ scegliere alcune delle cartelle più utilizzate.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="601"/>
         <source>Finish</source>
-        <translation>Finish</translation>
+        <translation>Fine</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="584"/>
@@ -243,14 +243,13 @@ e link qui sotto. Inoltre, se non lo avete ancora fatto, unitevi anche alla comm
         <location filename="MainGui_manjaroGrey.py" line="605"/>
         <source>Control panel to edit various aspects of the KDE desktop, 
 and more.</source>
-        <translation>Pannello di controllo per modificare vari aspetti del 
-desktop KDE, e altro ancora.</translation>
+        <translation>Pannello di controllo per modificare vari aspetti del desktop KDE, 
+e altro ancora.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="606"/>
         <source>Launch System Settings</source>
-        <translation>Avvia Impostazioni 
-di sistema</translation>
+        <translation>Avvia Impostazioni di sistema</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="607"/>
@@ -261,8 +260,8 @@ di sistema</translation>
         <location filename="MainGui_manjaroGrey.py" line="608"/>
         <source>For help and support, you can visit Manjaro.org for access 
 to a terrific forum, wiki, and IRC!</source>
-        <translation>Per ulteriori informazioni e assistenza, è possibile visitare 
-Manjaro.org per accedere a un formidabile forum, e wiki!</translation>
+        <translation>Per ulteriori informazioni e assistenza, è possibile visitare Manjaro.org per accedere 
+a un formidabile forum, wiki, e IRC!</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="609"/>

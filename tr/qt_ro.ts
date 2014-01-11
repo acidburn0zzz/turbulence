@@ -19,12 +19,12 @@
     <message>
         <location filename="MainGui_manjaroGrey.py" line="531"/>
         <source>Welcome</source>
-        <translation>Welcome</translation>
+        <translation>Bine ați venit</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="544"/>
         <source>Folders</source>
-        <translation>Folders</translation>
+        <translation>Dosare</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="533"/>
@@ -57,14 +57,13 @@ Dezvoltat în Austria, Franța și Germania, Manjaro țintește și utilizatorii
 
 Printre trăsăturile Manjaro se regăsesc:
 
-     Viteza, puterea și eficiența
+Viteza, puterea și eficiența
 
-     Accesul la cel mai recent software, de ultimă oră
+Accesul la cel mai recent software, de ultimă oră
 
-     Un model de actualizări la zi „rolling release” ce elimină necesitatea reinstalării pentru noi 
-     versiuni.
+Un model de actualizări la zi „rolling release” ce elimină necesitatea reinstalării pentru noi versiuni.
 
-     Acces la Arch User Repository (AUR)
+Acces la Arch User Repository (AUR)
 
 În următorii pași, Turbulence vă va ghida prin personalizarea copiei dvs. de Manjaro.</translation>
     </message>
@@ -81,7 +80,7 @@ Printre trăsăturile Manjaro se regăsesc:
     <message>
         <location filename="MainGui_manjaroGrey.py" line="576"/>
         <source>Themes</source>
-        <translation>Themes</translation>
+        <translation>Teme</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="602"/>
@@ -108,22 +107,22 @@ mai utilizate dosare.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="554"/>
         <source>Documents</source>
-        <translation>Documents</translation>
+        <translation>Documente</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="555"/>
         <source>Downloads</source>
-        <translation>Downloads</translation>
+        <translation>Descărcări</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="556"/>
         <source>Music</source>
-        <translation>Music</translation>
+        <translation>Muzică</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="557"/>
         <source>Pictures</source>
-        <translation>Pictures</translation>
+        <translation>Poze</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="558"/>
@@ -133,12 +132,12 @@ mai utilizate dosare.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="559"/>
         <source>Templates</source>
-        <translation>Templates</translation>
+        <translation>Șabloane</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="560"/>
         <source>Videos</source>
-        <translation>Videos</translation>
+        <translation>Video</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="568"/>
@@ -148,7 +147,7 @@ mai utilizate dosare.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="598"/>
         <source>Wallpapers</source>
-        <translation>Wallpapers</translation>
+        <translation>Tapete</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="575"/>
@@ -174,8 +173,8 @@ mai utilizate dosare.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="580"/>
-        <source>Cupertino-ish</source>
-        <translation>Cupertino-ish</translation>
+        <source>Plastik</source>
+        <translation>Plastik</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="601"/>
@@ -249,8 +248,7 @@ desktopului KDE și altele.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="606"/>
         <source>Launch System Settings</source>
-        <translation>Lansează setări 
-de sistem</translation>
+        <translation>Lansează setări de sistem</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="607"/>
@@ -261,8 +259,8 @@ de sistem</translation>
         <location filename="MainGui_manjaroGrey.py" line="608"/>
         <source>For help and support, you can visit Manjaro.org for access 
 to a terrific forum, wiki, and IRC!</source>
-        <translation>Pentru ajutor și suport vizitați Manjaro.org pentru a 
-accesa un forum superb, wiki și IRC!</translation>
+        <translation>Pentru ajutor și suport vizitați Manjaro.org pentru a accesa
+un forum superb, wiki și IRC!</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="609"/>

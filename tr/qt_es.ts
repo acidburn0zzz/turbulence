@@ -19,12 +19,12 @@
     <message>
         <location filename="MainGui_manjaroGrey.py" line="531"/>
         <source>Welcome</source>
-        <translation>Welcome</translation>
+        <translation>Bienvenido</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="544"/>
         <source>Folders</source>
-        <translation>Folders</translation>
+        <translation>Carpetas</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="533"/>
@@ -52,9 +52,9 @@ Some of Manjaro's features are:
 Over these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.</source>
         <translation>Hola y bienvenido a Manjaro.
 
-Manjaro es una distro elegante y rápida que ofrece los beneficios del popular sistema operativo Arch, además 
-de la facilidad de uso. Desarrollado en Austria, Francia y Alemania, Manjaro apunta a nuevos usuarios,así como 
-a usuarios experimentados.
+Manjaro es una distro elegante y rápida que ofrece los beneficios del popular sistema operativo Arch, además de la facilidad de uso.
+Desarrollado en Austria, Francia y Alemania, Manjaro apunta a nuevos usuarios,así como a usuarios experimentados.
+
 Algunas de las características de Manjaro son:
 
      Velocidad, potencia y eficiencia
@@ -81,7 +81,7 @@ Durante estos próximos pasos, Turbulence lo guiará a través de la personaliza
     <message>
         <location filename="MainGui_manjaroGrey.py" line="576"/>
         <source>Themes</source>
-        <translation>Themes</translation>
+        <translation>Temas</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="602"/>
@@ -103,37 +103,37 @@ algunas de las carpetas más utilizadas.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="553"/>
         <source>Desktop</source>
-        <translation>Desktop</translation>
+        <translation>Escritorio</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="554"/>
         <source>Documents</source>
-        <translation>Documents</translation>
+        <translation>Documentos</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="555"/>
         <source>Downloads</source>
-        <translation>Downloads</translation>
+        <translation>Descargas</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="556"/>
         <source>Music</source>
-        <translation>Music</translation>
+        <translation>Música</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="557"/>
         <source>Pictures</source>
-        <translation>Pictures</translation>
+        <translation>Imágenes</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="558"/>
         <source>Public</source>
-        <translation>Public</translation>
+        <translation>Público</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="559"/>
         <source>Templates</source>
-        <translation>Templates</translation>
+        <translation>Plantillas</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="560"/>
@@ -180,7 +180,7 @@ algunas de las carpetas más utilizadas.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="601"/>
         <source>Finish</source>
-        <translation>Finish</translation>
+        <translation>Fin</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="584"/>
@@ -243,14 +243,13 @@ y enlaces de abajo. Además, si usted no lo ha hecho, asegúrese de unirse a la 
         <location filename="MainGui_manjaroGrey.py" line="605"/>
         <source>Control panel to edit various aspects of the KDE desktop, 
 and more.</source>
-        <translation>Panel de control para modificar varios aspectos del, 
-escritorio KDE, y más.</translation>
+        <translation>Panel de control para modificar varios aspectos del escritorio KDE, 
+y más.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="606"/>
         <source>Launch System Settings</source>
-        <translation>Iniciar Configuración 
-del sistema</translation>
+        <translation>Iniciar Configuración del sistema</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="607"/>
@@ -261,8 +260,8 @@ del sistema</translation>
         <location filename="MainGui_manjaroGrey.py" line="608"/>
         <source>For help and support, you can visit Manjaro.org for access 
 to a terrific forum, wiki, and IRC!</source>
-        <translation>Para obtener ayuda y apoyo, se puede visitar Manjaro.org para
-acceder a su excelente foro, wiki, e IRC!</translation>
+        <translation>Para obtener ayuda y apoyo, se puede visitar Manjaro.org para acceder 
+a su excelente foro, wiki, e IRC!</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="609"/>

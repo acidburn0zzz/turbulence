@@ -9,7 +9,7 @@
     <message>
         <location filename="MainGui_manjaroGrey.py" line="529"/>
         <source>Turbulence</source>
-        <translation>Turbulence</translation>
+        <translation>Türbülans</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="530"/>
@@ -19,12 +19,12 @@
     <message>
         <location filename="MainGui_manjaroGrey.py" line="531"/>
         <source>Welcome</source>
-        <translation>Welcome</translation>
+        <translation>Hoşgeldiniz</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="544"/>
         <source>Folders</source>
-        <translation>Folders</translation>
+        <translation>Klasörler</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="533"/>
@@ -55,11 +55,12 @@ Over these next few steps, Turbulence will guide you through customizing your ne
 Manjaro hızlı ve görsel bir dağıtımdır. Arch Linux gibi güçlü bir sistem üzerine inşa edilmiştir.
 Avusturya, Fransa, Türkiye ve Almanya&apos;da geliştirilen Manjaro, basitlik, kullanışlılık kolaylık 
 sloganı ile son kullanıcıyı hedefler.
+
 Manjaro&apos;nun temel özellikleri şunlardır:
 
      Verimli, hızlı ve güçlü.
 
-     Son teknoloji yazılımları ve çözümleri barındıran, yuvarlanan sürüm
+ Son teknoloji yazılımları ve çözümleri barındıran, yuvarlanan sürüm
 
      Manjaro , sürekli gelişim modelini kullanmaktadır. Sisteminizi bir kere yüklersiniz ve Manjaro depolarından
      yapacağınız güncellemeler ile , sürekli güncel ve kararlı bir işletim sistemine sahip olursunuz.
@@ -81,7 +82,7 @@ Manjaro&apos;yu dilediğiniz gibi özelleştirmek için bir kaç adım daha Tür
     <message>
         <location filename="MainGui_manjaroGrey.py" line="576"/>
         <source>Themes</source>
-        <translation>Themes</translation>
+        <translation>Temalar</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="602"/>
@@ -103,42 +104,42 @@ ya da devam ederek varsayılan klasörleri oluşturmuş olursunuz.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="553"/>
         <source>Desktop</source>
-        <translation>Desktop</translation>
+        <translation>Masaüstü</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="554"/>
         <source>Documents</source>
-        <translation>Documents</translation>
+        <translation>Belgeler</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="555"/>
         <source>Downloads</source>
-        <translation>Downloads</translation>
+        <translation>indirilenler</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="556"/>
         <source>Music</source>
-        <translation>Music</translation>
+        <translation>Müzik</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="557"/>
         <source>Pictures</source>
-        <translation>Pictures</translation>
+        <translation>Resimler</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="558"/>
         <source>Public</source>
-        <translation>Public</translation>
+        <translation>Ortak</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="559"/>
         <source>Templates</source>
-        <translation>Templates</translation>
+        <translation>Sablonlar</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="560"/>
         <source>Videos</source>
-        <translation>Videos</translation>
+        <translation>Videolar</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="568"/>
@@ -148,7 +149,7 @@ ya da devam ederek varsayılan klasörleri oluşturmuş olursunuz.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="598"/>
         <source>Wallpapers</source>
-        <translation>Wallpapers</translation>
+        <translation>Duvarkağıtları</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="575"/>
@@ -159,7 +160,7 @@ ya da devam ederek varsayılan klasörleri oluşturmuş olursunuz.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="589"/>
         <source>Ozone</source>
-        <translation>Ozone</translation>
+        <translation>Ozon</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="578"/>
@@ -169,17 +170,17 @@ ya da devam ederek varsayılan klasörleri oluşturmuş olursunuz.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="579"/>
         <source>Oxygen</source>
-        <translation>Oxygen</translation>
+        <translation>Oksijen</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="580"/>
-        <source>Cupertino-ish</source>
-        <translation>Cupertino-ish</translation>
+        <source>Plastik</source>
+        <translation>Plastik</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="601"/>
         <source>Finish</source>
-        <translation>Finish</translation>
+        <translation>Tamamla</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="584"/>
@@ -189,37 +190,37 @@ ya da devam ederek varsayılan klasörleri oluşturmuş olursunuz.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="590"/>
         <source>Orange Splash</source>
-        <translation>Orange Splash</translation>
+        <translation>Turuncu Dekorasyon</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="591"/>
         <source>Sunset Plane</source>
-        <translation>Sunset Plane</translation>
+        <translation>Manzaralı Gün Batımı</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="592"/>
         <source>Mountain Lake</source>
-        <translation>Mountain Lake</translation>
+        <translation>Dağ ve Göl</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="593"/>
         <source>Space</source>
-        <translation>Space</translation>
+        <translation>Uzay</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="594"/>
         <source>Dark Stairs</source>
-        <translation>Dark Stairs</translation>
+        <translation>Karanlık Merdivenler</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="595"/>
         <source>Cherry Japan</source>
-        <translation>Cherry Japan</translation>
+        <translation>Japon Kirazı</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="596"/>
         <source>White Tiger</source>
-        <translation>White Tiger</translation>
+        <translation>Beyaz Kaplan</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="597"/>
@@ -230,8 +231,8 @@ ya da devam ederek varsayılan klasörleri oluşturmuş olursunuz.</translation>
         <location filename="MainGui_manjaroGrey.py" line="603"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs 
 and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
-        <translation>Tüm ayarlar yapıldı, Şimdi Manjaro&apos;yu kullanmaya başlayabilirsiniz ya da birkaç seçeneğe daha göz 
-atabilirsiniz. Manjaro Topluluğu sizi bekliyor, hemen katılmalısınız.</translation>
+        <translation>Tüm ayarlar yapıldı, Şimdi Manjaro&apos;yu kullanmaya başlayabilirsiniz ya da birkaç seçeneğe daha göz atabilirsiniz.
+Manjaro Topluluğu sizi bekliyor, hemen katılmalısınız.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="604"/>
@@ -242,14 +243,13 @@ atabilirsiniz. Manjaro Topluluğu sizi bekliyor, hemen katılmalısınız.</tran
         <location filename="MainGui_manjaroGrey.py" line="605"/>
         <source>Control panel to edit various aspects of the KDE desktop, 
 and more.</source>
-        <translation>Kontrol panelinde KDE Masaüstü ortamı ile ilgili 
-birçok ayarlama, ve sayısız seçenek bulacaksınız.</translation>
+        <translation>Kontrol panelinde KDE Masaüstü ortamı ile ilgili birçok ayarlama,
+ve sayısız seçenek bulacaksınız.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="606"/>
         <source>Launch System Settings</source>
-        <translation>Sistem Ayarlarını 
-Çalıştır</translation>
+        <translation>Sistem Ayarlarını Çalıştır</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="607"/>
@@ -260,14 +260,13 @@ birçok ayarlama, ve sayısız seçenek bulacaksınız.</translation>
         <location filename="MainGui_manjaroGrey.py" line="608"/>
         <source>For help and support, you can visit Manjaro.org for access 
 to a terrific forum, wiki, and IRC!</source>
-        <translation>Yardım ve destek için manjaro.org bağlantısını ziyaret 
-edin Forumlar, IRC ve Wiki size yeterince bilgilendirecek!</translation>
+        <translation>Yardım ve destek için manjaro.org bağlantısını ziyaret edin
+Forumlar, IRC ve Wiki size yeterince bilgilendirecek!</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="609"/>
         <source>Launch Manjaro.org</source>
-        <translation>manjaro.org adresine 
-git</translation>
+        <translation>manjaro.org adresine git</translation>
     </message>
 </context>
 </TS>

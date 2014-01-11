@@ -19,12 +19,12 @@
     <message>
         <location filename="MainGui_manjaroGrey.py" line="531"/>
         <source>Welcome</source>
-        <translation>Welcome</translation>
+        <translation>Bienvenue</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="544"/>
         <source>Folders</source>
-        <translation>Folders</translation>
+        <translation>Dossiers</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="533"/>
@@ -62,7 +62,7 @@ Quelques-unes des caractéristiques de Manjaro:
      Accès aux dernières versions des logiciels
 
      Un modèle de développement en publication continue qui permet de posséder un système toujours à jour
-     sans avoir à installer de nouvelles versions
+	 sans avoir à installer de nouvelles versions
 
      Accès au dépôt de logiciels des utilisateurs d’Arch Linux (AUR)
 
@@ -81,7 +81,7 @@ Durant les prochaines étapes, Turbulence va vous guider dans la personnalisatio
     <message>
         <location filename="MainGui_manjaroGrey.py" line="576"/>
         <source>Themes</source>
-        <translation>Themes</translation>
+        <translation>Thèmes</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="602"/>
@@ -103,7 +103,7 @@ Vous avez le choix parmi les dossiers courrament utilisés.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="553"/>
         <source>Desktop</source>
-        <translation>Desktop</translation>
+        <translation>Bureau</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="554"/>
@@ -113,17 +113,17 @@ Vous avez le choix parmi les dossiers courrament utilisés.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="555"/>
         <source>Downloads</source>
-        <translation>Downloads</translation>
+        <translation>Téléchargements</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="556"/>
         <source>Music</source>
-        <translation>Music</translation>
+        <translation>Musique</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="557"/>
         <source>Pictures</source>
-        <translation>Pictures</translation>
+        <translation>Images</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="558"/>
@@ -133,12 +133,12 @@ Vous avez le choix parmi les dossiers courrament utilisés.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="559"/>
         <source>Templates</source>
-        <translation>Templates</translation>
+        <translation>Modèles</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="560"/>
         <source>Videos</source>
-        <translation>Videos</translation>
+        <translation>Vidéos</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="568"/>
@@ -148,7 +148,7 @@ Vous avez le choix parmi les dossiers courrament utilisés.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="598"/>
         <source>Wallpapers</source>
-        <translation>Wallpapers</translation>
+        <translation>Papiers peints</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="575"/>
@@ -230,9 +230,9 @@ Vous avez le choix parmi les dossiers courrament utilisés.</translation>
         <location filename="MainGui_manjaroGrey.py" line="603"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs 
 and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
-        <translation>Tous vos paramètres ont été appliqués. Vous pouvez maintenant commencer à utiliser Manjaro, ou bien jeter un œil aux 
-programmes et liens ci-dessous. Enfin, si vous ne l&apos;avez pas déjà fait, nous vous recommandons de rejoindre la 
-communauté Manjaro !</translation>
+        <translation>Tous vos paramètres ont été appliqués. Vous pouvez maintenant commencer à utiliser Manjaro, 
+ou bien jeter un œil aux programmes et liens ci-dessous. 
+Enfin, si vous ne l&apos;avez pas déjà fait, nous vous recommandons de rejoindre la communauté Manjaro !</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="604"/>
@@ -249,8 +249,7 @@ du bureau KDE, et davantage.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="606"/>
         <source>Launch System Settings</source>
-        <translation>Lancer les paramètres 
-système</translation>
+        <translation>Lancer les paramètres système</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="607"/>

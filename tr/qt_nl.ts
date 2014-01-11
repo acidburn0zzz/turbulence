@@ -9,7 +9,7 @@
     <message>
         <location filename="MainGui_manjaroGrey.py" line="529"/>
         <source>Turbulence</source>
-        <translation>Turbulence</translation>
+        <translation>Turbulent</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="530"/>
@@ -19,7 +19,7 @@
     <message>
         <location filename="MainGui_manjaroGrey.py" line="531"/>
         <source>Welcome</source>
-        <translation>Welcome</translation>
+        <translation>Welkom</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="544"/>
@@ -57,16 +57,14 @@ Ontwikkeld in Oostenrijk,Frankrijk en Duitsland,Manjaro´s doelgroep is voor nie
 
 Sommige voordelen zijn:
 
-     Speed, power, and efficiency
+Toegang tot de laaste cutting en bleeding edge software
 
-     Toegang tot de laaste cutting en bleeding edge software
+Een rolling release ontwikkeling model dat je het laatste up-to-date brengt zonder
+opnieuw te installeren
 
-     Een rolling release ontwikkeling model dat je het laatste up-to-date brengt zonder
-     opnieuw te installeren
+Toegang tot het Arch User Repository (aur).
 
-     Toegang tot het Arch User Repository (aur).
-
-In de volgende stappen, Turbulence zal je leiden om je installatie te personaliseren.</translation>
+In de volgende stappen, Turbulent zal je leiden om je installatie te personaliseren.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="600"/>
@@ -92,8 +90,7 @@ In de volgende stappen, Turbulence zal je leiden om je installatie te personalis
         <location filename="MainGui_manjaroGrey.py" line="543"/>
         <source>Here, you can choose which folders you want in your home directory. You have a choice from 
 some of the most commonly used folders.</source>
-        <translation>Hier,Kan je kiezen welke folders je wilt in je home directory. Je kan kiezen uit de meest 
-algemeen gebruikte folders.</translation>
+        <translation>Hier,Kan je kiezen welke folders je wilt in je home directory. Je kan kiezen uit de meest algemeen gebruikte folders.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="703"/>
@@ -103,12 +100,12 @@ algemeen gebruikte folders.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="553"/>
         <source>Desktop</source>
-        <translation>Desktop</translation>
+        <translation>Bureaublad</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="554"/>
         <source>Documents</source>
-        <translation>Documents</translation>
+        <translation>Documenten</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="555"/>
@@ -118,17 +115,17 @@ algemeen gebruikte folders.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="556"/>
         <source>Music</source>
-        <translation>Music</translation>
+        <translation>Muziek</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="557"/>
         <source>Pictures</source>
-        <translation>Pictures</translation>
+        <translation>Afbeeldingen</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="558"/>
         <source>Public</source>
-        <translation>Public</translation>
+        <translation>Publiek</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="559"/>
@@ -138,7 +135,7 @@ algemeen gebruikte folders.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="560"/>
         <source>Videos</source>
-        <translation>Videos</translation>
+        <translation>Video</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="568"/>
@@ -148,7 +145,7 @@ algemeen gebruikte folders.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="598"/>
         <source>Wallpapers</source>
-        <translation>Wallpapers</translation>
+        <translation>Wallpaper</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="575"/>
@@ -180,7 +177,7 @@ algemeen gebruikte folders.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="601"/>
         <source>Finish</source>
-        <translation>Finish</translation>
+        <translation>Klaar</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="584"/>
@@ -190,7 +187,7 @@ algemeen gebruikte folders.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="590"/>
         <source>Orange Splash</source>
-        <translation>Orange Splash</translation>
+        <translation>Oranje Splash</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="591"/>
@@ -243,14 +240,13 @@ en links hier onder. Als ook, als je niet al hebt gedaan, wees zeker dat je je e
         <location filename="MainGui_manjaroGrey.py" line="605"/>
         <source>Control panel to edit various aspects of the KDE desktop, 
 and more.</source>
-        <translation>Beheerder paneel voor bewerken algemene aspecten van 
-de KDE desktop, En meer.</translation>
+        <translation>Beheerder paneel voor bewerken algemene aspecten van de KDE desktop,
+En meer.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="606"/>
         <source>Launch System Settings</source>
-        <translation>Lanceer Systeem 
-Instellingen.</translation>
+        <translation>Lanceer Systeem Instellingen.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="607"/>
@@ -261,8 +257,8 @@ Instellingen.</translation>
         <location filename="MainGui_manjaroGrey.py" line="608"/>
         <source>For help and support, you can visit Manjaro.org for access 
 to a terrific forum, wiki, and IRC!</source>
-        <translation>Voor help en ondersteuning, je kan Manjaro.org bezoeken 
-voor toegang tot een goed forum, wiki en IRC!</translation>
+        <translation>Voor help en ondersteuning, je kan Manjaro.org bezoeken voor toegang
+tot een goed forum, wiki en IRC!</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="609"/>

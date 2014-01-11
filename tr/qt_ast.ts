@@ -19,12 +19,12 @@
     <message>
         <location filename="MainGui_manjaroGrey.py" line="531"/>
         <source>Welcome</source>
-        <translation>Welcome</translation>
+        <translation>Bienllegáu</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="544"/>
         <source>Folders</source>
-        <translation>Folders</translation>
+        <translation>Direutorios</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="533"/>
@@ -53,18 +53,17 @@ Over these next few steps, Turbulence will guide you through customizing your ne
         <translation>Hola, ya bienllegáu a Manjaro.
 
 Manjaro ye una distro rápida ya pulida, carauterizada polos beneficios d&apos;Arch Linux ya xunto cola cenciellez d&apos;usu.
-Desendolcada n&apos;Austria, Francia ya Alemaña, Manjaro tien como oxetivu a los usuarios nuevos ya los usuarios 
-con esperiencia.
+Desendolcada n&apos;Austria, Francia ya Alemaña, Manjaro tien como oxetivu a los usuarios nuevos ya los usuarios con esperiencia.
+
 Dalgunes de les carauterístiques de Manjaro son:
 
-     Velocidá, poder, ya eficiencia.
+Velocidá, poder, ya eficiencia.
 
-     Accesu al caberu software ya caberes anovaciones.
+Accesu al caberu software ya caberes anovaciones.
 
-     Un modelu desendolcu continuu qu&apos;ufre un sistema peranováu ensin la necesidá d&apos;instalar vesiones
-     nueves.
+Un modelu desendolcu continuu qu&apos;ufre un sistema peranováu ensin la necesidá d&apos;instalar vesiones nueves.
 
-     Accesu al Arch User Repository (AUR).
+Accesu al Arch User Repository (AUR).
 
 Nos pasos venideros, Turbulence empobinaráte na personalización de Manjaro.</translation>
     </message>
@@ -81,7 +80,7 @@ Nos pasos venideros, Turbulence empobinaráte na personalización de Manjaro.</t
     <message>
         <location filename="MainGui_manjaroGrey.py" line="576"/>
         <source>Themes</source>
-        <translation>Themes</translation>
+        <translation>Temes</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="602"/>
@@ -103,37 +102,37 @@ de los direutorios más usaos.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="553"/>
         <source>Desktop</source>
-        <translation>Desktop</translation>
+        <translation>Escritoriu</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="554"/>
         <source>Documents</source>
-        <translation>Documents</translation>
+        <translation>Documentos</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="555"/>
         <source>Downloads</source>
-        <translation>Downloads</translation>
+        <translation>Descargues</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="556"/>
         <source>Music</source>
-        <translation>Music</translation>
+        <translation>Música</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="557"/>
         <source>Pictures</source>
-        <translation>Pictures</translation>
+        <translation>Semeyes</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="558"/>
         <source>Public</source>
-        <translation>Public</translation>
+        <translation>Público</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="559"/>
         <source>Templates</source>
-        <translation>Templates</translation>
+        <translation>Plantíes</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="560"/>
@@ -148,7 +147,7 @@ de los direutorios más usaos.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="598"/>
         <source>Wallpapers</source>
-        <translation>Wallpapers</translation>
+        <translation>Fondos de pantalla</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="575"/>
@@ -180,7 +179,7 @@ de los direutorios más usaos.</translation>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="601"/>
         <source>Finish</source>
-        <translation>Finish</translation>
+        <translation>Finar</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="584"/>
@@ -243,14 +242,13 @@ ya enllaces d&apos;embaxo. Tamién, si nun lo ficiesti, ¡pues xunite a la comun
         <location filename="MainGui_manjaroGrey.py" line="605"/>
         <source>Control panel to edit various aspects of the KDE desktop, 
 and more.</source>
-        <translation>Panel de control pa remanar dellos aspeutos del escritoriu 
-KDE, ya más.</translation>
+        <translation>Panel de control pa remanar dellos aspeutos del escritoriu KDE,
+ya más.</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="606"/>
         <source>Launch System Settings</source>
-        <translation>Llanzar axustes 
-del sistema</translation>
+        <translation>Llanzar axustes del sistema</translation>
     </message>
     <message>
         <location filename="MainGui_manjaroGrey.py" line="607"/>
