@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo """
+This program will re-generate the english translation file
+for Turbulence.
+
+Hit enter to proceed, otherwise ctrl ^C.
+"""
+
+read someVar
+
+echo -e "Regenerating qt_en.ts from translate.pro...\n"
+pylupdate4 -noobsolete -verbose translate.pro
+echo -e "Changing the appropriate file paths...\n"
+sed -i s'|GUI_|../GUI_|'g tr/qt_en.ts
+echo -e "Done!\n"
