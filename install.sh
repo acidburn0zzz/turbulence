@@ -12,7 +12,6 @@ fi
 
 if [ "$1" == "--remove" ] || [ "$1" == "-r" ]; then
     echo "Removing turbulence..."
-    rm -rf /usr/share/turbulence
     rm -rf '/usr/share/wallpapers/Cherry Japan'
     rm -rf '/usr/share/wallpapers/Dark Stairs'
     rm -rf '/usr/share/wallpapers/Earth In Space'
@@ -22,6 +21,7 @@ if [ "$1" == "--remove" ] || [ "$1" == "-r" ]; then
     rm -rf '/usr/share/wallpapers/Sunset Plane'
     rm -rf '/usr/share/wallpapers/White Tiger'
     rm -f /usr/bin/turbulence
+    rm -rf /usr/share/turbulence
     exit
 fi
 
