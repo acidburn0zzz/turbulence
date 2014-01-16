@@ -1,0 +1,23 @@
+#!/usr/bin/env python2
+
+from tools_ import *
+
+if utils_detector.detectTint():
+    print 'tint is running'
+else:
+    print 'tint is not running'
+
+if utils_detector.detectPlasma():
+    print 'plasma is running'
+else:
+    print 'plasma is not running'
+
+if utils_detector.detectKwin():
+    print 'kwin is running'
+else:
+    print 'kwin is not running'
+
+if utils_detector.detectNitrogen():
+    print 'nitrogen is running'
+else:
+    print 'nitrogen is not running'

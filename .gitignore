@@ -5,4 +5,5 @@ work-*
 *.iso
 *-x86_64*
 *-i686*
+*.pyc
 diff

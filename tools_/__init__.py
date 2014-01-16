@@ -1,1 +1,1 @@
-__all__ = ["folders", "themes", "Tint", "plasma_control", "ob_control", "logger", "wallpapers", "packages", "final"]
+__all__ = ["folders", "themes", "tint", "plasma_control", "ob_control", "utils_detector", "logger", "wallpapers", "packages", "final"]
