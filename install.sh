@@ -5,9 +5,15 @@ if [ $EUID != 0 ]; then
     exit
 fi
 
-if [ `printf '%s\n' "${PWD##*/}"` != "turbulence" ]; then
-    echo "This scrip needs to be ran in the turbulence directory. Exiting..."
-    exit
+if [ `printf '%s\n' "${PWD##*/}"` != "turbulence" ] && [ `printf '%s\n' "${PWD##*/}"` != "turbulence-evolution" ]; then
+    if [ -f "turbulencerunner" ] && [ -f "turbulence" ] && [ -d "GUI_" ] && [ -d "tools_" ] && [ -d "stylesheets" ]; then
+        echo -e " This directory isn't named properly, but I detected enough files to run. If you're not running this script\n"\
+              "with the intention of installing or removing Turbulence, then you should press ctrl ^C now. Otherwise, hit enter"
+        read someVar
+    else
+        echo "This script needs to be ran in the turbulence directory. Exiting..."
+        exit
+    fi
 fi
 
 if [ "$1" == "--remove" ] || [ "$1" == "-r" ]; then
@@ -20,6 +26,14 @@ if [ "$1" == "--remove" ] || [ "$1" == "-r" ]; then
     rm -rf '/usr/share/wallpapers/Ozone-Turbulence'
     rm -rf '/usr/share/wallpapers/Sunset Plane'
     rm -rf '/usr/share/wallpapers/White Tiger'
+    rm -rf '/usr/share/backgrounds/Cherry Japan.jpg'
+    rm -rf '/usr/share/backgrounds/Dark Stairs.jpg'
+    rm -rf '/usr/share/backgrounds/Earth In Space.jpg'
+    rm -rf '/usr/share/backgrounds/Mountain Lake.jpg'
+    rm -rf '/usr/share/backgrounds/Orange Splash.jpg'
+    rm -rf '/usr/share/backgrounds/Ozone-Turbulence.jpg'
+    rm -rf '/usr/share/backgrounds/Sunset Plane.jpg'
+    rm -rf '/usr/share/backgrounds/White Tiger.jpg'
     rm -f /usr/bin/turbulence
     rm -rf /usr/share/turbulence
     exit
@@ -42,9 +56,18 @@ if [ ! -d "/usr/share/wallpapers" ]; then
     mkdir /usr/share/wallpapers
     echo "Needed to create the /usr/share/wallpapers directory."
 fi
+
 echo "Copying the wallpapers into /usr/share/wallpapers..."
 mv /usr/share/turbulence/wallpapers/* /usr/share/wallpapers
 rm -r /usr/share/turbulence/wallpapers
+
+if [ ! -d "/usr/share/backgrounds" ]; then
+    mkdir /usr/share/backgrounds
+    echo "Needed to create the /usr/share/backgrounds directory."
+fi
+echo "Copying the wallpapers into /usr/share/backgrounds..."
+mv /usr/share/turbulence/backgrounds/* /usr/share/backgrounds
+rm -r /usr/share/turbulence/backgrounds
 
 echo "Copying the turbulence executable..."
 mv /usr/share/turbulence/turbulence /usr/bin
@@ -60,19 +83,15 @@ else
     rm -r /usr/share/turbulence/themes/ghost-deco-2_2
 fi
 
-if [ -d "/usr/share/apps/aurorae/themes/cupertino-ish" ]; then
-    echo "Cupertino-ish theme already installed. Skipping Copying the Cupertino-ish theme."
-    rm -r /usr/share/turbulence/themes
-else
-    echo "Copying the Cupertino-ish theme"
-    mv /usr/share/turbulence/themes/* /usr/share/apps/aurorae/themes
-    rm -r /usr/share/turbulence/themes
-fi
-
 echo "Generating translations..."
 cd /usr/share/turbulence/tr
 lrelease-qt4 /usr/share/turbulence/tr/*
 cd
+
+echo "Cleaning up some unneeded files..."
+rm -r /usr/share/turbulence/translate.pro
+rm -r /usr/share/turbulence/install.sh
+rm -r /usr/share/turbulence/create_ts
 
 echo "Changing permissions..."
 chmod +x /usr/bin/turbulence
@@ -84,3 +103,4 @@ echo "-python2"
 echo "-python2-pyqt4"
 echo "-pyqt4-common"
 echo "-qt4"
+echo "-kdeplasma-theme-cupertino-ish"

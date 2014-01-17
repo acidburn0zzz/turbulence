@@ -20,6 +20,12 @@ except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
 
+#Detect what processes you're running for DE/WM specific processess.
+
+tintStatus = utils_detector.detectTint() #Tint
+kwinStatus = utils_detector.detectKwin() #Kwin
+plasmaStatus = utils_detector.detectPlasma() #Plasma
+nitrogenStatus = utils_detector.detectNitrogen() #Nitrogen
 
 
 def widgetConfigurer(widgetType, xPos, yPos, xSize, ySize, name, image=None, styleSheet=None):
@@ -52,7 +58,6 @@ def createStaticWidgets(parent):
 
     return blackBackground, headerBack, turbulenceLogo, menuBackg, footerBack
 
-
 #Begins to main class
 class Ui_MainWindow(QtCore.QObject):
     def setupUi(self, MainWindow):
@@ -82,7 +87,7 @@ class Ui_MainWindow(QtCore.QObject):
         self.welcomeToManjaro = QtGui.QWidget()
         self.welcomeToManjaro.setObjectName(_fromUtf8("welcomeToManjaro"))
 
-        #Defines all the widgets
+        #Defines all the widgets for the first page
         createStaticWidgets(self.welcomeToManjaro)
         self.header = QtGui.QLabel(self.welcomeToManjaro)
         self.welcomeButton = QtGui.QPushButton(self.welcomeToManjaro)
@@ -134,6 +139,20 @@ class Ui_MainWindow(QtCore.QObject):
         
         #adds the first page
         self.stackedWidget.addWidget(self.welcomeToManjaro)
+        
+        #Hooks up the button handlers
+        QtCore.QObject.connect(self.folders2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNext)
+        QtCore.QObject.connect(self.forward, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNext)
+        QtCore.QObject.connect(self.cancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
+        
+        #Translates, or sets the text to the widgets
+        self.header.setText(_translate("MainWindow", "Welcome To Manjaro", None))
+        self.welcomeButton.setText("Welcome")
+        self.folders2.setText("Folders")
+        self.whatIsManjaro.setText(_translate("MainWindow", "What is Manjaro?", None))
+        self.manjaroDesc.setText(_translate("MainWindow", """Hello, and welcome to Manjaro.\n\nManjaro is a sleek and fast distro, featuring benefits from the popular Arch OS, along with ease of use.\nDeveloped in Austria, France, and Germany, Manjaro aims at new users, and experienced users.\n\nSome of Manjaro\'s features are:\n\n     Speed, power, and efficiency\n\n     Access to the very latest cutting and bleeding edge software\n\n     A ‘rolling release’ development model that provides the most up-to-date system possible without\n     the need to install new versions\n\n     Access to the Arch User Repository (AUR).\n\nOver these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.""", None))
+        self.cancel.setText(_translate("MainWindow", "Cancel", None))
+        self.forward.setText(_translate("MainWindow", "Forward", None))
         
         
         #Starts the second page in the stacked widget.
@@ -256,155 +275,242 @@ class Ui_MainWindow(QtCore.QObject):
         #adds the second page
         self.stackedWidget.addWidget(self.folders)
         
+        #Handles the button clicks.
+        QtCore.QObject.connect(self.themes, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNext)
+        QtCore.QObject.connect(self.previous, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
+        QtCore.QObject.connect(self.forward2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextFolders)
+        QtCore.QObject.connect(self.cancel2, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
         
-        #Starts the third page in the stacked widget.
-        self.Theme = QtGui.QWidget()
-        self.Theme.setObjectName(_fromUtf8("Theme"))
+        #Translates, or sets the text for all the widgets
+        self.header2.setText(_translate("MainWindow", "Folders", None))
+        self.foldersHead.setText("Folders")
+        self.themes.setText("Themes")
+        self.cancel2.setText(_translate("MainWindow", "Cancel", None))
+        self.forward2.setText(_translate("MainWindow", "Forward", None))
+        self.previous.setText(_translate("MainWindow", "Previous", None))
+        self.folderDesc.setText(_translate("MainWindow", "Here, you can choose which folders you want in your home directory. You have a choice from \nsome of the most commonly used folders.", None))
+        self.folderHeaderHead.setText("Folders")
+        self.folderHeader1.setText(_translate("MainWindow", "Status: Deactivated", None))
+        self.folderHeader2.setText(_translate("MainWindow", "Status: Deactivated", None))
+        self.folderHeader3.setText(_translate("MainWindow", "Status: Deactivated", None))
+        self.folderHeader4.setText(_translate("MainWindow", "Status: Deactivated", None))
+        self.folderHeader5.setText(_translate("MainWindow", "Status: Deactivated", None))
+        self.folderHeader6.setText(_translate("MainWindow", "Status: Deactivated", None))
+        self.folderHeader7.setText(_translate("MainWindow", "Status: Deactivated", None))
+        self.folderHeader8.setText(_translate("MainWindow", "Status: Deactivated", None))
+        self.folderName1.setText("Desktop")
+        self.folderName2.setText("Documents")
+        self.folderName3.setText("Downloads")
+        self.folderName4.setText("Music")
+        self.folderName5.setText("Pictures")
+        self.folderName6.setText("Public")
+        self.folderName7.setText("Templates")
+        self.folderName8.setText("Videos")
+        self.folderActive1.setText(_translate("MainWindow", "Active", None))
+        self.folderActive2.setText(_translate("MainWindow", "Active", None))
+        self.folderActive3.setText(_translate("MainWindow", "Active", None))
+        self.folderActive4.setText(_translate("MainWindow", "Active", None))
+        self.folderActive5.setText(_translate("MainWindow", "Active", None))
+        self.folderActive6.setText(_translate("MainWindow", "Active", None))
+        self.folderActive7.setText(_translate("MainWindow", "Active", None))
+        self.folderActive8.setText(_translate("MainWindow", "Active", None))
         
-        createStaticWidgets(self.Theme)
-        self.header3 = QtGui.QLabel(self.Theme)
-        self.themesMenu = QtGui.QPushButton(self.Theme)
-        self.arrow3 = QtGui.QLabel(self.Theme)
-        self.menuWallpapers = QtGui.QPushButton(self.Theme)
-        self.cancel3 = QtGui.QPushButton(self.Theme)
-        self.forward3 = QtGui.QPushButton(self.Theme)
-        self.previous2 = QtGui.QPushButton(self.Theme)
-        self.themeIcon = QtGui.QLabel(self.Theme)
-        self.folderDesc2 = QtGui.QLabel(self.Theme)
-        self.themesHeader = QtGui.QLabel(self.Theme)
-        self.themePreview1 = QtGui.QLabel(self.Theme)
-        self.themePreview2 = QtGui.QLabel(self.Theme)
-        self.themePreview3 = QtGui.QLabel(self.Theme)
-        self.themePreview4 = QtGui.QLabel(self.Theme)
-        self.themeRadio1 = QtGui.QRadioButton(self.Theme)
-        self.themeRadio2 = QtGui.QRadioButton(self.Theme)
-        self.themeRadio3 = QtGui.QRadioButton(self.Theme)
-        self.themeRadio4 = QtGui.QRadioButton(self.Theme)
         
-        thirdPageWidgets = {
-            "header3": [self.header3, 80, 20, 111, 51, "header3", None],
-            "themesMenu": [self.themesMenu, 20, 90, 91, 41, "themesMenu", None],
-            "arrow3": [self.arrow3, 120, 90, 31, 41, "arrow3", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-            "menuWallpapers": [self.menuWallpapers, 150, 90, 111, 41, "menuWallpapers", None],
-            "cancel3": [self.cancel3, 20, 575, 110, 33, "cancel3", None],
-            "forward3": [self.forward3, 730, 575, 111, 33, "forward3", None],
-            "previous2": [self.previous2, 620, 575, 101, 33, "previous2", None],
-            "themeIcon": [self.themeIcon, 40, 160, 61, 61, "themeIcon", "/usr/share/turbulence/images/manjaro-grey/themes/theme.png"],
-            "folderDesc2": [self.folderDesc2, 110, 167, 591, 51, "folderDesc2", None],
-            "themesHeader": [self.themesHeader, 50, 240, 91, 31, "themesHeader", None],
-            "themePreview1": [self.themePreview1, 90, 280, 241, 81, "themePreview1", "/usr/share/turbulence/images/manjaro-grey/themes/ozone.png"],
-            "themePreview2": [self.themePreview2, 510, 280, 241, 81, "themePreview2", "/usr/share/turbulence/images/manjaro-grey/themes/cupertino-ish.png"],
-            "themePreview3": [self.themePreview3, 90, 410, 241, 81, "themePreview3", "/usr/share/turbulence/images/manjaro-grey/themes/oxygen.png"],
-            "themePreview4": [self.themePreview4, 510, 410, 241, 81, "themePreview4", "/usr/share/turbulence/images/manjaro-grey/themes/plastik.png"],
-            "themeRadio1": [self.themeRadio1, 170, 370, 81, 21, "themeRadio1", None],
-            "themeRadio2": [self.themeRadio2, 566, 370, 131, 21, "themeRadio2", None],
-            "themeRadio3": [self.themeRadio3, 167, 500, 91, 21, "themeRadio3", None],
-            "themeRadio4": [self.themeRadio4, 591, 510, 91, 21, "themeRadio4", None]
-        }
+        #Checks if Kwin is running, and if so displays the kwin themer
+        if kwinStatus:
+            self.Theme = QtGui.QWidget()
+            self.Theme.setObjectName(_fromUtf8("Theme"))
         
-        #defines all the widget parameters
-        for widgetName, widgetSettings in thirdPageWidgets.items():
-            widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
+            createStaticWidgets(self.Theme)
+            self.header3 = QtGui.QLabel(self.Theme)
+            self.themesMenu = QtGui.QPushButton(self.Theme)
+            self.arrow3 = QtGui.QLabel(self.Theme)
+            self.menuWallpapers = QtGui.QPushButton(self.Theme)
+            self.cancel3 = QtGui.QPushButton(self.Theme)
+            self.forward3 = QtGui.QPushButton(self.Theme)
+            self.previous2 = QtGui.QPushButton(self.Theme)
+            self.themeIcon = QtGui.QLabel(self.Theme)
+            self.folderDesc2 = QtGui.QLabel(self.Theme)
+            self.themesHeader = QtGui.QLabel(self.Theme)
+            self.themePreview1 = QtGui.QLabel(self.Theme)
+            self.themePreview2 = QtGui.QLabel(self.Theme)
+            self.themePreview3 = QtGui.QLabel(self.Theme)
+            self.themePreview4 = QtGui.QLabel(self.Theme)
+            self.themeRadio1 = QtGui.QRadioButton(self.Theme)
+            self.themeRadio2 = QtGui.QRadioButton(self.Theme)
+            self.themeRadio3 = QtGui.QRadioButton(self.Theme)
+            self.themeRadio4 = QtGui.QRadioButton(self.Theme)
         
-        #Defines the custom settings
-        self.themesMenu.setFlat(True)
-        self.menuWallpapers.setFlat(True)
-        self.cancel3.setFlat(True)
-        self.forward3.setFlat(True)
-        self.previous2.setFlat(True)
+            thirdPageWidgets = {
+                "header3": [self.header3, 80, 20, 111, 51, "header3", None],
+                "themesMenu": [self.themesMenu, 20, 90, 91, 41, "themesMenu", None],
+                "arrow3": [self.arrow3, 120, 90, 31, 41, "arrow3", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
+                "menuWallpapers": [self.menuWallpapers, 150, 90, 111, 41, "menuWallpapers", None],
+                "cancel3": [self.cancel3, 20, 575, 110, 33, "cancel3", None],
+                "forward3": [self.forward3, 730, 575, 111, 33, "forward3", None],
+                "previous2": [self.previous2, 620, 575, 101, 33, "previous2", None],
+                "themeIcon": [self.themeIcon, 40, 160, 61, 61, "themeIcon", "/usr/share/turbulence/images/manjaro-grey/themes/theme.png"],
+                "folderDesc2": [self.folderDesc2, 110, 167, 591, 51, "folderDesc2", None],
+                "themesHeader": [self.themesHeader, 50, 240, 91, 31, "themesHeader", None],
+                "themePreview1": [self.themePreview1, 90, 280, 241, 81, "themePreview1", "/usr/share/turbulence/images/manjaro-grey/themes/ozone.png"],
+                "themePreview2": [self.themePreview2, 510, 280, 241, 81, "themePreview2", "/usr/share/turbulence/images/manjaro-grey/themes/cupertino-ish.png"],
+                "themePreview3": [self.themePreview3, 90, 410, 241, 81, "themePreview3", "/usr/share/turbulence/images/manjaro-grey/themes/oxygen.png"],
+                "themePreview4": [self.themePreview4, 510, 410, 241, 81, "themePreview4", "/usr/share/turbulence/images/manjaro-grey/themes/plastik.png"],
+                "themeRadio1": [self.themeRadio1, 170, 370, 81, 21, "themeRadio1", None],
+                "themeRadio2": [self.themeRadio2, 566, 370, 131, 21, "themeRadio2", None],
+                "themeRadio3": [self.themeRadio3, 167, 500, 91, 21, "themeRadio3", None],
+                "themeRadio4": [self.themeRadio4, 591, 510, 91, 21, "themeRadio4", None]
+             }
         
-        self.cancel3.setIcon(icon)
-        self.forward3.setIcon(icon1)
-        self.previous2.setIcon(icon2)
+            #defines all the widget parameters
+            for widgetName, widgetSettings in thirdPageWidgets.items():
+                widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
         
-        self.forward3.setIconSize(QtCore.QSize(28, 30))
-        self.previous2.setIconSize(QtCore.QSize(28, 30))
+            #Defines the custom settings
+            self.themesMenu.setFlat(True)
+            self.menuWallpapers.setFlat(True)
+            self.cancel3.setFlat(True)
+            self.forward3.setFlat(True)
+            self.previous2.setFlat(True)
         
-        #Adds the third page
-        self.stackedWidget.addWidget(self.Theme)
+            self.cancel3.setIcon(icon)
+            self.forward3.setIcon(icon1)
+            self.previous2.setIcon(icon2)
+        
+            self.forward3.setIconSize(QtCore.QSize(28, 30))
+            self.previous2.setIconSize(QtCore.QSize(28, 30))
+        
+            #Adds the third page
+            self.stackedWidget.addWidget(self.Theme)
+            
+            #Hooks up the button handlers
+            QtCore.QObject.connect(self.menuWallpapers, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextThemes)
+            QtCore.QObject.connect(self.cancel3, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
+            QtCore.QObject.connect(self.forward3, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextThemes)
+            QtCore.QObject.connect(self.previous2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrevFolders)
+            
+            #Translates the text
+            self.header3.setText("Themes")
+            self.themesMenu.setText("Themes")
+            self.menuWallpapers.setText("Wallpapers")
+            self.cancel3.setText(_translate("MainWindow", "Cancel", None))
+            self.forward3.setText(_translate("MainWindow", "Forward", None))
+            self.previous2.setText(_translate("MainWindow", "Previous", None))
+            self.folderDesc2.setText(_translate("MainWindow", "Here you can choose what type of theme you want for your window decorations.\n", None))
+            self.themesHeader.setText("Themes")
+            self.themeRadio1.setText("Ozone")
+            self.themeRadio2.setText("Cuptertino-ish")
+            self.themeRadio3.setText("Oxygen")
+            self.themeRadio4.setText("Plastik")
         
         
         #Starts code for fourth page
-        self.Wallpaper = QtGui.QWidget()
-        self.Wallpaper.setObjectName(_fromUtf8("Wallpaper"))
+        if plasmaStatus:
+            self.Wallpaper = QtGui.QWidget()
+            self.Wallpaper.setObjectName(_fromUtf8("Wallpaper"))
         
-        #defines all the widgets
-        createStaticWidgets(self.Wallpaper)
+            #defines all the widgets
+            createStaticWidgets(self.Wallpaper)
         
-        self.header4 = QtGui.QLabel(self.Wallpaper)
-        self.wallpapersMenu = QtGui.QPushButton(self.Wallpaper)
-        self.arrow4 = QtGui.QLabel(self.Wallpaper)
-        self.menuFinish = QtGui.QPushButton(self.Wallpaper)
-        self.wallpaperIcon = QtGui.QLabel(self.Wallpaper)
-        self.wallpaperDesc = QtGui.QLabel(self.Wallpaper)
-        self.previous3 = QtGui.QPushButton(self.Wallpaper)
-        self.forward4 = QtGui.QPushButton(self.Wallpaper)
-        self.cancel4 = QtGui.QPushButton(self.Wallpaper)
-        self.wallpaperHeader = QtGui.QLabel(self.Wallpaper)
-        self.wallpaper1 = QtGui.QLabel(self.Wallpaper)
-        self.wallpaper2 = QtGui.QLabel(self.Wallpaper)
-        self.wallpaper3 = QtGui.QLabel(self.Wallpaper)
-        self.wallpaper4 = QtGui.QLabel(self.Wallpaper)
-        self.wallpaper5 = QtGui.QLabel(self.Wallpaper) 
-        self.wallpaper6 = QtGui.QLabel(self.Wallpaper)
-        self.wallpaper7 = QtGui.QLabel(self.Wallpaper)
-        self.wallpaper8 = QtGui.QLabel(self.Wallpaper)
-        self.wallpaperChoice1 = QtGui.QRadioButton(self.Wallpaper)
-        self.wallpaperChoice2 = QtGui.QRadioButton(self.Wallpaper)
-        self.wallpaperChoice3 = QtGui.QRadioButton(self.Wallpaper)
-        self.wallpaperChoice4 = QtGui.QRadioButton(self.Wallpaper)
-        self.wallpaperChoice5 = QtGui.QRadioButton(self.Wallpaper)
-        self.wallpaperChoice6 = QtGui.QRadioButton(self.Wallpaper)
-        self.wallpaperChoice7 = QtGui.QRadioButton(self.Wallpaper)
-        self.wallpaperChoice8 = QtGui.QRadioButton(self.Wallpaper)
+            self.header4 = QtGui.QLabel(self.Wallpaper)
+            self.wallpapersMenu = QtGui.QPushButton(self.Wallpaper)
+            self.arrow4 = QtGui.QLabel(self.Wallpaper)
+            self.menuFinish = QtGui.QPushButton(self.Wallpaper)
+            self.wallpaperIcon = QtGui.QLabel(self.Wallpaper)
+            self.wallpaperDesc = QtGui.QLabel(self.Wallpaper)
+            self.previous3 = QtGui.QPushButton(self.Wallpaper)
+            self.forward4 = QtGui.QPushButton(self.Wallpaper)
+            self.cancel4 = QtGui.QPushButton(self.Wallpaper)
+            self.wallpaperHeader = QtGui.QLabel(self.Wallpaper)
+            self.wallpaper1 = QtGui.QLabel(self.Wallpaper)
+            self.wallpaper2 = QtGui.QLabel(self.Wallpaper)
+            self.wallpaper3 = QtGui.QLabel(self.Wallpaper)
+            self.wallpaper4 = QtGui.QLabel(self.Wallpaper)
+            self.wallpaper5 = QtGui.QLabel(self.Wallpaper) 
+            self.wallpaper6 = QtGui.QLabel(self.Wallpaper)
+            self.wallpaper7 = QtGui.QLabel(self.Wallpaper)
+            self.wallpaper8 = QtGui.QLabel(self.Wallpaper)
+            self.wallpaperChoice1 = QtGui.QRadioButton(self.Wallpaper)
+            self.wallpaperChoice2 = QtGui.QRadioButton(self.Wallpaper)
+            self.wallpaperChoice3 = QtGui.QRadioButton(self.Wallpaper)
+            self.wallpaperChoice4 = QtGui.QRadioButton(self.Wallpaper)
+            self.wallpaperChoice5 = QtGui.QRadioButton(self.Wallpaper)
+            self.wallpaperChoice6 = QtGui.QRadioButton(self.Wallpaper)
+            self.wallpaperChoice7 = QtGui.QRadioButton(self.Wallpaper)
+            self.wallpaperChoice8 = QtGui.QRadioButton(self.Wallpaper)
         
-        fourthPageWidgets = {
-            "header4": [self.header4, 80, 20, 161, 51, "header4", None],
-            "wallpapersMenu": [self.wallpapersMenu, 20, 90, 121, 41, "wallpapersMenu", None],
-            "arrow4": [self.arrow4, 150, 90, 31, 41, "arrow4", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-            "menuFinish": [self.menuFinish, 180, 90, 71, 41, "menuFinish", None],
-            "wallpaperIcon": [self.wallpaperIcon, 40, 160, 61, 61, "wallpaperIcon", "/usr/share/turbulence/images/manjaro-grey/wallpapers/wallpapers.png"],
-            "wallpaperDesc": [self.wallpaperDesc, 110, 160, 591, 51, "wallpaperDesc", None],
-            "previous3": [self.previous3, 620, 575, 101, 33, "previous3", None],
-            "forward4": [self.forward4, 730, 575, 111, 33, "forward4", None],
-            "cancel4": [self.cancel4, 20, 575, 110, 33, "cancel4", None],
-            "wallpaperHeader": [self.wallpaperHeader, 50, 240, 121, 31, "wallpaperHeader", None],
-            "wallpaper1": [self.wallpaper1, 40, 280, 141, 91, "wallpaper1", "/usr/share/turbulence/images/manjaro-grey/wallpapers/ozone.png"],
-            "wallpaper2": [self.wallpaper2, 250, 280, 141, 91, "wallpaper2", "/usr/share/turbulence/images/manjaro-grey/wallpapers/orangesplash.png"],
-            "wallpaper3": [self.wallpaper3, 470, 280, 141, 91, "wallpaper3", "/usr/share/turbulence/images/manjaro-grey/wallpapers/sunsetplane.png"],
-            "wallpaper4": [self.wallpaper4, 680, 280, 141, 91, "wallpaper4", "/usr/share/turbulence/images/manjaro-grey/wallpapers/mountainlake.png"],
-            "wallpaper5": [self.wallpaper5, 40, 410, 141, 91, "wallpaper5", "/usr/share/turbulence/images/manjaro-grey/wallpapers/earthinspace.png"],
-            "wallpaper6": [self.wallpaper6, 250, 410, 141, 91, "wallpaper6", "/usr/share/turbulence/images/manjaro-grey/wallpapers/darkstairs.png"],
-            "wallpaper7": [self.wallpaper7, 470, 410, 141, 91, "wallpaper7", "/usr/share/turbulence/images/manjaro-grey/wallpapers/cherryjapan.png"],
-            "wallpaper8": [self.wallpaper8, 680, 410, 141, 91, "wallpaper8", "/usr/share/turbulence/images/manjaro-grey/wallpapers/whitetiger.png"],
-            "wallpaperChoice1": [self.wallpaperChoice1, 70, 380, 81, 21, "wallpaperChoice1", None],
-            "wallpaperChoice2": [self.wallpaperChoice2, 250, 380, 141, 21, "wallpaperChoice2", None],
-            "wallpaperChoice3": [self.wallpaperChoice3, 480, 380, 131, 21, "wallpaperChoice3", None],
-            "wallpaperChoice4": [self.wallpaperChoice4, 680, 380, 141, 21, "wallpaperChoice4", None],
-            "wallpaperChoice5": [self.wallpaperChoice5, 70, 510, 81, 21, "wallpaperChoice5", None],
-            "wallpaperChoice6": [self.wallpaperChoice6, 262, 510, 111, 21, "wallpaperChoice6", None],
-            "wallpaperChoice7": [self.wallpaperChoice7, 477, 510, 131, 21, "wallpaperChoice7", None],
-            "wallpaperChoice8": [self.wallpaperChoice8, 692, 510, 121, 21, "wallpaperChoice8", None]
-        }
+            fourthPageWidgets = {
+                "header4": [self.header4, 80, 20, 161, 51, "header4", None],
+                "wallpapersMenu": [self.wallpapersMenu, 20, 90, 121, 41, "wallpapersMenu", None],
+                "arrow4": [self.arrow4, 150, 90, 31, 41, "arrow4", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
+                "menuFinish": [self.menuFinish, 180, 90, 71, 41, "menuFinish", None],
+                "wallpaperIcon": [self.wallpaperIcon, 40, 160, 61, 61, "wallpaperIcon", "/usr/share/turbulence/images/manjaro-grey/wallpapers/wallpapers.png"],
+                "wallpaperDesc": [self.wallpaperDesc, 110, 160, 591, 51, "wallpaperDesc", None],
+                "previous3": [self.previous3, 620, 575, 101, 33, "previous3", None],
+                "forward4": [self.forward4, 730, 575, 111, 33, "forward4", None],
+                "cancel4": [self.cancel4, 20, 575, 110, 33, "cancel4", None],
+                "wallpaperHeader": [self.wallpaperHeader, 50, 240, 121, 31, "wallpaperHeader", None],
+                "wallpaper1": [self.wallpaper1, 40, 280, 141, 91, "wallpaper1", "/usr/share/turbulence/images/manjaro-grey/wallpapers/ozone.png"],
+                "wallpaper2": [self.wallpaper2, 250, 280, 141, 91, "wallpaper2", "/usr/share/turbulence/images/manjaro-grey/wallpapers/orangesplash.png"],
+                "wallpaper3": [self.wallpaper3, 470, 280, 141, 91, "wallpaper3", "/usr/share/turbulence/images/manjaro-grey/wallpapers/sunsetplane.png"],
+                "wallpaper4": [self.wallpaper4, 680, 280, 141, 91, "wallpaper4", "/usr/share/turbulence/images/manjaro-grey/wallpapers/mountainlake.png"],
+                "wallpaper5": [self.wallpaper5, 40, 410, 141, 91, "wallpaper5", "/usr/share/turbulence/images/manjaro-grey/wallpapers/earthinspace.png"],
+                "wallpaper6": [self.wallpaper6, 250, 410, 141, 91, "wallpaper6", "/usr/share/turbulence/images/manjaro-grey/wallpapers/darkstairs.png"],
+                "wallpaper7": [self.wallpaper7, 470, 410, 141, 91, "wallpaper7", "/usr/share/turbulence/images/manjaro-grey/wallpapers/cherryjapan.png"],
+                "wallpaper8": [self.wallpaper8, 680, 410, 141, 91, "wallpaper8", "/usr/share/turbulence/images/manjaro-grey/wallpapers/whitetiger.png"],
+                "wallpaperChoice1": [self.wallpaperChoice1, 70, 380, 81, 21, "wallpaperChoice1", None],
+                "wallpaperChoice2": [self.wallpaperChoice2, 250, 380, 141, 21, "wallpaperChoice2", None],
+                "wallpaperChoice3": [self.wallpaperChoice3, 480, 380, 131, 21, "wallpaperChoice3", None],
+                "wallpaperChoice4": [self.wallpaperChoice4, 680, 380, 141, 21, "wallpaperChoice4", None],
+                "wallpaperChoice5": [self.wallpaperChoice5, 70, 510, 81, 21, "wallpaperChoice5", None],
+                "wallpaperChoice6": [self.wallpaperChoice6, 262, 510, 111, 21, "wallpaperChoice6", None],
+                "wallpaperChoice7": [self.wallpaperChoice7, 477, 510, 131, 21, "wallpaperChoice7", None],
+                "wallpaperChoice8": [self.wallpaperChoice8, 692, 510, 121, 21, "wallpaperChoice8", None]
+            }
 
-        #defines all the widget parameters
-        for widgetName, widgetSettings in fourthPageWidgets.items():
-            widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
+            #defines all the widget parameters
+            for widgetName, widgetSettings in fourthPageWidgets.items():
+                widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
         
-        #Defines all the custom settings.
-        self.wallpapersMenu.setFlat(True)
-        self.menuFinish.setFlat(True)
-        self.previous3.setFlat(True)
-        self.forward4.setFlat(True)
-        self.cancel4.setFlat(True)
+            #Defines all the custom settings.
+            self.wallpapersMenu.setFlat(True)
+            self.menuFinish.setFlat(True)
+            self.previous3.setFlat(True)
+            self.forward4.setFlat(True)
+            self.cancel4.setFlat(True)
         
-        self.previous3.setIcon(icon2)
-        self.previous3.setIconSize(QtCore.QSize(28, 30))
-        self.forward4.setIcon(icon1)
-        self.forward4.setIconSize(QtCore.QSize(28, 30))
-        self.cancel4.setIcon(icon)
+            self.previous3.setIcon(icon2)
+            self.previous3.setIconSize(QtCore.QSize(28, 30))
+            self.forward4.setIcon(icon1)
+            self.forward4.setIconSize(QtCore.QSize(28, 30))
+            self.cancel4.setIcon(icon)
         
-        self.stackedWidget.addWidget(self.Wallpaper)
+            self.stackedWidget.addWidget(self.Wallpaper)
+            
+            #Handles the button clicks
+            QtCore.QObject.connect(self.menuFinish, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextWallpapers)
+            QtCore.QObject.connect(self.cancel4, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
+            QtCore.QObject.connect(self.previous3, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
+            QtCore.QObject.connect(self.forward4, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextWallpapers)
+        
+            #Sets text, or translates widgets
+            self.header4.setText("Wallpapers")
+            self.wallpapersMenu.setText("Wallpapers")
+            self.menuFinish.setText("Finish")
+            self.wallpaperDesc.setText(_translate("MainWindow", "Here you can set which wallpaper you want.", None))
+            self.previous3.setText(_translate("MainWindow", "Previous", None))
+            self.forward4.setText(_translate("MainWindow", "Forward", None))
+            self.cancel4.setText(_translate("MainWindow", "Cancel", None))
+            self.wallpaperHeader.setText("Wallpapers")
+            self.wallpaperChoice1.setText("Ozone")
+            self.wallpaperChoice2.setText("Orange Splash")
+            self.wallpaperChoice3.setText("Sunset Plane")
+            self.wallpaperChoice4.setText("Mountain Lake")
+            self.wallpaperChoice5.setText("Space")
+            self.wallpaperChoice6.setText("Dark Stairs")
+            self.wallpaperChoice7.setText("Cherry Japan")
+            self.wallpaperChoice8.setText("White Tiger")
+        
         
         #Adds the fifth and final page
         self.Finish = QtGui.QWidget()
@@ -467,16 +573,40 @@ class Ui_MainWindow(QtCore.QObject):
         icon4.addPixmap(QtGui.QPixmap(_fromUtf8("/usr/share/turbulence/images/manjaro-grey/checkmark.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.forward5.setIcon(icon4)
         self.forward5.setIconSize(QtCore.QSize(16, 18))
-        
         self.previous4.setIcon(icon2)
         self.previous4.setIconSize(QtCore.QSize(28, 30))
         
         self.stackedWidget.addWidget(self.Finish)
         
+        #Handles the button click
+        QtCore.QObject.connect(self.wallpapersMenu2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
+        QtCore.QObject.connect(self.systemSettingsButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonSystemSettings)
+        QtCore.QObject.connect(self.helpButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonLaunchHelp)
+        QtCore.QObject.connect(self.cancel5, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
+        QtCore.QObject.connect(self.previous4, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
+        QtCore.QObject.connect(self.forward5, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
+        
+        #Translates the widgets, or sets text
+        self.header5.setText(_translate("MainWindow", "Congratulations!", None))
+        self.wallpapersMenu2.setText("Wallpapers")
+        self.finishMenu.setText("Finish")
+        self.cancel5.setText(_translate("MainWindow", "Cancel", None))
+        self.forward5.setText("Finish")
+        self.previous4.setText(_translate("MainWindow", "Previous", None))
+        self.finishDesc.setText(_translate("MainWindow", "All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs \nand links below. Also, if you haven\'t already, make sure to join the Manjaro community as well!", None))
+        self.systemSettings.setText(_translate("MainWindow", "System Settings", None))
+        self.systemSettingsDesc.setText(_translate("MainWindow", "Control panel to edit various aspects of the KDE desktop, \nand more.", None))
+        self.systemSettingsButton.setText(_translate("MainWindow", "Launch System Settings", None))
+        self.helpHead.setText(_translate("MainWindow", "Help", None))
+        self.helpDesc.setText(_translate("MainWindow", "For help and support, you can visit Manjaro.org for access \nto a terrific forum, wiki, and IRC!", None))
+        self.helpButton.setText(_translate("MainWindow", "Launch Manjaro.org", None))
+        
+        
+        #Configures the window a bit more.
         MainWindow.setCentralWidget(self.centralwidget)
-
-        self.retranslateUi(MainWindow)
+        MainWindow.setWindowTitle("Turbulence")
         self.stackedWidget.setCurrentIndex(0) #Sets the index for the stacked widget to 0.
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
         #sets the current checked boxes and status. It's at the bottom to be out of the way.
         neededDirs = folders.findKeyDir('active')
@@ -500,113 +630,6 @@ class Ui_MainWindow(QtCore.QObject):
                             folderWidgets[0].setChecked(True)
                             folderWidgets[1].setText(_translate("MainWindow", "Status: Active", None))
                             break
-        
-        #Handlers for button clicks and whatnot.
-        QtCore.QObject.connect(self.folders2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNext)
-        QtCore.QObject.connect(self.forward, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNext)
-        QtCore.QObject.connect(self.cancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
-        QtCore.QObject.connect(self.themes, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNext)
-        QtCore.QObject.connect(self.previous, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
-        QtCore.QObject.connect(self.forward2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextFolders)
-        QtCore.QObject.connect(self.cancel2, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
-        QtCore.QObject.connect(self.menuWallpapers, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextThemes)
-        QtCore.QObject.connect(self.previous2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrevFolders)
-        QtCore.QObject.connect(self.forward3, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextThemes)
-        QtCore.QObject.connect(self.cancel3, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
-        QtCore.QObject.connect(self.menuFinish, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextWallpapers)
-        QtCore.QObject.connect(self.cancel4, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
-        QtCore.QObject.connect(self.previous3, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
-        QtCore.QObject.connect(self.forward4, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextWallpapers)
-        QtCore.QObject.connect(self.wallpapersMenu2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
-        QtCore.QObject.connect(self.systemSettingsButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonSystemSettings)
-        QtCore.QObject.connect(self.helpButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonLaunchHelp)
-        QtCore.QObject.connect(self.cancel5, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
-        QtCore.QObject.connect(self.previous4, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
-        QtCore.QObject.connect(self.forward5, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
-    #Starts the translation function.
-    def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle("Turbulence")
-        self.header.setText(_translate("MainWindow", "Welcome To Manjaro", None))
-        self.welcomeButton.setText("Welcome")
-        self.folders2.setText("Folders")
-        self.whatIsManjaro.setText(_translate("MainWindow", "What is Manjaro?", None))
-        self.manjaroDesc.setText(_translate("MainWindow", """Hello, and welcome to Manjaro.\n\nManjaro is a sleek and fast distro, featuring benefits from the popular Arch OS, along with ease of use.\nDeveloped in Austria, France, and Germany, Manjaro aims at new users, and experienced users.\n\nSome of Manjaro\'s features are:\n\n     Speed, power, and efficiency\n\n     Access to the very latest cutting and bleeding edge software\n\n     A ‘rolling release’ development model that provides the most up-to-date system possible without\n     the need to install new versions\n\n     Access to the Arch User Repository (AUR).\n\nOver these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.""", None))
-        self.cancel.setText(_translate("MainWindow", "Cancel", None))
-        self.forward.setText(_translate("MainWindow", "Forward", None))
-        self.header2.setText(_translate("MainWindow", "Folders", None))
-        self.foldersHead.setText("Folders")
-        self.themes.setText("Themes")
-        self.cancel2.setText(_translate("MainWindow", "Cancel", None))
-        self.forward2.setText(_translate("MainWindow", "Forward", None))
-        self.previous.setText(_translate("MainWindow", "Previous", None))
-        self.folderDesc.setText(_translate("MainWindow", "Here, you can choose which folders you want in your home directory. You have a choice from \nsome of the most commonly used folders.", None))
-        self.folderHeaderHead.setText("Folders")
-        self.folderHeader1.setText(_translate("MainWindow", "Status: Deactivated", None))
-        self.folderHeader2.setText(_translate("MainWindow", "Status: Deactivated", None))
-        self.folderHeader3.setText(_translate("MainWindow", "Status: Deactivated", None))
-        self.folderHeader4.setText(_translate("MainWindow", "Status: Deactivated", None))
-        self.folderHeader5.setText(_translate("MainWindow", "Status: Deactivated", None))
-        self.folderHeader6.setText(_translate("MainWindow", "Status: Deactivated", None))
-        self.folderHeader7.setText(_translate("MainWindow", "Status: Deactivated", None))
-        self.folderHeader8.setText(_translate("MainWindow", "Status: Deactivated", None))
-        self.folderName1.setText("Desktop")
-        self.folderName2.setText("Documents")
-        self.folderName3.setText("Downloads")
-        self.folderName4.setText("Music")
-        self.folderName5.setText("Pictures")
-        self.folderName6.setText("Public")
-        self.folderName7.setText("Templates")
-        self.folderName8.setText("Videos")
-        self.folderActive1.setText(_translate("MainWindow", "Active", None))
-        self.folderActive2.setText(_translate("MainWindow", "Active", None))
-        self.folderActive3.setText(_translate("MainWindow", "Active", None))
-        self.folderActive4.setText(_translate("MainWindow", "Active", None))
-        self.folderActive5.setText(_translate("MainWindow", "Active", None))
-        self.folderActive6.setText(_translate("MainWindow", "Active", None))
-        self.folderActive7.setText(_translate("MainWindow", "Active", None))
-        self.folderActive8.setText(_translate("MainWindow", "Active", None))
-        self.header3.setText("Themes")
-        self.themesMenu.setText("Themes")
-        self.menuWallpapers.setText("Wallpapers")
-        self.cancel3.setText(_translate("MainWindow", "Cancel", None))
-        self.forward3.setText(_translate("MainWindow", "Forward", None))
-        self.previous2.setText(_translate("MainWindow", "Previous", None))
-        self.folderDesc2.setText(_translate("MainWindow", "Here you can choose what type of theme you want for your window decorations.\n", None))
-        self.themesHeader.setText("Themes")
-        self.themeRadio1.setText("Ozone")
-        self.themeRadio2.setText("Cuptertino-ish")
-        self.themeRadio3.setText("Oxygen")
-        self.themeRadio4.setText("Plastik")
-        self.header4.setText("Wallpapers")
-        self.wallpapersMenu.setText("Wallpapers")
-        self.menuFinish.setText("Finish")
-        self.wallpaperDesc.setText(_translate("MainWindow", "Here you can set which wallpaper you want.", None))
-        self.previous3.setText(_translate("MainWindow", "Previous", None))
-        self.forward4.setText(_translate("MainWindow", "Forward", None))
-        self.cancel4.setText(_translate("MainWindow", "Cancel", None))
-        self.wallpaperHeader.setText("Wallpapers")
-        self.wallpaperChoice1.setText("Ozone")
-        self.wallpaperChoice2.setText("Orange Splash")
-        self.wallpaperChoice3.setText("Sunset Plane")
-        self.wallpaperChoice4.setText("Mountain Lake")
-        self.wallpaperChoice5.setText("Space")
-        self.wallpaperChoice6.setText("Dark Stairs")
-        self.wallpaperChoice7.setText("Cherry Japan")
-        self.wallpaperChoice8.setText("White Tiger")
-        self.header5.setText(_translate("MainWindow", "Congratulations!", None))
-        self.wallpapersMenu2.setText("Wallpapers")
-        self.finishMenu.setText("Finish")
-        self.cancel5.setText(_translate("MainWindow", "Cancel", None))
-        self.forward5.setText("Finish")
-        self.previous4.setText(_translate("MainWindow", "Previous", None))
-        self.finishDesc.setText(_translate("MainWindow", "All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs \nand links below. Also, if you haven\'t already, make sure to join the Manjaro community as well!", None))
-        self.systemSettings.setText(_translate("MainWindow", "System Settings", None))
-        self.systemSettingsDesc.setText(_translate("MainWindow", "Control panel to edit various aspects of the KDE desktop, \nand more.", None))
-        self.systemSettingsButton.setText(_translate("MainWindow", "Launch System Settings", None))
-        self.helpHead.setText(_translate("MainWindow", "Help", None))
-        self.helpDesc.setText(_translate("MainWindow", "For help and support, you can visit Manjaro.org for access \nto a terrific forum, wiki, and IRC!", None))
-        self.helpButton.setText(_translate("MainWindow", "Launch Manjaro.org", None))
         
     #Functions to be used in the slots.
     #Moves to next page in the stacked widget.

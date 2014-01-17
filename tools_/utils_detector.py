@@ -2,10 +2,10 @@
 
 import subprocess
 import signal
-import os
 
 from sys import exit
 from tools_ import logger
+from os.path import isfile
 
 if __name__ == "__main__":
     print "This script should not be ran manually. It's apart of a package for the turbulence utility."
@@ -30,24 +30,18 @@ def detectProcess(processName):
 
 #Detect if tint is present
 def detectTint():
-    if detectProcess('tint2'):
-        return True
-    else:
-        return False
+    tint = detectProcess('tint2')
+    return tint
 
 #Detect if plasma is present
 def detectPlasma():
-    if detectProcess('plasma-desktop'):
-        return True
-    else:
-        return False
+    plasma =  detectProcess('plasma-desktop')
+    return plasma
 
 #Detect is KWin is present
 def detectKwin():
-    if detectProcess('kwin'):
-        return True
-    else:
-        return False
+    kwin = detectProcess('kwin')
+    return kwin
 
 #This is a tricky one, since nitrogen doesn't have
 #A process to detect it by. I'm going to be looking
@@ -56,11 +50,9 @@ def detectNitrogen():
     if detectPlasma():
         return False
     else:
-        if os.path.isfile('/usr/bin/nitrogen'):
-            print "Assuming that you are running nitrogen..."
+        if isfile('/usr/bin/nitrogen'):
             return True
         else:
             return False
-
             
             

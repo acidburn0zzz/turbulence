@@ -31,9 +31,19 @@ To remove Turbulence, just `cd` to the turbulence directory and run the followin
 sudo bash install.sh -r
 ```
 
-# TODO
+# Dependencies
+
+* python2
+* python2-pyqt4
+* pyqt4-common
+* qt4
+* kdeplasma-theme-cupertino-ish
+
+# Roadmap and TODO
 
 * Add better language support (very soon)
 * Merge this project and Turbulence-Evolution (Also very soon)
-* Add package selection support
-* Add much more general support for other settings
+* Add package selection support to KDE
+* Add a verify page, and have all settings applied then
+* Make terminal start with focus in packages page
+* Add multilingual support to folders. (Should happen soon)
