@@ -56,6 +56,7 @@ def writeLog(event, optionalArg=None):
         "proceedToFolders": ["\nProceeded to folders", None],
         "folderChosen": ["\nThis folder was chosen to be used: ", optionalArg],
         "folderNotChosen": ["\nThis folder was chosen to not be used: ", optionalArg],
+        "couldntParseXDG": ["\nCouldn't parse the XDG config file: ", optionalArg],
         "createdDir": ["\nCreated the directory: ", optionalArg],
         "dirAlreadyExists": ["\nCould not create this directory since it already existed: ", optionalArg],
         "removedDir": ["\nRemoved the directory: ", optionalArg],

@@ -45,5 +45,5 @@ sudo bash install.sh -r
 * Merge this project and Turbulence-Evolution (Also very soon)
 * Add package selection support to KDE
 * Add a verify page, and have all settings applied then
-* Make terminal start with focus in packages page
+* Make terminal start with focus in packages page using wmctrl
 * Add multilingual support to folders. (Should happen soon)

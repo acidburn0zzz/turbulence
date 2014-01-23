@@ -611,14 +611,14 @@ class Ui_MainWindow(QtCore.QObject):
         #sets the current checked boxes and status. It's at the bottom to be out of the way.
         neededDirs = folders.findKeyDir('active')
         neededFolders = {
-            "Desktop": [self.folderActive1, self.folderHeader1],
-            "Documents": [self.folderActive2, self.folderHeader2],
-            "Downloads": [self.folderActive3, self.folderHeader3],
-            "Music": [self.folderActive4, self.folderHeader4],
-            "Pictures": [self.folderActive5, self.folderHeader5],
-            "Public": [self.folderActive6, self.folderHeader6],
-            "Templates": [self.folderActive7, self.folderHeader7],
-            "Videos": [self.folderActive8, self.folderHeader8]
+            "DESKTOP": [self.folderActive1, self.folderHeader1],
+            "DOCUMENTS": [self.folderActive2, self.folderHeader2],
+            "DOWNLOAD": [self.folderActive3, self.folderHeader3],
+            "MUSIC": [self.folderActive4, self.folderHeader4],
+            "PICTURES": [self.folderActive5, self.folderHeader5],
+            "PUBLICSHARE": [self.folderActive6, self.folderHeader6],
+            "TEMPLATES": [self.folderActive7, self.folderHeader7],
+            "VIDEOS": [self.folderActive8, self.folderHeader8]
         }
 
         for x in neededDirs:
@@ -642,23 +642,23 @@ class Ui_MainWindow(QtCore.QObject):
     #Moved to the next page, but also applies to settings for folders.
     def handleButtonNextFolders(self):
         checkboxDirectoryPairs = {
-            "Desktop": self.folderActive1,
-            "Documents": self.folderActive2,
-            "Downloads":self.folderActive3,
-            "Music": self.folderActive4,
-            "Pictures": self.folderActive5,
-            "Public": self.folderActive6,
-            "Templates": self.folderActive7,
-            "Videos": self.folderActive8
+            self.folderActive1: ["Desktop", "XDG_DESKTOP_DIR"],
+            self.folderActive2: ["Documents", "XDG_DOCUMENTS_DIR"],
+            self.folderActive3: ["Downloads", "XDG_DOWNLOAD_DIR"],
+            self.folderActive4: ["Music", "XDG_MUSIC_DIR"],
+            self.folderActive5: ["Pictures", "XDG_PICTURES_DIR"],
+            self.folderActive6: ["Public", "XDG_PUBLICSHARE_DIR"],
+            self.folderActive7: ["Templates", "XDG_TEMPLATES_DIR"],
+            self.folderActive8: ["Videos", "XDG_VIDEOS_DIR"]
         }
 
-        for directoryPoint, checkbox in checkboxDirectoryPairs.items():
+        for checkbox, directoryPoint in checkboxDirectoryPairs.items():
             if checkbox.isChecked():
-                folders.createDir(directoryPoint)
-                logger.writeLog('folderChosen', directoryPoint)
+                folders.createDir(directoryPoint[0], directoryPoint[1])
+                logger.writeLog('folderChosen', directoryPoint[0])
             else:
-                folders.deleteDir(directoryPoint)
-                logger.writeLog('folderNotChosen', directoryPoint)
+                folders.deleteDir(directoryPoint[1])
+                logger.writeLog('folderNotChosen', directoryPoint[1])
             
         index = self.stackedWidget.currentIndex() + 1
         if index < self.stackedWidget.count():

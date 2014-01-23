@@ -31,9 +31,15 @@ for themeFileName, themeFile in neededFiles.items():
     except IOError:
        print "I couldn't find the themefile: " + themeFileName
        if themeFileName == "auroraerc":
-           print "Creating " + themeFileName
-           auroraeRC = homeDir + themeFile
-           open(auroraeRC, "w")
+           if os.path.isdir(homeDir + '/.kde4/share/config'):
+               print "Creating " + themeFileName
+               auroraeRC = homeDir + themeFile
+               open(auroraeRC, "w")
+           else:
+               os.makedirs(homeDir + '/.kde4/share/config')
+               print "Creating " + themeFileName
+               auroraeRC = homeDir + themeFile
+               open(auroraeRC, "w")
 
 #Changes the kwin theme
 def kwinThemer(theme):
