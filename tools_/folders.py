@@ -112,17 +112,24 @@ def deleteDir(directory):
             if homeDirValue != "\"$HOME/\"":
                 fullPath = ''.join(homeDirValue.replace("$HOME", homeDir).split("\"")[1:])
                 if os.path.exists(fullPath):
-                    os.rmdir(fullPath)
+                    if os.listdir(fullPath) == []:
+                        os.rmdir(fullPath)
+                        logger.writeLog("removedDir", fullPath)   
+                    else:
+                        logger.writeLog("dirNotEmpty", fullPath)
                 else:
                     logger.writeLog('dirNotExists', fullPath)
                 os.system('xdg-user-dirs-update --set ' + directory.partition('XDG_')[-1].rpartition('_DIR')[0] + ' $HOME/')
             else:
                 fullPath = homeDirValue.replace("$HOME", homeDir)
-                if not os.path.exists(fullPath):
-                    os.rmdir(fullPath)
+                if os.path.exists(fullPath):
+                    if os.listdir(fullPath) == []:
+                        os.rmdir(fullPath)
+                        logger.writeLog("removedDir", fullPath)   
+                    else:
+                        logger.writeLog("dirNotEmpty", fullPath)
                 else:
-                    logger.writeLog('dirNotExists', fullPath)
-    logger.writeLog("removedDir", fullPath)                
+                    logger.writeLog('dirNotExists', fullPath)             
     
             
     
