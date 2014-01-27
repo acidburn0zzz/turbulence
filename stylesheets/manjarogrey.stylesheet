@@ -10,7 +10,7 @@
 }
 
 /*First Page Elements*/
-#header {
+#welcomeHeader {
     font: 20pt "Sans Serif"; 
     color: rgb(220, 220, 220);
 }
@@ -18,52 +18,52 @@
     font: 13pt "Sans Serif"; 
     color: rgb(220, 220, 220);
 }
-#folders2 {
+#welcomeFolders {
     font: 12pt "Sans Serif"; 
     color: rgb(220, 220, 220);
 }
-#whatIsManjaro {
+#welcomeWhatIsManjaro {
     font: 30pt "Sans Serif"; 
     color: rgb(220, 220, 220);
 }
-#manjaroDesc {
+#welcomeManjaroDesc {
     font: 10pt "Sans Serif";
     color: rgb(220, 220, 220); 
 }
-#forward {
+#welcomeForward {
     color: rgb(220, 220, 220);
 }
-#cancel {
+#welcomeCancel {
     color: rgb(220, 220, 220);
 }
 
 /*Second Page Elements*/
-#header2 {
+#folderHeader {
     font: 20pt "Sans Serif"; 
     color: rgb(220, 220, 220);
 }
-#foldersHead {
+#folderMenu {
     font: 13pt "Sans Serif"; 
     color: rgb(220, 220, 220);
 }
-#themes {
+#folderThemes {
     font: 12pt "Sans Serif";
     color: rgb(220, 220, 220);
 }
-#cancel2 {
+#folderCancel {
     color: rgb(220, 220, 220);
 }
-#forward2 {
+#folderForward {
     color: rgb(220, 220, 220);
 }
-#previous {
+#folderPrevious {
     color: rgb(220, 220, 220);
 }
 #folderDesc {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
 }
-#folderHeaderHead {
+#folderSubHeader {
     color: rgb(220, 220, 220);
     font: 16pt "Sans Serif";
 }
@@ -205,32 +205,32 @@
 }
 
 /*Third Page Elements*/
-#header3 {
+#themeHeader {
     font: 20pt "Sans Serif";
     color: rgb(220, 220, 220);
 }
-#themesMenu {
+#themeMenu {
     font: 13pt "Sans Serif";
     color: rgb(220, 220, 220);
 }
-#menuWallpapers {
+#themeMenuWallpapers {
     font: 12pt "Sans Serif";
     color: rgb(220, 220, 220);
 }
-#cancel3 {
+#themeCancel {
     color: rgb(220, 220, 220);
 }
-#forward3 {
+#themeForward {
     color: rgb(220, 220, 220);
 }
-#previous2 {
+#themePrevious {
     color: rgb(220, 220, 220);
 }
-#folderDesc2 {
+#themeDesc {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
 }
-#themesHeader {
+#themeHeaderHead {
     color: rgb(220, 220, 220);
     font: 16pt "Sans Serif";
 }
@@ -277,15 +277,15 @@
 }
 
 /*Fourth Page Elements*/
-#header4 {
+#wallpaperHeader {
     font: 20pt "Sans Serif";
     color: rgb(220, 220, 220);
 }
-#wallpapersMenu {
+#wallpaperMenu {
     font: 13pt "Sans Serif";
     color: rgb(220, 220, 220);
 }
-#menuFinish {
+#wallpaperMenuFinish {
     font: 12pt "Sans Serif";
     color: rgb(220, 220, 220);
 }
@@ -293,16 +293,16 @@
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
 }
-#cancel4 {
+#wallpaperCancel {
     color: rgb(220, 220, 220);
 }
-#forward4 {
+#wallpaperForward {
     color: rgb(220, 220, 220);
 }
-#previous3 {
+#wallpaperPrevious {
     color: rgb(220, 220, 220);
 }
-#wallpaperHeader {
+#wallpaperHeaderHead {
     color: rgb(220, 220, 220);
     font: 16pt "Sans Serif";
 }
@@ -388,11 +388,11 @@
 }
 
 /*Fifth Page Elements*/
-#header5 {
+#finishHeader {
     color: rgb(220, 220, 220);
     font: 20pt "Sans Serif";
 }
-#wallpapersMenu2 {
+#finishWallpaperMenu {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
 }
@@ -400,40 +400,40 @@
     color: rgb(220, 220, 220);
     font: 13pt "Sans Serif";
 }
-#cancel5 {
+#finishCancel {
     color: rgb(220, 220, 220);
 }
-#forward5 {
+#finishForward {
     color: rgb(220, 220, 220);
 }
-#previous4 {
+#finishPrevious {
     color: rgb(220, 220, 220);
 }
 #finishDesc {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
 }
-#systemSettings {
+#finishSystemSettings {
     color: rgb(220, 220, 220);
     font: 14pt "Sans Serif";
 }
-#systemSettingsDesc {
+#finishSystemSettingsDesc {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
 }
-#systemSettingsButton {
+#finishSystemSettingsButton {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
 }
-#helpHead {
+#finishHelpHead {
     color: rgb(220, 220, 220);
     font: 14pt "Sans Serif";
 }
-#helpDesc {
+#finishHelpDesc {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
 }
-#helpButton {
+#finishHelpButton {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
 }

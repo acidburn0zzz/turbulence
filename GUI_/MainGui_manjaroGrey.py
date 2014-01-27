@@ -76,6 +76,15 @@ class Ui_MainWindow(QtCore.QObject):
         MainWindow.setWindowIcon(QtGui.QIcon('/usr/share/turbulence/images/manjaro-grey/turbulence.png'))
         MainWindow.setStyleSheet(self.styleData)
         
+        forwardIcon = QtGui.QIcon()
+        forwardIcon.addPixmap(QtGui.QPixmap(_fromUtf8("/usr/share/turbulence/images/manjaro-grey/arrow.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        cancelIcon = QtGui.QIcon()
+        cancelIcon.addPixmap(QtGui.QPixmap(_fromUtf8("/usr/share/turbulence/images/manjaro-grey/cancel.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        previousIcon = QtGui.QIcon()
+        previousIcon.addPixmap(QtGui.QPixmap(_fromUtf8("/usr/share/turbulence/images/manjaro-grey/arrowreverse.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        finishIcon = QtGui.QIcon()
+        finishIcon.addPixmap(QtGui.QPixmap(_fromUtf8("/usr/share/turbulence/images/manjaro-grey/checkmark.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         
@@ -89,33 +98,33 @@ class Ui_MainWindow(QtCore.QObject):
 
         #Defines all the widgets for the first page
         createStaticWidgets(self.welcomeToManjaro)
-        self.header = QtGui.QLabel(self.welcomeToManjaro)
+        self.welcomeHeader = QtGui.QLabel(self.welcomeToManjaro)
         self.welcomeButton = QtGui.QPushButton(self.welcomeToManjaro)
-        self.arrow = QtGui.QLabel(self.welcomeToManjaro)
-        self.folders2 = QtGui.QPushButton(self.welcomeToManjaro)
-        self.whatIsManjaro = QtGui.QLabel(self.welcomeToManjaro)
-        self.manjaroDesc = QtGui.QLabel(self.welcomeToManjaro)
-        self.bullet1 = QtGui.QLabel(self.welcomeToManjaro)
-        self.bullet2 = QtGui.QLabel(self.welcomeToManjaro)
-        self.bullet3 = QtGui.QLabel(self.welcomeToManjaro)
-        self.bullet4 = QtGui.QLabel(self.welcomeToManjaro)
-        self.forward = QtGui.QPushButton(self.welcomeToManjaro)
-        self.cancel = QtGui.QPushButton(self.welcomeToManjaro)
+        self.welcomeArrow = QtGui.QLabel(self.welcomeToManjaro)
+        self.welcomeFolders = QtGui.QPushButton(self.welcomeToManjaro)
+        self.welcomeWhatIsManjaro = QtGui.QLabel(self.welcomeToManjaro)
+        self.welcomeManjaroDesc = QtGui.QLabel(self.welcomeToManjaro)
+        self.welcomeBullet1 = QtGui.QLabel(self.welcomeToManjaro)
+        self.welcomeBullet2 = QtGui.QLabel(self.welcomeToManjaro)
+        self.welcomeBullet3 = QtGui.QLabel(self.welcomeToManjaro)
+        self.welcomeBullet4 = QtGui.QLabel(self.welcomeToManjaro)
+        self.welcomeForward = QtGui.QPushButton(self.welcomeToManjaro)
+        self.welcomeCancel = QtGui.QPushButton(self.welcomeToManjaro)
         
         #widget dictionary
         firstPageWidgets = {
-            "header": [self.header, 80, 20, 361, 51, "header", None],
+            "welcomeHeader": [self.welcomeHeader, 80, 20, 361, 51, "welcomeHeader", None],
             "welcomeButton": [self.welcomeButton, 20, 90, 111, 41, "welcomeButton", None],
-            "arrow": [self.arrow, 140, 90, 111, 41, "arrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-            "folders2": [self.folders2, 170, 90, 81, 41, "folders2", None],
-            "whatIsManjaro": [self.whatIsManjaro, 30, 180, 480, 71, "whatIsManjaro", None],
-            "manjaroDesc": [self.manjaroDesc, 70, 260, 760, 261, "manjaroDesc", None],
-            "bullet1": [self.bullet1, 70, 365, 21, 21, "bullet1", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
-            "bullet2": [self.bullet2, 70, 395, 21, 21, "bullet2", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
-            "bullet3": [self.bullet3, 70, 425, 21, 21, "bullet3", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
-            "bullet4": [self.bullet4, 70, 470, 21, 21, "bullet4", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
-            "forward": [self.forward, 730, 575, 111, 33, "forward", None],
-            "cancel": [self. cancel, 20, 575, 110, 33, "cancel", None],
+            "welcomeArrow": [self.welcomeArrow, 140, 90, 111, 41, "welcomeArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
+            "welcomeFolders": [self.welcomeFolders, 170, 90, 81, 41, "welcomeFolders", None],
+            "welcomeWhatIsManjaro": [self.welcomeWhatIsManjaro, 30, 180, 480, 71, "welcomeWhatIsManjaro", None],
+            "welcomeManjaroDesc": [self.welcomeManjaroDesc, 70, 260, 760, 261, "welcomeManjaroDesc", None],
+            "welcomeBullet1": [self.welcomeBullet1, 70, 365, 21, 21, "welcomeBullet1", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
+            "welcomeBullet2": [self.welcomeBullet2, 70, 395, 21, 21, "welcomeBullet2", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
+            "welcomeBullet3": [self.welcomeBullet3, 70, 425, 21, 21, "welcomeBullet3", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
+            "welcomeBullet4": [self.welcomeBullet4, 70, 470, 21, 21, "welcomeBullet4", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
+            "welcomeForward": [self.welcomeForward, 730, 575, 111, 33, "welcomeForward", None],
+            "welcomeCancel": [self. welcomeCancel, 20, 575, 110, 33, "welcomeCancel", None],
         }
         
         #defines all the widget parameters
@@ -124,35 +133,30 @@ class Ui_MainWindow(QtCore.QObject):
         
         #defines all the custom settings
         self.welcomeButton.setFlat(True)
-        self.folders2.setFlat(True)
-        self.forward.setFlat(True)
-        self.cancel.setFlat(True)
+        self.welcomeFolders.setFlat(True)
+        self.welcomeForward.setFlat(True)
+        self.welcomeCancel.setFlat(True)
         
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(_fromUtf8("/usr/share/turbulence/images/manjaro-grey/arrow.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.forward.setIcon(icon1)
-        self.forward.setIconSize(QtCore.QSize(28, 30))
-        
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(_fromUtf8("/usr/share/turbulence/images/manjaro-grey/cancel.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.cancel.setIcon(icon)
+        self.welcomeForward.setIcon(forwardIcon)
+        self.welcomeForward.setIconSize(QtCore.QSize(28, 30))
+        self.welcomeCancel.setIcon(cancelIcon)
         
         #adds the first page
         self.stackedWidget.addWidget(self.welcomeToManjaro)
         
         #Hooks up the button handlers
-        QtCore.QObject.connect(self.folders2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNext)
-        QtCore.QObject.connect(self.forward, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNext)
-        QtCore.QObject.connect(self.cancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
+        QtCore.QObject.connect(self.welcomeFolders, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNext)
+        QtCore.QObject.connect(self.welcomeForward, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNext)
+        QtCore.QObject.connect(self.welcomeCancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
         
         #Translates, or sets the text to the widgets
-        self.header.setText(_translate("MainWindow", "Welcome To Manjaro", None))
+        self.welcomeHeader.setText(_translate("MainWindow", "Welcome To Manjaro", None))
         self.welcomeButton.setText("Welcome")
-        self.folders2.setText("Folders")
-        self.whatIsManjaro.setText(_translate("MainWindow", "What is Manjaro?", None))
-        self.manjaroDesc.setText(_translate("MainWindow", """Hello, and welcome to Manjaro.\n\nManjaro is a sleek and fast distro, featuring benefits from the popular Arch OS, along with ease of use.\nDeveloped in Austria, France, and Germany, Manjaro aims at new users, and experienced users.\n\nSome of Manjaro\'s features are:\n\n     Speed, power, and efficiency\n\n     Access to the very latest cutting and bleeding edge software\n\n     A ‘rolling release’ development model that provides the most up-to-date system possible without\n     the need to install new versions\n\n     Access to the Arch User Repository (AUR).\n\nOver these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.""", None))
-        self.cancel.setText(_translate("MainWindow", "Cancel", None))
-        self.forward.setText(_translate("MainWindow", "Forward", None))
+        self.welcomeFolders.setText("Folders")
+        self.welcomeWhatIsManjaro.setText(_translate("MainWindow", "What is Manjaro?", None))
+        self.welcomeManjaroDesc.setText(_translate("MainWindow", """Hello, and welcome to Manjaro.\n\nManjaro is a sleek and fast distro, featuring benefits from the popular Arch OS, along with ease of use.\nDeveloped in Austria, France, and Germany, Manjaro aims at new users, and experienced users.\n\nSome of Manjaro\'s features are:\n\n     Speed, power, and efficiency\n\n     Access to the very latest cutting and bleeding edge software\n\n     A ‘rolling release’ development model that provides the most up-to-date system possible without\n     the need to install new versions\n\n     Access to the Arch User Repository (AUR).\n\nOver these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.""", None))
+        self.welcomeCancel.setText(_translate("MainWindow", "Cancel", None))
+        self.welcomeForward.setText(_translate("MainWindow", "Forward", None))
         
         
         #Starts the second page in the stacked widget.
@@ -162,16 +166,16 @@ class Ui_MainWindow(QtCore.QObject):
         #Defines all the widget for the second page
         createStaticWidgets(self.folders)
         
-        self.header2 = QtGui.QLabel(self.folders)
-        self.foldersHead = QtGui.QPushButton(self.folders)
-        self.arrow2 = QtGui.QLabel(self.folders)
-        self.themes = QtGui.QPushButton(self.folders)
-        self.cancel2 = QtGui.QPushButton(self.folders)
-        self.forward2 = QtGui.QPushButton(self.folders)
-        self.previous = QtGui.QPushButton(self.folders)
+        self.folderHeader = QtGui.QLabel(self.folders)
+        self.folderMenu = QtGui.QPushButton(self.folders)
+        self.folderArrow = QtGui.QLabel(self.folders)
+        self.folderThemes = QtGui.QPushButton(self.folders)
+        self.folderCancel = QtGui.QPushButton(self.folders)
+        self.folderForward = QtGui.QPushButton(self.folders)
+        self.folderPrevious = QtGui.QPushButton(self.folders)
         self.folderIcon = QtGui.QLabel(self.folders)
         self.folderDesc = QtGui.QLabel(self.folders)
-        self.folderHeaderHead = QtGui.QLabel(self.folders)
+        self.folderSubHeader = QtGui.QLabel(self.folders)
         self.folderIcon1 = QtGui.QLabel(self.folders)
         self.folderIcon2 = QtGui.QLabel(self.folders)
         self.folderIcon3 = QtGui.QLabel(self.folders)
@@ -205,18 +209,18 @@ class Ui_MainWindow(QtCore.QObject):
         self.folderActive7 = QtGui.QCheckBox(self.folders)
         self.folderActive8 = QtGui.QCheckBox(self.folders)
         
-        #widget dictionary. Almost like a bestiary of QT ^_^
+        #widget dictionary.
         secondPageWidgets = {
-            "header2": [self.header2, 80, 20, 111, 51, "header2", None],
-            "foldersHead": [self.foldersHead, 20, 90, 91, 41, "foldersHead", None],
-            "arrow2": [self.arrow2, 120, 90, 31, 41, "arrow2", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-            "themes": [self.themes, 150, 90, 91, 41, "themes", None],
-            "cancel2": [self.cancel2, 20, 575, 110, 33, "cancel2", None],
-            "forward2": [self.forward2, 730, 575, 111, 33, "forward2", None],
-            "previous": [self.previous, 620, 575, 101, 33, "previous", None],
+            "folderHeader": [self.folderHeader, 80, 20, 111, 51, "folderHeader", None],
+            "folderMenu": [self.folderMenu, 20, 90, 91, 41, "folderMenu", None],
+            "folderArrow": [self.folderArrow, 120, 90, 31, 41, "folderArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
+            "folderThemes": [self.folderThemes, 150, 90, 91, 41, "folderThemes", None],
+            "folderCancel": [self.folderCancel, 20, 575, 110, 33, "folderCancel", None],
+            "folderForward": [self.folderForward, 730, 575, 111, 33, "folderForward", None],
+            "folderPrevious": [self.folderPrevious, 620, 575, 101, 33, "folderPrevious", None],
             "folderIcon": [self.folderIcon, 40, 150, 61, 61, "folderIcon", "/usr/share/turbulence/images/manjaro-grey/foldericons/folder.png"],
             "folderDesc": [self.folderDesc, 110, 170, 591, 31, "folderDesc", None],
-            "folderHeaderHead": [self.folderHeaderHead, 50, 240, 81, 31, "folderHeaderHead", None],
+            "folderSubHeader": [self.folderSubHeader, 50, 240, 81, 31, "foldeSubHeader", None],
             "folderIcon1": [self.folderIcon1, 60, 290, 81, 81, "folderIcon1", "/usr/share/turbulence/images/manjaro-grey/foldericons/desktop.png"],
             "folderIcon2": [self.folderIcon2, 60, 440, 81, 81, "folderIcon2", "/usr/share/turbulence/images/manjaro-grey/foldericons/pictures.png"],
             "folderIcon3": [self.folderIcon3, 270, 290, 81, 81, "folderIcon3", "/usr/share/turbulence/images/manjaro-grey/foldericons/documents.png"],
@@ -256,40 +260,36 @@ class Ui_MainWindow(QtCore.QObject):
             widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
         
         #defines the custom settings
-        self.foldersHead.setFlat(True)
-        self.themes.setFlat(True)
-        self.cancel2.setFlat(True)
-        self.forward2.setFlat(True)
-        self.previous.setFlat(True)
+        self.folderMenu.setFlat(True)
+        self.folderThemes.setFlat(True)
+        self.folderCancel.setFlat(True)
+        self.folderForward.setFlat(True)
+        self.folderPrevious.setFlat(True)
         
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(_fromUtf8("/usr/share/turbulence/images/manjaro-grey/arrowreverse.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.previous.setIcon(icon2)
-        
-        self.forward2.setIconSize(QtCore.QSize(28, 30))
-        self.previous.setIconSize(QtCore.QSize(28, 30))
-        
-        self.cancel2.setIcon(icon)
-        self.forward2.setIcon(icon1)
+        self.folderPrevious.setIcon(previousIcon)
+        self.folderCancel.setIcon(cancelIcon)
+        self.folderForward.setIcon(forwardIcon)
+        self.folderForward.setIconSize(QtCore.QSize(28, 30))
+        self.folderPrevious.setIconSize(QtCore.QSize(28, 30))
         
         #adds the second page
         self.stackedWidget.addWidget(self.folders)
         
         #Handles the button clicks.
-        QtCore.QObject.connect(self.themes, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNext)
-        QtCore.QObject.connect(self.previous, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
-        QtCore.QObject.connect(self.forward2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextFolders)
-        QtCore.QObject.connect(self.cancel2, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
+        QtCore.QObject.connect(self.folderThemes, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNext)
+        QtCore.QObject.connect(self.folderPrevious, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
+        QtCore.QObject.connect(self.folderForward, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextFolders)
+        QtCore.QObject.connect(self.folderCancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
         
         #Translates, or sets the text for all the widgets
-        self.header2.setText(_translate("MainWindow", "Folders", None))
-        self.foldersHead.setText("Folders")
-        self.themes.setText("Themes")
-        self.cancel2.setText(_translate("MainWindow", "Cancel", None))
-        self.forward2.setText(_translate("MainWindow", "Forward", None))
-        self.previous.setText(_translate("MainWindow", "Previous", None))
+        self.folderHeader.setText(_translate("MainWindow", "Folders", None))
+        self.folderMenu.setText("Folders")
+        self.folderThemes.setText("Themes")
+        self.folderCancel.setText(_translate("MainWindow", "Cancel", None))
+        self.folderForward.setText(_translate("MainWindow", "Forward", None))
+        self.folderPrevious.setText(_translate("MainWindow", "Previous", None))
         self.folderDesc.setText(_translate("MainWindow", "Here, you can choose which folders you want in your home directory. You have a choice from \nsome of the most commonly used folders.", None))
-        self.folderHeaderHead.setText("Folders")
+        self.folderSubHeader.setText("Folders")
         self.folderHeader1.setText(_translate("MainWindow", "Status: Deactivated", None))
         self.folderHeader2.setText(_translate("MainWindow", "Status: Deactivated", None))
         self.folderHeader3.setText(_translate("MainWindow", "Status: Deactivated", None))
@@ -322,16 +322,16 @@ class Ui_MainWindow(QtCore.QObject):
             self.Theme.setObjectName(_fromUtf8("Theme"))
         
             createStaticWidgets(self.Theme)
-            self.header3 = QtGui.QLabel(self.Theme)
-            self.themesMenu = QtGui.QPushButton(self.Theme)
-            self.arrow3 = QtGui.QLabel(self.Theme)
-            self.menuWallpapers = QtGui.QPushButton(self.Theme)
-            self.cancel3 = QtGui.QPushButton(self.Theme)
-            self.forward3 = QtGui.QPushButton(self.Theme)
-            self.previous2 = QtGui.QPushButton(self.Theme)
+            self.themeHeader = QtGui.QLabel(self.Theme)
+            self.themeMenu = QtGui.QPushButton(self.Theme)
+            self.themeArrow = QtGui.QLabel(self.Theme)
+            self.themeMenuWallpapers = QtGui.QPushButton(self.Theme)
+            self.themeCancel = QtGui.QPushButton(self.Theme)
+            self.themeForward = QtGui.QPushButton(self.Theme)
+            self.themePrevious = QtGui.QPushButton(self.Theme)
             self.themeIcon = QtGui.QLabel(self.Theme)
-            self.folderDesc2 = QtGui.QLabel(self.Theme)
-            self.themesHeader = QtGui.QLabel(self.Theme)
+            self.themeDesc = QtGui.QLabel(self.Theme)
+            self.themeHeaderHead = QtGui.QLabel(self.Theme)
             self.themePreview1 = QtGui.QLabel(self.Theme)
             self.themePreview2 = QtGui.QLabel(self.Theme)
             self.themePreview3 = QtGui.QLabel(self.Theme)
@@ -342,16 +342,16 @@ class Ui_MainWindow(QtCore.QObject):
             self.themeRadio4 = QtGui.QRadioButton(self.Theme)
         
             thirdPageWidgets = {
-                "header3": [self.header3, 80, 20, 111, 51, "header3", None],
-                "themesMenu": [self.themesMenu, 20, 90, 91, 41, "themesMenu", None],
-                "arrow3": [self.arrow3, 120, 90, 31, 41, "arrow3", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-                "menuWallpapers": [self.menuWallpapers, 150, 90, 111, 41, "menuWallpapers", None],
-                "cancel3": [self.cancel3, 20, 575, 110, 33, "cancel3", None],
-                "forward3": [self.forward3, 730, 575, 111, 33, "forward3", None],
-                "previous2": [self.previous2, 620, 575, 101, 33, "previous2", None],
+                "themeHeader": [self.themeHeader, 80, 20, 111, 51, "themeHeader", None],
+                "themeMenu": [self.themeMenu, 20, 90, 91, 41, "themeMenu", None],
+                "themeArrow": [self.themeArrow, 120, 90, 31, 41, "themeArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
+                "themeMenuWallpapers": [self.themeMenuWallpapers, 150, 90, 111, 41, "themeMenuWallpapers", None],
+                "themeCancel": [self.themeCancel, 20, 575, 110, 33, "themeCancel", None],
+                "themeForward": [self.themeForward, 730, 575, 111, 33, "themeForward", None],
+                "themePrevious": [self.themePrevious, 620, 575, 101, 33, "themePrevious", None],
                 "themeIcon": [self.themeIcon, 40, 160, 61, 61, "themeIcon", "/usr/share/turbulence/images/manjaro-grey/themes/theme.png"],
-                "folderDesc2": [self.folderDesc2, 110, 167, 591, 51, "folderDesc2", None],
-                "themesHeader": [self.themesHeader, 50, 240, 91, 31, "themesHeader", None],
+                "themeDesc": [self.themeDesc, 110, 167, 591, 51, "themeDesc", None],
+                "themeHeaderHead": [self.themeHeaderHead, 50, 240, 91, 31, "themeHeaderHead", None],
                 "themePreview1": [self.themePreview1, 90, 280, 241, 81, "themePreview1", "/usr/share/turbulence/images/manjaro-grey/themes/ozone.png"],
                 "themePreview2": [self.themePreview2, 510, 280, 241, 81, "themePreview2", "/usr/share/turbulence/images/manjaro-grey/themes/cupertino-ish.png"],
                 "themePreview3": [self.themePreview3, 90, 410, 241, 81, "themePreview3", "/usr/share/turbulence/images/manjaro-grey/themes/oxygen.png"],
@@ -367,37 +367,36 @@ class Ui_MainWindow(QtCore.QObject):
                 widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
         
             #Defines the custom settings
-            self.themesMenu.setFlat(True)
-            self.menuWallpapers.setFlat(True)
-            self.cancel3.setFlat(True)
-            self.forward3.setFlat(True)
-            self.previous2.setFlat(True)
+            self.themeMenu.setFlat(True)
+            self.themeMenuWallpapers.setFlat(True)
+            self.themeCancel.setFlat(True)
+            self.themeForward.setFlat(True)
+            self.themePrevious.setFlat(True)
         
-            self.cancel3.setIcon(icon)
-            self.forward3.setIcon(icon1)
-            self.previous2.setIcon(icon2)
-        
-            self.forward3.setIconSize(QtCore.QSize(28, 30))
-            self.previous2.setIconSize(QtCore.QSize(28, 30))
+            self.themeCancel.setIcon(cancelIcon)
+            self.themeForward.setIcon(forwardIcon)
+            self.themePrevious.setIcon(previousIcon)
+            self.themeForward.setIconSize(QtCore.QSize(28, 30))
+            self.themePrevious.setIconSize(QtCore.QSize(28, 30))
         
             #Adds the third page
             self.stackedWidget.addWidget(self.Theme)
             
             #Hooks up the button handlers
-            QtCore.QObject.connect(self.menuWallpapers, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextThemes)
-            QtCore.QObject.connect(self.cancel3, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
-            QtCore.QObject.connect(self.forward3, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextThemes)
-            QtCore.QObject.connect(self.previous2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrevFolders)
+            QtCore.QObject.connect(self.themeMenuWallpapers, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextThemes)
+            QtCore.QObject.connect(self.themeCancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
+            QtCore.QObject.connect(self.themeForward, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextThemes)
+            QtCore.QObject.connect(self.themePrevious, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrevFolders)
             
             #Translates the text
-            self.header3.setText("Themes")
-            self.themesMenu.setText("Themes")
-            self.menuWallpapers.setText("Wallpapers")
-            self.cancel3.setText(_translate("MainWindow", "Cancel", None))
-            self.forward3.setText(_translate("MainWindow", "Forward", None))
-            self.previous2.setText(_translate("MainWindow", "Previous", None))
-            self.folderDesc2.setText(_translate("MainWindow", "Here you can choose what type of theme you want for your window decorations.\n", None))
-            self.themesHeader.setText("Themes")
+            self.themeHeader.setText("Themes")
+            self.themeMenu.setText("Themes")
+            self.themeMenuWallpapers.setText("Wallpapers")
+            self.themeCancel.setText(_translate("MainWindow", "Cancel", None))
+            self.themeForward.setText(_translate("MainWindow", "Forward", None))
+            self.themePrevious.setText(_translate("MainWindow", "Previous", None))
+            self.themeDesc.setText(_translate("MainWindow", "Here you can choose what type of theme you want for your window decorations.\n", None))
+            self.themeHeaderHead.setText("Themes")
             self.themeRadio1.setText("Ozone")
             self.themeRadio2.setText("Cuptertino-ish")
             self.themeRadio3.setText("Oxygen")
@@ -412,16 +411,16 @@ class Ui_MainWindow(QtCore.QObject):
             #defines all the widgets
             createStaticWidgets(self.Wallpaper)
         
-            self.header4 = QtGui.QLabel(self.Wallpaper)
-            self.wallpapersMenu = QtGui.QPushButton(self.Wallpaper)
-            self.arrow4 = QtGui.QLabel(self.Wallpaper)
-            self.menuFinish = QtGui.QPushButton(self.Wallpaper)
+            self.wallpaperHeader = QtGui.QLabel(self.Wallpaper)
+            self.wallpaperMenu = QtGui.QPushButton(self.Wallpaper)
+            self.wallpaperArrow = QtGui.QLabel(self.Wallpaper)
+            self.wallpaperMenuFinish = QtGui.QPushButton(self.Wallpaper)
             self.wallpaperIcon = QtGui.QLabel(self.Wallpaper)
             self.wallpaperDesc = QtGui.QLabel(self.Wallpaper)
-            self.previous3 = QtGui.QPushButton(self.Wallpaper)
-            self.forward4 = QtGui.QPushButton(self.Wallpaper)
-            self.cancel4 = QtGui.QPushButton(self.Wallpaper)
-            self.wallpaperHeader = QtGui.QLabel(self.Wallpaper)
+            self.wallpaperPrevious = QtGui.QPushButton(self.Wallpaper)
+            self.wallpaperForward = QtGui.QPushButton(self.Wallpaper)
+            self.wallpaperCancel = QtGui.QPushButton(self.Wallpaper)
+            self.wallpaperHeaderHead = QtGui.QLabel(self.Wallpaper)
             self.wallpaper1 = QtGui.QLabel(self.Wallpaper)
             self.wallpaper2 = QtGui.QLabel(self.Wallpaper)
             self.wallpaper3 = QtGui.QLabel(self.Wallpaper)
@@ -440,16 +439,16 @@ class Ui_MainWindow(QtCore.QObject):
             self.wallpaperChoice8 = QtGui.QRadioButton(self.Wallpaper)
         
             fourthPageWidgets = {
-                "header4": [self.header4, 80, 20, 161, 51, "header4", None],
-                "wallpapersMenu": [self.wallpapersMenu, 20, 90, 121, 41, "wallpapersMenu", None],
-                "arrow4": [self.arrow4, 150, 90, 31, 41, "arrow4", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-                "menuFinish": [self.menuFinish, 180, 90, 71, 41, "menuFinish", None],
+                "wallpaperHeader": [self.wallpaperHeader, 80, 20, 161, 51, "wallpaperHeader", None],
+                "wallpaperMenu": [self.wallpaperMenu, 20, 90, 121, 41, "wallpaperMenu", None],
+                "wallpaperArrow": [self.wallpaperArrow, 150, 90, 31, 41, "wallpaperArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
+                "wallpaperMenuFinish": [self.wallpaperMenuFinish, 180, 90, 71, 41, "wallpaperMenuFinish", None],
                 "wallpaperIcon": [self.wallpaperIcon, 40, 160, 61, 61, "wallpaperIcon", "/usr/share/turbulence/images/manjaro-grey/wallpapers/wallpapers.png"],
                 "wallpaperDesc": [self.wallpaperDesc, 110, 160, 591, 51, "wallpaperDesc", None],
-                "previous3": [self.previous3, 620, 575, 101, 33, "previous3", None],
-                "forward4": [self.forward4, 730, 575, 111, 33, "forward4", None],
-                "cancel4": [self.cancel4, 20, 575, 110, 33, "cancel4", None],
-                "wallpaperHeader": [self.wallpaperHeader, 50, 240, 121, 31, "wallpaperHeader", None],
+                "wallpaperPrevious": [self.wallpaperPrevious, 620, 575, 101, 33, "wallpaperPrevious", None],
+                "wallpaperForward": [self.wallpaperForward, 730, 575, 111, 33, "wallpaperForward", None],
+                "wallpaperCancel": [self.wallpaperCancel, 20, 575, 110, 33, "wallpaperCancel", None],
+                "wallpaperHeaderHead": [self.wallpaperHeaderHead, 50, 240, 121, 31, "wallpaperHeaderHead", None],
                 "wallpaper1": [self.wallpaper1, 40, 280, 141, 91, "wallpaper1", "/usr/share/turbulence/images/manjaro-grey/wallpapers/ozone.png"],
                 "wallpaper2": [self.wallpaper2, 250, 280, 141, 91, "wallpaper2", "/usr/share/turbulence/images/manjaro-grey/wallpapers/orangesplash.png"],
                 "wallpaper3": [self.wallpaper3, 470, 280, 141, 91, "wallpaper3", "/usr/share/turbulence/images/manjaro-grey/wallpapers/sunsetplane.png"],
@@ -473,35 +472,35 @@ class Ui_MainWindow(QtCore.QObject):
                 widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
         
             #Defines all the custom settings.
-            self.wallpapersMenu.setFlat(True)
-            self.menuFinish.setFlat(True)
-            self.previous3.setFlat(True)
-            self.forward4.setFlat(True)
-            self.cancel4.setFlat(True)
+            self.wallpaperMenu.setFlat(True)
+            self.wallpaperMenuFinish.setFlat(True)
+            self.wallpaperPrevious.setFlat(True)
+            self.wallpaperForward.setFlat(True)
+            self.wallpaperCancel.setFlat(True)
         
-            self.previous3.setIcon(icon2)
-            self.previous3.setIconSize(QtCore.QSize(28, 30))
-            self.forward4.setIcon(icon1)
-            self.forward4.setIconSize(QtCore.QSize(28, 30))
-            self.cancel4.setIcon(icon)
+            self.wallpaperPrevious.setIcon(previousIcon)
+            self.wallpaperForward.setIcon(forwardIcon)
+            self.wallpaperCancel.setIcon(cancelIcon)
+            self.wallpaperPrevious.setIconSize(QtCore.QSize(28, 30))
+            self.wallpaperForward.setIconSize(QtCore.QSize(28, 30))
         
             self.stackedWidget.addWidget(self.Wallpaper)
             
             #Handles the button clicks
-            QtCore.QObject.connect(self.menuFinish, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextWallpapers)
-            QtCore.QObject.connect(self.cancel4, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
-            QtCore.QObject.connect(self.previous3, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
-            QtCore.QObject.connect(self.forward4, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextWallpapers)
+            QtCore.QObject.connect(self.wallpaperMenuFinish, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextWallpapers)
+            QtCore.QObject.connect(self.wallpaperCancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
+            QtCore.QObject.connect(self.wallpaperPrevious, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
+            QtCore.QObject.connect(self.wallpaperForward, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextWallpapers)
         
             #Sets text, or translates widgets
-            self.header4.setText("Wallpapers")
-            self.wallpapersMenu.setText("Wallpapers")
-            self.menuFinish.setText("Finish")
-            self.wallpaperDesc.setText(_translate("MainWindow", "Here you can set which wallpaper you want.", None))
-            self.previous3.setText(_translate("MainWindow", "Previous", None))
-            self.forward4.setText(_translate("MainWindow", "Forward", None))
-            self.cancel4.setText(_translate("MainWindow", "Cancel", None))
             self.wallpaperHeader.setText("Wallpapers")
+            self.wallpaperMenu.setText("Wallpapers")
+            self.wallpaperMenuFinish.setText("Finish")
+            self.wallpaperDesc.setText(_translate("MainWindow", "Here you can set which wallpaper you want.", None))
+            self.wallpaperPrevious.setText(_translate("MainWindow", "Previous", None))
+            self.wallpaperForward.setText(_translate("MainWindow", "Forward", None))
+            self.wallpaperCancel.setText(_translate("MainWindow", "Cancel", None))
+            self.wallpaperHeaderHead.setText("Wallpapers")
             self.wallpaperChoice1.setText("Ozone")
             self.wallpaperChoice2.setText("Orange Splash")
             self.wallpaperChoice3.setText("Sunset Plane")
@@ -518,40 +517,40 @@ class Ui_MainWindow(QtCore.QObject):
         
         createStaticWidgets(self.Finish)
         
-        self.header5 = QtGui.QLabel(self.Finish)
-        self.wallpapersMenu2 = QtGui.QPushButton(self.Finish)
+        self.finishHeader = QtGui.QLabel(self.Finish)
+        self.finishWallpaperMenu = QtGui.QPushButton(self.Finish)
         self.finishMenu = QtGui.QPushButton(self.Finish)
-        self.arrow5 = QtGui.QLabel(self.Finish)
-        self.cancel5 = QtGui.QPushButton(self.Finish)
-        self.forward5 = QtGui.QPushButton(self.Finish)
-        self.previous4 = QtGui.QPushButton(self.Finish)
+        self.finishArrow = QtGui.QLabel(self.Finish)
+        self.finishCancel = QtGui.QPushButton(self.Finish)
+        self.finishForward = QtGui.QPushButton(self.Finish)
+        self.finishPrevious = QtGui.QPushButton(self.Finish)
         self.finishDesc = QtGui.QLabel(self.Finish)
-        self.systemSettings = QtGui.QLabel(self.Finish)
-        self.systemSettingsPic = QtGui.QLabel(self.Finish)
-        self.systemSettingsDesc = QtGui.QLabel(self.Finish)
-        self.systemSettingsButton = QtGui.QPushButton(self.Finish)
-        self.helpHead = QtGui.QLabel(self.Finish)
-        self.helpPic = QtGui.QLabel(self.Finish)
-        self.helpDesc = QtGui.QLabel(self.Finish)
-        self.helpButton = QtGui.QPushButton(self.Finish)
+        self.finishSystemSettings = QtGui.QLabel(self.Finish)
+        self.finishSystemSettingsPic = QtGui.QLabel(self.Finish)
+        self.finishSystemSettingsDesc = QtGui.QLabel(self.Finish)
+        self.finishSystemSettingsButton = QtGui.QPushButton(self.Finish)
+        self.finishHelpHead = QtGui.QLabel(self.Finish)
+        self.finishHelpPic = QtGui.QLabel(self.Finish)
+        self.finishHelpDesc = QtGui.QLabel(self.Finish)
+        self.finishHelpButton = QtGui.QPushButton(self.Finish)
         
         finalPageWidgets = {
-            "header5": [self.header5, 80, 20, 231, 51, "header5", None],
-            "wallpapersMenu2": [self.wallpapersMenu2, 20, 90, 111, 41, "wallpapersMenu2", None],
-            "arrow5": [self.arrow5, 140, 90, 31, 41, "arrow5", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
+            "finishHeader": [self.finishHeader, 80, 20, 231, 51, "finishHeader", None],
+            "finishWallpaperMenu": [self.finishWallpaperMenu, 20, 90, 111, 41, "finishWallpaperMenu", None],
+            "finishArrow": [self.finishArrow, 140, 90, 31, 41, "finishArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
             "finishMenu": [self.finishMenu, 170, 90, 81, 41, "finishMenu", None],
-            "cancel5": [self.cancel5, 20, 575, 110, 33, "cancel5", None],
-            "forward5": [self.forward5, 750, 575, 91, 33, "forward5", None],
-            "previous4": [self.previous4, 640, 575, 101, 33, "previous4", None],
+            "finishCancel": [self.finishCancel, 20, 575, 110, 33, "finishCancel", None],
+            "finishForward": [self.finishForward, 750, 575, 91, 33, "finishForward", None],
+            "finishPrevious": [self.finishPrevious, 640, 575, 101, 33, "finishPrevious", None],
             "finishDesc": [self.finishDesc, 30, 150, 781, 51, "finishDesc", None],
-            "systemSettings": [self.systemSettings, 40, 220, 250, 31, "systemSettings", None],
-            "systemSettingsPic": [self.systemSettingsPic, 70, 260, 111, 101, "systemSettingsPic", "/usr/share/turbulence/images/manjaro-grey/finish/preferences-system.png"],
-            "systemSettingsDesc": [self.systemSettingsDesc, 200, 280, 371, 31, "systemSettingsDesc", None],
-            "systemSettingsButton": [self.systemSettingsButton, 300, 310, 181, 41, "systemSettingsButton", None],
-            "helpHead": [self.helpHead, 40, 400, 71, 31, "helpHead", None, None],
-            "helpPic": [self.helpPic, 70, 440, 111, 101, "helpPic", "/usr/share/turbulence/images/manjaro-grey/finish/help-icon.png"],
-            "helpDesc": [self.helpDesc, 200, 440, 381, 51, "helpDesc", None],
-            "helpButton": [self.helpButton, 300, 491, 181, 41, "helpButton", None]
+            "finishSystemSettings": [self.finishSystemSettings, 40, 220, 250, 31, "finishSystemSettings", None],
+            "finishSystemSettingsPic": [self.finishSystemSettingsPic, 70, 260, 111, 101, "finishSystemSettingsPic", "/usr/share/turbulence/images/manjaro-grey/finish/preferences-system.png"],
+            "finishSystemSettingsDesc": [self.finishSystemSettingsDesc, 200, 280, 371, 31, "finishSystemSettingsDesc", None],
+            "finishSystemSettingsButton": [self.finishSystemSettingsButton, 300, 310, 181, 41, "finishSystemSettingsButton", None],
+            "finishHelpHead": [self.finishHelpHead, 40, 400, 71, 31, "finishHelpHead", None, None],
+            "finishHelpPic": [self.finishHelpPic, 70, 440, 111, 101, "finishHelpPic", "/usr/share/turbulence/images/manjaro-grey/finish/help-icon.png"],
+            "finishHelpDesc": [self.finishHelpDesc, 200, 440, 381, 51, "finishHelpDesc", None],
+            "finishHelpButton": [self.finishHelpButton, 300, 491, 181, 41, "finishHelpButton", None]
         }
 
         #defines all the widget parameters
@@ -559,47 +558,44 @@ class Ui_MainWindow(QtCore.QObject):
             widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
         
         #Defines the custom settings
-        self.wallpapersMenu2.setFlat(True)
+        self.finishWallpaperMenu.setFlat(True)
         self.finishMenu.setFlat(True)
-        self.cancel5.setFlat(True)
-        self.forward5.setFlat(True)
-        self.previous4.setFlat(True)
-        self.systemSettingsButton.setFlat(True)
-        self.helpButton.setFlat(True)
+        self.finishCancel.setFlat(True)
+        self.finishForward.setFlat(True)
+        self.finishPrevious.setFlat(True)
+        self.finishSystemSettingsButton.setFlat(True)
+        self.finishHelpButton.setFlat(True)
         
-        self.cancel5.setIcon(icon)
-        
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap(_fromUtf8("/usr/share/turbulence/images/manjaro-grey/checkmark.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.forward5.setIcon(icon4)
-        self.forward5.setIconSize(QtCore.QSize(16, 18))
-        self.previous4.setIcon(icon2)
-        self.previous4.setIconSize(QtCore.QSize(28, 30))
+        self.finishCancel.setIcon(cancelIcon)
+        self.finishForward.setIcon(finishIcon)
+        self.finishPrevious.setIcon(previousIcon)
+        self.finishForward.setIconSize(QtCore.QSize(16, 18))
+        self.finishPrevious.setIconSize(QtCore.QSize(28, 30))
         
         self.stackedWidget.addWidget(self.Finish)
         
         #Handles the button click
-        QtCore.QObject.connect(self.wallpapersMenu2, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
-        QtCore.QObject.connect(self.systemSettingsButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonSystemSettings)
-        QtCore.QObject.connect(self.helpButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonLaunchHelp)
-        QtCore.QObject.connect(self.cancel5, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
-        QtCore.QObject.connect(self.previous4, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
-        QtCore.QObject.connect(self.forward5, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
+        QtCore.QObject.connect(self.finishWallpaperMenu, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
+        QtCore.QObject.connect(self.finishSystemSettingsButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonSystemSettings)
+        QtCore.QObject.connect(self.finishHelpButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonLaunchHelp)
+        QtCore.QObject.connect(self.finishCancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
+        QtCore.QObject.connect(self.finishPrevious, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
+        QtCore.QObject.connect(self.finishForward, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
         
         #Translates the widgets, or sets text
-        self.header5.setText(_translate("MainWindow", "Congratulations!", None))
-        self.wallpapersMenu2.setText("Wallpapers")
+        self.finishHeader.setText(_translate("MainWindow", "Congratulations!", None))
+        self.finishWallpaperMenu.setText("Wallpapers")
         self.finishMenu.setText("Finish")
-        self.cancel5.setText(_translate("MainWindow", "Cancel", None))
-        self.forward5.setText("Finish")
-        self.previous4.setText(_translate("MainWindow", "Previous", None))
+        self.finishCancel.setText(_translate("MainWindow", "Cancel", None))
+        self.finishForward.setText("Finish")
+        self.finishPrevious.setText(_translate("MainWindow", "Previous", None))
         self.finishDesc.setText(_translate("MainWindow", "All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs \nand links below. Also, if you haven\'t already, make sure to join the Manjaro community as well!", None))
-        self.systemSettings.setText(_translate("MainWindow", "System Settings", None))
-        self.systemSettingsDesc.setText(_translate("MainWindow", "Control panel to edit various aspects of the KDE desktop, \nand more.", None))
-        self.systemSettingsButton.setText(_translate("MainWindow", "Launch System Settings", None))
-        self.helpHead.setText(_translate("MainWindow", "Help", None))
-        self.helpDesc.setText(_translate("MainWindow", "For help and support, you can visit Manjaro.org for access \nto a terrific forum, wiki, and IRC!", None))
-        self.helpButton.setText(_translate("MainWindow", "Launch Manjaro.org", None))
+        self.finishSystemSettings.setText(_translate("MainWindow", "System Settings", None))
+        self.finishSystemSettingsDesc.setText(_translate("MainWindow", "Control panel to edit various aspects of the KDE desktop, \nand more.", None))
+        self.finishSystemSettingsButton.setText(_translate("MainWindow", "Launch System Settings", None))
+        self.finishHelpHead.setText(_translate("MainWindow", "Help", None))
+        self.finishHelpDesc.setText(_translate("MainWindow", "For help and support, you can visit Manjaro.org for access \nto a terrific forum, wiki, and IRC!", None))
+        self.finishHelpButton.setText(_translate("MainWindow", "Launch Manjaro.org", None))
         
         
         #Configures the window a bit more.
@@ -607,6 +603,7 @@ class Ui_MainWindow(QtCore.QObject):
         MainWindow.setWindowTitle("Turbulence")
         self.stackedWidget.setCurrentIndex(0) #Sets the index for the stacked widget to 0.
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
 
         #sets the current checked boxes and status. It's at the bottom to be out of the way.
         neededDirs = folders.findKeyDir('active')
@@ -631,13 +628,14 @@ class Ui_MainWindow(QtCore.QObject):
                             folderWidgets[1].setText(_translate("MainWindow", "Status: Active", None))
                             break
         
-    #Functions to be used in the slots.
+        
     #Moves to next page in the stacked widget.
     def handleButtonNext(self):
         index = self.stackedWidget.currentIndex() + 1
         if index < self.stackedWidget.count():
             self.stackedWidget.setCurrentIndex(index)
             logger.writeLog('proceedToFolders')
+            
             
     #Moved to the next page, but also applies to settings for folders.
     def handleButtonNextFolders(self):
