@@ -846,6 +846,7 @@ class Ui_MainWindow(QtCore.QObject):
             QtCore.QObject.connect(self.packagesCancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
             QtCore.QObject.connect(self.packagesPrevious, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
             QtCore.QObject.connect(self.packagesForward, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextPackages)
+            QtCore.QObject.connect(self.packagesMenuFinish, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextPackages)
             QtCore.QObject.connect(self.packagesCheckConnection, QtCore.SIGNAL(_fromUtf8("clicked()")), self.checkInternetStatus)
             QtCore.QObject.connect(self.packagesInstallButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonInstallPackages)
             
