@@ -17,10 +17,20 @@
 #welcomeButton {
     font: 13pt "Sans Serif"; 
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#welcomeButton:hover {
+    border: 1px solid #49525b;
 }
 #welcomeFolders {
     font: 12pt "Sans Serif"; 
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#welcomeFolders:hover {
+    border: 1px solid #49525b;
 }
 #welcomeWhatIsManjaro {
     font: 30pt "Sans Serif"; 
@@ -32,9 +42,19 @@
 }
 #welcomeForward {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#welcomeForward:hover {
+    border: 1px solid #49525b;
 }
 #welcomeCancel {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#welcomeCancel:hover {
+    border: 1px solid #49525b;
 }
 
 /*Second Page Elements*/
@@ -45,19 +65,44 @@
 #folderMenu {
     font: 13pt "Sans Serif"; 
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#folderMenu:hover {
+    border: 1px solid #49525b;
 }
 #folderThemes {
     font: 12pt "Sans Serif";
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#folderThemes:hover {
+    border: 1px solid #49525b;
 }
 #folderCancel {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#folderCancel:hover {
+    border: 1px solid #49525b;
 }
 #folderForward {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#folderForward:hover {
+    border: 1px solid #49525b;
 }
 #folderPrevious {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#folderPrevious:hover {
+    border: 1px solid #49525b;
 }
 #folderDesc {
     color: rgb(220, 220, 220);
@@ -212,19 +257,44 @@
 #themeMenu {
     font: 13pt "Sans Serif";
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#themeMenu:hover {
+    border: 1px solid #49525b;
 }
 #themeMenuWallpapers {
     font: 12pt "Sans Serif";
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#themeMenuWallpapers:hover {
+    border: 1px solid #49525b;
 }
 #themeCancel {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#themeCancel:hover {
+    border: 1px solid #49525b;
 }
 #themeForward {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#themeForward:hover {
+    border: 1px solid #49525b;
 }
 #themePrevious {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#themePrevious:hover {
+    border: 1px solid #49525b;
 }
 #themeDesc {
     color: rgb(220, 220, 220);
@@ -375,10 +445,20 @@
 #wallpaperMenu {
     font: 13pt "Sans Serif";
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#wallpaperMenu:hover {
+    border: 1px solid #49525b;
 }
 #wallpaperMenuFinish {
     font: 12pt "Sans Serif";
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#wallpaperMenuFinish:hover {
+    border: 1px solid #49525b;
 }
 #wallpaperDesc {
     color: rgb(220, 220, 220);
@@ -386,12 +466,27 @@
 }
 #wallpaperCancel {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#wallpaperCancel:hover {
+    border: 1px solid #49525b;
 }
 #wallpaperForward {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#wallpaperForward:hover {
+    border: 1px solid #49525b;
 }
 #wallpaperPrevious {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#wallpaperPrevious:hover {
+    border: 1px solid #49525b;
 }
 #wallpaperHeaderHead {
     color: rgb(220, 220, 220);
@@ -884,19 +979,44 @@ QTabBar::tab:selected {
 #finishWallpaperMenu {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#finishWallpaperMenu:hover {
+    border: 1px solid #49525b;
 }
 #finishMenu {
     color: rgb(220, 220, 220);
     font: 13pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#finishMenu:hover {
+    border: 1px solid #49525b;
 }
 #finishCancel {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#finishCancel:hover {
+    border: 1px solid #49525b;
 }
 #finishForward {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#finishForward:hover {
+    border: 1px solid #49525b;
 }
 #finishPrevious {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#finishPrevious:hover {
+    border: 1px solid #49525b;
 }
 #finishDesc {
     color: rgb(220, 220, 220);
@@ -913,6 +1033,11 @@ QTabBar::tab:selected {
 #finishSystemSettingsButton {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#finishSystemSettingsButton:hover {
+    border: 1px solid #49525b;
 }
 #finishHelpHead {
     color: rgb(220, 220, 220);
@@ -925,4 +1050,9 @@ QTabBar::tab:selected {
 #finishHelpButton {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#finishHelpButton:hover {
+    border: 1px solid #49525b;
 }

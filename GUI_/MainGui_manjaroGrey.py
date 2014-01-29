@@ -138,9 +138,15 @@ class Ui_MainWindow(QtCore.QObject):
         self.welcomeForward.setFlat(True)
         self.welcomeCancel.setFlat(True)
         
+        self.welcomeButton.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.welcomeFolders.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.welcomeForward.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.welcomeCancel.setFocusPolicy(QtCore.Qt.NoFocus)
+        
         self.welcomeForward.setIcon(forwardIcon)
-        self.welcomeForward.setIconSize(QtCore.QSize(28, 30))
         self.welcomeCancel.setIcon(cancelIcon)
+        self.welcomeForward.setIconSize(QtCore.QSize(28, 30))
+        self.welcomeCancel.setIconSize(QtCore.QSize(16, 16))
         
         #adds the first page
         self.stackedWidget.addWidget(self.welcomeToManjaro)
@@ -221,7 +227,7 @@ class Ui_MainWindow(QtCore.QObject):
             "folderPrevious": [self.folderPrevious, 620, 575, 101, 33, "folderPrevious", None],
             "folderIcon": [self.folderIcon, 40, 150, 61, 61, "folderIcon", "/usr/share/turbulence/images/manjaro-grey/foldericons/folder.png"],
             "folderDesc": [self.folderDesc, 110, 170, 591, 31, "folderDesc", None],
-            "folderSubHeader": [self.folderSubHeader, 50, 240, 81, 31, "foldeSubHeader", None],
+            "folderSubHeader": [self.folderSubHeader, 50, 240, 81, 31, "folderSubHeader", None],
             "folderIcon1": [self.folderIcon1, 60, 290, 81, 81, "folderIcon1", "/usr/share/turbulence/images/manjaro-grey/foldericons/desktop.png"],
             "folderIcon2": [self.folderIcon2, 60, 440, 81, 81, "folderIcon2", "/usr/share/turbulence/images/manjaro-grey/foldericons/pictures.png"],
             "folderIcon3": [self.folderIcon3, 270, 290, 81, 81, "folderIcon3", "/usr/share/turbulence/images/manjaro-grey/foldericons/documents.png"],
@@ -267,11 +273,18 @@ class Ui_MainWindow(QtCore.QObject):
         self.folderForward.setFlat(True)
         self.folderPrevious.setFlat(True)
         
+        self.folderMenu.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.folderThemes.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.folderCancel.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.folderForward.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.folderPrevious.setFocusPolicy(QtCore.Qt.NoFocus)
+        
         self.folderPrevious.setIcon(previousIcon)
         self.folderCancel.setIcon(cancelIcon)
         self.folderForward.setIcon(forwardIcon)
-        self.folderForward.setIconSize(QtCore.QSize(28, 30))
         self.folderPrevious.setIconSize(QtCore.QSize(28, 30))
+        self.folderForward.setIconSize(QtCore.QSize(28, 30))
+        self.folderCancel.setIconSize(QtCore.QSize(16, 16))
         
         #adds the second page
         self.stackedWidget.addWidget(self.folders)
@@ -374,11 +387,18 @@ class Ui_MainWindow(QtCore.QObject):
             self.themeForward.setFlat(True)
             self.themePrevious.setFlat(True)
         
+            self.themeMenu.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.themeMenuWallpapers.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.themeCancel.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.themeForward.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.themePrevious.setFocusPolicy(QtCore.Qt.NoFocus)
+        
             self.themeCancel.setIcon(cancelIcon)
             self.themeForward.setIcon(forwardIcon)
             self.themePrevious.setIcon(previousIcon)
             self.themeForward.setIconSize(QtCore.QSize(28, 30))
             self.themePrevious.setIconSize(QtCore.QSize(28, 30))
+            self.themeCancel.setIconSize(QtCore.QSize(16, 16))
         
             #Adds the third page
             self.stackedWidget.addWidget(self.Theme)
@@ -571,12 +591,19 @@ class Ui_MainWindow(QtCore.QObject):
             self.wallpaperPrevious.setFlat(True)
             self.wallpaperForward.setFlat(True)
             self.wallpaperCancel.setFlat(True)
+            
+            self.wallpaperMenu.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.wallpaperMenuFinish.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.wallpaperPrevious.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.wallpaperForward.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.wallpaperCancel.setFocusPolicy(QtCore.Qt.NoFocus)
         
             self.wallpaperPrevious.setIcon(previousIcon)
             self.wallpaperForward.setIcon(forwardIcon)
             self.wallpaperCancel.setIcon(cancelIcon)
             self.wallpaperPrevious.setIconSize(QtCore.QSize(28, 30))
             self.wallpaperForward.setIconSize(QtCore.QSize(28, 30))
+            self.wallpaperCancel.setIconSize(QtCore.QSize(16, 16))
         
             self.stackedWidget.addWidget(self.Wallpaper)
             
@@ -950,11 +977,20 @@ class Ui_MainWindow(QtCore.QObject):
         self.finishSystemSettingsButton.setFlat(True)
         self.finishHelpButton.setFlat(True)
         
+        self.finishWallpaperMenu.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.finishMenu.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.finishCancel.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.finishForward.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.finishPrevious.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.finishSystemSettingsButton.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.finishHelpButton.setFocusPolicy(QtCore.Qt.NoFocus)
+        
         self.finishCancel.setIcon(cancelIcon)
         self.finishForward.setIcon(finishIcon)
         self.finishPrevious.setIcon(previousIcon)
         self.finishForward.setIconSize(QtCore.QSize(16, 18))
         self.finishPrevious.setIconSize(QtCore.QSize(28, 30))
+        self.finishCancel.setIconSize(QtCore.QSize(16, 16))
         
         self.stackedWidget.addWidget(self.Finish)
         
