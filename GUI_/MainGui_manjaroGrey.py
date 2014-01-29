@@ -26,7 +26,8 @@ tintStatus = utils_detector.detectTint() #Tint
 kwinStatus = utils_detector.detectKwin() #Kwin
 plasmaStatus = utils_detector.detectPlasma() #Plasma
 nitrogenStatus = utils_detector.detectNitrogen() #Nitrogen
-
+openboxStatus = utils_detector.detectOpenBox() #Openbox
+openboxStatus = True
 
 def widgetConfigurer(widgetType, xPos, yPos, xSize, ySize, name, image=None, styleSheet=None):
     widgetType.setGeometry(QtCore.QRect(xPos, yPos, xSize, ySize))
@@ -401,6 +402,99 @@ class Ui_MainWindow(QtCore.QObject):
             self.themeRadio2.setText("Cuptertino-ish")
             self.themeRadio3.setText("Oxygen")
             self.themeRadio4.setText("Plastik")
+             
+        if tintStatus:
+            #Starts the third page in the stacked widget.
+            self.Tint = QtGui.QWidget()
+            self.Tint.setObjectName(_fromUtf8("Tint"))
+        
+            createStaticWidgets(self.Tint)
+            self.tintHeader = QtGui.QLabel(self.Tint)
+            self.tintMenu = QtGui.QPushButton(self.Tint)
+            self.tintArrow = QtGui.QLabel(self.Tint)
+            self.tintMenuWallpapers = QtGui.QPushButton(self.Tint)
+            self.tintCancel = QtGui.QPushButton(self.Tint)
+            self.tintForward = QtGui.QPushButton(self.Tint)
+            self.tintPrevious = QtGui.QPushButton(self.Tint)
+            self.tintPositionIcon = QtGui.QLabel(self.Tint)
+            self.tintPositionDesc = QtGui.QLabel(self.Tint)
+            self.tintPositionHeader = QtGui.QLabel(self.Tint)
+            self.tintPosition1 = QtGui.QLabel(self.Tint)
+            self.tintPosition2 = QtGui.QLabel(self.Tint)
+            self.tintPosition3 = QtGui.QLabel(self.Tint)
+            self.tintPosition4 = QtGui.QLabel(self.Tint)
+            self.tintPositionRadio1 = QtGui.QRadioButton(self.Tint)
+            self.tintPositionRadio2 = QtGui.QRadioButton(self.Tint)
+            self.tintPositionRadio3 = QtGui.QRadioButton(self.Tint)
+            self.tintPositionRadio4 = QtGui.QRadioButton(self.Tint)
+        
+            thirdPageWidgets = {
+                "tintHeader": [self.tintHeader, 80, 20, 111, 51, "tintHeader", None],
+                "tintMenu": [self.tintMenu, 20, 90, 81, 41, "tintMenu", None],
+                "tintArrow": [self.tintArrow, 120, 90, 31, 41, "tintArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
+                "tintMenuWallpapers": [self.tintMenuWallpapers, 150, 90, 111, 41, "tintMenuWallpapers", None],
+                "tintCancel": [self.tintCancel, 20, 575, 110, 33, "tintCancel", None],
+                "tintForward": [self.tintForward, 730, 575, 111, 33, "tintForward", None],
+                "tintPrevious": [self.tintPrevious, 620, 575, 101, 33, "tintPrevious", None],
+                "tintPositionIcon": [self.tintPositionIcon, 40, 160, 61, 61, "tintPositionIcon", "/usr/share/turbulence/images/manjaro-grey/tint-previews/position.png"],
+                "tintPositionDesc": [self.tintPositionDesc, 110, 168, 591, 51, "tintPositionDesc", None],
+                "tintPositionHeader": [self.tintPositionHeader, 50, 240, 91, 31, "tintPositionHeader", None],
+                "tintPosition1": [self.tintPosition1, 90, 280, 241, 83, "tintPosition1", "/usr/share/turbulence/images/manjaro-grey/tint-previews/top.png"],
+                "tintPosition2": [self.tintPosition2, 530, 280, 241, 83, "tintPosition2", "/usr/share/turbulence/images/manjaro-grey/tint-previews/right.png"],
+                "tintPosition3": [self.tintPosition3, 90, 410, 241, 83, "tintPosition3", "/usr/share/turbulence/images/manjaro-grey/tint-previews/bottom.png"],
+                "tintPosition4": [self.tintPosition4, 530, 410, 241, 83, "tintPosition4", "/usr/share/turbulence/images/manjaro-grey/tint-previews/left.png"],
+                "tintPositionRadio1": [self.tintPositionRadio1, 165, 370, 131, 21, "tintPositionRadio1", None],
+                "tintPositionRadio2": [self.tintPositionRadio2, 600, 370, 131, 21, "tintPositionRadio2", None],
+                "tintPositionRadio3": [self.tintPositionRadio3, 165, 500, 131, 21, "tintPositionRadio3", None],
+                "tintPositionRadio4": [self.tintPositionRadio4, 600, 500, 131, 21, "tintPositionRadio4", None]
+            }
+        
+            #defines all the widget parameters
+            for widgetName, widgetSettings in thirdPageWidgets.items():
+                widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
+        
+            #Defines the custom settings
+            self.tintMenu.setFlat(True)
+            self.tintMenuWallpapers.setFlat(True)
+            self.tintCancel.setFlat(True)
+            self.tintForward.setFlat(True)
+            self.tintPrevious.setFlat(True)
+         
+            self.tintMenu.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.tintMenuWallpapers.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.tintCancel.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.tintForward.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.tintPrevious.setFocusPolicy(QtCore.Qt.NoFocus)
+        
+            self.tintCancel.setIcon(cancelIcon)
+            self.tintForward.setIcon(forwardIcon)
+            self.tintPrevious.setIcon(previousIcon)
+            self.tintCancel.setIconSize(QtCore.QSize(16, 16))
+            self.tintForward.setIconSize(QtCore.QSize(28, 30))
+            self.tintPrevious.setIconSize(QtCore.QSize(28, 30))
+        
+            #Adds the third page
+            self.stackedWidget.addWidget(self.Tint)
+            
+            #Handles button clicks
+            QtCore.QObject.connect(self.tintMenuWallpapers, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextTint)
+            QtCore.QObject.connect(self.tintPrevious, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrevFolders)
+            QtCore.QObject.connect(self.tintForward, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextTint)
+            QtCore.QObject.connect(self.tintCancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
+            
+            #Sets text and translates widgets
+            self.tintHeader.setText(_translate("MainWindow", "Tint 2", None))
+            self.tintMenu.setText(_translate("MainWindow", "Tint 2", None))
+            self.tintMenuWallpapers.setText("Wallpapers")
+            self.tintCancel.setText(_translate("MainWindow", "Cancel", None))
+            self.tintForward.setText(_translate("MainWindow", "Forward", None))
+            self.tintPrevious.setText(_translate("MainWindow", "Previous", None))
+            self.tintPositionDesc.setText(_translate("MainWindow", "Here you can choose what position you want of your Tint 2 panel.\n", None))
+            self.tintPositionHeader.setText(_translate("MainWindow", "Tint 2", None))
+            self.tintPositionRadio1.setText(_translate("MainWindow", "Top", None))
+            self.tintPositionRadio2.setText(_translate("MainWindow", "Right", None))
+            self.tintPositionRadio3.setText(_translate("MainWindow", "Bottom", None))
+            self.tintPositionRadio4.setText(_translate("MainWindow", "Left", None))
         
         
         #Starts code for fourth page
@@ -509,6 +603,296 @@ class Ui_MainWindow(QtCore.QObject):
             self.wallpaperChoice6.setText("Dark Stairs")
             self.wallpaperChoice7.setText("Cherry Japan")
             self.wallpaperChoice8.setText("White Tiger")
+        
+        if openboxStatus:
+            #Adds the sixth page.
+            self.Packages = QtGui.QWidget()
+            self.Packages.setObjectName(_fromUtf8("Packages"))
+        
+            #Creates all the widgets
+            createStaticWidgets(self.Packages)
+            
+            self.packagesHeader = QtGui.QLabel(self.Packages)
+            self.packagesMenu = QtGui.QPushButton(self.Packages)
+            self.packagesArrow = QtGui.QLabel(self.Packages)
+            self.packagesMenuFinish = QtGui.QPushButton(self.Packages)
+            self.packagesIcon = QtGui.QLabel(self.Packages)
+            self.packagesDesc = QtGui.QLabel(self.Packages)
+            self.packagesPrevious = QtGui.QPushButton(self.Packages)
+            self.packagesForward = QtGui.QPushButton(self.Packages)
+            self.packagesCancel = QtGui.QPushButton(self.Packages)
+            self.packagesHeaderHead = QtGui.QLabel(self.Packages)
+            self.packagesTabs = QtGui.QTabWidget(self.Packages)
+            self.packagesNetwork = QtGui.QWidget()
+            self.packagesNetworkBack = QtGui.QLabel(self.packagesNetwork)
+            self.packagesAroraPic = QtGui.QLabel(self.packagesNetwork)
+            self.packagesAroraCheck = QtGui.QCheckBox(self.packagesNetwork)
+            self.packagesDelugePic = QtGui.QLabel(self.packagesNetwork)
+            self.packagesDelugeCheck = QtGui.QCheckBox(self.packagesNetwork)
+            self.packagesChromiumPic = QtGui.QLabel(self.packagesNetwork)
+            self.packagesChromiumCheck = QtGui.QCheckBox(self.packagesNetwork)
+            self.packagesFirefoxPic = QtGui.QLabel(self.packagesNetwork)
+            self.packagesFirefoxCheck = QtGui.QCheckBox(self.packagesNetwork)
+            self.packagesMidoriPic = QtGui.QLabel(self.packagesNetwork)
+            self.packagesMidoriCheck = QtGui.QCheckBox(self.packagesNetwork)
+            self.packagesOperaPic = QtGui.QLabel(self.packagesNetwork)
+            self.packagesOperaCheck = QtGui.QCheckBox(self.packagesNetwork)
+            self.packagesTransmissionPic = QtGui.QLabel(self.packagesNetwork)
+            self.packagesTransmissionCheck = QtGui.QCheckBox(self.packagesNetwork)
+            self.packagesNotActive = QtGui.QLabel(self.packagesNetwork)
+            self.packagesMultimedia = QtGui.QWidget()
+            self.packagesMultimediaBack = QtGui.QLabel(self.packagesMultimedia)
+            self.packagesVlcPic = QtGui.QLabel(self.packagesMultimedia)
+            self.packagesVlcCheck = QtGui.QCheckBox(self.packagesMultimedia)
+            self.packagesSmplayerPic = QtGui.QLabel(self.packagesMultimedia)
+            self.packagesSmplayerCheck = QtGui.QCheckBox(self.packagesMultimedia)
+            self.packagesAudaciousPic = QtGui.QLabel(self.packagesMultimedia)
+            self.packagesAudaciousCheck = QtGui.QCheckBox(self.packagesMultimedia)
+            self.packagesClemetinePic = QtGui.QLabel(self.packagesMultimedia)
+            self.packagesClementineCheck = QtGui.QCheckBox(self.packagesMultimedia)
+            self.packagesDeadbeefPic = QtGui.QLabel(self.packagesMultimedia)
+            self.packagesDeadbeefCheck = QtGui.QCheckBox(self.packagesMultimedia)
+            self.packagesGraphics = QtGui.QWidget()
+            self.packagesGraphicsBack = QtGui.QLabel(self.packagesGraphics)
+            self.packagesBlenderPic = QtGui.QLabel(self.packagesGraphics)
+            self.packagesBlenderCheck = QtGui.QCheckBox(self.packagesGraphics)
+            self.packagesEvincePic = QtGui.QLabel(self.packagesGraphics)
+            self.packagesEvinceCheck = QtGui.QCheckBox(self.packagesGraphics)
+            self.packagesGimpPic = QtGui.QLabel(self.packagesGraphics)
+            self.packagesGimpCheck = QtGui.QCheckBox(self.packagesGraphics)
+            self.packagesGpicviewPic = QtGui.QLabel(self.packagesGraphics)
+            self.packagesGpicviewCheck = QtGui.QCheckBox(self.packagesGraphics)
+            self.packagesViewniorPic = QtGui.QLabel(self.packagesGraphics)
+            self.packagesViewniorCheck = QtGui.QCheckBox(self.packagesGraphics)
+            self.packagesAccessories = QtGui.QWidget()
+            self.packagesAccessoriesBack = QtGui.QLabel(self.packagesAccessories)
+            self.packagesGeanyPic = QtGui.QLabel(self.packagesAccessories)
+            self.packagesGeanyCheck = QtGui.QCheckBox(self.packagesAccessories)
+            self.packagesHexchatPic = QtGui.QLabel(self.packagesAccessories)
+            self.packagesHexchatCheck = QtGui.QCheckBox(self.packagesAccessories)
+            self.packagesLeafpadPic = QtGui.QLabel(self.packagesAccessories)
+            self.packagesLeafpadCheck = QtGui.QCheckBox(self.packagesAccessories)
+            self.packagesPcmanfmPic = QtGui.QLabel(self.packagesAccessories)
+            self.packagesPcmanfmCheck = QtGui.QCheckBox(self.packagesAccessories)
+            self.packagesSpacefmPic = QtGui.QLabel(self.packagesAccessories)
+            self.packagesSpacefmCheck = QtGui.QCheckBox(self.packagesAccessories)
+            self.packagesTerminatorPic = QtGui.QLabel(self.packagesAccessories)
+            self.packagesTerminatorCheck = QtGui.QCheckBox(self.packagesAccessories)
+            self.packagesThunarPic = QtGui.QLabel(self.packagesAccessories)
+            self.packagesThunarCheck = QtGui.QCheckBox(self.packagesAccessories)
+            self.packagesExtras = QtGui.QWidget()
+            self.packagesExtrasBack = QtGui.QLabel(self.packagesExtras)
+            self.packagesAurSupportPic = QtGui.QLabel(self.packagesExtras)
+            self.packagesAurSupportCheck = QtGui.QCheckBox(self.packagesExtras)
+            self.packagesMultimediaSupportPic = QtGui.QLabel(self.packagesExtras)
+            self.packagesMultimediaSupportCheck = QtGui.QCheckBox(self.packagesExtras)
+            self.packagesPrinterSupportPic = QtGui.QLabel(self.packagesExtras)
+            self.packagesPrinterSupportCheck = QtGui.QCheckBox(self.packagesExtras)
+            self.packagesInstall = QtGui.QWidget()
+            self.packagesInstallBack = QtGui.QLabel(self.packagesInstall)
+            self.packagesInstallButton = QtGui.QPushButton(self.packagesInstall)
+            self.packagesCheckConnection = QtGui.QPushButton(self.Packages)
+        
+            fifthPageWidgets = {
+                "packagesHeader": [self.packagesHeader, 80, 20, 141, 51, "packagesHeader", None],
+                "packagesMenu": [self.packagesMenu, 20, 90, 121, 41, "packagesMenu", None],
+                "packagesArrow": [self.packagesArrow, 150, 90, 31, 41, "packagesArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
+                "packagesMenuFinish": [self.packagesMenuFinish, 180, 90, 71, 41, "packagesMenuFinish", None],
+                "packagesIcon": [self.packagesIcon, 40, 160, 61, 61, "packagesIcon", "/usr/share/turbulence/images/manjaro-grey/packages/packagesicon.png"],
+                "packagesDesc": [self.packagesDesc, 110, 140, 650, 100, "packagesDesc", None],
+                "packagesPrevious": [self.packagesPrevious, 620, 575, 101, 33, "packagesPrevious", None],
+                "packagesForward": [self.packagesForward, 730, 575, 111, 33, "packagesForward", None],
+                "packagesCancel": [self.packagesCancel, 20, 575, 110, 33, "packagesCancel", None],
+                "packagesHeaderHead": [self.packagesHeaderHead, 50, 240, 101, 31, "packagesHeaderHead", None],
+                "packagesTabs": [self.packagesTabs, 60, 290, 741, 251, "packagesTabs", None],
+                "packagesNetworkBack": [self.packagesNetworkBack, -14, -7, 761, 241, "packagesNetworkBack", "/usr/share/turbulence/images/manjaro-grey/packages/packages-back.png"],
+                "packagesAroraPic": [self.packagesAroraPic, 20, 10, 71, 71, "packagesAroraPic", "/usr/share/turbulence/images/manjaro-grey/packages/network/arora.png"],
+                "packagesAroaCheck": [self.packagesAroraCheck, 10, 80, 111, 31, "packagesAroraCheck", None],
+                "packagesChromiumPic": [self.packagesChromiumPic, 140, 10, 71, 71, "packagesChromiumPic", "/usr/share/turbulence/images/manjaro-grey/packages/network/chromium.png"],
+                "packagesChromiumCheck": [self.packagesChromiumCheck, 130, 80, 102, 31, "packagesChromiumCheck", None],
+                "packagesDelugePic": [self.packagesDelugePic, 270, 10, 71, 71, "packagesDelugePic", "/usr/share/turbulence/images/manjaro-grey/packages/network/deluge.png"],
+                "packagesDelugeCheck": [self.packagesDelugeCheck, 260, 80, 102, 31, "packagesDelugeCheck", None],
+                "packagesFirefoxPic": [self.packagesFirefoxPic, 400, 10, 71, 71, "packagesFirefoxPic", "/usr/share/turbulence/images/manjaro-grey/packages/network/firefox.png"],
+                "packagesFirefoxCheck": [self.packagesFirefoxCheck, 390, 80, 102, 31, "packagesFirefoxCheck", None],
+                "packagesMidoriPic": [self.packagesMidoriPic, 520, 10, 71, 71, "packagesMidoriPic", "/usr/share/turbulence/images/manjaro-grey/packages/network/midori.png"],
+                "packagesMidoriCheck": [self.packagesMidoriCheck, 510, 80, 121, 31, "packagesMidoriCheck", None],
+                "packagesOperaPic": [self.packagesOperaPic, 640, 10, 71, 71, "packagesOperaPic", "/usr/share/turbulence/images/manjaro-grey/packages/network/opera.png"],
+                "packagesOperaCheck": [self.packagesOperaCheck, 630, 80, 102, 31, "packagesOperaCheck", None],
+                "packagesTransmissionPic": [self.packagesTransmissionPic, 20, 110, 71, 71, "packagesTransmissionPic", "/usr/share/turbulence/images/manjaro-grey/packages/network/transmission.png"],
+                "packagesTransmissionCheck": [self.packagesTransmissionCheck, 10, 180, 121, 31, "packagesTransmissionCheck", None],
+                "packagesNotActive": [self.packagesNotActive, -10, -10, 751, 241, "packagesNotActive", None],
+                "packagesMultimediaBack": [self.packagesMultimediaBack, -20, -10, 761, 241, "packagesMultimediaBack", "/usr/share/turbulence/images/manjaro-grey/packages/packages-back.png"],
+                "packagesAudaciousPic": [self.packagesAudaciousPic, 20, 10, 71, 71, "packagesAudaciousPic", "/usr/share/turbulence/images/manjaro-grey/packages/multimedia/audacious.png"],
+                "packagesAudaciousCheck": [self.packagesAudaciousCheck, 10, 80, 111, 31, "packagesAudaciousCheck", None],
+                "packagesClementinePic": [self.packagesClemetinePic, 140, 10, 71, 71, "packagesClementinePic", "/usr/share/turbulence/images/manjaro-grey/packages/multimedia/clementine.png"],
+                "packagesClementineCheck": [self.packagesClementineCheck, 130, 80, 111, 31, "packagesClementineCheck", None],
+                "packagesDeadbeefPic": [self.packagesDeadbeefPic, 270, 10, 71, 71, "packagesDeadbeefPic", "/usr/share/turbulence/images/manjaro-grey/packages/multimedia/deadbeef.png"],
+                "packagesDeadbeefCheck": [self.packagesDeadbeefCheck, 260, 80, 111, 31, "packagesDeadbeefCheck", None],
+                "packagesSmplayerPic": [self.packagesSmplayerPic, 400, 10, 71, 71, "packagesSmplayerPic", "/usr/share/turbulence/images/manjaro-grey/packages/multimedia/smplayer.png"],
+                "packagesSmplayerCheck": [self.packagesSmplayerCheck, 390, 80, 102, 31, "packagesSmplayerCheck", None],
+                "packagesVlcPic": [self.packagesVlcPic, 520, 10, 71, 71, "packagesVlcPic", "/usr/share/turbulence/images/manjaro-grey/packages/multimedia/vlc.png"],
+                "packagesVlcCheck": [self.packagesVlcCheck, 510, 80, 102, 31, "packagesVlcCheck", None],
+                "packagesGraphicsBack": [self.packagesGraphicsBack, -20, -10, 761, 241, "packagesGraphicsBack", "/usr/share/turbulence/images/manjaro-grey/packages/packages-back.png"],
+                "packagesBlenderPic": [self.packagesBlenderPic, 20, 10, 71, 71, "packagesBlenderPic", "/usr/share/turbulence/images/manjaro-grey/packages/graphics/blender.png"],
+                "packagesBlenderCheck": [self.packagesBlenderCheck, 10, 80, 111, 31, "packagesBlenderCheck", None],
+                "packagesEvincePic": [self.packagesEvincePic, 140, 10, 71, 71, "packagesEvincePic", "/usr/share/turbulence/images/manjaro-grey/packages/graphics/evince.png"],
+                "packagesEvinceCheck": [self.packagesEvinceCheck, 130, 80, 111, 31, "packagesEvinceCheck", None],
+                "packagesGimpPic": [self.packagesGimpPic, 270, 10, 71, 71, "packagesGimpPic", "/usr/share/turbulence/images/manjaro-grey/packages/graphics/gimp.png"],
+                "packagesGimpCheck": [self.packagesGimpCheck, 260, 80, 111, 31, "packagesGimpCheck", None],
+                "packagesGpicviewPic": [self.packagesGpicviewPic, 400, 10, 71, 71, "packagesGpicviewPic", "/usr/share/turbulence/images/manjaro-grey/packages/graphics/gpicview.png"],
+                "packagesGpicviewCheck": [self.packagesGpicviewCheck, 390, 80, 111, 31, "packagesGpicviewCheck", None],
+                "packagesViewniorPic": [self.packagesViewniorPic, 520, 10, 71, 71, "packagesViewniorPic", "/usr/share/turbulence/images/manjaro-grey/packages/graphics/viewnior.png"],
+                "packagesViewniorCheck": [self.packagesViewniorCheck, 510, 80, 111, 31, "packagesViewniorCheck", None],
+                "packagesAccessoriesBack": [self.packagesAccessoriesBack, -20, -10, 761, 241, "packagesAccessoriesBack", "/usr/share/turbulence/images/manjaro-grey/packages/packages-back.png"],
+                "packagesGeanyPic": [self.packagesGeanyPic, 20, 10, 71, 71, "packagesGeanyPic", "/usr/share/turbulence/images/manjaro-grey/packages/accessories/geany.png"],
+                "packagesGeanyCheck": [self.packagesGeanyCheck, 10, 80, 111, 31, "packagesGeanyCheck", None],
+                "packagesHexchatPic": [self.packagesHexchatPic, 140, 10, 71, 71, "packagesHexchatPic", "/usr/share/turbulence/images/manjaro-grey/packages/accessories/hexchat.png"],
+                "packagesHexchatCheck": [self.packagesHexchatCheck, 130, 80, 111, 31, "packagesHexchatCheck", None],
+                "packagesLeafpadPic": [self.packagesLeafpadPic, 270, 10, 71, 71, "packagesLeafpadPic", "/usr/share/turbulence/images/manjaro-grey/packages/accessories/leafpad.png"],
+                "packagesLeafpadCheck": [self.packagesLeafpadCheck, 260, 80, 111, 31, "packagesLeafpadCheck", None],
+                "packagesPcmanfmPic": [self.packagesPcmanfmPic, 400, 10, 71, 71, "packagesPcmanfmPic", "/usr/share/turbulence/images/manjaro-grey/packages/accessories/pcmanfm.png"],
+                "packagesPcmanfmCheck": [self.packagesPcmanfmCheck, 390, 80, 111, 31, "packagesPcmanfmCheck", None],
+                "packagesSpacefmPic": [self.packagesSpacefmPic, 520, 10, 71, 71, "packagesSpacefmPic", "/usr/share/turbulence/images/manjaro-grey/packages/accessories/spacefm.png"],
+                "packagesSpacefmCheck": [self.packagesSpacefmCheck, 510, 80, 111, 31, "packagesSpacefmCheck", None],
+                "packagesTerminatorPic": [self.packagesTerminatorPic, 640, 10, 71, 71, "packagesTerminatorPic", "/usr/share/turbulence/images/manjaro-grey/packages/accessories/terminator.png"],
+                "packagesTerminatorCheck": [self.packagesTerminatorCheck, 630, 80, 111, 31, "packagesTerminatorCheck", None],
+                "packagesThunarPic": [self.packagesThunarPic, 20, 110, 71, 71, "packagesThunarPic" , "/usr/share/turbulence/images/manjaro-grey/packages/accessories/thunar.png"],
+                "packagesThunarCheck": [self.packagesThunarCheck, 10, 180, 111, 31, "packagesThunarCheck", None],
+                "packagesExtrasBack": [self.packagesExtrasBack, -20, -10, 761, 241, "packagesExtrasBack", "/usr/share/turbulence/images/manjaro-grey/packages/packages-back.png"],
+                "packagesAurSupportPic": [self.packagesAurSupportPic, 20, 10, 71, 71, "packagesAurSupportPic" , "/usr/share/turbulence/images/manjaro-grey/packages/extras/aursupport.png"],
+                "packagesAurSupportCheck": [self.packagesAurSupportCheck, 10, 90, 111, 41, "packagesAurSupportCheck", None],
+                "packagesMultimediaSupportPic": [self.packagesMultimediaSupportPic, 140, 10, 71, 71, "packagesMultimediaSupportPic" , "/usr/share/turbulence/images/manjaro-grey/packages/extras/multimediasupport.png"],
+                "packagesMultimediaSupportCheck": [self.packagesMultimediaSupportCheck, 130, 90, 111, 34, "packagesMultimediaSupportCheck", None],
+                "packagesPrinterSupportPic": [self.packagesPrinterSupportPic, 270, 10, 71, 71, "packagesPrinterSupportPic" , "/usr/share/turbulence/images/manjaro-grey/packages/extras/printersupport.png"],
+                "packagesPrinterSupportCheck": [self.packagesPrinterSupportCheck, 260, 90, 111, 41, "packagesPrinterSupportCheck", None],
+                "packagesInstallBack": [self.packagesInstallBack, -20, -10, 761, 241, "packagesInstallBack", None],
+                "packagesInstallButton": [self.packagesInstallButton, 310, 95, 111, 31, "packagesInstallButton", None],
+                "packagesCheckConnection": [self.packagesCheckConnection, 230, 400, 380, 60, "packagesCheckConnection", None]
+            }
+
+            #defines all the widget parameters
+            for widgetName, widgetSettings in fifthPageWidgets.items():
+                widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
+        
+            #Adds any custom widgets.
+            self.packagesMenu.setFlat(True)
+            self.packagesMenuFinish.setFlat(True)
+            self.packagesPrevious.setFlat(True)
+            self.packagesForward.setFlat(True)
+            self.packagesCancel.setFlat(True)
+            self.packagesCheckConnection.setFlat(True)
+            self.packagesInstallButton.setFlat(True)
+        
+            self.packagesMenu.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.packagesMenuFinish.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.packagesPrevious.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.packagesForward.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.packagesCancel.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.packagesCheckConnection.setFocusPolicy(QtCore.Qt.NoFocus)
+            self.packagesInstallButton.setFocusPolicy(QtCore.Qt.NoFocus)
+        
+            self.packagesPrevious.setIcon(previousIcon)
+            self.packagesForward.setIcon(forwardIcon)
+            self.packagesCancel.setIcon(cancelIcon)
+            self.packagesPrevious.setIconSize(QtCore.QSize(28, 30))
+            self.packagesForward.setIconSize(QtCore.QSize(28, 30))
+            self.packagesCancel.setIconSize(QtCore.QSize(16, 16))
+         
+            self.packagesNetwork.setObjectName(_fromUtf8("Network"))
+            self.packagesMultimedia.setObjectName(_fromUtf8("Multimedia"))
+            self.packagesGraphics.setObjectName(_fromUtf8("Graphics"))
+            self.packagesAccessories.setObjectName(_fromUtf8("Accessories"))
+            self.packagesExtras.setObjectName(_fromUtf8("Extras"))
+            self.packagesInstall.setObjectName(_fromUtf8("Install"))
+        
+            self.packagesTabs.addTab(self.packagesNetwork, _fromUtf8(""))
+            self.packagesTabs.addTab(self.packagesMultimedia, _fromUtf8(""))
+            self.packagesTabs.addTab(self.packagesGraphics, _fromUtf8(""))
+            self.packagesTabs.addTab(self.packagesAccessories, _fromUtf8(""))
+            self.packagesTabs.addTab(self.packagesExtras, _fromUtf8(""))
+            self.packagesTabs.addTab(self.packagesInstall, _fromUtf8(""))
+        
+            self.packagesTabs.tabBar().setEnabled(False)
+            self.stackedWidget.addWidget(self.Packages)
+            
+            #Handles button clicks
+            QtCore.QObject.connect(self.packagesCancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
+            QtCore.QObject.connect(self.packagesPrevious, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
+            QtCore.QObject.connect(self.packagesForward, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextPackages)
+            QtCore.QObject.connect(self.packagesCheckConnection, QtCore.SIGNAL(_fromUtf8("clicked()")), self.checkInternetStatus)
+            QtCore.QObject.connect(self.packagesInstallButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonInstallPackages)
+            
+            #Fifth page
+            self.packagesHeader.setText("Packages")
+            self.packagesMenu.setText("Packages")
+            self.packagesMenuFinish.setText("Finish")
+            self.packagesDesc.setText(_translate("MainWindow", "Here, you can choose what packages you would like to install. Hover over any of the \npackages to see a description, and select or unselect any packages you want to add or \nremove. Packages that are installed will be auto-selected.\n\nWhen you are done, go to the Install tab, and click \"Install\".", None))
+            self.packagesPrevious.setText(_translate("MainWindow", "Previous", None))
+            self.packagesForward.setText(_translate("MainWindow", "Forward", None))
+            self.packagesCancel.setText(_translate("MainWindow", "Cancel", None))
+            self.packagesHeaderHead.setText("Packages")
+            self.packagesCheckConnection.setText(_translate("MainWindow", "Check For Internet Connection", None))
+            self.packagesFirefoxPic.setToolTip(_translate("MainWindow", "Standalone web browser from mozilla.org", None))
+            self.packagesAroraPic.setToolTip(_translate("MainWindow", "Lightweight cross-platform Web browser", None))
+            self.packagesAroraCheck.setText(_translate("MainWindow", "Arora", None))
+            self.packagesChromiumPic.setToolTip(_translate("MainWindow", "The open-source project behind Google Chrome, an \n" "attempt at creating a safer, faster, and more stable browser", None))
+            self.packagesOperaPic.setToolTip(_translate("MainWindow", "Fast and secure web browser and Internet suite", None))
+            self.packagesTransmissionPic.setToolTip(_translate("MainWindow", "Fast, easy, and free BitTorrent client", None))
+            self.packagesFirefoxCheck.setText(_translate("MainWindow", "Firefox", None))
+            self.packagesMidoriPic.setToolTip(_translate("MainWindow", "Lightweight web browser (GTK2)", None))
+            self.packagesChromiumCheck.setText(_translate("MainWindow", "Chomium", None))
+            self.packagesOperaCheck.setText(_translate("MainWindow", "Opera", None))
+            self.packagesTransmissionCheck.setText(_translate("MainWindow", "Transmission", None))
+            self.packagesMidoriCheck.setText(_translate("MainWindow", "Midori", None))
+            self.packagesDelugePic.setToolTip(_translate("MainWindow", "A BitTorrent client with multiple user interfaces \n" "in a client/server model", None))
+            self.packagesDelugeCheck.setText(_translate("MainWindow", "Deluge", None))
+            self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesNetwork), _translate("MainWindow", "Network", None))
+            self.packagesVlcPic.setToolTip(_translate("MainWindow", "A multi-platform MPEG, VCD/DVD, and DivX player", None))
+            self.packagesVlcCheck.setText(_translate("MainWindow", "VLC", None))
+            self.packagesSmplayerPic.setToolTip(_translate("MainWindow", "A complete front-end for MPlayer", None))
+            self.packagesSmplayerCheck.setText(_translate("MainWindow", "SMPlayer", None))
+            self.packagesAudaciousPic.setToolTip(_translate("MainWindow", "Lightweight, advanced audio player focused on audio quality", None))
+            self.packagesAudaciousCheck.setText(_translate("MainWindow", "Audacious", None))
+            self.packagesClemetinePic.setToolTip(_translate("MainWindow", "A music player and library organizer", None))
+            self.packagesClementineCheck.setText(_translate("MainWindow", "Clementine", None))
+            self.packagesDeadbeefPic.setToolTip(_translate("MainWindow", "An audio player for GNU/Linux based on GTK2.", None))
+            self.packagesDeadbeefCheck.setText(_translate("MainWindow", "DeaDBeeF", None))
+            self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesMultimedia), _translate("MainWindow", "Multimedia", None))
+            self.packagesBlenderPic.setToolTip(_translate("MainWindow", "A fully integrated 3D graphics creation suite", None))
+            self.packagesBlenderCheck.setText(_translate("MainWindow", "Blender", None))
+            self.packagesEvincePic.setToolTip(_translate("MainWindow", "Simply a document viewer", None))
+            self.packagesEvinceCheck.setText(_translate("MainWindow", "Evince", None))
+            self.packagesGimpPic.setToolTip(_translate("MainWindow", "GNU Image Manipulation Program", None))
+            self.packagesGimpCheck.setText(_translate("MainWindow", "Gimp", None))
+            self.packagesGpicviewPic.setToolTip(_translate("MainWindow", "Lightweight image viewer", None))
+            self.packagesGpicviewCheck.setText(_translate("MainWindow", "GPicView", None))
+            self.packagesViewniorPic.setToolTip(_translate("MainWindow", "A simple, fast and elegant image viewer program", None))
+            self.packagesViewniorCheck.setText(_translate("MainWindow", "Viewnior", None))
+            self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesGraphics), _translate("MainWindow", "Graphics", None))
+            self.packagesGeanyPic.setToolTip(_translate("MainWindow", "Fast and lightweight IDE", None))
+            self.packagesGeanyCheck.setText(_translate("MainWindow", "Geany", None))
+            self.packagesHexchatPic.setToolTip(_translate("MainWindow", "A popular and easy to use graphical IRC (chat) client", None))
+            self.packagesHexchatCheck.setText(_translate("MainWindow", "Hexchat", None))
+            self.packagesLeafpadPic.setToolTip(_translate("MainWindow", "A notepad clone for GTK+ 2.0", None))
+            self.packagesLeafpadCheck.setText(_translate("MainWindow", "Leafpad", None))
+            self.packagesPcmanfmPic.setToolTip(_translate("MainWindow", "An extremely fast and lightweight file manager", None))
+            self.packagesPcmanfmCheck.setText(_translate("MainWindow", "PCManFM", None))
+            self.packagesSpacefmPic.setToolTip(_translate("MainWindow", "Multi-panel tabbed file manager", None))
+            self.packagesSpacefmCheck.setText(_translate("MainWindow", "SpaceFM", None))
+            self.packagesTerminatorPic.setToolTip(_translate("MainWindow", "Terminal emulator that supports tabs and grids", None))
+            self.packagesTerminatorCheck.setText(_translate("MainWindow", "Terminator", None))
+            self.packagesThunarPic.setToolTip(_translate("MainWindow", "Modern file manager for Xfce", None))
+            self.packagesThunarCheck.setText(_translate("MainWindow", "Thunar", None))
+            self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesAccessories), _translate("MainWindow", "Accessories", None))
+            self.packagesAurSupportPic.setToolTip(_translate("MainWindow", "Installs yaourt, and required dependencies to access the AUR", None))
+            self.packagesAurSupportCheck.setText(_translate("MainWindow", "Aur \nSupport", None))
+            self.packagesMultimediaSupportPic.setToolTip(_translate("MainWindow", "Installs flashplugin, and required codecs for playing media", None))
+            self.packagesMultimediaSupportCheck.setText(_translate("MainWindow", "Multimedia \nSupport", None))
+            self.packagesPrinterSupportPic.setToolTip(_translate("MainWindow", "Installs manjaro-printer, and CUPS to enable printers", None))
+            self.packagesPrinterSupportCheck.setText(_translate("MainWindow", "Printer \nSupport", None))
+            self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesExtras), _translate("MainWindow", "Extras", None))
+            self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesInstall), "Install")
+            self.packagesInstallButton.setText("Install")
         
         
         #Adds the fifth and final page
@@ -681,6 +1065,25 @@ class Ui_MainWindow(QtCore.QObject):
         if index < self.stackedWidget.count():
             self.stackedWidget.setCurrentIndex(index)
             logger.writeLog('proceedToWallpapers')
+            
+    #Moves next a page, but also applies to settings for tint.
+    def handleButtonNextTint(self):
+        Tint = {
+            "top": self.tintPositionRadio1,
+            "right": self.tintPositionRadio2,
+            "bottom": self.tintPositionRadio3,
+            "left": self.tintPositionRadio4,
+        }
+        
+        for tintPosition, tintRadio in Tint.items():
+            if tintRadio.isChecked():
+                tint.panelPosition(tintPosition)
+                ob_control.killTintTwoPlus()
+
+        index = self.stackedWidget.currentIndex() + 1
+        if index < self.stackedWidget.count():
+            self.stackedWidget.setCurrentIndex(index)
+            logger.writeLog('proceedToWallpapers')
     
     #Moves next a page, but also applies the wallpaper settings.
     def handleButtonNextWallpapers(self):
@@ -702,8 +1105,103 @@ class Ui_MainWindow(QtCore.QObject):
         index = self.stackedWidget.currentIndex() + 1
         if index < self.stackedWidget.count():
             self.stackedWidget.setCurrentIndex(index)
-            logger.writeLog('proceedToFinal')
+            logger.writeLog('proceedToPackages')
 
+            
+    def handleButtonNextPackages(self):
+        index = self.stackedWidget.currentIndex() + 1
+        if index < self.stackedWidget.count():
+            self.stackedWidget.setCurrentIndex(index)
+            logger.writeLog('proceedToFinal')
+    
+    #Moves from the folder slide toward the package installer.
+    def handleButtonInstallPackages(self):
+        packagesMFI = {
+            "arora": self.packagesAroraCheck, 
+            "chromium": self.packagesChromiumCheck, 
+            "deluge": self.packagesDelugeCheck,
+            "firefox": self.packagesFirefoxCheck,
+            "midori": self.packagesMidoriCheck,
+            "opera": self.packagesOperaCheck, 
+            "transmission-gtk": self.packagesTransmissionCheck,
+            "audacious": self.packagesAudaciousCheck,
+            "clementine": self.packagesClementineCheck,
+            "deadbeef": self.packagesDeadbeefCheck, 
+            "smplayer": self.packagesSmplayerCheck,
+            "vlc": self.packagesVlcCheck,
+            "blender": self.packagesBlenderCheck,
+            "evince": self.packagesEvinceCheck,
+            "gimp": self.packagesGimpCheck,
+            "gpicview": self.packagesGpicviewCheck,
+            "viewnior": self.packagesViewniorCheck,
+            "geany": self.packagesGeanyCheck,
+            "hexchat": self.packagesHexchatCheck,
+            "leafpad": self.packagesLeafpadCheck,
+            "pcmanfm": self.packagesPcmanfmCheck,
+            "spacefm": self.packagesSpacefmCheck,
+            "terminator": self.packagesTerminatorCheck,
+            "thunar": self.packagesThunarCheck,
+            "yaourt": self.packagesAurSupportCheck, #Aur support
+            "flashplugin": self.packagesMultimediaSupportCheck, #Multimedia support
+            "manjaro-printer": self.packagesPrinterSupportCheck #Printing support
+            
+        }
+        #self.installButton.lower()
+        packagesTBIList = []
+        packagesTBRList = []
+        for packageName, packageCheck in packagesMFI.items():
+            if packageCheck.isChecked():
+                packagesTBIList.append(packageName)
+            else:
+                packagesTBRList.append(packageName)
+        packages.handlePackages(packagesTBIList, packagesTBRList)
+	    
+    def checkInternetStatus(self):
+        packagesList = packages.getCurrentPackages()
+        if packages.checkInternet():
+            self.packagesTabs.tabBar().setEnabled(True)
+            self.packagesCheckConnection.lower()
+            self.packagesNotActive.lower()
+            logger.writeLog("checkInternetStatusPassed")
+        else:
+            self.packagesCheckConnection.setText(_translate("MainWindow", "Failed. Please Try Again.", None))
+            logger.writeLog("checkInternetStatusFailed")
+        
+        packagesMFI = {
+            "arora": self.packagesAroraCheck, 
+            "chromium": self.packagesChromiumCheck, 
+            "deluge": self.packagesDelugeCheck,
+            "firefox": self.packagesFirefoxCheck,
+            "midori": self.packagesMidoriCheck,
+            "opera": self.packagesOperaCheck, 
+            "transmission-gtk": self.packagesTransmissionCheck,
+            "audacious": self.packagesAudaciousCheck,
+            "clementine": self.packagesClementineCheck,
+            "deadbeef": self.packagesDeadbeefCheck, 
+            "smplayer": self.packagesSmplayerCheck,
+            "vlc": self.packagesVlcCheck,
+            "blender": self.packagesBlenderCheck,
+            "evince": self.packagesEvinceCheck,
+            "gimp": self.packagesGimpCheck,
+            "gpicview": self.packagesGpicviewCheck,
+            "viewnior": self.packagesViewniorCheck,
+            "geany": self.packagesGeanyCheck,
+            "hexchat": self.packagesHexchatCheck,
+            "leafpad": self.packagesLeafpadCheck,
+            "pcmanfm": self.packagesPcmanfmCheck,
+            "spacefm": self.packagesSpacefmCheck,
+            "terminator": self.packagesTerminatorCheck,
+            "thunar": self.packagesThunarCheck,
+            "yaourt": self.packagesAurSupportCheck, #Aur support
+            "flashplugin": self.packagesMultimediaSupportCheck, #Multimedia support
+            "manjaro-printer": self.packagesPrinterSupportCheck #Printing support
+        }
+        packagesAI = set(packagesList).intersection(packagesMFI)
+        packagesAIList = list(packagesAI)
+        
+        for packagesItem in packagesAIList:
+            packagesMFI[packagesItem].setChecked(True)	
+            
     #Moves back from the themes to folders, and reloads the settings for folders.
     def handleButtonPrevFolders(self):
         checkboxDirectoryPairs = {

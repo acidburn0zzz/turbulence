@@ -42,6 +42,10 @@ def detectPlasma():
 def detectKwin():
     kwin = detectProcess('kwin')
     return kwin
+  
+def detectOpenBox():
+    openbox = detectProcess('openbox')
+    return openbox
 
 #This is a tricky one, since nitrogen doesn't have
 #A process to detect it by. I'm going to be looking
