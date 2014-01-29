@@ -27,7 +27,7 @@ kwinStatus = utils_detector.detectKwin() #Kwin
 plasmaStatus = utils_detector.detectPlasma() #Plasma
 nitrogenStatus = utils_detector.detectNitrogen() #Nitrogen
 openboxStatus = utils_detector.detectOpenBox() #Openbox
-openboxStatus = True
+kdeStatus = utils_detector.detectKde() #Kde
 
 def widgetConfigurer(widgetType, xPos, yPos, xSize, ySize, name, image=None, styleSheet=None):
     widgetType.setGeometry(QtCore.QRect(xPos, yPos, xSize, ySize))
@@ -929,11 +929,11 @@ class Ui_MainWindow(QtCore.QObject):
             "finishDesc": [self.finishDesc, 30, 150, 781, 51, "finishDesc", None],
             "finishSystemSettings": [self.finishSystemSettings, 40, 220, 250, 31, "finishSystemSettings", None],
             "finishSystemSettingsPic": [self.finishSystemSettingsPic, 70, 260, 111, 101, "finishSystemSettingsPic", "/usr/share/turbulence/images/manjaro-grey/finish/preferences-system.png"],
-            "finishSystemSettingsDesc": [self.finishSystemSettingsDesc, 200, 280, 371, 31, "finishSystemSettingsDesc", None],
+            "finishSystemSettingsDesc": [self.finishSystemSettingsDesc, 200, 280, 390, 31, "finishSystemSettingsDesc", None],
             "finishSystemSettingsButton": [self.finishSystemSettingsButton, 300, 310, 181, 41, "finishSystemSettingsButton", None],
             "finishHelpHead": [self.finishHelpHead, 40, 400, 71, 31, "finishHelpHead", None, None],
             "finishHelpPic": [self.finishHelpPic, 70, 440, 111, 101, "finishHelpPic", "/usr/share/turbulence/images/manjaro-grey/finish/help-icon.png"],
-            "finishHelpDesc": [self.finishHelpDesc, 200, 440, 381, 51, "finishHelpDesc", None],
+            "finishHelpDesc": [self.finishHelpDesc, 200, 440, 391, 51, "finishHelpDesc", None],
             "finishHelpButton": [self.finishHelpButton, 300, 491, 181, 41, "finishHelpButton", None]
         }
 
@@ -960,7 +960,6 @@ class Ui_MainWindow(QtCore.QObject):
         
         #Handles the button click
         QtCore.QObject.connect(self.finishWallpaperMenu, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
-        QtCore.QObject.connect(self.finishSystemSettingsButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonSystemSettings)
         QtCore.QObject.connect(self.finishHelpButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonLaunchHelp)
         QtCore.QObject.connect(self.finishCancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
         QtCore.QObject.connect(self.finishPrevious, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
@@ -974,12 +973,20 @@ class Ui_MainWindow(QtCore.QObject):
         self.finishForward.setText("Finish")
         self.finishPrevious.setText(_translate("MainWindow", "Previous", None))
         self.finishDesc.setText(_translate("MainWindow", "All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs \nand links below. Also, if you haven\'t already, make sure to join the Manjaro community as well!", None))
-        self.finishSystemSettings.setText(_translate("MainWindow", "System Settings", None))
-        self.finishSystemSettingsDesc.setText(_translate("MainWindow", "Control panel to edit various aspects of the KDE desktop, \nand more.", None))
-        self.finishSystemSettingsButton.setText(_translate("MainWindow", "Launch System Settings", None))
         self.finishHelpHead.setText(_translate("MainWindow", "Help", None))
         self.finishHelpDesc.setText(_translate("MainWindow", "For help and support, you can visit Manjaro.org for access \nto a terrific forum, wiki, and IRC!", None))
         self.finishHelpButton.setText(_translate("MainWindow", "Launch Manjaro.org", None))
+        
+        if kdeStatus:
+            self.finishSystemSettings.setText(_translate("MainWindow", "System Settings", None))
+            self.finishSystemSettingsDesc.setText(_translate("MainWindow", "Control panel to edit various aspects of the KDE desktop, \nand more.", None))
+            self.finishSystemSettingsButton.setText(_translate("MainWindow", "Launch System Settings", None))
+            QtCore.QObject.connect(self.finishSystemSettingsButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonSystemSettings)
+        elif openboxStatus:
+            self.finishSystemSettings.setText(_translate("MainWindow", "Customize OpenBox", None))
+            self.finishSystemSettingsDesc.setText(_translate("MainWindow", "Control panel to edit various aspects of OpenBox", None))
+            self.finishSystemSettingsButton.setText(_translate("MainWindow", "Launch Customize \nLook and Feel", None))
+            QtCore.QObject.connect(self.finishSystemSettingsButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonlxappearance)
         
         
         #Configures the window a bit more.
@@ -1227,6 +1234,9 @@ class Ui_MainWindow(QtCore.QObject):
             
     def handleButtonSystemSettings(self):
         final.launchSystemSettings()
+        
+    def handleButtonlxappearance(self):
+        final.launchAppearance()
         
     def handleButtonLaunchHelp(self):
         final.launchHelp()

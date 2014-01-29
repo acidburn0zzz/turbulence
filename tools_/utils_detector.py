@@ -46,6 +46,10 @@ def detectKwin():
 def detectOpenBox():
     openbox = detectProcess('openbox')
     return openbox
+  
+def detectKde():
+    kde = detectProcess('kded4')
+    return kde
 
 #This is a tricky one, since nitrogen doesn't have
 #A process to detect it by. I'm going to be looking
