@@ -37,4 +37,5 @@ def handlePackages(packagesTBI, packagesTBR): #packagesTBI = packages to be inst
     logger.writeLog("packagesToBeRemoved", packagesTBRStr)
     
     installPackages = subprocess.Popen(["lxterminal", "-e", "bash",  "/usr/share/turbulence/scripts/install-packages.sh", "\"" + ' '.join(packagesTBIList) + "\"", "-r", "\"" + ' '.join(packagesTBRList) + "\""])
+    installPackages.wait()
     system("wmctrl -a LXTerminal")
