@@ -28,7 +28,6 @@ plasmaStatus = utils_detector.detectPlasma() #Plasma
 nitrogenStatus = utils_detector.detectNitrogen() #Nitrogen
 openboxStatus = utils_detector.detectOpenBox() #Openbox
 kdeStatus = utils_detector.detectKde() #Kde
-openboxStatus = True
 
 def widgetConfigurer(widgetType, xPos, yPos, xSize, ySize, name, image=None, styleSheet=None):
     widgetType.setGeometry(QtCore.QRect(xPos, yPos, xSize, ySize))
