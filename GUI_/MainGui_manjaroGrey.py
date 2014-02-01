@@ -20,8 +20,7 @@ except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
 
-#Detect what processes you're running for DE/WM specific processess.
-
+#Detect what processes you're running for DE/WM specific slides.
 tintStatus = utils_detector.detectTint() #Tint
 kwinStatus = utils_detector.detectKwin() #Kwin
 plasmaStatus = utils_detector.detectPlasma() #Plasma
@@ -29,16 +28,37 @@ nitrogenStatus = utils_detector.detectNitrogen() #Nitrogen
 openboxStatus = utils_detector.detectOpenBox() #Openbox
 kdeStatus = utils_detector.detectKde() #Kde
 
+#Configure normal widgets
 def widgetConfigurer(widgetType, xPos, yPos, xSize, ySize, name, image=None, styleSheet=None):
     widgetType.setGeometry(QtCore.QRect(xPos, yPos, xSize, ySize))
     widgetType.setObjectName(_fromUtf8(name))
     
-    if image != None:
+    if image is not None:
         widgetType.setPixmap(QtGui.QPixmap(_fromUtf8(image)))
         
-    if styleSheet != None:
+    if styleSheet is not None:
         widgetType.setStyleSheet(_fromUtf8(styleSheet))
         
+#Configure widgets held in a layout
+def layoutConfigurer(name, widgetType, minW, minH, maxH, maxW, flat, focus, image):
+    widgetType.setObjectName(_fromUtf8(name))
+    if minW or minH is not None:
+        widgetType.setMinimumSize(QtCore.QSize(minW, minH))
+    
+    if maxH or maxW is not None:
+        widgetType.setMaximumSize(QtCore.QSize(maxH, maxW))
+        
+    if flat:
+        widgetType.setFlat(True)
+    
+    if focus:
+        widgetType.setFocusPolicy(QtCore.Qt.NoFocus)
+    
+    if image:
+        widgetType.setPixmap(QtGui.QPixmap(_fromUtf8(image)))
+        
+
+#Create static widgets that are the same on all pages        
 def createStaticWidgets(parent):
     global blackBackground; blackBackground = QtGui.QLabel(parent)
     global headerBack; headerBack = QtGui.QLabel(parent)
@@ -100,53 +120,69 @@ class Ui_MainWindow(QtCore.QObject):
         #Defines all the widgets for the first page
         createStaticWidgets(self.welcomeToManjaro)
         self.welcomeHeader = QtGui.QLabel(self.welcomeToManjaro)
-        self.welcomeButton = QtGui.QPushButton(self.welcomeToManjaro)
-        self.welcomeArrow = QtGui.QLabel(self.welcomeToManjaro)
-        self.welcomeFolders = QtGui.QPushButton(self.welcomeToManjaro)
+        self.welcomeMenuContainer = QtGui.QWidget(self.welcomeToManjaro)
+        self.welcomeMenuContainerHLayout = QtGui.QHBoxLayout(self.welcomeMenuContainer)
+        self.welcomeButton = QtGui.QPushButton(self.welcomeMenuContainer)
+        self.welcomeArrow = QtGui.QLabel(self.welcomeMenuContainer)
+        self.welcomeFolders = QtGui.QPushButton(self.welcomeMenuContainer)
+        self.welcomeMenuSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         self.welcomeWhatIsManjaro = QtGui.QLabel(self.welcomeToManjaro)
         self.welcomeManjaroDesc = QtGui.QLabel(self.welcomeToManjaro)
-        self.welcomeBullet1 = QtGui.QLabel(self.welcomeToManjaro)
-        self.welcomeBullet2 = QtGui.QLabel(self.welcomeToManjaro)
-        self.welcomeBullet3 = QtGui.QLabel(self.welcomeToManjaro)
-        self.welcomeBullet4 = QtGui.QLabel(self.welcomeToManjaro)
-        self.welcomeForward = QtGui.QPushButton(self.welcomeToManjaro)
-        self.welcomeCancel = QtGui.QPushButton(self.welcomeToManjaro)
+        #self.welcomeBullet1 = QtGui.QLabel(self.welcomeToManjaro)
+        #self.welcomeBullet2 = QtGui.QLabel(self.welcomeToManjaro)
+        #self.welcomeBullet3 = QtGui.QLabel(self.welcomeToManjaro)
+        #self.welcomeBullet4 = QtGui.QLabel(self.welcomeToManjaro)
+        self.welcomeFooterContainer = QtGui.QWidget(self.welcomeToManjaro)
+        self.welcomeFooterContainerHLayout = QtGui.QHBoxLayout(self.welcomeFooterContainer)
+        self.welcomeFooterSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.welcomeForward = QtGui.QPushButton(self.welcomeFooterContainer)
+        self.welcomeCancel = QtGui.QPushButton(self.welcomeFooterContainer)
+        
         
         #widget dictionary
         firstPageWidgets = {
             "welcomeHeader": [self.welcomeHeader, 80, 20, 361, 51, "welcomeHeader", None],
-            "welcomeButton": [self.welcomeButton, 20, 90, 111, 41, "welcomeButton", None],
-            "welcomeArrow": [self.welcomeArrow, 140, 90, 111, 41, "welcomeArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-            "welcomeFolders": [self.welcomeFolders, 170, 90, 81, 41, "welcomeFolders", None],
             "welcomeWhatIsManjaro": [self.welcomeWhatIsManjaro, 30, 180, 480, 71, "welcomeWhatIsManjaro", None],
-            "welcomeManjaroDesc": [self.welcomeManjaroDesc, 70, 260, 760, 261, "welcomeManjaroDesc", None],
-            "welcomeBullet1": [self.welcomeBullet1, 70, 365, 21, 21, "welcomeBullet1", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
-            "welcomeBullet2": [self.welcomeBullet2, 70, 395, 21, 21, "welcomeBullet2", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
-            "welcomeBullet3": [self.welcomeBullet3, 70, 425, 21, 21, "welcomeBullet3", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
-            "welcomeBullet4": [self.welcomeBullet4, 70, 470, 21, 21, "welcomeBullet4", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
-            "welcomeForward": [self.welcomeForward, 730, 575, 111, 33, "welcomeForward", None],
-            "welcomeCancel": [self. welcomeCancel, 20, 575, 110, 33, "welcomeCancel", None],
+            "welcomeManjaroDesc": [self.welcomeManjaroDesc, 70, 260, 610, 260, "welcomeManjaroDesc", None],
+            #"welcomeBullet1": [self.welcomeBullet1, 70, 365, 21, 21, "welcomeBullet1", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
+            #"welcomeBullet2": [self.welcomeBullet2, 70, 395, 21, 21, "welcomeBullet2", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
+            #"welcomeBullet3": [self.welcomeBullet3, 70, 425, 21, 21, "welcomeBullet3", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
+            #"welcomeBullet4": [self.welcomeBullet4, 70, 470, 21, 21, "welcomeBullet4", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
+        }
+        
+        firstPageLayouts = {
+            "welcomeButton": [self.welcomeButton, 0, 39, None, None, True, True, False],
+            "welcomeArrow": [self.welcomeArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png"],
+            "welcomeFolders": [self.welcomeFolders, 0, 39, None, None, True, True, False],
+            "welcomeForward": [self.welcomeForward, 0, 34, None, None, True, True, False],
+            "welcomeCancel": [self.welcomeCancel, 0, 34, None, None, True, True, False]
         }
         
         #defines all the widget parameters
         for widgetName, widgetSettings in firstPageWidgets.items():
             widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
+            
+        for widgetName, widgetSettings in firstPageLayouts.items():
+            layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7])
         
-        #defines all the custom settings
-        self.welcomeButton.setFlat(True)
-        self.welcomeFolders.setFlat(True)
-        self.welcomeForward.setFlat(True)
-        self.welcomeCancel.setFlat(True)
-        
-        self.welcomeButton.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.welcomeFolders.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.welcomeForward.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.welcomeCancel.setFocusPolicy(QtCore.Qt.NoFocus)
-        
+        #defines all the custom settings        
         self.welcomeForward.setIcon(forwardIcon)
         self.welcomeCancel.setIcon(cancelIcon)
         self.welcomeForward.setIconSize(QtCore.QSize(28, 30))
         self.welcomeCancel.setIconSize(QtCore.QSize(16, 16))
+        
+        self.welcomeMenuContainerHLayout.addWidget(self.welcomeButton)
+        self.welcomeMenuContainerHLayout.addWidget(self.welcomeArrow)
+        self.welcomeMenuContainerHLayout.addWidget(self.welcomeFolders)
+        self.welcomeMenuContainerHLayout.addItem(self.welcomeMenuSpacer)
+        self.welcomeFooterContainerHLayout.addWidget(self.welcomeCancel)
+        self.welcomeFooterContainerHLayout.addItem(self.welcomeFooterSpacer)
+        self.welcomeFooterContainerHLayout.addWidget(self.welcomeForward)
+        self.welcomeMenuContainer.setGeometry(QtCore.QRect(20, 87, 511, 43))
+        self.welcomeFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
+        
+        self.welcomeManjaroDesc.setTextFormat(QtCore.Qt.RichText)
+        self.welcomeManjaroDesc.setWordWrap(True)
         
         #adds the first page
         self.stackedWidget.addWidget(self.welcomeToManjaro)
@@ -161,7 +197,8 @@ class Ui_MainWindow(QtCore.QObject):
         self.welcomeButton.setText("Welcome")
         self.welcomeFolders.setText("Folders")
         self.welcomeWhatIsManjaro.setText(_translate("MainWindow", "What is Manjaro?", None))
-        self.welcomeManjaroDesc.setText(_translate("MainWindow", """Hello, and welcome to Manjaro.\n\nManjaro is a sleek and fast distro, featuring benefits from the popular Arch OS, along with ease of use.\nDeveloped in Austria, France, and Germany, Manjaro aims at new users, and experienced users.\n\nSome of Manjaro\'s features are:\n\n     Speed, power, and efficiency\n\n     Access to the very latest cutting and bleeding edge software\n\n     A ‘rolling release’ development model that provides the most up-to-date system possible without\n     the need to install new versions\n\n     Access to the Arch User Repository (AUR).\n\nOver these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.""", None))
+        #self.welcomeManjaroDesc.setText(_translate("MainWindow", """Hello, and welcome to Manjaro.\n\nManjaro is a sleek and fast distro, featuring benefits from the popular Arch OS, along with ease of use.\nDeveloped in Austria, France, and Germany, Manjaro aims at new users, and experienced users.\n\nSome of Manjaro\'s features are:\n\n     Speed, power, and efficiency\n\n     Access to the very latest cutting and bleeding edge software\n\n     A ‘rolling release’ development model that provides the most up-to-date system possible without\n     the need to install new versions\n\n     Access to the Arch User Repository (AUR).\n\nOver these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.""", None))
+        self.welcomeManjaroDesc.setText(_translate("MainWindow", """<b>Manjaro</b> is a sleek and fast distro, featuring benefits from the popular Arch OS, along with ease of use. Developed in Austria, France, and Germany, Manjaro aims at new users, and experienced users.<br><br>Some of Manjaro\'s features are:  <ul><li>Speed, power, and efficiency</li><li>Access to the very latest cutting and bleeding edge software</li> <li>A ‘rolling release’ development model that provides the most up-to-date system possible without the need to install new versions</li><li>Access to the Arch User Repository (AUR).</li></ul>Over these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.""", None))
         self.welcomeCancel.setText(_translate("MainWindow", "Cancel", None))
         self.welcomeForward.setText(_translate("MainWindow", "Forward", None))
         
@@ -630,6 +667,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.wallpaperChoice6.setText("Dark Stairs")
             self.wallpaperChoice7.setText("Cherry Japan")
             self.wallpaperChoice8.setText("White Tiger")
+        
         
         if openboxStatus:
             #Adds the sixth page.
