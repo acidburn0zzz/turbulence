@@ -666,7 +666,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.wallpaperChoice5.setText("Space")
             self.wallpaperChoice6.setText("Dark Stairs")
             self.wallpaperChoice7.setText("Cherry Japan")
-            self.wallpaperChoice8.setText("White Tiger")
+            self.wallpaperChoice8.setText("Snow Leopard")
         
         
         if openboxStatus:
