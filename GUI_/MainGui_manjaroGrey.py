@@ -139,8 +139,8 @@ class Ui_MainWindow(QtCore.QObject):
         
         #widget dictionary
         firstPageWidgets = {
-            "welcomeHeader": [self.welcomeHeader, 80, 20, 361, 51, "welcomeHeader", None],
-            "welcomeWhatIsManjaro": [self.welcomeWhatIsManjaro, 30, 180, 480, 71, "welcomeWhatIsManjaro", None],
+            "welcomeHeader": [self.welcomeHeader, 80, 20, 600, 51, "welcomeHeader", None],
+            "welcomeWhatIsManjaro": [self.welcomeWhatIsManjaro, 30, 180, 600, 71, "welcomeWhatIsManjaro", None],
             "welcomeManjaroDesc": [self.welcomeManjaroDesc, 70, 260, 631, 260, "welcomeManjaroDesc", None],
         }
         
@@ -189,7 +189,7 @@ class Ui_MainWindow(QtCore.QObject):
         QtCore.QObject.connect(self.welcomeCancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
         
         #Translates, or sets the text to the widgets
-        self.welcomeHeader.setText(_translate("MainWindow", "Welcome To Manjaro", None))
+        self.welcomeHeader.setText(_translate("MainWindow", "Welcome To Manjaro!", None))
         self.welcomeButton.setText("Welcome")
         self.welcomeFolders.setText("Folders")
         self.welcomeWhatIsManjaro.setText(_translate("MainWindow", "What is Manjaro?", None))
@@ -260,9 +260,9 @@ class Ui_MainWindow(QtCore.QObject):
         
         #widget dictionary.
         secondPageWidgets = {
-            "folderHeader": [self.folderHeader, 80, 20, 111, 51, "folderHeader", None],
+            "folderHeader": [self.folderHeader, 80, 20, 600, 51, "folderHeader", None],
             "folderIcon": [self.folderIcon, 40, 150, 61, 61, "folderIcon", "/usr/share/turbulence/images/manjaro-grey/foldericons/folder.png"],
-            "folderDesc": [self.folderDesc, 110, 170, 591, 31, "folderDesc", None]
+            "folderDesc": [self.folderDesc, 110, 160, 590, 50, "folderDesc", None]
         }
         
         secondPageLayouts = {
@@ -320,6 +320,8 @@ class Ui_MainWindow(QtCore.QObject):
         self.folderPrevious.setIconSize(QtCore.QSize(28, 30))
         self.folderForward.setIconSize(QtCore.QSize(28, 30))
         self.folderCancel.setIconSize(QtCore.QSize(16, 16))
+        
+        self.folderDesc.setWordWrap(True)
         
         self.folderMenuContainerHLayout.addWidget(self.folderMenu)
         self.folderMenuContainerHLayout.addWidget(self.folderArrow)
@@ -387,7 +389,7 @@ class Ui_MainWindow(QtCore.QObject):
         self.folderCancel.setText(_translate("MainWindow", "Cancel", None))
         self.folderForward.setText(_translate("MainWindow", "Forward", None))
         self.folderPrevious.setText(_translate("MainWindow", "Previous", None))
-        self.folderDesc.setText(_translate("MainWindow", "Here, you can choose which folders you want in your home directory. You have a choice from \nsome of the most commonly used folders.", None))
+        self.folderDesc.setText(_translate("MainWindow", "Here, you can choose which folders you want in your home directory. You have a choice from some of the most commonly used folders.", None))
         self.folderSubHeader.setText("Folders")
         self.folderHeader1.setText(_translate("MainWindow", "Status: Deactivated", None))
         self.folderHeader2.setText(_translate("MainWindow", "Status: Deactivated", None))
