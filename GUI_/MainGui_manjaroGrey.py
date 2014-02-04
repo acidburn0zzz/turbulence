@@ -40,7 +40,7 @@ def widgetConfigurer(widgetType, xPos, yPos, xSize, ySize, name, image=None, sty
         widgetType.setStyleSheet(_fromUtf8(styleSheet))
         
 #Configure widgets held in a layout
-def layoutConfigurer(name, widgetType, minW, minH, maxH, maxW, flat, focus, image):
+def layoutConfigurer(name, widgetType, minW, minH, maxH, maxW, flat, focus, image, position=False):
     widgetType.setObjectName(_fromUtf8(name))
     if minW or minH is not None:
         widgetType.setMinimumSize(QtCore.QSize(minW, minH))
@@ -56,6 +56,9 @@ def layoutConfigurer(name, widgetType, minW, minH, maxH, maxW, flat, focus, imag
     
     if image:
         widgetType.setPixmap(QtGui.QPixmap(_fromUtf8(image)))
+        
+    if position:
+        widgetType.setAlignment(QtCore.Qt.AlignCenter)
         
 
 #Create static widgets that are the same on all pages        
@@ -128,26 +131,17 @@ class Ui_MainWindow(QtCore.QObject):
         self.welcomeMenuSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         self.welcomeWhatIsManjaro = QtGui.QLabel(self.welcomeToManjaro)
         self.welcomeManjaroDesc = QtGui.QLabel(self.welcomeToManjaro)
-        #self.welcomeBullet1 = QtGui.QLabel(self.welcomeToManjaro)
-        #self.welcomeBullet2 = QtGui.QLabel(self.welcomeToManjaro)
-        #self.welcomeBullet3 = QtGui.QLabel(self.welcomeToManjaro)
-        #self.welcomeBullet4 = QtGui.QLabel(self.welcomeToManjaro)
         self.welcomeFooterContainer = QtGui.QWidget(self.welcomeToManjaro)
         self.welcomeFooterContainerHLayout = QtGui.QHBoxLayout(self.welcomeFooterContainer)
         self.welcomeFooterSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         self.welcomeForward = QtGui.QPushButton(self.welcomeFooterContainer)
         self.welcomeCancel = QtGui.QPushButton(self.welcomeFooterContainer)
         
-        
         #widget dictionary
         firstPageWidgets = {
             "welcomeHeader": [self.welcomeHeader, 80, 20, 361, 51, "welcomeHeader", None],
             "welcomeWhatIsManjaro": [self.welcomeWhatIsManjaro, 30, 180, 480, 71, "welcomeWhatIsManjaro", None],
-            "welcomeManjaroDesc": [self.welcomeManjaroDesc, 70, 260, 610, 260, "welcomeManjaroDesc", None],
-            #"welcomeBullet1": [self.welcomeBullet1, 70, 365, 21, 21, "welcomeBullet1", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
-            #"welcomeBullet2": [self.welcomeBullet2, 70, 395, 21, 21, "welcomeBullet2", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
-            #"welcomeBullet3": [self.welcomeBullet3, 70, 425, 21, 21, "welcomeBullet3", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
-            #"welcomeBullet4": [self.welcomeBullet4, 70, 470, 21, 21, "welcomeBullet4", "/usr/share/turbulence/images/manjaro-grey/bullet.png"],
+            "welcomeManjaroDesc": [self.welcomeManjaroDesc, 70, 260, 631, 260, "welcomeManjaroDesc", None],
         }
         
         firstPageLayouts = {
@@ -175,9 +169,11 @@ class Ui_MainWindow(QtCore.QObject):
         self.welcomeMenuContainerHLayout.addWidget(self.welcomeArrow)
         self.welcomeMenuContainerHLayout.addWidget(self.welcomeFolders)
         self.welcomeMenuContainerHLayout.addItem(self.welcomeMenuSpacer)
+        
         self.welcomeFooterContainerHLayout.addWidget(self.welcomeCancel)
         self.welcomeFooterContainerHLayout.addItem(self.welcomeFooterSpacer)
         self.welcomeFooterContainerHLayout.addWidget(self.welcomeForward)
+        
         self.welcomeMenuContainer.setGeometry(QtCore.QRect(20, 87, 511, 43))
         self.welcomeFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
         
@@ -197,12 +193,10 @@ class Ui_MainWindow(QtCore.QObject):
         self.welcomeButton.setText("Welcome")
         self.welcomeFolders.setText("Folders")
         self.welcomeWhatIsManjaro.setText(_translate("MainWindow", "What is Manjaro?", None))
-        #self.welcomeManjaroDesc.setText(_translate("MainWindow", """Hello, and welcome to Manjaro.\n\nManjaro is a sleek and fast distro, featuring benefits from the popular Arch OS, along with ease of use.\nDeveloped in Austria, France, and Germany, Manjaro aims at new users, and experienced users.\n\nSome of Manjaro\'s features are:\n\n     Speed, power, and efficiency\n\n     Access to the very latest cutting and bleeding edge software\n\n     A ‘rolling release’ development model that provides the most up-to-date system possible without\n     the need to install new versions\n\n     Access to the Arch User Repository (AUR).\n\nOver these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.""", None))
-        self.welcomeManjaroDesc.setText(_translate("MainWindow", """<b>Manjaro</b> is a sleek and fast distro, featuring benefits from the popular Arch OS, along with ease of use. Developed in Austria, France, and Germany, Manjaro aims at new users, and experienced users.<br><br>Some of Manjaro\'s features are:  <ul><li>Speed, power, and efficiency</li><li>Access to the very latest cutting and bleeding edge software</li> <li>A ‘rolling release’ development model that provides the most up-to-date system possible without the need to install new versions</li><li>Access to the Arch User Repository (AUR).</li></ul>Over these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.""", None))
+        self.welcomeManjaroDesc.setText(_translate("MainWindow", """<b>Manjaro</b> is a sleek and fast distro, featuring benefits from the popular Arch OS, along with ease of use. Developed in Austria, France, and Germany, Manjaro aims at new users, and experienced users.\n<br><br>\nSome of Manjaro's features are:\n<ul>\n<li>Speed, power, and efficiency</li>\n<li>Access to the very latest cutting and bleeding edge software</li>\n<li>A ‘rolling release’ development model that provides the most up-to-date system possible without the need to install new versions</li>\n<li>Access to the Arch User Repository (AUR).</li>\n</ul>\nFor newcomers, a user-friendly installer is provided, and the system itself is designed to work fully straight out of the box. For more experienced, and adventurous users, Manjaro also offers the configurability and versatility to be shaped and moulded in every respect to suit personal taste and preference.\n<br><br>\nOver these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.""", None))
         self.welcomeCancel.setText(_translate("MainWindow", "Cancel", None))
         self.welcomeForward.setText(_translate("MainWindow", "Forward", None))
-        
-        
+         
         #Starts the second page in the stacked widget.
         self.folders = QtGui.QWidget()
         self.folders.setObjectName(_fromUtf8("folders"))
@@ -211,117 +205,171 @@ class Ui_MainWindow(QtCore.QObject):
         createStaticWidgets(self.folders)
         
         self.folderHeader = QtGui.QLabel(self.folders)
-        self.folderMenu = QtGui.QPushButton(self.folders)
-        self.folderArrow = QtGui.QLabel(self.folders)
-        self.folderThemes = QtGui.QPushButton(self.folders)
-        self.folderCancel = QtGui.QPushButton(self.folders)
-        self.folderForward = QtGui.QPushButton(self.folders)
-        self.folderPrevious = QtGui.QPushButton(self.folders)
+        self.folderMenuContainer = QtGui.QWidget(self.folders)
+        self.folderMenuContainerHLayout = QtGui.QHBoxLayout(self.folderMenuContainer)
+        self.folderMenu = QtGui.QPushButton(self.folderMenuContainer)
+        self.folderArrow = QtGui.QLabel(self.folderMenuContainer)
+        self.folderThemes = QtGui.QPushButton(self.folderMenuContainer)
+        self.folderMenuSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.folderFooterContainer = QtGui.QWidget(self.folders)
+        self.folderFooterContainerHLayout = QtGui.QHBoxLayout(self.folderFooterContainer)
+        self.folderCancel = QtGui.QPushButton(self.folderFooterContainer)
+        self.folderFooterSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.folderForward = QtGui.QPushButton(self.folderFooterContainer)
+        self.folderPrevious = QtGui.QPushButton(self.folderFooterContainer)
         self.folderIcon = QtGui.QLabel(self.folders)
         self.folderDesc = QtGui.QLabel(self.folders)
         self.folderSubHeader = QtGui.QLabel(self.folders)
-        self.folderIcon1 = QtGui.QLabel(self.folders)
-        self.folderIcon2 = QtGui.QLabel(self.folders)
-        self.folderIcon3 = QtGui.QLabel(self.folders)
-        self.folderIcon4 = QtGui.QLabel(self.folders)
-        self.folderIcon5 = QtGui.QLabel(self.folders)
-        self.folderIcon6 = QtGui.QLabel(self.folders)
-        self.folderIcon7 = QtGui.QLabel(self.folders)
-        self.folderIcon8 = QtGui.QLabel(self.folders)
-        self.folderHeader1 = QtGui.QLabel(self.folders)
-        self.folderHeader2 = QtGui.QLabel(self.folders)
-        self.folderHeader3 = QtGui.QLabel(self.folders)
-        self.folderHeader4 = QtGui.QLabel(self.folders)
-        self.folderHeader5 = QtGui.QLabel(self.folders)
-        self.folderHeader6 = QtGui.QLabel(self.folders)
-        self.folderHeader7 = QtGui.QLabel(self.folders)
-        self.folderHeader8 = QtGui.QLabel(self.folders)
-        self.folderName1 = QtGui.QLabel(self.folders)
-        self.folderName2 = QtGui.QLabel(self.folders)
-        self.folderName3 = QtGui.QLabel(self.folders)
-        self.folderName4 = QtGui.QLabel(self.folders)
-        self.folderName5 = QtGui.QLabel(self.folders)
-        self.folderName6 = QtGui.QLabel(self.folders)
-        self.folderName7 = QtGui.QLabel(self.folders)
-        self.folderName8 = QtGui.QLabel(self.folders)
-        self.folderActive1 = QtGui.QCheckBox(self.folders)
-        self.folderActive2 = QtGui.QCheckBox(self.folders)
-        self.folderActive3 = QtGui.QCheckBox(self.folders)
-        self.folderActive4 = QtGui.QCheckBox(self.folders)
-        self.folderActive5 = QtGui.QCheckBox(self.folders)
-        self.folderActive6 = QtGui.QCheckBox(self.folders)
-        self.folderActive7 = QtGui.QCheckBox(self.folders)
-        self.folderActive8 = QtGui.QCheckBox(self.folders)
+        self.folderContentsUpper = QtGui.QWidget(self.folders)
+        self.folderContentsUpperLayout = QtGui.QGridLayout(self.folderContentsUpper)
+        self.folderIcon1 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderIcon2 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderIcon3 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderIcon4 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderIcon5 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderIcon6 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderIcon7 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderIcon8 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderHeader1 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderHeader2 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderHeader3 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderHeader4 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderHeader5 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderHeader6 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderHeader7 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderHeader8 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderName1 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderName2 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderName3 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderName4 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderName5 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderName6 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderName7 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderName8 = QtGui.QLabel(self.folderContentsUpper)
+        self.folderActive1 = QtGui.QCheckBox(self.folderContentsUpper)
+        self.folderActive2 = QtGui.QCheckBox(self.folderContentsUpper)
+        self.folderActive3 = QtGui.QCheckBox(self.folderContentsUpper)
+        self.folderActive4 = QtGui.QCheckBox(self.folderContentsUpper)
+        self.folderActive5 = QtGui.QCheckBox(self.folderContentsUpper)
+        self.folderActive6 = QtGui.QCheckBox(self.folderContentsUpper)
+        self.folderActive7 = QtGui.QCheckBox(self.folderContentsUpper)
+        self.folderActive8 = QtGui.QCheckBox(self.folderContentsUpper)
+        self.folderContentsUpperSpacer1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.folderContentsUpperSpacer2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.folderContentsUpperSpacer3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         
         #widget dictionary.
         secondPageWidgets = {
             "folderHeader": [self.folderHeader, 80, 20, 111, 51, "folderHeader", None],
-            "folderMenu": [self.folderMenu, 20, 90, 91, 41, "folderMenu", None],
-            "folderArrow": [self.folderArrow, 120, 90, 31, 41, "folderArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-            "folderThemes": [self.folderThemes, 150, 90, 91, 41, "folderThemes", None],
-            "folderCancel": [self.folderCancel, 20, 575, 110, 33, "folderCancel", None],
-            "folderForward": [self.folderForward, 730, 575, 111, 33, "folderForward", None],
-            "folderPrevious": [self.folderPrevious, 620, 575, 101, 33, "folderPrevious", None],
             "folderIcon": [self.folderIcon, 40, 150, 61, 61, "folderIcon", "/usr/share/turbulence/images/manjaro-grey/foldericons/folder.png"],
-            "folderDesc": [self.folderDesc, 110, 170, 591, 31, "folderDesc", None],
-            "folderSubHeader": [self.folderSubHeader, 50, 240, 81, 31, "folderSubHeader", None],
-            "folderIcon1": [self.folderIcon1, 60, 290, 81, 81, "folderIcon1", "/usr/share/turbulence/images/manjaro-grey/foldericons/desktop.png"],
-            "folderIcon2": [self.folderIcon2, 60, 440, 81, 81, "folderIcon2", "/usr/share/turbulence/images/manjaro-grey/foldericons/pictures.png"],
-            "folderIcon3": [self.folderIcon3, 270, 290, 81, 81, "folderIcon3", "/usr/share/turbulence/images/manjaro-grey/foldericons/documents.png"],
-            "folderIcon4": [self.folderIcon4, 690, 290, 81, 81, "folderIcon4", "/usr/share/turbulence/images/manjaro-grey/foldericons/music.png"],
-            "folderIcon5": [self.folderIcon5, 480, 290, 81, 81, "folderIcon5", "/usr/share/turbulence/images/manjaro-grey/foldericons/downloads.png"],
-            "folderIcon6": [self.folderIcon6, 270, 440, 81, 81, "folderIcon6", "/usr/share/turbulence/images/manjaro-grey/foldericons/public.png"],
-            "folderIcon7": [self.folderIcon7, 480, 440, 81, 81, "folderIcon7", "/usr/share/turbulence/images/manjaro-grey/foldericons/templates.png"],
-            "folderIcon8": [self.folderIcon8, 690, 440, 81, 81, "folderIcon8", "/usr/share/turbulence/images/manjaro-grey/foldericons/videos.png"],
-            "folderHeader1": [self.folderHeader1, 50, 371, 131, 21, "folderHeader1", None],
-            "folderHeader2": [self.folderHeader2, 260, 371, 131, 21, "folderHeader2", None],
-            "folderHeader3": [self.folderHeader3, 470, 370, 131, 21, "folderHeader3", None],
-            "folderHeader4": [self.folderHeader4, 680, 370, 131, 21, "folderHeader4", None],
-            "folderHeader5": [self.folderHeader5, 50, 520, 131, 21, "folderHeader5", None],
-            "folderHeader6": [self.folderHeader6, 260, 520, 131, 21, "folderHeader6", None],
-            "folderHeader7": [self.folderHeader7, 470, 520, 131, 21, "folderHeader7", None],
-            "folderHeader8": [self.folderHeader8, 680, 520, 131, 21, "folderHeader8", None],
-            "folderName1": [self.folderName1, 69, 270, 71, 21, "folderName1", None],
-            "folderName2": [self.folderName2, 265, 270, 91, 21, "folderName2", None],
-            "folderName3": [self.folderName3, 477, 270, 91, 21, "folderName3", None],
-            "folderName4": [self.folderName4, 708, 270, 91, 21, "folderName4", None],
-            "folderName5": [self.folderName5, 70, 420, 71, 21, "folderName5", None],
-            "folderName6": [self.folderName6, 288, 420, 51, 21, "folderName6", None],
-            "folderName7": [self.folderName7, 482, 420, 81, 21, "folderName7", None],
-            "folderName8": [self.folderName8, 702, 420, 61, 20, "folderName8", None],
-            "folderActive1": [self.folderActive1, 50, 390, 100, 21, "folderActive1", None],
-            "folderActive2": [self.folderActive2, 260, 390, 100, 21, "folderActive2", None],
-            "folderActive3": [self.folderActive3, 470, 390, 100, 21, "folderActive3", None],
-            "folderActive4": [self.folderActive4, 680, 390, 100, 21, "folderActive4", None],
-            "folderActive5": [self.folderActive5, 50, 540, 100, 21, "folderActive5", None],
-            "folderActive6": [self.folderActive6, 260, 540, 100, 21, "folderActive6", None],
-            "folderActive7": [self.folderActive7, 470, 540, 100, 21, "folderActive7", None],
-            "folderActive8": [self.folderActive8, 680, 540, 100, 21, "folderActive8", None]
+            "folderDesc": [self.folderDesc, 110, 170, 591, 31, "folderDesc", None]
+        }
+        
+        secondPageLayouts = {
+            "folderMenu": [self.folderMenu, 0, 39, None, None, True, True, False, False],
+            "folderArrow": [self.folderArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png", False],
+            "folderThemes": [self.folderThemes, 0, 39, None, None, True, True, False, False],
+            "folderForward": [self.folderForward, 0, 34, None, None, True, True, False, False],
+            "folderPrevious": [self.folderPrevious, 0, 34, None, None, True, True, False, False],
+            "folderCancel": [self.folderCancel, 0, 34, None, None, True, True, False, False],
+            "folderIcon1": [self.folderIcon1, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/desktop.png", True],
+            "folderIcon2": [self.folderIcon2, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/documents.png", True],
+            "folderIcon3": [self.folderIcon3, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/downloads.png", True],
+            "folderIcon4": [self.folderIcon4, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/music.png", True],
+            "folderIcon5": [self.folderIcon5, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/pictures.png", True],
+            "folderIcon6": [self.folderIcon6, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/public.png", True],
+            "folderIcon7": [self.folderIcon7, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/templates.png", True],
+            "folderIcon8": [self.folderIcon8, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/videos.png", True],
+            "folderHeader1": [self.folderHeader1, None, None, None, None, False, False, False, False],
+            "folderHeader2": [self.folderHeader2, None, None, None, None, False, False, False, False],
+            "folderHeader3": [self.folderHeader3, None, None, None, None, False, False, False, False],
+            "folderHeader4": [self.folderHeader4, None, None, None, None, False, False, False, False],
+            "folderHeader5": [self.folderHeader5, None, None, None, None, False, False, False, False],
+            "folderHeader6": [self.folderHeader6, None, None, None, None, False, False, False, False],
+            "folderHeader7": [self.folderHeader7, None, None, None, None, False, False, False, False],
+            "folderHeader8": [self.folderHeader8, None, None, None, None, False, False, False, False],
+            "folderName1": [self.folderName1, None, None, None, None, False, False, False, True],
+            "folderName2": [self.folderName2, None, None, None, None, False, False, False, True],
+            "folderName3": [self.folderName3, None, None, None, None, False, False, False, True],
+            "folderName4": [self.folderName4, None, None, None, None, False, False, False, True],
+            "folderName5": [self.folderName5, None, None, None, None, False, False, False, True],
+            "folderName6": [self.folderName6, None, None, None, None, False, False, False, True],
+            "folderName7": [self.folderName7, None, None, None, None, False, False, False, True],
+            "folderName8": [self.folderName8, None, None, None, None, False, False, False, True],
+            "folderActive1": [self.folderActive1, None, None, None, None, False, False, False, False],
+            "folderActive2": [self.folderActive2, None, None, None, None, False, False, False, False],
+            "folderActive3": [self.folderActive3, None, None, None, None, False, False, False, False],
+            "folderActive4": [self.folderActive4, None, None, None, None, False, False, False, False],
+            "folderActive5": [self.folderActive5, None, None, None, None, False, False, False, False],
+            "folderActive6": [self.folderActive6, None, None, None, None, False, False, False, False],
+            "folderActive7": [self.folderActive7, None, None, None, None, False, False, False, False],
+            "folderActive8": [self.folderActive8, None, None, None, None, False, False, False, False]
         }
         
         #defines all the widget parameters
         for widgetName, widgetSettings in secondPageWidgets.items():
             widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
+           
+        for widgetName, widgetSettings in secondPageLayouts.items():
+            layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7], widgetSettings[8])
         
         #defines the custom settings
-        self.folderMenu.setFlat(True)
-        self.folderThemes.setFlat(True)
-        self.folderCancel.setFlat(True)
-        self.folderForward.setFlat(True)
-        self.folderPrevious.setFlat(True)
-        
-        self.folderMenu.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.folderThemes.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.folderCancel.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.folderForward.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.folderPrevious.setFocusPolicy(QtCore.Qt.NoFocus)
-        
         self.folderPrevious.setIcon(previousIcon)
         self.folderCancel.setIcon(cancelIcon)
         self.folderForward.setIcon(forwardIcon)
         self.folderPrevious.setIconSize(QtCore.QSize(28, 30))
         self.folderForward.setIconSize(QtCore.QSize(28, 30))
         self.folderCancel.setIconSize(QtCore.QSize(16, 16))
+        
+        self.folderMenuContainerHLayout.addWidget(self.folderMenu)
+        self.folderMenuContainerHLayout.addWidget(self.folderArrow)
+        self.folderMenuContainerHLayout.addWidget(self.folderThemes)
+        self.folderMenuContainerHLayout.addItem(self.folderMenuSpacer)
+        
+        self.folderFooterContainerHLayout.addWidget(self.folderCancel)
+        self.folderFooterContainerHLayout.addItem(self.folderFooterSpacer)
+        self.folderFooterContainerHLayout.addWidget(self.folderPrevious)
+        self.folderFooterContainerHLayout.addWidget(self.folderForward)
+        
+        self.folderContentsUpperLayout.addWidget(self.folderName1, 0, 0, 1, 1)
+        self.folderContentsUpperLayout.addItem(self.folderContentsUpperSpacer1, 0, 1, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderName2, 0, 2, 1, 1)
+        self.folderContentsUpperLayout.addItem(self.folderContentsUpperSpacer2, 0, 3, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderName3, 0, 4, 1, 1)
+        self.folderContentsUpperLayout.addItem(self.folderContentsUpperSpacer3, 0, 5, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderName4, 0, 6, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderIcon1, 1, 0, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderIcon2, 1, 2, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderIcon3, 1, 4, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderIcon4, 1, 6, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderHeader1, 2, 0, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderHeader2, 2, 2, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderHeader3, 2, 4, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderHeader4, 2, 6, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderActive1, 3, 0, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderActive2, 3, 2, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderActive3, 3, 4, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderActive4, 3, 6, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderName5, 4, 0, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderName6, 4, 2, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderName7, 4, 4, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderName8, 4, 6, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderIcon5, 5, 0, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderIcon6, 5, 2, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderIcon7, 5, 4, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderIcon8, 5, 6, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderHeader5, 6, 0, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderHeader6, 6, 2, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderHeader7, 6, 4, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderHeader8, 6, 6, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderActive5, 7, 0, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderActive6, 7, 2, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderActive7, 7, 4, 1, 1)
+        self.folderContentsUpperLayout.addWidget(self.folderActive8, 7, 6, 1, 1)
+        
+        self.folderMenuContainer.setGeometry(QtCore.QRect(20, 87, 511, 43))
+        self.folderFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
+        self.folderContentsUpper.setGeometry(QtCore.QRect(60, 230, 730, 320))
         
         #adds the second page
         self.stackedWidget.addWidget(self.folders)

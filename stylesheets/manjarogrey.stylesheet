@@ -71,6 +71,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 20px 0px 20px;
 }
 #folderMenu:hover {
     border: 1px solid #49525b;
@@ -80,6 +81,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 20px 0px 20px;
 }
 #folderThemes:hover {
     border: 1px solid #49525b;
@@ -88,6 +90,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #folderCancel:hover {
     border: 1px solid #49525b;
@@ -96,6 +99,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #folderForward:hover {
     border: 1px solid #49525b;
@@ -104,6 +108,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #folderPrevious:hover {
     border: 1px solid #49525b;
