@@ -219,7 +219,6 @@ class Ui_MainWindow(QtCore.QObject):
         self.folderPrevious = QtGui.QPushButton(self.folderFooterContainer)
         self.folderIcon = QtGui.QLabel(self.folders)
         self.folderDesc = QtGui.QLabel(self.folders)
-        self.folderSubHeader = QtGui.QLabel(self.folders)
         self.folderContentsUpper = QtGui.QWidget(self.folders)
         self.folderContentsUpperLayout = QtGui.QGridLayout(self.folderContentsUpper)
         self.folderIcon1 = QtGui.QLabel(self.folderContentsUpper)
@@ -390,7 +389,6 @@ class Ui_MainWindow(QtCore.QObject):
         self.folderForward.setText(_translate("MainWindow", "Forward", None))
         self.folderPrevious.setText(_translate("MainWindow", "Previous", None))
         self.folderDesc.setText(_translate("MainWindow", "Here, you can choose which folders you want in your home directory. You have a choice from some of the most commonly used folders.", None))
-        self.folderSubHeader.setText("Folders")
         self.folderHeader1.setText(_translate("MainWindow", "Status: Deactivated", None))
         self.folderHeader2.setText(_translate("MainWindow", "Status: Deactivated", None))
         self.folderHeader3.setText(_translate("MainWindow", "Status: Deactivated", None))
@@ -418,74 +416,143 @@ class Ui_MainWindow(QtCore.QObject):
         
         
         #Checks if Kwin is running, and if so displays the kwin themer
-        if kwinStatus:
+        if kwinStatus: 
+            #Starts the kwin page in the stacked widget
             self.Theme = QtGui.QWidget()
             self.Theme.setObjectName(_fromUtf8("Theme"))
         
             createStaticWidgets(self.Theme)
             self.themeHeader = QtGui.QLabel(self.Theme)
-            self.themeMenu = QtGui.QPushButton(self.Theme)
-            self.themeArrow = QtGui.QLabel(self.Theme)
-            self.themeMenuWallpapers = QtGui.QPushButton(self.Theme)
+            self.themeMenuContainer = QtGui.QWidget(self.Theme)
+            self.themeMenuContainerHLayout = QtGui.QHBoxLayout(self.themeMenuContainer)
+            self.themeMenu = QtGui.QPushButton(self.themeMenuContainer)
+            self.themeArrow = QtGui.QLabel(self.themeMenuContainer)
+            self.themeMenuWallpapers = QtGui.QPushButton(self.themeMenuContainer)
+            self.themeMenuSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.themeFooterContainer = QtGui.QWidget(self.Theme)
+            self.themeFooterContainerHLayout = QtGui.QHBoxLayout(self.themeFooterContainer)
             self.themeCancel = QtGui.QPushButton(self.Theme)
-            self.themeForward = QtGui.QPushButton(self.Theme)
+            self.themeFooterSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
             self.themePrevious = QtGui.QPushButton(self.Theme)
+            self.themeForward = QtGui.QPushButton(self.Theme)
             self.themeIcon = QtGui.QLabel(self.Theme)
             self.themeDesc = QtGui.QLabel(self.Theme)
-            self.themeHeaderHead = QtGui.QLabel(self.Theme)
-            self.themePreview1 = QtGui.QLabel(self.Theme)
-            self.themePreview2 = QtGui.QLabel(self.Theme)
-            self.themePreview3 = QtGui.QLabel(self.Theme)
-            self.themePreview4 = QtGui.QLabel(self.Theme)
-            self.themeRadio1 = QtGui.QRadioButton(self.Theme)
-            self.themeRadio2 = QtGui.QRadioButton(self.Theme)
-            self.themeRadio3 = QtGui.QRadioButton(self.Theme)
-            self.themeRadio4 = QtGui.QRadioButton(self.Theme)
+            self.themeContentsContainer = QtGui.QWidget(self.Theme)
+            self.themeContentsContainerLayout = QtGui.QGridLayout(self.themeContentsContainer)
+            self.themePreviewContainer1 = QtGui.QWidget(self.Theme)
+            self.themePreviewContainerLayout1 = QtGui.QHBoxLayout(self.themePreviewContainer1)
+            self.themePreviewContainer2 = QtGui.QWidget(self.Theme)
+            self.themePreviewContainerLayout2 = QtGui.QHBoxLayout(self.themePreviewContainer2)
+            self.themePreviewContainer3 = QtGui.QWidget(self.Theme)
+            self.themePreviewContainerLayout3 = QtGui.QHBoxLayout(self.themePreviewContainer3)
+            self.themePreviewContainer4 = QtGui.QWidget(self.Theme)
+            self.themePreviewContainerLayout4 = QtGui.QHBoxLayout(self.themePreviewContainer4)
+            self.themePreview1 = QtGui.QLabel(self.themeContentsContainer)
+            self.themePreview2 = QtGui.QLabel(self.themeContentsContainer)
+            self.themePreview3 = QtGui.QLabel(self.themeContentsContainer)
+            self.themePreview4 = QtGui.QLabel(self.themeContentsContainer)
+            self.themeRadio1 = QtGui.QRadioButton(self.themePreviewContainer1)
+            self.themeRadio2 = QtGui.QRadioButton(self.themePreviewContainer2)
+            self.themeRadio3 = QtGui.QRadioButton(self.themePreviewContainer3)
+            self.themeRadio4 = QtGui.QRadioButton(self.themePreviewContainer4)
+            self.themeContentsRadioPush1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.themeContentsRadioPush2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.themeContentsRadioPush3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.themeContentsRadioPush4 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.themeContentsRadioPush5 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.themeContentsRadioPush6 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.themeContentsRadioPush7 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.themeContentsRadioPush8 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.themeContentsPush1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.themeContentsPush2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.themeContentsPush3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.themeContentsPush4 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+            self.themeContentsPush5 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+            self.themeContentsPush6 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         
             thirdPageWidgets = {
-                "themeHeader": [self.themeHeader, 80, 20, 111, 51, "themeHeader", None],
-                "themeMenu": [self.themeMenu, 20, 90, 91, 41, "themeMenu", None],
-                "themeArrow": [self.themeArrow, 120, 90, 31, 41, "themeArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-                "themeMenuWallpapers": [self.themeMenuWallpapers, 150, 90, 111, 41, "themeMenuWallpapers", None],
-                "themeCancel": [self.themeCancel, 20, 575, 110, 33, "themeCancel", None],
-                "themeForward": [self.themeForward, 730, 575, 111, 33, "themeForward", None],
-                "themePrevious": [self.themePrevious, 620, 575, 101, 33, "themePrevious", None],
+                "themeHeader": [self.themeHeader, 80, 20, 600, 51, "themeHeader", None],
                 "themeIcon": [self.themeIcon, 40, 160, 61, 61, "themeIcon", "/usr/share/turbulence/images/manjaro-grey/themes/theme.png"],
                 "themeDesc": [self.themeDesc, 110, 167, 591, 51, "themeDesc", None],
-                "themeHeaderHead": [self.themeHeaderHead, 50, 240, 91, 31, "themeHeaderHead", None],
-                "themePreview1": [self.themePreview1, 90, 280, 241, 81, "themePreview1", "/usr/share/turbulence/images/manjaro-grey/themes/ozone.png"],
-                "themePreview2": [self.themePreview2, 510, 280, 241, 81, "themePreview2", "/usr/share/turbulence/images/manjaro-grey/themes/cupertino-ish.png"],
-                "themePreview3": [self.themePreview3, 90, 410, 241, 81, "themePreview3", "/usr/share/turbulence/images/manjaro-grey/themes/oxygen.png"],
-                "themePreview4": [self.themePreview4, 510, 410, 241, 81, "themePreview4", "/usr/share/turbulence/images/manjaro-grey/themes/plastik.png"],
-                "themeRadio1": [self.themeRadio1, 170, 370, 81, 21, "themeRadio1", None],
-                "themeRadio2": [self.themeRadio2, 566, 370, 131, 21, "themeRadio2", None],
-                "themeRadio3": [self.themeRadio3, 167, 500, 91, 21, "themeRadio3", None],
-                "themeRadio4": [self.themeRadio4, 591, 510, 91, 21, "themeRadio4", None]
-             }
+            }
+             
+            thirdPageLayouts = {
+                "themeMenu": [self.themeMenu, 0, 39, None, None, True, True, False, False],
+                "themeArrow": [self.themeArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png", False],
+                "themeMenuWallpapers": [self.themeMenuWallpapers, 0, 39, None, None, True, True, False, False],
+                "themeForward": [self.themeForward, 0, 34, None, None, True, True, False, False],
+                "themePrevious": [self.themePrevious, 0, 34, None, None, True, True, False, False],
+                "themeCancel": [self.themeCancel, 0, 34, None, None, True, True, False, False],
+                "themePreview1": [self.themePreview1, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/themes/ozone.png", True],
+                "themePreview2": [self.themePreview2, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/themes/cupertino-ish.png", True],
+                "themePreview3": [self.themePreview3, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/themes/oxygen.png", True],
+                "themePreview4": [self.themePreview4, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/themes/plastik.png", True],
+                "themeRadio1": [self.themeRadio1, None, None, None, None, False, False, False, False],
+                "themeRadio2": [self.themeRadio2, None, None, None, None, False, False, False, False],
+                "themeRadio3": [self.themeRadio3, None, None, None, None, False, False, False, False],
+                "themeRadio4": [self.themeRadio4, None, None, None, None, False, False, False, False]
+                
+            }
         
             #defines all the widget parameters
             for widgetName, widgetSettings in thirdPageWidgets.items():
                 widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
         
+            for widgetName, widgetSettings in thirdPageLayouts.items():
+                layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7], widgetSettings[8])
+        
             #Defines the custom settings
-            self.themeMenu.setFlat(True)
-            self.themeMenuWallpapers.setFlat(True)
-            self.themeCancel.setFlat(True)
-            self.themeForward.setFlat(True)
-            self.themePrevious.setFlat(True)
-        
-            self.themeMenu.setFocusPolicy(QtCore.Qt.NoFocus)
-            self.themeMenuWallpapers.setFocusPolicy(QtCore.Qt.NoFocus)
-            self.themeCancel.setFocusPolicy(QtCore.Qt.NoFocus)
-            self.themeForward.setFocusPolicy(QtCore.Qt.NoFocus)
-            self.themePrevious.setFocusPolicy(QtCore.Qt.NoFocus)
-        
             self.themeCancel.setIcon(cancelIcon)
             self.themeForward.setIcon(forwardIcon)
             self.themePrevious.setIcon(previousIcon)
             self.themeForward.setIconSize(QtCore.QSize(28, 30))
             self.themePrevious.setIconSize(QtCore.QSize(28, 30))
             self.themeCancel.setIconSize(QtCore.QSize(16, 16))
+            
+            self.themeDesc.setWordWrap(True)
+        
+            self.themeMenuContainerHLayout.addWidget(self.themeMenu)
+            self.themeMenuContainerHLayout.addWidget(self.themeArrow)
+            self.themeMenuContainerHLayout.addWidget(self.themeMenuWallpapers)
+            self.themeMenuContainerHLayout.addItem(self.folderMenuSpacer)
+            
+            self.themeFooterContainerHLayout.addWidget(self.themeCancel)
+            self.themeFooterContainerHLayout.addItem(self.themeFooterSpacer)
+            self.themeFooterContainerHLayout.addWidget(self.themePrevious)
+            self.themeFooterContainerHLayout.addWidget(self.themeForward)
+            
+            self.themePreviewContainerLayout1.addItem(self.themeContentsRadioPush1)
+            self.themePreviewContainerLayout1.addWidget(self.themeRadio1)
+            self.themePreviewContainerLayout1.addItem(self.themeContentsRadioPush2)
+            self.themePreviewContainerLayout2.addItem(self.themeContentsRadioPush3)
+            self.themePreviewContainerLayout2.addWidget(self.themeRadio2)
+            self.themePreviewContainerLayout2.addItem(self.themeContentsRadioPush4)
+            self.themePreviewContainerLayout3.addItem(self.themeContentsRadioPush5)
+            self.themePreviewContainerLayout3.addWidget(self.themeRadio3)
+            self.themePreviewContainerLayout3.addItem(self.themeContentsRadioPush6)
+            self.themePreviewContainerLayout4.addItem(self.themeContentsRadioPush7)
+            self.themePreviewContainerLayout4.addWidget(self.themeRadio4)
+            self.themePreviewContainerLayout4.addItem(self.themeContentsRadioPush8)
+            
+            self.themeContentsContainerLayout.addItem(self.themeContentsPush4, 0, 3, 1, 1)
+            self.themeContentsContainerLayout.addItem(self.themeContentsPush1, 1, 0, 1, 1)
+            self.themeContentsContainerLayout.addWidget(self.themePreview1, 1, 1, 1, 1)
+            self.themeContentsContainerLayout.addItem(self.themeContentsPush2, 1, 2, 1, 1)
+            self.themeContentsContainerLayout.addWidget(self.themePreview2, 1, 3, 1, 1)
+            self.themeContentsContainerLayout.addItem(self.themeContentsPush3, 1, 4, 1, 1)
+            self.themeContentsContainerLayout.addWidget(self.themePreviewContainer1, 2, 1, 1, 1)
+            self.themeContentsContainerLayout.addWidget(self.themePreviewContainer2, 2, 3, 1, 1)
+            self.themeContentsContainerLayout.addItem(self.themeContentsPush5, 3, 2, 1, 1)
+            self.themeContentsContainerLayout.addWidget(self.themePreview3, 4, 1, 1, 1)
+            self.themeContentsContainerLayout.addWidget(self.themePreview4, 4, 3, 1, 1)
+            self.themeContentsContainerLayout.addWidget(self.themePreviewContainer3, 5, 1, 1, 1)
+            self.themeContentsContainerLayout.addWidget(self.themePreviewContainer4, 5, 3, 1, 1)
+            self.themeContentsContainerLayout.addItem(self.themeContentsPush6, 6, 3, 1, 1)
+            
+            
+            self.themeMenuContainer.setGeometry(QtCore.QRect(20, 87, 511, 43))
+            self.themeFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
+            self.themeContentsContainer.setGeometry(QtCore.QRect(10, 230, 840, 340))
         
             #Adds the third page
             self.stackedWidget.addWidget(self.Theme)
@@ -503,15 +570,14 @@ class Ui_MainWindow(QtCore.QObject):
             self.themeCancel.setText(_translate("MainWindow", "Cancel", None))
             self.themeForward.setText(_translate("MainWindow", "Forward", None))
             self.themePrevious.setText(_translate("MainWindow", "Previous", None))
-            self.themeDesc.setText(_translate("MainWindow", "Here you can choose what type of theme you want for your window decorations.\n", None))
-            self.themeHeaderHead.setText("Themes")
+            self.themeDesc.setText(_translate("MainWindow", "Here you can choose what type of theme you want for your window decorations.", None))
             self.themeRadio1.setText("Ozone")
             self.themeRadio2.setText("Cuptertino-ish")
             self.themeRadio3.setText("Oxygen")
             self.themeRadio4.setText("Plastik")
              
         if tintStatus:
-            #Starts the third page in the stacked widget.
+            #Starts the tint page in the stacked widget.
             self.Tint = QtGui.QWidget()
             self.Tint.setObjectName(_fromUtf8("Tint"))
         
