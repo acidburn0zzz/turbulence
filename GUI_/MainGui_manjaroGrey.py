@@ -261,7 +261,7 @@ class Ui_MainWindow(QtCore.QObject):
         secondPageWidgets = {
             "folderHeader": [self.folderHeader, 80, 20, 600, 51, "folderHeader", None],
             "folderIcon": [self.folderIcon, 40, 150, 61, 61, "folderIcon", "/usr/share/turbulence/images/manjaro-grey/foldericons/folder.png"],
-            "folderDesc": [self.folderDesc, 110, 160, 590, 50, "folderDesc", None]
+            "folderDesc": [self.folderDesc, 110, 167, 591, 51, "folderDesc", None]
         }
         
         secondPageLayouts = {
@@ -514,7 +514,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.themeMenuContainerHLayout.addWidget(self.themeMenu)
             self.themeMenuContainerHLayout.addWidget(self.themeArrow)
             self.themeMenuContainerHLayout.addWidget(self.themeMenuWallpapers)
-            self.themeMenuContainerHLayout.addItem(self.folderMenuSpacer)
+            self.themeMenuContainerHLayout.addItem(self.themeMenuSpacer)
             
             self.themeFooterContainerHLayout.addWidget(self.themeCancel)
             self.themeFooterContainerHLayout.addItem(self.themeFooterSpacer)
@@ -549,7 +549,6 @@ class Ui_MainWindow(QtCore.QObject):
             self.themeContentsContainerLayout.addWidget(self.themePreviewContainer4, 5, 3, 1, 1)
             self.themeContentsContainerLayout.addItem(self.themeContentsPush6, 6, 3, 1, 1)
             
-            
             self.themeMenuContainer.setGeometry(QtCore.QRect(20, 87, 511, 43))
             self.themeFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
             self.themeContentsContainer.setGeometry(QtCore.QRect(10, 230, 840, 340))
@@ -583,68 +582,134 @@ class Ui_MainWindow(QtCore.QObject):
         
             createStaticWidgets(self.Tint)
             self.tintHeader = QtGui.QLabel(self.Tint)
-            self.tintMenu = QtGui.QPushButton(self.Tint)
-            self.tintArrow = QtGui.QLabel(self.Tint)
-            self.tintMenuWallpapers = QtGui.QPushButton(self.Tint)
-            self.tintCancel = QtGui.QPushButton(self.Tint)
-            self.tintForward = QtGui.QPushButton(self.Tint)
-            self.tintPrevious = QtGui.QPushButton(self.Tint)
+            self.tintMenuContainer = QtGui.QWidget(self.Tint)
+            self.tintMenuContainerHLayout = QtGui.QHBoxLayout(self.tintMenuContainer)
+            self.tintMenu = QtGui.QPushButton(self.tintMenuContainer)
+            self.tintArrow = QtGui.QLabel(self.tintMenuContainer)
+            self.tintMenuWallpapers = QtGui.QPushButton(self.tintMenuContainer)
+            self.tintMenuSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.tintFooterContainer = QtGui.QWidget(self.Tint)
+            self.tintFooterContainerHLayout = QtGui.QHBoxLayout(self.tintFooterContainer)
+            self.tintCancel = QtGui.QPushButton(self.tintFooterContainer)
+            self.tintFooterSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.tintPrevious = QtGui.QPushButton(self.tintFooterContainer)
+            self.tintForward = QtGui.QPushButton(self.tintFooterContainer)
             self.tintPositionIcon = QtGui.QLabel(self.Tint)
             self.tintPositionDesc = QtGui.QLabel(self.Tint)
-            self.tintPositionHeader = QtGui.QLabel(self.Tint)
-            self.tintPosition1 = QtGui.QLabel(self.Tint)
-            self.tintPosition2 = QtGui.QLabel(self.Tint)
-            self.tintPosition3 = QtGui.QLabel(self.Tint)
-            self.tintPosition4 = QtGui.QLabel(self.Tint)
-            self.tintPositionRadio1 = QtGui.QRadioButton(self.Tint)
-            self.tintPositionRadio2 = QtGui.QRadioButton(self.Tint)
-            self.tintPositionRadio3 = QtGui.QRadioButton(self.Tint)
-            self.tintPositionRadio4 = QtGui.QRadioButton(self.Tint)
+            self.tintContentsContainer = QtGui.QWidget(self.Tint)
+            self.tintContentsContainerLayout = QtGui.QGridLayout(self.tintContentsContainer)
+            self.tintPreviewContainer1 = QtGui.QWidget(self.Tint)
+            self.tintPreviewContainerLayout1 = QtGui.QHBoxLayout(self.tintPreviewContainer1)
+            self.tintPreviewContainer2 = QtGui.QWidget(self.Tint)
+            self.tintPreviewContainerLayout2 = QtGui.QHBoxLayout(self.tintPreviewContainer2)
+            self.tintPreviewContainer3 = QtGui.QWidget(self.Tint)
+            self.tintPreviewContainerLayout3 = QtGui.QHBoxLayout(self.tintPreviewContainer3)
+            self.tintPreviewContainer4 = QtGui.QWidget(self.Tint)
+            self.tintPreviewContainerLayout4 = QtGui.QHBoxLayout(self.tintPreviewContainer4)
+            self.tintPosition1 = QtGui.QLabel(self.tintContentsContainer)
+            self.tintPosition2 = QtGui.QLabel(self.tintContentsContainer)
+            self.tintPosition3 = QtGui.QLabel(self.tintContentsContainer)
+            self.tintPosition4 = QtGui.QLabel(self.tintContentsContainer)
+            self.tintPositionRadio1 = QtGui.QRadioButton(self.tintPreviewContainer1)
+            self.tintPositionRadio2 = QtGui.QRadioButton(self.tintPreviewContainer2)
+            self.tintPositionRadio3 = QtGui.QRadioButton(self.tintPreviewContainer3)
+            self.tintPositionRadio4 = QtGui.QRadioButton(self.tintPreviewContainer4)
+            self.tintContentsRadioPush1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.tintContentsRadioPush2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.tintContentsRadioPush3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.tintContentsRadioPush4 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.tintContentsRadioPush5 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.tintContentsRadioPush6 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.tintContentsRadioPush7 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.tintContentsRadioPush8 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.tintContentsPush1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.tintContentsPush2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.tintContentsPush3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+            self.tintContentsPush4 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+            self.tintContentsPush5 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+            self.tintContentsPush6 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         
             thirdPageWidgets = {
-                "tintHeader": [self.tintHeader, 80, 20, 111, 51, "tintHeader", None],
-                "tintMenu": [self.tintMenu, 20, 90, 81, 41, "tintMenu", None],
-                "tintArrow": [self.tintArrow, 120, 90, 31, 41, "tintArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-                "tintMenuWallpapers": [self.tintMenuWallpapers, 150, 90, 111, 41, "tintMenuWallpapers", None],
-                "tintCancel": [self.tintCancel, 20, 575, 110, 33, "tintCancel", None],
-                "tintForward": [self.tintForward, 730, 575, 111, 33, "tintForward", None],
-                "tintPrevious": [self.tintPrevious, 620, 575, 101, 33, "tintPrevious", None],
+                "tintHeader": [self.tintHeader, 80, 20, 600, 51, "tintHeader", None],
                 "tintPositionIcon": [self.tintPositionIcon, 40, 160, 61, 61, "tintPositionIcon", "/usr/share/turbulence/images/manjaro-grey/tint-previews/position.png"],
-                "tintPositionDesc": [self.tintPositionDesc, 110, 168, 591, 51, "tintPositionDesc", None],
-                "tintPositionHeader": [self.tintPositionHeader, 50, 240, 91, 31, "tintPositionHeader", None],
-                "tintPosition1": [self.tintPosition1, 90, 280, 241, 83, "tintPosition1", "/usr/share/turbulence/images/manjaro-grey/tint-previews/top.png"],
-                "tintPosition2": [self.tintPosition2, 530, 280, 241, 83, "tintPosition2", "/usr/share/turbulence/images/manjaro-grey/tint-previews/right.png"],
-                "tintPosition3": [self.tintPosition3, 90, 410, 241, 83, "tintPosition3", "/usr/share/turbulence/images/manjaro-grey/tint-previews/bottom.png"],
-                "tintPosition4": [self.tintPosition4, 530, 410, 241, 83, "tintPosition4", "/usr/share/turbulence/images/manjaro-grey/tint-previews/left.png"],
-                "tintPositionRadio1": [self.tintPositionRadio1, 165, 370, 131, 21, "tintPositionRadio1", None],
-                "tintPositionRadio2": [self.tintPositionRadio2, 600, 370, 131, 21, "tintPositionRadio2", None],
-                "tintPositionRadio3": [self.tintPositionRadio3, 165, 500, 131, 21, "tintPositionRadio3", None],
-                "tintPositionRadio4": [self.tintPositionRadio4, 600, 500, 131, 21, "tintPositionRadio4", None]
+                "tintPositionDesc": [self.tintPositionDesc, 110, 167, 591, 51, "tintPositionDesc", None]
+            }
+        
+            thirdPageLayouts  = {
+                "tintMenu": [self.tintMenu, 0, 39, None, None, True, True, False, False],
+                "tintArrow": [self.tintArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png", False],
+                "tintMenuWallpapers": [self.tintMenuWallpapers, 0, 39, None, None, True, True, False, False],
+                "tintForward": [self.tintForward, 0, 34, None, None, True, True, False, False],
+                "tintPrevious": [self.tintPrevious, 0, 34, None, None, True, True, False, False],
+                "tintCancel": [self.tintCancel, 0, 34, None, None, True, True, False, False],
+                "tintPosition1": [self.tintPosition1, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/tint-previews/top.png", True],
+                "tintPosition2": [self.tintPosition2, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/tint-previews/right.png", True],
+                "tintPosition3": [self.tintPosition3, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/tint-previews/bottom.png", True],
+                "tintPosition4": [self.tintPosition4, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/tint-previews/left.png", True],
+                "tintPositionRadio1": [self.tintPositionRadio1, None, None, None, None, False, False, False, False],
+                "tintPositionRadio2": [self.tintPositionRadio2, None, None, None, None, False, False, False, False],
+                "tintPositionRadio3": [self.tintPositionRadio3, None, None, None, None, False, False, False, False],
+                "tintPositionRadio4": [self.tintPositionRadio4, None, None, None, None, False, False, False, False]
             }
         
             #defines all the widget parameters
             for widgetName, widgetSettings in thirdPageWidgets.items():
                 widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
         
-            #Defines the custom settings
-            self.tintMenu.setFlat(True)
-            self.tintMenuWallpapers.setFlat(True)
-            self.tintCancel.setFlat(True)
-            self.tintForward.setFlat(True)
-            self.tintPrevious.setFlat(True)
-         
-            self.tintMenu.setFocusPolicy(QtCore.Qt.NoFocus)
-            self.tintMenuWallpapers.setFocusPolicy(QtCore.Qt.NoFocus)
-            self.tintCancel.setFocusPolicy(QtCore.Qt.NoFocus)
-            self.tintForward.setFocusPolicy(QtCore.Qt.NoFocus)
-            self.tintPrevious.setFocusPolicy(QtCore.Qt.NoFocus)
+            for widgetName, widgetSettings in thirdPageLayouts.items():
+                layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7], widgetSettings[8])
         
+            #Defines the custom settings
             self.tintCancel.setIcon(cancelIcon)
             self.tintForward.setIcon(forwardIcon)
             self.tintPrevious.setIcon(previousIcon)
             self.tintCancel.setIconSize(QtCore.QSize(16, 16))
             self.tintForward.setIconSize(QtCore.QSize(28, 30))
             self.tintPrevious.setIconSize(QtCore.QSize(28, 30))
+            
+            self.tintPositionDesc.setWordWrap(True)
+            
+            self.tintMenuContainerHLayout.addWidget(self.tintMenu)
+            self.tintMenuContainerHLayout.addWidget(self.tintArrow)
+            self.tintMenuContainerHLayout.addWidget(self.tintMenuWallpapers)
+            self.tintMenuContainerHLayout.addItem(self.tintMenuSpacer)
+            
+            self.tintFooterContainerHLayout.addWidget(self.tintCancel)
+            self.tintFooterContainerHLayout.addItem(self.tintFooterSpacer)
+            self.tintFooterContainerHLayout.addWidget(self.tintPrevious)
+            self.tintFooterContainerHLayout.addWidget(self.tintForward)
+            
+            self.tintPreviewContainerLayout1.addItem(self.tintContentsRadioPush1)
+            self.tintPreviewContainerLayout1.addWidget(self.tintPositionRadio1)
+            self.tintPreviewContainerLayout1.addItem(self.tintContentsRadioPush2)
+            self.tintPreviewContainerLayout2.addItem(self.tintContentsRadioPush3)
+            self.tintPreviewContainerLayout2.addWidget(self.tintPositionRadio2)
+            self.tintPreviewContainerLayout2.addItem(self.tintContentsRadioPush4)
+            self.tintPreviewContainerLayout3.addItem(self.tintContentsRadioPush5)
+            self.tintPreviewContainerLayout3.addWidget(self.tintPositionRadio3)
+            self.tintPreviewContainerLayout3.addItem(self.tintContentsRadioPush6)
+            self.tintPreviewContainerLayout4.addItem(self.tintContentsRadioPush7)
+            self.tintPreviewContainerLayout4.addWidget(self.tintPositionRadio4)
+            self.tintPreviewContainerLayout4.addItem(self.tintContentsRadioPush8)
+            
+            self.tintContentsContainerLayout.addItem(self.tintContentsPush4, 0, 3, 1, 1)
+            self.tintContentsContainerLayout.addItem(self.tintContentsPush1, 1, 0, 1, 1)
+            self.tintContentsContainerLayout.addWidget(self.tintPosition1, 1, 1, 1, 1)
+            self.tintContentsContainerLayout.addItem(self.tintContentsPush2, 1, 2, 1, 1)
+            self.tintContentsContainerLayout.addWidget(self.tintPosition2, 1, 3, 1, 1)
+            self.tintContentsContainerLayout.addItem(self.tintContentsPush3, 1, 4, 1, 1)
+            self.tintContentsContainerLayout.addWidget(self.tintPreviewContainer1, 2, 1, 1, 1)
+            self.tintContentsContainerLayout.addWidget(self.tintPreviewContainer2, 2, 3, 1, 1)
+            self.tintContentsContainerLayout.addItem(self.tintContentsPush5, 3, 2, 1, 1)
+            self.tintContentsContainerLayout.addWidget(self.tintPosition3, 4, 1, 1, 1)
+            self.tintContentsContainerLayout.addWidget(self.tintPosition4, 4, 3, 1, 1)
+            self.tintContentsContainerLayout.addWidget(self.tintPreviewContainer3, 5, 1, 1, 1)
+            self.tintContentsContainerLayout.addWidget(self.tintPreviewContainer4, 5, 3, 1, 1)
+            self.tintContentsContainerLayout.addItem(self.tintContentsPush6, 6, 3, 1, 1)
+            
+            self.tintMenuContainer.setGeometry(QtCore.QRect(20, 87, 511, 43))
+            self.tintFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
+            self.tintContentsContainer.setGeometry(QtCore.QRect(10, 230, 840, 340))
         
             #Adds the third page
             self.stackedWidget.addWidget(self.Tint)
@@ -662,8 +727,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.tintCancel.setText(_translate("MainWindow", "Cancel", None))
             self.tintForward.setText(_translate("MainWindow", "Forward", None))
             self.tintPrevious.setText(_translate("MainWindow", "Previous", None))
-            self.tintPositionDesc.setText(_translate("MainWindow", "Here you can choose what position you want of your Tint 2 panel.\n", None))
-            self.tintPositionHeader.setText(_translate("MainWindow", "Tint 2", None))
+            self.tintPositionDesc.setText(_translate("MainWindow", "Here you can choose what position you want of your Tint 2 panel.", None))
             self.tintPositionRadio1.setText(_translate("MainWindow", "Top", None))
             self.tintPositionRadio2.setText(_translate("MainWindow", "Right", None))
             self.tintPositionRadio3.setText(_translate("MainWindow", "Bottom", None))

@@ -369,6 +369,7 @@
     font: 13pt "Sans Serif";
     color: rgb(220, 220, 220);
     border: none;
+    padding:0px 20px 0px 20px;
 }
 #tintMenu:hover {
     border: 1px solid #49525b;
@@ -377,6 +378,7 @@
     font: 12pt "Sans Serif";
     color: rgb(220, 220, 220);
     border: none;
+    padding:0px 20px 0px 20px;
 }
 #tintMenuWallpapers:hover {
     border: 1px solid #49525b;
@@ -384,6 +386,7 @@
 #tintCancel {
     color: rgb(220, 220, 220);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #tintCancel:hover {
     border: 1px solid #49525b;
@@ -391,6 +394,7 @@
 #tintForward {
     color: rgb(220, 220, 220);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #tintForward:hover {
     border: 1px solid #49525b;
@@ -398,6 +402,7 @@
 #tintPrevious {
     color: rgb(220, 220, 220);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #tintPrevious:hover {
     border: 1px solid #49525b;
