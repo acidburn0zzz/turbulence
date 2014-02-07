@@ -174,7 +174,7 @@ class Ui_MainWindow(QtCore.QObject):
         self.welcomeFooterContainerHLayout.addItem(self.welcomeFooterSpacer)
         self.welcomeFooterContainerHLayout.addWidget(self.welcomeForward)
         
-        self.welcomeMenuContainer.setGeometry(QtCore.QRect(20, 87, 511, 43))
+        self.welcomeMenuContainer.setGeometry(QtCore.QRect(20, 83, 511, 50))
         self.welcomeFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
         
         self.welcomeManjaroDesc.setTextFormat(QtCore.Qt.RichText)
