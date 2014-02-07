@@ -257,6 +257,15 @@ class Ui_MainWindow(QtCore.QObject):
         self.folderContentsUpperSpacer2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         self.folderContentsUpperSpacer3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         
+        if kwinStatus and tintStatus:
+            self.folderThemes.setText("Themes")
+        elif kwinStatus:
+            self.folderThemes.setText("Themes")
+        elif tintStatus:
+            self.folderThemes.setText("Tint 2")
+        else:
+            self.folderThemes.setText("Packages")
+
         #widget dictionary.
         secondPageWidgets = {
             "folderHeader": [self.folderHeader, 80, 20, 600, 51, "folderHeader", None],
@@ -384,7 +393,6 @@ class Ui_MainWindow(QtCore.QObject):
         #Translates, or sets the text for all the widgets
         self.folderHeader.setText(_translate("MainWindow", "Folders", None))
         self.folderMenu.setText("Folders")
-        self.folderThemes.setText("Themes")
         self.folderCancel.setText(_translate("MainWindow", "Cancel", None))
         self.folderForward.setText(_translate("MainWindow", "Forward", None))
         self.folderPrevious.setText(_translate("MainWindow", "Previous", None))
@@ -470,6 +478,11 @@ class Ui_MainWindow(QtCore.QObject):
             self.themeContentsPush5 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
             self.themeContentsPush6 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         
+            if tintStatus:
+                 self.themeMenuWallpapers.setText("Tint 2")
+            else:
+                 self.themeMenuWallpapers.setText("Wallpapers")
+                 
             thirdPageWidgets = {
                 "themeHeader": [self.themeHeader, 80, 20, 600, 51, "themeHeader", None],
                 "themeIcon": [self.themeIcon, 40, 160, 61, 61, "themeIcon", "/usr/share/turbulence/images/manjaro-grey/themes/theme.png"],
@@ -565,7 +578,6 @@ class Ui_MainWindow(QtCore.QObject):
             #Translates the text
             self.themeHeader.setText("Themes")
             self.themeMenu.setText("Themes")
-            self.themeMenuWallpapers.setText("Wallpapers")
             self.themeCancel.setText(_translate("MainWindow", "Cancel", None))
             self.themeForward.setText(_translate("MainWindow", "Forward", None))
             self.themePrevious.setText(_translate("MainWindow", "Previous", None))
@@ -735,228 +747,243 @@ class Ui_MainWindow(QtCore.QObject):
         
         
         #Starts code for fourth page
-        if plasmaStatus:
-            self.Wallpaper = QtGui.QWidget()
-            self.Wallpaper.setObjectName(_fromUtf8("Wallpaper"))
+        self.Wallpaper = QtGui.QWidget()
+        self.Wallpaper.setObjectName(_fromUtf8("Wallpaper"))
         
-            #defines all the widgets
-            createStaticWidgets(self.Wallpaper)
-            self.wallpaperHeader = QtGui.QLabel(self.Wallpaper)
-            self.wallpaperMenuContainer = QtGui.QWidget(self.Wallpaper)
-            self.wallpaperMenuContainerHLayout = QtGui.QHBoxLayout(self.wallpaperMenuContainer)
-            self.wallpaperMenu = QtGui.QPushButton(self.wallpaperMenuContainer)
-            self.wallpaperArrow = QtGui.QLabel(self.wallpaperMenuContainer)
-            self.wallpaperMenuFinish = QtGui.QPushButton(self.wallpaperMenuContainer)
-            self.wallpaperMenuSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperIcon = QtGui.QLabel(self.Wallpaper)
-            self.wallpaperDesc = QtGui.QLabel(self.Wallpaper)
-            self.wallpaperFooterContainer = QtGui.QWidget(self.Wallpaper)
-            self.wallpaperFooterContainerHLayout = QtGui.QHBoxLayout(self.wallpaperFooterContainer)
-            self.wallpaperPrevious = QtGui.QPushButton(self.wallpaperFooterContainer)
-            self.wallpaperForward = QtGui.QPushButton(self.wallpaperFooterContainer)
-            self.wallpaperCancel = QtGui.QPushButton(self.wallpaperFooterContainer)
-            self.wallpaperFooterSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsContainer = QtGui.QWidget(self.Wallpaper)
-            self.wallpaperContentsContainerLayout = QtGui.QGridLayout(self.wallpaperContentsContainer)
-            self.wallpaperPreviewContainer1 = QtGui.QWidget(self.Wallpaper)
-            self.wallpaperPreviewContainerLayout1 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer1)
-            self.wallpaperPreviewContainer2 = QtGui.QWidget(self.Wallpaper)
-            self.wallpaperPreviewContainerLayout2 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer2)
-            self.wallpaperPreviewContainer3 = QtGui.QWidget(self.Wallpaper)
-            self.wallpaperPreviewContainerLayout3 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer3)
-            self.wallpaperPreviewContainer4 = QtGui.QWidget(self.Wallpaper)
-            self.wallpaperPreviewContainerLayout4 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer4)
-            self.wallpaperPreviewContainer5 = QtGui.QWidget(self.Wallpaper)
-            self.wallpaperPreviewContainerLayout5 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer5)
-            self.wallpaperPreviewContainer6 = QtGui.QWidget(self.Wallpaper)
-            self.wallpaperPreviewContainerLayout6 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer6)
-            self.wallpaperPreviewContainer7 = QtGui.QWidget(self.Wallpaper)
-            self.wallpaperPreviewContainerLayout7 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer7)
-            self.wallpaperPreviewContainer8 = QtGui.QWidget(self.Wallpaper)
-            self.wallpaperPreviewContainerLayout8 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer8)
-            self.wallpaper1 = QtGui.QLabel(self.wallpaperPreviewContainer1)
-            self.wallpaper2 = QtGui.QLabel(self.wallpaperPreviewContainer2)
-            self.wallpaper3 = QtGui.QLabel(self.wallpaperPreviewContainer3)
-            self.wallpaper4 = QtGui.QLabel(self.wallpaperPreviewContainer4)
-            self.wallpaper5 = QtGui.QLabel(self.wallpaperPreviewContainer5) 
-            self.wallpaper6 = QtGui.QLabel(self.wallpaperPreviewContainer6)
-            self.wallpaper7 = QtGui.QLabel(self.wallpaperPreviewContainer7)
-            self.wallpaper8 = QtGui.QLabel(self.wallpaperPreviewContainer8)
-            self.wallpaperChoice1 = QtGui.QRadioButton(self.wallpaperContentsContainer)
-            self.wallpaperChoice2 = QtGui.QRadioButton(self.wallpaperContentsContainer)
-            self.wallpaperChoice3 = QtGui.QRadioButton(self.wallpaperContentsContainer)
-            self.wallpaperChoice4 = QtGui.QRadioButton(self.wallpaperContentsContainer)
-            self.wallpaperChoice5 = QtGui.QRadioButton(self.wallpaperContentsContainer)
-            self.wallpaperChoice6 = QtGui.QRadioButton(self.wallpaperContentsContainer)
-            self.wallpaperChoice7 = QtGui.QRadioButton(self.wallpaperContentsContainer)
-            self.wallpaperChoice8 = QtGui.QRadioButton(self.wallpaperContentsContainer)
-            self.wallpaperContentsRadioPush1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush4 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush5 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush6 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush7 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush8 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush9 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush10 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush11 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush12 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush13 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush14 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush15 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsRadioPush16 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsPush1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsPush2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsPush3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsPush4 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsPush5 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-            self.wallpaperContentsPush6 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-            self.wallpaperContentsPush7 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-            self.wallpaperContentsPush8 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         
-            fourthPageWidgets = {
-                "wallpaperHeader": [self.wallpaperHeader, 80, 20, 600, 51, "wallpaperHeader", None],
-                "wallpaperIcon": [self.wallpaperIcon, 40, 160, 61, 61, "wallpaperIcon", "/usr/share/turbulence/images/manjaro-grey/wallpapers/wallpapers.png"],
-                "wallpaperDesc": [self.wallpaperDesc, 110, 160, 591, 51, "wallpaperDesc", None],
-                "wallpaperChoice1": [self.wallpaperChoice1, 70, 380, 81, 21, "wallpaperChoice1", None],
-                "wallpaperChoice2": [self.wallpaperChoice2, 250, 380, 141, 21, "wallpaperChoice2", None],
-                "wallpaperChoice3": [self.wallpaperChoice3, 480, 380, 131, 21, "wallpaperChoice3", None],
-                "wallpaperChoice4": [self.wallpaperChoice4, 680, 380, 141, 21, "wallpaperChoice4", None],
-                "wallpaperChoice5": [self.wallpaperChoice5, 70, 510, 81, 21, "wallpaperChoice5", None],
-                "wallpaperChoice6": [self.wallpaperChoice6, 262, 510, 111, 21, "wallpaperChoice6", None],
-                "wallpaperChoice7": [self.wallpaperChoice7, 477, 510, 131, 21, "wallpaperChoice7", None],
-                "wallpaperChoice8": [self.wallpaperChoice8, 692, 510, 121, 21, "wallpaperChoice8", None]
-            }
-
-            fourthPageLayouts = {
-                "wallpaperMenu": [self.wallpaperMenu, 0, 39, None, None, True, True, False, False],
-                "wallpaperArrow": [self.wallpaperArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png", False],
-                "wallpaperMenuFinish": [self.wallpaperMenuFinish, 0, 39, None, None, True, True, False, False],
-                "wallpaperForward": [self.wallpaperForward, 0, 34, None, None, True, True, False, False],
-                "wallpaperPrevious": [self.wallpaperPrevious, 0, 34, None, None, True, True, False, False],
-                "wallpaperCancel": [self.wallpaperCancel, 0, 34, None, None, True, True, False, False],
-                "wallpaper1": [self.wallpaper1, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/ozone.png", True],
-                "wallpaper2": [self.wallpaper2, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/orangesplash.png", True],
-                "wallpaper3": [self.wallpaper3, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/sunsetplane.png", True],
-                "wallpaper4": [self.wallpaper4, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/mountainlake.png", True],
-                "wallpaper5": [self.wallpaper5, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/earthinspace.png", True],
-                "wallpaper6": [self.wallpaper6, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/darkstairs.png", True],
-                "wallpaper7": [self.wallpaper7, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/cherryjapan.png", True],
-                "wallpaper8": [self.wallpaper8, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/whitetiger.png", True],
-                "wallpaperChoice1": [self.wallpaperChoice1, None, None, None, None, False, False, False, False],
-                "wallpaperChoice2": [self.wallpaperChoice2, None, None, None, None, False, False, False, False],
-                "wallpaperChoice3": [self.wallpaperChoice3, None, None, None, None, False, False, False, False],
-                "wallpaperChoice4": [self.wallpaperChoice4, None, None, None, None, False, False, False, False],
-                "wallpaperChoice5": [self.wallpaperChoice5, None, None, None, None, False, False, False, False],
-                "wallpaperChoice6": [self.wallpaperChoice6, None, None, None, None, False, False, False, False],
-                "wallpaperChoice7": [self.wallpaperChoice7, None, None, None, None, False, False, False, False],
-                "wallpaperChoice8": [self.wallpaperChoice8, None, None, None, None, False, False, False, False]
-            }
-
-            #defines all the widget parameters
-            for widgetName, widgetSettings in fourthPageWidgets.items():
-                widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
+        #defines all the widgets
+        createStaticWidgets(self.Wallpaper)
+        self.wallpaperHeader = QtGui.QLabel(self.Wallpaper)
+        self.wallpaperMenuContainer = QtGui.QWidget(self.Wallpaper)
+        self.wallpaperMenuContainerHLayout = QtGui.QHBoxLayout(self.wallpaperMenuContainer)
+        self.wallpaperMenu = QtGui.QPushButton(self.wallpaperMenuContainer)
+        self.wallpaperArrow = QtGui.QLabel(self.wallpaperMenuContainer)
+        self.wallpaperMenuFinish = QtGui.QPushButton(self.wallpaperMenuContainer)
+        self.wallpaperMenuSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperIcon = QtGui.QLabel(self.Wallpaper)
+        self.wallpaperDesc = QtGui.QLabel(self.Wallpaper)
+        self.wallpaperFooterContainer = QtGui.QWidget(self.Wallpaper)
+        self.wallpaperFooterContainerHLayout = QtGui.QHBoxLayout(self.wallpaperFooterContainer)
+        self.wallpaperPrevious = QtGui.QPushButton(self.wallpaperFooterContainer)
+        self.wallpaperForward = QtGui.QPushButton(self.wallpaperFooterContainer)
+        self.wallpaperCancel = QtGui.QPushButton(self.wallpaperFooterContainer)
+        self.wallpaperFooterSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsContainer = QtGui.QWidget(self.Wallpaper)
+        self.wallpaperContentsContainerLayout = QtGui.QGridLayout(self.wallpaperContentsContainer)
+        self.wallpaperPreviewContainer1 = QtGui.QWidget(self.Wallpaper)
+        self.wallpaperPreviewContainerLayout1 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer1)
+        self.wallpaperPreviewContainer2 = QtGui.QWidget(self.Wallpaper)
+        self.wallpaperPreviewContainerLayout2 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer2)
+        self.wallpaperPreviewContainer3 = QtGui.QWidget(self.Wallpaper)
+        self.wallpaperPreviewContainerLayout3 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer3)
+        self.wallpaperPreviewContainer4 = QtGui.QWidget(self.Wallpaper)
+        self.wallpaperPreviewContainerLayout4 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer4)
+        self.wallpaperPreviewContainer5 = QtGui.QWidget(self.Wallpaper)
+        self.wallpaperPreviewContainerLayout5 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer5)
+        self.wallpaperPreviewContainer6 = QtGui.QWidget(self.Wallpaper)
+        self.wallpaperPreviewContainerLayout6 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer6)
+        self.wallpaperPreviewContainer7 = QtGui.QWidget(self.Wallpaper)
+        self.wallpaperPreviewContainerLayout7 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer7)
+        self.wallpaperPreviewContainer8 = QtGui.QWidget(self.Wallpaper)
+        self.wallpaperPreviewContainerLayout8 = QtGui.QHBoxLayout(self.wallpaperPreviewContainer8)
+        self.wallpaper1 = QtGui.QLabel(self.wallpaperPreviewContainer1)
+        self.wallpaper2 = QtGui.QLabel(self.wallpaperPreviewContainer2)
+        self.wallpaper3 = QtGui.QLabel(self.wallpaperPreviewContainer3)
+        self.wallpaper4 = QtGui.QLabel(self.wallpaperPreviewContainer4)
+        self.wallpaper5 = QtGui.QLabel(self.wallpaperPreviewContainer5) 
+        self.wallpaper6 = QtGui.QLabel(self.wallpaperPreviewContainer6)
+        self.wallpaper7 = QtGui.QLabel(self.wallpaperPreviewContainer7)
+        self.wallpaper8 = QtGui.QLabel(self.wallpaperPreviewContainer8)
+        self.wallpaperChoice1 = QtGui.QRadioButton(self.wallpaperContentsContainer)
+        self.wallpaperChoice2 = QtGui.QRadioButton(self.wallpaperContentsContainer)
+        self.wallpaperChoice3 = QtGui.QRadioButton(self.wallpaperContentsContainer)
+        self.wallpaperChoice4 = QtGui.QRadioButton(self.wallpaperContentsContainer)
+        self.wallpaperChoice5 = QtGui.QRadioButton(self.wallpaperContentsContainer)
+        self.wallpaperChoice6 = QtGui.QRadioButton(self.wallpaperContentsContainer)
+        self.wallpaperChoice7 = QtGui.QRadioButton(self.wallpaperContentsContainer)
+        self.wallpaperChoice8 = QtGui.QRadioButton(self.wallpaperContentsContainer)
+        self.wallpaperContentsRadioPush1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush4 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush5 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush6 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush7 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush8 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush9 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush10 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush11 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush12 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush13 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush14 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush15 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsRadioPush16 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsPush1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsPush2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsPush3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsPush4 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsPush5 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.wallpaperContentsPush6 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.wallpaperContentsPush7 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.wallpaperContentsPush8 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         
-            for widgetName, widgetSettings in fourthPageLayouts.items():
-                layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7], widgetSettings[8])
-        
-            #Defines all the custom settings.
-            self.wallpaperPrevious.setIcon(previousIcon)
-            self.wallpaperForward.setIcon(forwardIcon)
-            self.wallpaperCancel.setIcon(cancelIcon)
-            self.wallpaperPrevious.setIconSize(QtCore.QSize(28, 30))
-            self.wallpaperForward.setIconSize(QtCore.QSize(28, 30))
-            self.wallpaperCancel.setIconSize(QtCore.QSize(16, 16))
-            
-            self.wallpaperMenuContainerHLayout.addWidget(self.wallpaperMenu)
-            self.wallpaperMenuContainerHLayout.addWidget(self.wallpaperArrow)
-            self.wallpaperMenuContainerHLayout.addWidget(self.wallpaperMenuFinish)
-            self.wallpaperMenuContainerHLayout.addItem(self.wallpaperMenuSpacer)
-            
-            self.wallpaperFooterContainerHLayout.addWidget(self.wallpaperCancel)
-            self.wallpaperFooterContainerHLayout.addItem(self.wallpaperFooterSpacer)
-            self.wallpaperFooterContainerHLayout.addWidget(self.wallpaperPrevious)
-            self.wallpaperFooterContainerHLayout.addWidget(self.wallpaperForward)
-            
-            self.wallpaperPreviewContainerLayout1.addItem(self.wallpaperContentsRadioPush1)
-            self.wallpaperPreviewContainerLayout1.addWidget(self.wallpaperChoice1)
-            self.wallpaperPreviewContainerLayout1.addItem(self.wallpaperContentsRadioPush2)
-            self.wallpaperPreviewContainerLayout2.addItem(self.wallpaperContentsRadioPush3)
-            self.wallpaperPreviewContainerLayout2.addWidget(self.wallpaperChoice2)
-            self.wallpaperPreviewContainerLayout2.addItem(self.wallpaperContentsRadioPush4)
-            self.wallpaperPreviewContainerLayout3.addItem(self.wallpaperContentsRadioPush5)
-            self.wallpaperPreviewContainerLayout3.addWidget(self.wallpaperChoice3)
-            self.wallpaperPreviewContainerLayout3.addItem(self.wallpaperContentsRadioPush6)
-            self.wallpaperPreviewContainerLayout4.addItem(self.wallpaperContentsRadioPush7)
-            self.wallpaperPreviewContainerLayout4.addWidget(self.wallpaperChoice4)
-            self.wallpaperPreviewContainerLayout4.addItem(self.wallpaperContentsRadioPush8)
-            self.wallpaperPreviewContainerLayout5.addItem(self.wallpaperContentsRadioPush9)
-            self.wallpaperPreviewContainerLayout5.addWidget(self.wallpaperChoice5)
-            self.wallpaperPreviewContainerLayout5.addItem(self.wallpaperContentsRadioPush10)
-            self.wallpaperPreviewContainerLayout6.addItem(self.wallpaperContentsRadioPush11)
-            self.wallpaperPreviewContainerLayout6.addWidget(self.wallpaperChoice6)
-            self.wallpaperPreviewContainerLayout6.addItem(self.wallpaperContentsRadioPush12)
-            self.wallpaperPreviewContainerLayout7.addItem(self.wallpaperContentsRadioPush13)
-            self.wallpaperPreviewContainerLayout7.addWidget(self.wallpaperChoice7)
-            self.wallpaperPreviewContainerLayout7.addItem(self.wallpaperContentsRadioPush14)
-            self.wallpaperPreviewContainerLayout8.addItem(self.wallpaperContentsRadioPush15)
-            self.wallpaperPreviewContainerLayout8.addWidget(self.wallpaperChoice8)
-            self.wallpaperPreviewContainerLayout8.addItem(self.wallpaperContentsRadioPush16)
-            
-            self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush6, 0, 3, 1, 1)
-            self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush1, 1, 0, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaper1, 1, 1, 1, 1)
-            self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush2, 1, 2, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaper2, 1, 3, 1, 1)
-            self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush3, 1, 4, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaper3, 1, 5, 1, 1)
-            self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush4, 1, 6, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaper4, 1, 7, 1, 1)
-            self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush5, 1, 8, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer1, 2, 1, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer2, 2, 3, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer3, 2, 5, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer4, 2, 7, 1, 1)
-            self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush7, 3, 2, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaper5, 4, 1, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaper6, 4, 3, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaper7, 4, 5, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaper8, 4, 7, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer5, 5, 1, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer6, 5, 3, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer7, 5, 5, 1, 1)
-            self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer8, 5, 7, 1, 1)
-            self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush8, 6, 3, 1, 1)
-            
-            self.wallpaperMenuContainer.setGeometry(QtCore.QRect(20, 87, 511, 43))
-            self.wallpaperFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
-            self.wallpaperContentsContainer.setGeometry(QtCore.QRect(10, 230, 840, 340))
-        
-            self.stackedWidget.addWidget(self.Wallpaper)
-            
-            #Handles the button clicks
-            QtCore.QObject.connect(self.wallpaperMenuFinish, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextWallpapers)
-            QtCore.QObject.connect(self.wallpaperCancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
-            QtCore.QObject.connect(self.wallpaperPrevious, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
-            QtCore.QObject.connect(self.wallpaperForward, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextWallpapers)
-        
-            #Sets text, or translates widgets
-            self.wallpaperHeader.setText("Wallpapers")
-            self.wallpaperMenu.setText("Wallpapers")
-            self.wallpaperMenuFinish.setText("Finish")
-            self.wallpaperDesc.setText(_translate("MainWindow", "Here you can set which wallpaper you want.", None))
-            self.wallpaperPrevious.setText(_translate("MainWindow", "Previous", None))
-            self.wallpaperForward.setText(_translate("MainWindow", "Forward", None))
-            self.wallpaperCancel.setText(_translate("MainWindow", "Cancel", None))
+        #Sets the wallpaper release specific wallpapers.
+        if openboxStatus:
+            releaseWallsOne = "/usr/share/turbulence/images/manjaro-grey/wallpapers/evodark.png"
+            releaseWallsTwo = "/usr/share/turbulence/images/manjaro-grey/wallpapers/evolight.png"
+            self.wallpaperChoice1.setText("Evolution Dark")
+            self.wallpaperChoice2.setText("Evolution Light")
+        elif kdeStatus:
+            releaseWallsOne = "/usr/share/turbulence/images/manjaro-grey/wallpapers/manjarostyle.png"
+            releaseWallsTwo = "/usr/share/turbulence/images/manjaro-grey/wallpapers/orangesplash.png"
+            self.wallpaperChoice1.setText("Manjaro Style")
+            self.wallpaperChoice2.setText("Orange Splash")
+        else:
+            releaseWallsOne = "/usr/share/turbulence/images/manjaro-grey/wallpapers/ozone.png"
+            releaseWallsTwo = "/usr/share/turbulence/images/manjaro-grey/wallpapers/orangesplash.png"
             self.wallpaperChoice1.setText("Ozone")
             self.wallpaperChoice2.setText("Orange Splash")
-            self.wallpaperChoice3.setText("Sunset Plane")
-            self.wallpaperChoice4.setText("Mountain Lake")
-            self.wallpaperChoice5.setText("Space")
-            self.wallpaperChoice6.setText("Dark Stairs")
-            self.wallpaperChoice7.setText("Cherry Japan")
-            self.wallpaperChoice8.setText("Snow Leopard")
+            
+        fourthPageWidgets = {
+            "wallpaperHeader": [self.wallpaperHeader, 80, 20, 600, 51, "wallpaperHeader", None],
+            "wallpaperIcon": [self.wallpaperIcon, 40, 160, 61, 61, "wallpaperIcon", "/usr/share/turbulence/images/manjaro-grey/wallpapers/wallpapers.png"],
+            "wallpaperDesc": [self.wallpaperDesc, 110, 160, 591, 51, "wallpaperDesc", None],
+            "wallpaperChoice1": [self.wallpaperChoice1, 70, 380, 81, 21, "wallpaperChoice1", None],
+            "wallpaperChoice2": [self.wallpaperChoice2, 250, 380, 141, 21, "wallpaperChoice2", None],
+            "wallpaperChoice3": [self.wallpaperChoice3, 480, 380, 131, 21, "wallpaperChoice3", None],
+            "wallpaperChoice4": [self.wallpaperChoice4, 680, 380, 141, 21, "wallpaperChoice4", None],
+            "wallpaperChoice5": [self.wallpaperChoice5, 70, 510, 81, 21, "wallpaperChoice5", None],
+            "wallpaperChoice6": [self.wallpaperChoice6, 262, 510, 111, 21, "wallpaperChoice6", None],
+            "wallpaperChoice7": [self.wallpaperChoice7, 477, 510, 131, 21, "wallpaperChoice7", None],
+            "wallpaperChoice8": [self.wallpaperChoice8, 692, 510, 121, 21, "wallpaperChoice8", None]
+        }
+
+        fourthPageLayouts = {
+            "wallpaperMenu": [self.wallpaperMenu, 0, 39, None, None, True, True, False, False],
+            "wallpaperArrow": [self.wallpaperArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png", False],
+            "wallpaperMenuFinish": [self.wallpaperMenuFinish, 0, 39, None, None, True, True, False, False],
+            "wallpaperForward": [self.wallpaperForward, 0, 34, None, None, True, True, False, False],
+            "wallpaperPrevious": [self.wallpaperPrevious, 0, 34, None, None, True, True, False, False],
+            "wallpaperCancel": [self.wallpaperCancel, 0, 34, None, None, True, True, False, False],
+            "wallpaper1": [self.wallpaper1, None, None, None, None, False, False, releaseWallsOne, True],
+            "wallpaper2": [self.wallpaper2, None, None, None, None, False, False, releaseWallsTwo, True],
+            "wallpaper3": [self.wallpaper3, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/sunsetplane.png", True],
+            "wallpaper4": [self.wallpaper4, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/mountainlake.png", True],
+            "wallpaper5": [self.wallpaper5, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/earthinspace.png", True],
+            "wallpaper6": [self.wallpaper6, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/darkstairs.png", True],
+            "wallpaper7": [self.wallpaper7, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/cherryjapan.png", True],
+            "wallpaper8": [self.wallpaper8, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/whitetiger.png", True],
+            "wallpaperChoice1": [self.wallpaperChoice1, None, None, None, None, False, False, False, False],
+            "wallpaperChoice2": [self.wallpaperChoice2, None, None, None, None, False, False, False, False],
+            "wallpaperChoice3": [self.wallpaperChoice3, None, None, None, None, False, False, False, False],
+            "wallpaperChoice4": [self.wallpaperChoice4, None, None, None, None, False, False, False, False],
+            "wallpaperChoice5": [self.wallpaperChoice5, None, None, None, None, False, False, False, False],
+            "wallpaperChoice6": [self.wallpaperChoice6, None, None, None, None, False, False, False, False],
+            "wallpaperChoice7": [self.wallpaperChoice7, None, None, None, None, False, False, False, False],
+            "wallpaperChoice8": [self.wallpaperChoice8, None, None, None, None, False, False, False, False]
+        }
+
+        #defines all the widget parameters
+        for widgetName, widgetSettings in fourthPageWidgets.items():
+            widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
+        
+        for widgetName, widgetSettings in fourthPageLayouts.items():
+            layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7], widgetSettings[8])
+        
+        #Defines all the custom settings.
+        self.wallpaperPrevious.setIcon(previousIcon)
+        self.wallpaperForward.setIcon(forwardIcon)
+        self.wallpaperCancel.setIcon(cancelIcon)
+        self.wallpaperPrevious.setIconSize(QtCore.QSize(28, 30))
+        self.wallpaperForward.setIconSize(QtCore.QSize(28, 30))
+        self.wallpaperCancel.setIconSize(QtCore.QSize(16, 16))
+          
+        self.wallpaperMenuContainerHLayout.addWidget(self.wallpaperMenu)
+        self.wallpaperMenuContainerHLayout.addWidget(self.wallpaperArrow)
+        self.wallpaperMenuContainerHLayout.addWidget(self.wallpaperMenuFinish)
+        self.wallpaperMenuContainerHLayout.addItem(self.wallpaperMenuSpacer)
+            
+        self.wallpaperFooterContainerHLayout.addWidget(self.wallpaperCancel)
+        self.wallpaperFooterContainerHLayout.addItem(self.wallpaperFooterSpacer)
+        self.wallpaperFooterContainerHLayout.addWidget(self.wallpaperPrevious)
+        self.wallpaperFooterContainerHLayout.addWidget(self.wallpaperForward)
+            
+        self.wallpaperPreviewContainerLayout1.addItem(self.wallpaperContentsRadioPush1)
+        self.wallpaperPreviewContainerLayout1.addWidget(self.wallpaperChoice1)
+        self.wallpaperPreviewContainerLayout1.addItem(self.wallpaperContentsRadioPush2)
+        self.wallpaperPreviewContainerLayout2.addItem(self.wallpaperContentsRadioPush3)
+        self.wallpaperPreviewContainerLayout2.addWidget(self.wallpaperChoice2)
+        self.wallpaperPreviewContainerLayout2.addItem(self.wallpaperContentsRadioPush4)
+        self.wallpaperPreviewContainerLayout3.addItem(self.wallpaperContentsRadioPush5)
+        self.wallpaperPreviewContainerLayout3.addWidget(self.wallpaperChoice3)
+        self.wallpaperPreviewContainerLayout3.addItem(self.wallpaperContentsRadioPush6)
+        self.wallpaperPreviewContainerLayout4.addItem(self.wallpaperContentsRadioPush7)
+        self.wallpaperPreviewContainerLayout4.addWidget(self.wallpaperChoice4)
+        self.wallpaperPreviewContainerLayout4.addItem(self.wallpaperContentsRadioPush8)
+        self.wallpaperPreviewContainerLayout5.addItem(self.wallpaperContentsRadioPush9)
+        self.wallpaperPreviewContainerLayout5.addWidget(self.wallpaperChoice5)
+        self.wallpaperPreviewContainerLayout5.addItem(self.wallpaperContentsRadioPush10)
+        self.wallpaperPreviewContainerLayout6.addItem(self.wallpaperContentsRadioPush11)
+        self.wallpaperPreviewContainerLayout6.addWidget(self.wallpaperChoice6)
+        self.wallpaperPreviewContainerLayout6.addItem(self.wallpaperContentsRadioPush12)
+        self.wallpaperPreviewContainerLayout7.addItem(self.wallpaperContentsRadioPush13)
+        self.wallpaperPreviewContainerLayout7.addWidget(self.wallpaperChoice7)
+        self.wallpaperPreviewContainerLayout7.addItem(self.wallpaperContentsRadioPush14)
+        self.wallpaperPreviewContainerLayout8.addItem(self.wallpaperContentsRadioPush15)
+        self.wallpaperPreviewContainerLayout8.addWidget(self.wallpaperChoice8)
+        self.wallpaperPreviewContainerLayout8.addItem(self.wallpaperContentsRadioPush16)
+            
+        self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush6, 0, 3, 1, 1)
+        self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush1, 1, 0, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaper1, 1, 1, 1, 1)
+        self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush2, 1, 2, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaper2, 1, 3, 1, 1)
+        self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush3, 1, 4, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaper3, 1, 5, 1, 1)
+        self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush4, 1, 6, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaper4, 1, 7, 1, 1)
+        self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush5, 1, 8, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer1, 2, 1, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer2, 2, 3, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer3, 2, 5, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer4, 2, 7, 1, 1)
+        self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush7, 3, 2, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaper5, 4, 1, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaper6, 4, 3, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaper7, 4, 5, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaper8, 4, 7, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer5, 5, 1, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer6, 5, 3, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer7, 5, 5, 1, 1)
+        self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer8, 5, 7, 1, 1)
+        self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush8, 6, 3, 1, 1)
+            
+        self.wallpaperMenuContainer.setGeometry(QtCore.QRect(20, 87, 511, 43))
+        self.wallpaperFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
+        self.wallpaperContentsContainer.setGeometry(QtCore.QRect(10, 230, 840, 340))
+        
+        self.stackedWidget.addWidget(self.Wallpaper)
+            
+        #Handles the button clicks
+        QtCore.QObject.connect(self.wallpaperMenuFinish, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextWallpapers)
+        QtCore.QObject.connect(self.wallpaperCancel, QtCore.SIGNAL(_fromUtf8("clicked()")), MainWindow.close)
+        QtCore.QObject.connect(self.wallpaperPrevious, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrev)
+        QtCore.QObject.connect(self.wallpaperForward, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextWallpapers)
+       
+        #Sets text, or translates widgets
+        self.wallpaperHeader.setText("Wallpapers")
+        self.wallpaperMenu.setText("Wallpapers")
+        self.wallpaperMenuFinish.setText("Packages")
+        self.wallpaperDesc.setText(_translate("MainWindow", "Here you can set which wallpaper you want.", None))
+        self.wallpaperPrevious.setText(_translate("MainWindow", "Previous", None))
+        self.wallpaperForward.setText(_translate("MainWindow", "Forward", None))
+        self.wallpaperCancel.setText(_translate("MainWindow", "Cancel", None))
+        self.wallpaperChoice3.setText("Sunset Plane")
+        self.wallpaperChoice4.setText("Mountain Lake")
+        self.wallpaperChoice5.setText("Space")
+        self.wallpaperChoice6.setText("Dark Stairs")
+        self.wallpaperChoice7.setText("Cherry Japan")
+        self.wallpaperChoice8.setText("Snow Leopard")
         
         
         if openboxStatus:
@@ -1459,20 +1486,46 @@ class Ui_MainWindow(QtCore.QObject):
     
     #Moves next a page, but also applies the wallpaper settings.
     def handleButtonNextWallpapers(self):
-        wallpapersDict = {
-            "ozoneTurbulence": self.wallpaperChoice1,
-            "orangeSplash": self.wallpaperChoice2,
-            "sunsetPlane": self.wallpaperChoice3,
-            "mountainLake": self.wallpaperChoice4,
-            "earthInSpace": self.wallpaperChoice5,
-            "darkStairs": self.wallpaperChoice6,
-            "cherryJapan": self.wallpaperChoice7,
-            "whiteTiger": self.wallpaperChoice8
-        }
+        if kdeStatus:
+            wallpapersDict = {
+                "manjarostyle": self.wallpaperChoice1,
+                "orangeSplash": self.wallpaperChoice2,
+                "sunsetPlane": self.wallpaperChoice3,
+                "mountainLake": self.wallpaperChoice4,
+                "earthInSpace": self.wallpaperChoice5,
+                "darkStairs": self.wallpaperChoice6,
+                "cherryJapan": self.wallpaperChoice7,
+                "whiteTiger": self.wallpaperChoice8
+            }
+            edition = "kde"
+        elif openboxStatus:
+            wallpapersDict = {
+                "evodark": self.wallpaperChoice1,
+                "evolight": self.wallpaperChoice2,
+                "sunsetPlane": self.wallpaperChoice3,
+                "mountainLake": self.wallpaperChoice4,
+                "earthInSpace": self.wallpaperChoice5,
+                "darkStairs": self.wallpaperChoice6,
+                "cherryJapan": self.wallpaperChoice7,
+                "whiteTiger": self.wallpaperChoice8
+            }
+            edition = "openbox"
+        else:
+            wallpapersDict = {
+                "ozoneTurbulence": self.wallpaperChoice1,
+                "orangeSplash": self.wallpaperChoice2,
+                "sunsetPlane": self.wallpaperChoice3,
+                "mountainLake": self.wallpaperChoice4,
+                "earthInSpace": self.wallpaperChoice5,
+                "darkStairs": self.wallpaperChoice6,
+                "cherryJapan": self.wallpaperChoice7,
+                "whiteTiger": self.wallpaperChoice8
+            }
+            edition = "kde"
         
         for wallpaperName, wallpaperRadio in wallpapersDict.items():
             if wallpaperRadio.isChecked():
-                wallpapers.changeWallpaperPlus(wallpaperName)
+                wallpapers.changeWallpaperPlus(wallpaperName, edition)
                 
         index = self.stackedWidget.currentIndex() + 1
         if index < self.stackedWidget.count():

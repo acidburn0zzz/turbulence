@@ -1,6 +1,7 @@
 #!/usr/bin/env python2
 
 import os
+import subprocess
 from sys import exit
 
 from tools_ import logger
@@ -28,24 +29,14 @@ def plasmaRCExists():
     else:
         return False
   
-#Changes the wallpaper
-def wallpaperChanger(wallpaperChoice):
-  
-    if not plasmaRCExists():
-        print "You don't seem to have a " + fullPath + " file."
-        return False
-      
-    wallpaperOptions = {
-        "cherryJapan": "wallpaper=/usr/share/wallpapers/Cherry Japan",
-        "darkStairs": "wallpaper=/usr/share/wallpapers/Dark Stairs",
-        "earthInSpace": "wallpaper=/usr/share/wallpapers/Earth In Space",
-        "mountainLake": "wallpaper=/usr/share/wallpapers/Mountain Lake",
-        "orangeSplash": "wallpaper=/usr/share/wallpapers/Orange Splash",
-        "ozoneTurbulence": "wallpaper=/usr/share/wallpapers/Ozone-Turbulence",
-        "sunsetPlane": "wallpaper=/usr/share/wallpapers/Sunset Plane",
-        "whiteTiger": "wallpaper=/usr/share/wallpapers/White Tiger"
-    }
-  
+def changeWallpaperOpenbox(wallpaperChoice, wallpaperOptions):
+    for wallpaperName, wallpaperPath in wallpaperOptions.items():
+        if wallpaperChoice == wallpaperName:
+            setWallpaper = subprocess.Popen(["nitrogen", "--set-scaled", "--save", wallpaperPath], stdout=subprocess.PIPE)
+            setWallpaper.wait()
+            logger.writeLog("changedWallpaper", wallpaperName)
+            
+def changeWallpaperKde(wallpaperChoice, wallpaperOptions):
     for wallpaperName, wallpaperPath in wallpaperOptions.items():
         if wallpaperChoice == wallpaperName:
             query = "wallpaper="
@@ -63,8 +54,52 @@ def wallpaperChanger(wallpaperChoice):
             logger.writeLog('changedWallpaper', wallpaperChoice)
             return True
 
+#Changes the wallpaper
+def wallpaperChanger(wallpaperChoice, edition):
+  
+    if not plasmaRCExists():
+        print "You don't seem to have a " + fullPath + " file."
+        return False
+    
+    if edition == "kde":
+        wallpaperOptions = {
+            "cherryJapan": "wallpaper=/usr/share/wallpapers/Cherry Japan",
+            "darkStairs": "wallpaper=/usr/share/wallpapers/Dark Stairs",
+            "earthInSpace": "wallpaper=/usr/share/wallpapers/Earth In Space",
+            "mountainLake": "wallpaper=/usr/share/wallpapers/Mountain Lake",
+            "orangeSplash": "wallpaper=/usr/share/wallpapers/Orange Splash",
+            "manjarostyle": "wallpaper=/usr/share/wallpapers/manjaro-style",
+            "sunsetPlane": "wallpaper=/usr/share/wallpapers/Sunset Plane",
+            "whiteTiger": "wallpaper=/usr/share/wallpapers/White Tiger"
+        }
+        changeWallpaperKde(wallpaperChoice, wallpaperOptions)
+    elif edition == "openbox":
+        wallpaperOptions = {
+            "cherryJapan": "/usr/share/backgrounds/Cherry Japan.jpg",
+            "darkStairs": "/usr/share/backgrounds/Dark Stairs.jpg",
+            "earthInSpace": "/usr/share/backgrounds/Earth In Space.jpg",
+            "mountainLake": "/usr/share/backgrounds/Mountain Lake.jpg",
+            "evolight": "/usr/share/backgrounds/evolight.jpg",
+            "evodark": "/usr/share/backgrounds/evodark.jpg",
+            "sunsetPlane": "/usr/share/backgrounds/Sunset Plane.jpg",
+            "whiteTiger": "/usr/share/backgrounds/White Tiger.jpg"
+        }
+        changeWallpaperOpenbox(wallpaperChoice, wallpaperOptions)
+    else:
+        wallpaperOptions = {
+            "cherryJapan": "wallpaper=/usr/share/wallpapers/Cherry Japan",
+            "darkStairs": "wallpaper=/usr/share/wallpapers/Dark Stairs",
+            "earthInSpace": "wallpaper=/usr/share/wallpapers/Earth In Space",
+            "mountainLake": "wallpaper=/usr/share/wallpapers/Mountain Lake",
+            "orangeSplash": "wallpaper=/usr/share/wallpapers/Orange Splash",
+            "ozoneTurbulence": "wallpaper=/usr/share/wallpapers/Ozone-Turbulence",
+            "sunsetPlane": "wallpaper=/usr/share/wallpapers/Sunset Plane",
+            "whiteTiger": "wallpaper=/usr/share/wallpapers/White Tiger"
+        }
+        changeWallpaperKde(wallpaperChoice, wallpaperOptions)
+
 #Changes the wallpaper plus restarts plasma
-def changeWallpaperPlus(wallpaper):
+def changeWallpaperPlus(wallpaper, edition):
     plasma_control.killPlasma()
-    wallpaperChanger(wallpaper)
+    wallpaperChanger(wallpaper, edition)
     plasma_control.startPlasma()
