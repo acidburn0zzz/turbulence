@@ -466,6 +466,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 20px 0px 20px;
 }
 #wallpaperMenu:hover {
     border: 1px solid #49525b;
@@ -475,6 +476,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 20px 0px 20px;
 }
 #wallpaperMenuFinish:hover {
     border: 1px solid #49525b;
@@ -487,6 +489,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #wallpaperCancel:hover {
     border: 1px solid #49525b;
@@ -495,6 +498,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #wallpaperForward:hover {
     border: 1px solid #49525b;
@@ -503,6 +507,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #wallpaperPrevious:hover {
     border: 1px solid #49525b;
