@@ -85,7 +85,23 @@ def createStaticWidgets(parent):
 #Begins to main class
 class Ui_MainWindow(QtCore.QObject):
     def setupUi(self, MainWindow):
-      
+        
+        if kdeStatus:
+            lMinW = 20
+            lMinH = 87
+            lMaxW = 511
+            lMaxH = 43
+        elif openboxStatus:
+            lMinW = 20
+            lMinH = 83
+            lMaxW = 511
+            lMaxH = 50
+        else:
+            lMinW = 20
+            lMinH = 87
+            lMaxW = 511
+            lMaxH = 43
+            
         #Grabs the stylesheet
         styleSheetFile = open("/usr/share/turbulence/stylesheets/manjarogrey.stylesheet", "r")
         self.styleData = styleSheetFile.read()
@@ -174,7 +190,7 @@ class Ui_MainWindow(QtCore.QObject):
         self.welcomeFooterContainerHLayout.addItem(self.welcomeFooterSpacer)
         self.welcomeFooterContainerHLayout.addWidget(self.welcomeForward)
         
-        self.welcomeMenuContainer.setGeometry(QtCore.QRect(20, 83, 511, 50))
+        self.welcomeMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
         self.welcomeFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
         
         self.welcomeManjaroDesc.setTextFormat(QtCore.Qt.RichText)
@@ -377,7 +393,7 @@ class Ui_MainWindow(QtCore.QObject):
         self.folderContentsUpperLayout.addWidget(self.folderActive7, 7, 4, 1, 1)
         self.folderContentsUpperLayout.addWidget(self.folderActive8, 7, 6, 1, 1)
         
-        self.folderMenuContainer.setGeometry(QtCore.QRect(20, 87, 511, 43))
+        self.folderMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
         self.folderFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
         self.folderContentsUpper.setGeometry(QtCore.QRect(60, 230, 730, 320))
         
@@ -562,7 +578,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.themeContentsContainerLayout.addWidget(self.themePreviewContainer4, 5, 3, 1, 1)
             self.themeContentsContainerLayout.addItem(self.themeContentsPush6, 6, 3, 1, 1)
             
-            self.themeMenuContainer.setGeometry(QtCore.QRect(20, 87, 511, 43))
+            self.themeMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
             self.themeFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
             self.themeContentsContainer.setGeometry(QtCore.QRect(10, 230, 840, 340))
         
@@ -719,7 +735,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.tintContentsContainerLayout.addWidget(self.tintPreviewContainer4, 5, 3, 1, 1)
             self.tintContentsContainerLayout.addItem(self.tintContentsPush6, 6, 3, 1, 1)
             
-            self.tintMenuContainer.setGeometry(QtCore.QRect(20, 87, 511, 43))
+            self.tintMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
             self.tintFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
             self.tintContentsContainer.setGeometry(QtCore.QRect(10, 230, 840, 340))
         
@@ -958,7 +974,7 @@ class Ui_MainWindow(QtCore.QObject):
         self.wallpaperContentsContainerLayout.addWidget(self.wallpaperPreviewContainer8, 5, 7, 1, 1)
         self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush8, 6, 3, 1, 1)
             
-        self.wallpaperMenuContainer.setGeometry(QtCore.QRect(20, 87, 511, 43))
+        self.wallpaperMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
         self.wallpaperFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
         self.wallpaperContentsContainer.setGeometry(QtCore.QRect(10, 230, 840, 340))
         
