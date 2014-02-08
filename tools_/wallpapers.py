@@ -37,6 +37,10 @@ def changeWallpaperOpenbox(wallpaperChoice, wallpaperOptions):
             logger.writeLog("changedWallpaper", wallpaperName)
             
 def changeWallpaperKde(wallpaperChoice, wallpaperOptions):
+    if not plasmaRCExists():
+        print "You don't seem to have a " + fullPath + " file."
+        return False
+      
     for wallpaperName, wallpaperPath in wallpaperOptions.items():
         if wallpaperChoice == wallpaperName:
             query = "wallpaper="
@@ -56,11 +60,6 @@ def changeWallpaperKde(wallpaperChoice, wallpaperOptions):
 
 #Changes the wallpaper
 def wallpaperChanger(wallpaperChoice, edition):
-  
-    if not plasmaRCExists():
-        print "You don't seem to have a " + fullPath + " file."
-        return False
-    
     if edition == "kde":
         wallpaperOptions = {
             "cherryJapan": "wallpaper=/usr/share/wallpapers/Cherry Japan",
@@ -100,6 +99,17 @@ def wallpaperChanger(wallpaperChoice, edition):
 
 #Changes the wallpaper plus restarts plasma
 def changeWallpaperPlus(wallpaper, edition):
-    plasma_control.killPlasma()
-    wallpaperChanger(wallpaper, edition)
-    plasma_control.startPlasma()
+    if edition == "openbox":
+        wallpaperChanger(wallpaper, edition)
+        return True
+    elif edition == "kde":
+        plasma_control.killPlasma()
+        wallpaperChanger(wallpaper, edition)
+        plasma_control.startPlasma()
+        return True
+    else:
+        plasma_control.killPlasma()
+        wallpaperChanger(wallpaper, edition)
+        plasma_control.startPlasma()
+        return True
+        

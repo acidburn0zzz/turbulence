@@ -499,7 +499,7 @@ class Ui_MainWindow(QtCore.QObject):
         
             if tintStatus:
                  self.themeMenuWallpapers.setText("Tint 2")
-            elif kdeStatus:
+            elif plasmaStatus:
                  self.themeMenuWallpapers.setText("Wallpapers")
             else:
                  self.themeMenuWallpapers.setText("Finish")
@@ -662,7 +662,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.tintContentsPush5 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
             self.tintContentsPush6 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
             
-            if openboxStatus or kdeStatus:
+            if nitrogenStatus or plasmaStatus:
                 self.tintMenuWallpapers.setText("Wallpapers")
             else:
                 self.tintMenuWallpapers.setText("Finish")
@@ -770,7 +770,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.tintPositionRadio3.setText(_translate("MainWindow", "Bottom", None))
             self.tintPositionRadio4.setText(_translate("MainWindow", "Left", None))
         
-        if openboxStatus or kdeStatus:
+        if nitrogenStatus or plasmaStatus:
             #Starts code for fourth page
             self.Wallpaper = QtGui.QWidget()
             self.Wallpaper.setObjectName(_fromUtf8("Wallpaper"))
@@ -1527,7 +1527,7 @@ class Ui_MainWindow(QtCore.QObject):
                 "whiteTiger": self.wallpaperChoice8
             }
             edition = "kde"
-        elif openboxStatus:
+        elif nitrogenStatus:
             wallpapersDict = {
                 "evodark": self.wallpaperChoice1,
                 "evolight": self.wallpaperChoice2,
