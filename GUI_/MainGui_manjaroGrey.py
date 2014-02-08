@@ -1165,7 +1165,7 @@ class Ui_MainWindow(QtCore.QObject):
                 "packagesPrinterSupportPic": [self.packagesPrinterSupportPic, 270, 10, 71, 71, "packagesPrinterSupportPic" , "/usr/share/turbulence/images/manjaro-grey/packages/extras/printersupport.png"],
                 "packagesPrinterSupportCheck": [self.packagesPrinterSupportCheck, 260, 90, 111, 41, "packagesPrinterSupportCheck", None],
                 "packagesInstallBack": [self.packagesInstallBack, -20, -10, 761, 241, "packagesInstallBack", None],
-                "packagesInstallButton": [self.packagesInstallButton, 310, 95, 111, 31, "packagesInstallButton", None],
+                "packagesInstallButton": [self.packagesInstallButton, 270, 95, 150, 30, "packagesInstallButton", None],
                 "packagesCheckConnection": [self.packagesCheckConnection, 230, 400, 380, 60, "packagesCheckConnection", None]
             }
 

@@ -989,7 +989,7 @@ QTabBar::tab:selected {
 #packagesInstallButton {
     color: rgb(220, 220, 220);
     font: 14pt "Sans Serif";
-    border: none;
+    border: 1px solid #485B47;
 }
 #packagesInstallButton:hover {
     border: 1px solid #49525b;
@@ -1058,7 +1058,7 @@ QTabBar::tab:selected {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
     background-color: rgba(0, 0, 0, 0,);
-    border: none;
+    border: 1px solid #485B47;
 }
 #finishSystemSettingsButton:hover {
     border: 1px solid #49525b;
@@ -1075,7 +1075,7 @@ QTabBar::tab:selected {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
     background-color: rgba(0, 0, 0, 0,);
-    border: none;
+    border: 1px solid #485B47;
 }
 #finishHelpButton:hover {
     border: 1px solid #49525b;
