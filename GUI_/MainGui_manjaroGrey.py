@@ -209,8 +209,8 @@ class Ui_MainWindow(QtCore.QObject):
         
         #Translates, or sets the text to the widgets
         self.welcomeHeader.setText(_translate("MainWindow", "Welcome To Manjaro!", None))
-        self.welcomeButton.setText("Welcome")
-        self.welcomeFolders.setText("Folders")
+        self.welcomeButton.setText(_translate("MainWindow", "Welcome", None))
+        self.welcomeFolders.setText(_translate("MainWindow", "Folders", None))
         self.welcomeWhatIsManjaro.setText(_translate("MainWindow", "What is Manjaro?", None))
         self.welcomeManjaroDesc.setText(_translate("MainWindow", """<b>Manjaro</b> is a sleek and fast distro, featuring benefits from the popular Arch OS, along with ease of use. Developed in Austria, France, and Germany, Manjaro aims at new users, and experienced users.\n<br><br>\nSome of Manjaro's features are:\n<ul>\n<li>Speed, power, and efficiency</li>\n<li>Access to the very latest cutting and bleeding edge software</li>\n<li>A ‘rolling release’ development model that provides the most up-to-date system possible without the need to install new versions</li>\n<li>Access to the Arch User Repository (AUR).</li>\n</ul>\nFor newcomers, a user-friendly installer is provided, and the system itself is designed to work fully straight out of the box. For more experienced, and adventurous users, Manjaro also offers the configurability and versatility to be shaped and moulded in every respect to suit personal taste and preference.\n<br><br>\nOver these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.""", None))
         self.welcomeCancel.setText(_translate("MainWindow", "Cancel", None))
@@ -277,13 +277,13 @@ class Ui_MainWindow(QtCore.QObject):
         self.folderContentsUpperSpacer3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         
         if kwinStatus and tintStatus:
-            self.folderThemes.setText("Themes")
+            self.folderThemes.setText(_translate("MainWindow", "Themes", None))
         elif kwinStatus:
-            self.folderThemes.setText("Themes")
+            self.folderThemes.setText(_translate("MainWindow", "Themes", None))
         elif tintStatus:
-            self.folderThemes.setText("Tint 2")
+            self.folderThemes.setText(_translate("MainWindow", "Tint 2", None))
         else:
-            self.folderThemes.setText("Finish")
+            self.folderThemes.setText(_translate("MainWindow", "Finish", None))
 
         #widget dictionary.
         secondPageWidgets = {
@@ -411,7 +411,7 @@ class Ui_MainWindow(QtCore.QObject):
         
         #Translates, or sets the text for all the widgets
         self.folderHeader.setText(_translate("MainWindow", "Folders", None))
-        self.folderMenu.setText("Folders")
+        self.folderMenu.setText(_translate("MainWindow", "Folders", None))
         self.folderCancel.setText(_translate("MainWindow", "Cancel", None))
         self.folderForward.setText(_translate("MainWindow", "Forward", None))
         self.folderPrevious.setText(_translate("MainWindow", "Previous", None))
@@ -424,14 +424,14 @@ class Ui_MainWindow(QtCore.QObject):
         self.folderHeader6.setText(_translate("MainWindow", "Status: Deactivated", None))
         self.folderHeader7.setText(_translate("MainWindow", "Status: Deactivated", None))
         self.folderHeader8.setText(_translate("MainWindow", "Status: Deactivated", None))
-        self.folderName1.setText("Desktop")
-        self.folderName2.setText("Documents")
-        self.folderName3.setText("Downloads")
-        self.folderName4.setText("Music")
-        self.folderName5.setText("Pictures")
-        self.folderName6.setText("Public")
-        self.folderName7.setText("Templates")
-        self.folderName8.setText("Videos")
+        self.folderName1.setText(_translate("MainWindow", "Desktop", None))
+        self.folderName2.setText(_translate("MainWindow", "Documents", None))
+        self.folderName3.setText(_translate("MainWindow", "Downloads", None))
+        self.folderName4.setText(_translate("MainWindow", "Music", None))
+        self.folderName5.setText(_translate("MainWindow", "Pictures", None))
+        self.folderName6.setText(_translate("MainWindow", "Public", None))
+        self.folderName7.setText(_translate("MainWindow", "Templates", None))
+        self.folderName8.setText(_translate("MainWindow", "Videos", None))
         self.folderActive1.setText(_translate("MainWindow", "Active", None))
         self.folderActive2.setText(_translate("MainWindow", "Active", None))
         self.folderActive3.setText(_translate("MainWindow", "Active", None))
@@ -498,11 +498,11 @@ class Ui_MainWindow(QtCore.QObject):
             self.themeContentsPush6 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         
             if tintStatus:
-                 self.themeMenuWallpapers.setText("Tint 2")
+                 self.themeMenuWallpapers.setText(_translate("MainWindow", "Tint 2", None))
             elif plasmaStatus:
-                 self.themeMenuWallpapers.setText("Wallpapers")
+                 self.themeMenuWallpapers.setText(_translate("MainWindow", "Wallpapers", None))
             else:
-                 self.themeMenuWallpapers.setText("Finish")
+                 self.themeMenuWallpapers.setText(_translate("MainWindow", "Finish", None))
                  
             thirdPageWidgets = {
                 "themeHeader": [self.themeHeader, 80, 20, 600, 51, "themeHeader", None],
@@ -597,8 +597,8 @@ class Ui_MainWindow(QtCore.QObject):
             QtCore.QObject.connect(self.themePrevious, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonPrevFolders)
             
             #Translates the text
-            self.themeHeader.setText("Themes")
-            self.themeMenu.setText("Themes")
+            self.themeHeader.setText(_translate("MainWindow", "Themes", None))
+            self.themeMenu.setText(_translate("MainWindow", "Themes", None))
             self.themeCancel.setText(_translate("MainWindow", "Cancel", None))
             self.themeForward.setText(_translate("MainWindow", "Forward", None))
             self.themePrevious.setText(_translate("MainWindow", "Previous", None))
@@ -858,9 +858,9 @@ class Ui_MainWindow(QtCore.QObject):
                 self.wallpaperChoice2.setText("Orange Splash")
                 
             if openboxStatus:
-                self.wallpaperMenuFinish.setText("Packages")
+                self.wallpaperMenuFinish.setText(_translate("MainWindow", "Packages", None))
             else:
-                self.wallpaperMenuFinish.setText("Finish")
+                self.wallpaperMenuFinish.setText(_translate("MainWindow", "Finish", None))
             
             fourthPageWidgets = {
                 "wallpaperHeader": [self.wallpaperHeader, 80, 20, 600, 51, "wallpaperHeader", None],
@@ -915,6 +915,8 @@ class Ui_MainWindow(QtCore.QObject):
             self.wallpaperPrevious.setIconSize(QtCore.QSize(28, 30))
             self.wallpaperForward.setIconSize(QtCore.QSize(28, 30))
             self.wallpaperCancel.setIconSize(QtCore.QSize(16, 16))
+            
+            self.wallpaperDesc.setWordWrap(True)
             
             self.wallpaperMenuContainerHLayout.addWidget(self.wallpaperMenu)
             self.wallpaperMenuContainerHLayout.addWidget(self.wallpaperArrow)
@@ -989,8 +991,8 @@ class Ui_MainWindow(QtCore.QObject):
             QtCore.QObject.connect(self.wallpaperForward, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonNextWallpapers)
        
             #Sets text, or translates widgets
-            self.wallpaperHeader.setText("Wallpapers")
-            self.wallpaperMenu.setText("Wallpapers")
+            self.wallpaperHeader.setText(_translate("MainWindow", "Wallpapers", None))
+            self.wallpaperMenu.setText(_translate("MainWindow", "Wallpapers", None))
             self.wallpaperDesc.setText(_translate("MainWindow", "Here you can set which wallpaper you want.", None))
             self.wallpaperPrevious.setText(_translate("MainWindow", "Previous", None))
             self.wallpaperForward.setText(_translate("MainWindow", "Forward", None))
@@ -1020,7 +1022,6 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesPrevious = QtGui.QPushButton(self.Packages)
             self.packagesForward = QtGui.QPushButton(self.Packages)
             self.packagesCancel = QtGui.QPushButton(self.Packages)
-            self.packagesHeaderHead = QtGui.QLabel(self.Packages)
             self.packagesTabs = QtGui.QTabWidget(self.Packages)
             self.packagesNetwork = QtGui.QWidget()
             self.packagesNetworkBack = QtGui.QLabel(self.packagesNetwork)
@@ -1093,7 +1094,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesCheckConnection = QtGui.QPushButton(self.Packages)
         
             fifthPageWidgets = {
-                "packagesHeader": [self.packagesHeader, 80, 20, 141, 51, "packagesHeader", None],
+                "packagesHeader": [self.packagesHeader, 80, 20, 600, 51, "packagesHeader", None],
                 "packagesMenu": [self.packagesMenu, 20, 90, 121, 41, "packagesMenu", None],
                 "packagesArrow": [self.packagesArrow, 150, 90, 31, 41, "packagesArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
                 "packagesMenuFinish": [self.packagesMenuFinish, 180, 90, 71, 41, "packagesMenuFinish", None],
@@ -1102,7 +1103,6 @@ class Ui_MainWindow(QtCore.QObject):
                 "packagesPrevious": [self.packagesPrevious, 620, 575, 101, 33, "packagesPrevious", None],
                 "packagesForward": [self.packagesForward, 730, 575, 111, 33, "packagesForward", None],
                 "packagesCancel": [self.packagesCancel, 20, 575, 110, 33, "packagesCancel", None],
-                "packagesHeaderHead": [self.packagesHeaderHead, 50, 240, 101, 31, "packagesHeaderHead", None],
                 "packagesTabs": [self.packagesTabs, 60, 290, 741, 251, "packagesTabs", None],
                 "packagesNetworkBack": [self.packagesNetworkBack, -14, -7, 761, 241, "packagesNetworkBack", "/usr/share/turbulence/images/manjaro-grey/packages/packages-back.png"],
                 "packagesAroraPic": [self.packagesAroraPic, 20, 10, 71, 71, "packagesAroraPic", "/usr/share/turbulence/images/manjaro-grey/packages/network/arora.png"],
@@ -1181,6 +1181,8 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesCancel.setFlat(True)
             self.packagesCheckConnection.setFlat(True)
             self.packagesInstallButton.setFlat(True)
+            
+            self.packagesDesc.setWordWrap(True)
         
             self.packagesMenu.setFocusPolicy(QtCore.Qt.NoFocus)
             self.packagesMenuFinish.setFocusPolicy(QtCore.Qt.NoFocus)
@@ -1223,76 +1225,75 @@ class Ui_MainWindow(QtCore.QObject):
             QtCore.QObject.connect(self.packagesInstallButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonInstallPackages)
             
             #Fifth page
-            self.packagesHeader.setText("Packages")
-            self.packagesMenu.setText("Packages")
-            self.packagesMenuFinish.setText("Finish")
-            self.packagesDesc.setText(_translate("MainWindow", "Here, you can choose what packages you would like to install. Hover over any of the \npackages to see a description, and select or unselect any packages you want to add or \nremove. Packages that are installed will be auto-selected.\n\nWhen you are done, go to the Install tab, and click \"Install\".", None))
+            self.packagesHeader.setText(_translate("MainWindow", "Packages", None))
+            self.packagesMenu.setText(_translate("MainWindow", "Packages", None))
+            self.packagesMenuFinish.setText(_translate("MainWindow", "Finish", None))
+            self.packagesDesc.setText(_translate("MainWindow", "Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or unselect any packages you want to add or remove. Packages that are installed will be auto-selected.\n\nWhen you are done, go to the Install tab, and click \"Install\".", None))
             self.packagesPrevious.setText(_translate("MainWindow", "Previous", None))
             self.packagesForward.setText(_translate("MainWindow", "Forward", None))
             self.packagesCancel.setText(_translate("MainWindow", "Cancel", None))
-            self.packagesHeaderHead.setText("Packages")
             self.packagesCheckConnection.setText(_translate("MainWindow", "Check For Internet Connection", None))
             self.packagesFirefoxPic.setToolTip(_translate("MainWindow", "Standalone web browser from mozilla.org", None))
             self.packagesAroraPic.setToolTip(_translate("MainWindow", "Lightweight cross-platform Web browser", None))
-            self.packagesAroraCheck.setText(_translate("MainWindow", "Arora", None))
+            self.packagesAroraCheck.setText("Arora")
             self.packagesChromiumPic.setToolTip(_translate("MainWindow", "The open-source project behind Google Chrome, an \n" "attempt at creating a safer, faster, and more stable browser", None))
             self.packagesOperaPic.setToolTip(_translate("MainWindow", "Fast and secure web browser and Internet suite", None))
             self.packagesTransmissionPic.setToolTip(_translate("MainWindow", "Fast, easy, and free BitTorrent client", None))
-            self.packagesFirefoxCheck.setText(_translate("MainWindow", "Firefox", None))
+            self.packagesFirefoxCheck.setText("Firefox")
             self.packagesMidoriPic.setToolTip(_translate("MainWindow", "Lightweight web browser (GTK2)", None))
-            self.packagesChromiumCheck.setText(_translate("MainWindow", "Chomium", None))
-            self.packagesOperaCheck.setText(_translate("MainWindow", "Opera", None))
-            self.packagesTransmissionCheck.setText(_translate("MainWindow", "Transmission", None))
-            self.packagesMidoriCheck.setText(_translate("MainWindow", "Midori", None))
+            self.packagesChromiumCheck.setText("Chomium")
+            self.packagesOperaCheck.setText("Opera")
+            self.packagesTransmissionCheck.setText("Transmission")
+            self.packagesMidoriCheck.setText("Midori")
             self.packagesDelugePic.setToolTip(_translate("MainWindow", "A BitTorrent client with multiple user interfaces \n" "in a client/server model", None))
-            self.packagesDelugeCheck.setText(_translate("MainWindow", "Deluge", None))
+            self.packagesDelugeCheck.setText("Deluge")
             self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesNetwork), _translate("MainWindow", "Network", None))
             self.packagesVlcPic.setToolTip(_translate("MainWindow", "A multi-platform MPEG, VCD/DVD, and DivX player", None))
-            self.packagesVlcCheck.setText(_translate("MainWindow", "VLC", None))
+            self.packagesVlcCheck.setText("VLC")
             self.packagesSmplayerPic.setToolTip(_translate("MainWindow", "A complete front-end for MPlayer", None))
-            self.packagesSmplayerCheck.setText(_translate("MainWindow", "SMPlayer", None))
+            self.packagesSmplayerCheck.setText("SMPlayer")
             self.packagesAudaciousPic.setToolTip(_translate("MainWindow", "Lightweight, advanced audio player focused on audio quality", None))
-            self.packagesAudaciousCheck.setText(_translate("MainWindow", "Audacious", None))
+            self.packagesAudaciousCheck.setText("Audacious")
             self.packagesClemetinePic.setToolTip(_translate("MainWindow", "A music player and library organizer", None))
-            self.packagesClementineCheck.setText(_translate("MainWindow", "Clementine", None))
+            self.packagesClementineCheck.setText("Clementine")
             self.packagesDeadbeefPic.setToolTip(_translate("MainWindow", "An audio player for GNU/Linux based on GTK2.", None))
-            self.packagesDeadbeefCheck.setText(_translate("MainWindow", "DeaDBeeF", None))
+            self.packagesDeadbeefCheck.setText("DeaDBeeF")
             self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesMultimedia), _translate("MainWindow", "Multimedia", None))
             self.packagesBlenderPic.setToolTip(_translate("MainWindow", "A fully integrated 3D graphics creation suite", None))
-            self.packagesBlenderCheck.setText(_translate("MainWindow", "Blender", None))
+            self.packagesBlenderCheck.setText("Blender")
             self.packagesEvincePic.setToolTip(_translate("MainWindow", "Simply a document viewer", None))
-            self.packagesEvinceCheck.setText(_translate("MainWindow", "Evince", None))
+            self.packagesEvinceCheck.setText("Evince")
             self.packagesGimpPic.setToolTip(_translate("MainWindow", "GNU Image Manipulation Program", None))
-            self.packagesGimpCheck.setText(_translate("MainWindow", "Gimp", None))
+            self.packagesGimpCheck.setText("Gimp")
             self.packagesGpicviewPic.setToolTip(_translate("MainWindow", "Lightweight image viewer", None))
-            self.packagesGpicviewCheck.setText(_translate("MainWindow", "GPicView", None))
+            self.packagesGpicviewCheck.setText("GPicView")
             self.packagesViewniorPic.setToolTip(_translate("MainWindow", "A simple, fast and elegant image viewer program", None))
-            self.packagesViewniorCheck.setText(_translate("MainWindow", "Viewnior", None))
+            self.packagesViewniorCheck.setText("Viewnior")
             self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesGraphics), _translate("MainWindow", "Graphics", None))
             self.packagesGeanyPic.setToolTip(_translate("MainWindow", "Fast and lightweight IDE", None))
-            self.packagesGeanyCheck.setText(_translate("MainWindow", "Geany", None))
+            self.packagesGeanyCheck.setText("Geany")
             self.packagesHexchatPic.setToolTip(_translate("MainWindow", "A popular and easy to use graphical IRC (chat) client", None))
-            self.packagesHexchatCheck.setText(_translate("MainWindow", "Hexchat", None))
+            self.packagesHexchatCheck.setText("Hexchat")
             self.packagesLeafpadPic.setToolTip(_translate("MainWindow", "A notepad clone for GTK+ 2.0", None))
-            self.packagesLeafpadCheck.setText(_translate("MainWindow", "Leafpad", None))
+            self.packagesLeafpadCheck.setText("Leafpad")
             self.packagesPcmanfmPic.setToolTip(_translate("MainWindow", "An extremely fast and lightweight file manager", None))
-            self.packagesPcmanfmCheck.setText(_translate("MainWindow", "PCManFM", None))
+            self.packagesPcmanfmCheck.setText("PCManFM")
             self.packagesSpacefmPic.setToolTip(_translate("MainWindow", "Multi-panel tabbed file manager", None))
-            self.packagesSpacefmCheck.setText(_translate("MainWindow", "SpaceFM", None))
+            self.packagesSpacefmCheck.setText("SpaceFM")
             self.packagesTerminatorPic.setToolTip(_translate("MainWindow", "Terminal emulator that supports tabs and grids", None))
-            self.packagesTerminatorCheck.setText(_translate("MainWindow", "Terminator", None))
+            self.packagesTerminatorCheck.setText("Terminator")
             self.packagesThunarPic.setToolTip(_translate("MainWindow", "Modern file manager for Xfce", None))
-            self.packagesThunarCheck.setText(_translate("MainWindow", "Thunar", None))
+            self.packagesThunarCheck.setText("Thunar")
             self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesAccessories), _translate("MainWindow", "Accessories", None))
             self.packagesAurSupportPic.setToolTip(_translate("MainWindow", "Installs yaourt, and required dependencies to access the AUR", None))
-            self.packagesAurSupportCheck.setText(_translate("MainWindow", "Aur \nSupport", None))
+            self.packagesAurSupportCheck.setText("Aur \nSupport")
             self.packagesMultimediaSupportPic.setToolTip(_translate("MainWindow", "Installs flashplugin, and required codecs for playing media", None))
-            self.packagesMultimediaSupportCheck.setText(_translate("MainWindow", "Multimedia \nSupport", None))
+            self.packagesMultimediaSupportCheck.setText("Multimedia \nSupport")
             self.packagesPrinterSupportPic.setToolTip(_translate("MainWindow", "Installs manjaro-printer, and CUPS to enable printers", None))
-            self.packagesPrinterSupportCheck.setText(_translate("MainWindow", "Printer \nSupport", None))
+            self.packagesPrinterSupportCheck.setText("Printer \nSupport")
             self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesExtras), _translate("MainWindow", "Extras", None))
-            self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesInstall), "Install")
-            self.packagesInstallButton.setText("Install")
+            self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesInstall), _translate("MainWindow", "Install", None))
+            self.packagesInstallButton.setText(_translate("MainWindow", "Install", None))
         
         
         #Adds the fifth and final page
@@ -1318,8 +1319,19 @@ class Ui_MainWindow(QtCore.QObject):
         self.finishHelpDesc = QtGui.QLabel(self.Finish)
         self.finishHelpButton = QtGui.QPushButton(self.Finish)
         
+        if openboxStatus:
+            self.finishWallpaperMenu.setText(_translate("MainWindow", "Packages", None))
+        elif nitrogenStatus or plasmaStatus:
+            self.finishWallpaperMenu.setText(_translate("MainWindow", "Wallpapers", None))
+        elif tintStatus:
+            self.finishWallpaperMenu.setText(_translate("MainWindow", "Tint 2", None))
+        elif kwinStatus:
+            self.finishWallpaperMenu.setText(_translate("MainWindow", "Themes", None))
+        else:
+            self.finishWallpaperMenu.setText(_translate("MainWindow", "Folders", None))
+         
         finalPageWidgets = {
-            "finishHeader": [self.finishHeader, 80, 20, 231, 51, "finishHeader", None],
+            "finishHeader": [self.finishHeader, 80, 20, 600, 51, "finishHeader", None],
             "finishWallpaperMenu": [self.finishWallpaperMenu, 20, 90, 111, 41, "finishWallpaperMenu", None],
             "finishArrow": [self.finishArrow, 140, 90, 31, 41, "finishArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
             "finishMenu": [self.finishMenu, 170, 90, 81, 41, "finishMenu", None],
@@ -1327,11 +1339,11 @@ class Ui_MainWindow(QtCore.QObject):
             "finishForward": [self.finishForward, 750, 575, 91, 33, "finishForward", None],
             "finishPrevious": [self.finishPrevious, 640, 575, 101, 33, "finishPrevious", None],
             "finishDesc": [self.finishDesc, 30, 150, 781, 51, "finishDesc", None],
-            "finishSystemSettings": [self.finishSystemSettings, 40, 220, 250, 31, "finishSystemSettings", None],
+            "finishSystemSettings": [self.finishSystemSettings, 40, 220, 500, 31, "finishSystemSettings", None],
             "finishSystemSettingsPic": [self.finishSystemSettingsPic, 70, 260, 111, 101, "finishSystemSettingsPic", "/usr/share/turbulence/images/manjaro-grey/finish/preferences-system.png"],
             "finishSystemSettingsDesc": [self.finishSystemSettingsDesc, 200, 280, 390, 31, "finishSystemSettingsDesc", None],
             "finishSystemSettingsButton": [self.finishSystemSettingsButton, 300, 310, 181, 41, "finishSystemSettingsButton", None],
-            "finishHelpHead": [self.finishHelpHead, 40, 400, 71, 31, "finishHelpHead", None, None],
+            "finishHelpHead": [self.finishHelpHead, 40, 400, 500, 31, "finishHelpHead", None, None],
             "finishHelpPic": [self.finishHelpPic, 70, 440, 111, 101, "finishHelpPic", "/usr/share/turbulence/images/manjaro-grey/finish/help-icon.png"],
             "finishHelpDesc": [self.finishHelpDesc, 200, 440, 391, 51, "finishHelpDesc", None],
             "finishHelpButton": [self.finishHelpButton, 300, 491, 181, 41, "finishHelpButton", None]
@@ -1349,6 +1361,10 @@ class Ui_MainWindow(QtCore.QObject):
         self.finishPrevious.setFlat(True)
         self.finishSystemSettingsButton.setFlat(True)
         self.finishHelpButton.setFlat(True)
+        
+        self.finishDesc.setWordWrap(True)
+        self.finishSystemSettingsDesc.setWordWrap(True)
+        self.finishHelpDesc.setWordWrap(True)
         
         self.finishWallpaperMenu.setFocusPolicy(QtCore.Qt.NoFocus)
         self.finishMenu.setFocusPolicy(QtCore.Qt.NoFocus)
@@ -1376,25 +1392,24 @@ class Ui_MainWindow(QtCore.QObject):
         
         #Translates the widgets, or sets text
         self.finishHeader.setText(_translate("MainWindow", "Congratulations!", None))
-        self.finishWallpaperMenu.setText("Wallpapers")
-        self.finishMenu.setText("Finish")
+        self.finishMenu.setText(_translate("MainWindow", "Finish", None))
         self.finishCancel.setText(_translate("MainWindow", "Cancel", None))
-        self.finishForward.setText("Finish")
+        self.finishForward.setText(_translate("MainWindow", "Finish", None))
         self.finishPrevious.setText(_translate("MainWindow", "Previous", None))
-        self.finishDesc.setText(_translate("MainWindow", "All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs \nand links below. Also, if you haven\'t already, make sure to join the Manjaro community as well!", None))
+        self.finishDesc.setText(_translate("MainWindow", "All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs and links below. Also, if you haven\'t already, make sure to join the Manjaro community as well!", None))
         self.finishHelpHead.setText(_translate("MainWindow", "Help", None))
-        self.finishHelpDesc.setText(_translate("MainWindow", "For help and support, you can visit Manjaro.org for access \nto a terrific forum, wiki, and IRC!", None))
+        self.finishHelpDesc.setText(_translate("MainWindow", "For help and support, you can visit Manjaro.org for access to a terrific forum, wiki, and IRC!", None))
         self.finishHelpButton.setText(_translate("MainWindow", "Launch Manjaro.org", None))
         
         if kdeStatus:
             self.finishSystemSettings.setText(_translate("MainWindow", "System Settings", None))
-            self.finishSystemSettingsDesc.setText(_translate("MainWindow", "Control panel to edit various aspects of the KDE desktop, \nand more.", None))
+            self.finishSystemSettingsDesc.setText(_translate("MainWindow", "Control panel to edit various aspects of the KDE desktop, and more.", None))
             self.finishSystemSettingsButton.setText(_translate("MainWindow", "Launch System Settings", None))
             QtCore.QObject.connect(self.finishSystemSettingsButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonSystemSettings)
         elif openboxStatus:
             self.finishSystemSettings.setText(_translate("MainWindow", "Customize OpenBox", None))
             self.finishSystemSettingsDesc.setText(_translate("MainWindow", "Control panel to edit various aspects of OpenBox", None))
-            self.finishSystemSettingsButton.setText(_translate("MainWindow", "Launch Customize \nLook and Feel", None))
+            self.finishSystemSettingsButton.setText(_translate("MainWindow", "Launch Customize Look and Feel", None))
             QtCore.QObject.connect(self.finishSystemSettingsButton, QtCore.SIGNAL(_fromUtf8("clicked()")), self.handleButtonlxappearance)
         
         
