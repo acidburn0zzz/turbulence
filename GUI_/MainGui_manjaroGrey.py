@@ -160,7 +160,7 @@ class Ui_MainWindow(QtCore.QObject):
         firstPageWidgets = {
             "welcomeHeader": [self.welcomeHeader, 80, 20, 600, 51, "welcomeHeader", None],
             "welcomeWhatIsManjaro": [self.welcomeWhatIsManjaro, 30, 180, 600, 71, "welcomeWhatIsManjaro", None],
-            "welcomeManjaroDesc": [self.welcomeManjaroDesc, 70, 260, 631, 260, "welcomeManjaroDesc", None],
+            "welcomeManjaroDesc": [self.welcomeManjaroDesc, 70, 260, 631, 290, "welcomeManjaroDesc", None],
         }
         
         firstPageLayouts = {
@@ -1342,11 +1342,11 @@ class Ui_MainWindow(QtCore.QObject):
             "finishSystemSettings": [self.finishSystemSettings, 40, 220, 500, 31, "finishSystemSettings", None],
             "finishSystemSettingsPic": [self.finishSystemSettingsPic, 70, 260, 111, 101, "finishSystemSettingsPic", "/usr/share/turbulence/images/manjaro-grey/finish/preferences-system.png"],
             "finishSystemSettingsDesc": [self.finishSystemSettingsDesc, 200, 280, 390, 31, "finishSystemSettingsDesc", None],
-            "finishSystemSettingsButton": [self.finishSystemSettingsButton, 300, 310, 181, 41, "finishSystemSettingsButton", None],
+            "finishSystemSettingsButton": [self.finishSystemSettingsButton, 300, 280, 390, 41, "finishSystemSettingsButton", None],
             "finishHelpHead": [self.finishHelpHead, 40, 400, 500, 31, "finishHelpHead", None, None],
             "finishHelpPic": [self.finishHelpPic, 70, 440, 111, 101, "finishHelpPic", "/usr/share/turbulence/images/manjaro-grey/finish/help-icon.png"],
-            "finishHelpDesc": [self.finishHelpDesc, 200, 440, 391, 51, "finishHelpDesc", None],
-            "finishHelpButton": [self.finishHelpButton, 300, 491, 181, 41, "finishHelpButton", None]
+            "finishHelpDesc": [self.finishHelpDesc, 200, 440, 390, 51, "finishHelpDesc", None],
+            "finishHelpButton": [self.finishHelpButton, 300, 440, 390, 41, "finishHelpButton", None]
         }
 
         #defines all the widget parameters
