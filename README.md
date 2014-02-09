@@ -6,6 +6,7 @@ first boot. Some of it's features are:
 
 * Sleak grey graphical layout
 * Provides information of Manjaro to new users
+* Provides process detection to better serve configuration options based on what you're running
 * Can allow the user to easily select which Folders he wants in his home directory
 * Allows users to select which placement for their tint2 (OpenBox)
 * Allows users to select which wallpaper they want (Openbox/KDE)
@@ -37,6 +38,11 @@ sudo bash install.sh -r
 * python2-pyqt4
 * pyqt4-common
 * qt4
+* wmctrl
+
+# Optional Dependencies
+
+* Lxterminal
 * kdeplasma-theme-cupertino-ish
 
 # Roadmap and TODO
@@ -45,3 +51,8 @@ sudo bash install.sh -r
 * Add a verify page, and have all settings applied then
 * Add Tullianas Kwin theme in place of .Ozone
 * Code Clean up and restructure
+* Make buttons non blocking
+* Add a config file
+* Add more settings to configure KDE options as well as OpenBox
+* Figure out alternatives to opening a terminal with the pacman installer script
+* Move install button from install tab to next page
