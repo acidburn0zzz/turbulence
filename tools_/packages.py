@@ -22,9 +22,9 @@ def checkInternet():
     
     
 def getCurrentPackages():
-	packagesText = subprocess.check_output("pacman -Qq", shell=True)
-	packagesList = packagesText.split("\n")
-	return packagesList
+        packagesText = subprocess.check_output("pacman -Qq", shell=True)
+        packagesList = packagesText.split("\n")
+        return packagesList
 
 def handlePackages(packagesTBI, packagesTBR): #packagesTBI = packages to be installed #packagesTBR = packages to br removed
     currentPackages = getCurrentPackages()

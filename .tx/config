@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[turbulence.mainguits]
+[manjaro-turbulence.turbulencets]
 file_filter = tr/qt_<lang>.ts
 source_lang = en
 type = QT
