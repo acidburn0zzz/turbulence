@@ -17,6 +17,10 @@ def launchSystemSettings():
     call(["systemsettings"])
     return True
     
+def launchAppearance():
+    logger.writeLog("launchCustomize")
+    call(["lxappearance"])
+    return True
     
 def launchHelp():
     logger.writeLog("launchHelp")

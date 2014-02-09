@@ -10,60 +10,114 @@
 }
 
 /*First Page Elements*/
-#header {
+#welcomeHeader {
     font: 20pt "Sans Serif"; 
     color: rgb(220, 220, 220);
 }
 #welcomeButton {
     font: 13pt "Sans Serif"; 
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
 }
-#folders2 {
+#welcomeButton:hover {
+    border: 1px solid #49525b;
+}
+#welcomeFolders {
     font: 12pt "Sans Serif"; 
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
 }
-#whatIsManjaro {
+#welcomeFolders:hover {
+    border: 1px solid #49525b;
+}
+#welcomeWhatIsManjaro {
     font: 30pt "Sans Serif"; 
     color: rgb(220, 220, 220);
 }
-#manjaroDesc {
+#welcomeManjaroDesc {
     font: 10pt "Sans Serif";
     color: rgb(220, 220, 220); 
 }
-#forward {
+#welcomeForward {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
 }
-#cancel {
+#welcomeForward:hover {
+    border: 1px solid #49525b;
+}
+#welcomeCancel {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#welcomeCancel:hover {
+    border: 1px solid #49525b;
 }
 
 /*Second Page Elements*/
-#header2 {
+#folderHeader {
     font: 20pt "Sans Serif"; 
     color: rgb(220, 220, 220);
 }
-#foldersHead {
+#folderMenu {
     font: 13pt "Sans Serif"; 
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
 }
-#themes {
+#folderMenu:hover {
+    border: 1px solid #49525b;
+}
+#folderThemes {
     font: 12pt "Sans Serif";
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
 }
-#cancel2 {
-    color: rgb(220, 220, 220);
+#folderThemes:hover {
+    border: 1px solid #49525b;
 }
-#forward2 {
+#folderCancel {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
 }
-#previous {
+#folderCancel:hover {
+    border: 1px solid #49525b;
+}
+#folderForward {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#folderForward:hover {
+    border: 1px solid #49525b;
+}
+#folderPrevious {
+    color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#folderPrevious:hover {
+    border: 1px solid #49525b;
 }
 #folderDesc {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
 }
-#folderHeaderHead {
+#folderSubHeader {
     color: rgb(220, 220, 220);
     font: 16pt "Sans Serif";
 }
@@ -205,32 +259,62 @@
 }
 
 /*Third Page Elements*/
-#header3 {
+#themeHeader {
     font: 20pt "Sans Serif";
     color: rgb(220, 220, 220);
 }
-#themesMenu {
+#themeMenu {
     font: 13pt "Sans Serif";
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
 }
-#menuWallpapers {
+#themeMenu:hover {
+    border: 1px solid #49525b;
+}
+#themeMenuWallpapers {
     font: 12pt "Sans Serif";
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
 }
-#cancel3 {
+#themeMenuWallpapers:hover {
+    border: 1px solid #49525b;
+}
+#themeCancel {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
 }
-#forward3 {
+#themeCancel:hover {
+    border: 1px solid #49525b;
+}
+#themeForward {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
 }
-#previous2 {
+#themeForward:hover {
+    border: 1px solid #49525b;
+}
+#themePrevious {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
 }
-#folderDesc2 {
+#themePrevious:hover {
+    border: 1px solid #49525b;
+}
+#themeDesc {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
 }
-#themesHeader {
+#themeHeaderHead {
     color: rgb(220, 220, 220);
     font: 16pt "Sans Serif";
 }
@@ -276,33 +360,159 @@
     image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
 }
 
-/*Fourth Page Elements*/
-#header4 {
+/*Tint Page Elements*/
+#tintHeader {
     font: 20pt "Sans Serif";
     color: rgb(220, 220, 220);
 }
-#wallpapersMenu {
+#tintMenu {
     font: 13pt "Sans Serif";
     color: rgb(220, 220, 220);
+    border: none;
+    padding:0px 20px 0px 20px;
 }
-#menuFinish {
+#tintMenu:hover {
+    border: 1px solid #49525b;
+}
+#tintMenuWallpapers {
     font: 12pt "Sans Serif";
     color: rgb(220, 220, 220);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#tintMenuWallpapers:hover {
+    border: 1px solid #49525b;
+}
+#tintCancel {
+    color: rgb(220, 220, 220);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#tintCancel:hover {
+    border: 1px solid #49525b;
+}
+#tintForward {
+    color: rgb(220, 220, 220);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#tintForward:hover {
+    border: 1px solid #49525b;
+}
+#tintPrevious {
+    color: rgb(220, 220, 220);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#tintPrevious:hover {
+    border: 1px solid #49525b;
+}
+#tintPositionDesc {
+    color: rgb(220, 220, 220);
+    font: 10pt "Sans Serif";
+}
+#tintPositionHeader {
+    color: rgb(220, 220, 220);
+    font: 16pt "Sans Serif";
+}
+#tintPositionRadio1 {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+}
+#tintPositionRadio1::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#tintPositionRadio1::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
+}
+#tintPositionRadio2 {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+}
+#tintPositionRadio2::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#tintPositionRadio2::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
+}
+#tintPositionRadio3 {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+}
+#tintPositionRadio3::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#tintPositionRadio3::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
+}
+#tintPositionRadio4 {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+}
+#tintPositionRadio4::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-check.png);
+}
+#tintPositionRadio4::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/radio-un-check.png);
+}
+
+/*Fourth Page Elements*/
+#wallpaperHeader {
+    font: 20pt "Sans Serif";
+    color: rgb(220, 220, 220);
+}
+#wallpaperMenu {
+    font: 13pt "Sans Serif";
+    color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#wallpaperMenu:hover {
+    border: 1px solid #49525b;
+}
+#wallpaperMenuFinish {
+    font: 12pt "Sans Serif";
+    color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#wallpaperMenuFinish:hover {
+    border: 1px solid #49525b;
 }
 #wallpaperDesc {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
 }
-#cancel4 {
+#wallpaperCancel {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
 }
-#forward4 {
+#wallpaperCancel:hover {
+    border: 1px solid #49525b;
+}
+#wallpaperForward {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
 }
-#previous3 {
+#wallpaperForward:hover {
+    border: 1px solid #49525b;
+}
+#wallpaperPrevious {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
 }
-#wallpaperHeader {
+#wallpaperPrevious:hover {
+    border: 1px solid #49525b;
+}
+#wallpaperHeaderHead {
     color: rgb(220, 220, 220);
     font: 16pt "Sans Serif";
 }
@@ -388,52 +598,485 @@
 }
 
 /*Fifth Page Elements*/
-#header5 {
+#packagesHeader {
+    font: 20pt "Sans Serif";
+    color: rgb(220, 220, 220);
+}
+#packagesMenu {
+    font: 13pt "Sans Serif";
+    color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+#packagesMenu:hover {
+    border: 1px solid #49525b;
+}
+#packagesMenuFinish {
+    font: 12pt "Sans Serif";
+    color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+#packagesMenuFinish:hover {
+    border: 1px solid #49525b;
+}
+#packagesDesc {
+    color: rgb(220, 220, 220);
+    font: 10pt "Sans Serif";
+}
+#packagesPrevious {
+    color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+#packagesPrevious:hover {
+    border: 1px solid #49525b;
+}
+#packagesForward {
+    color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+#packagesForward:hover {
+    border: 1px solid #49525b;
+}
+#packagesCancel {
+    color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+#packagesCancel:hover {
+    border: 1px solid #49525b;
+}
+#packagesHeaderHead {
+    color: rgb(220, 220, 220);
+    font: 16pt "Sans Serif";
+}
+#packagesTabs {
+    color: rgb(220, 220, 220);
+    border: 1px solid red;
+}
+QTabWidget::pane {
+    border: 1px solid lightgrey;
+}
+QTabBar::tab {
+    color: rgb(220, 220, 220);
+    background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:0, y2:0.409, stop:0 rgb(27, 27, 27), stop:1 rgb(114, 114, 114));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px solid lightgrey;
+    border-bottom: none;
+    padding: 5px;
+    margin-left: 5px;
+}
+QTabBar::tab:selected {
+    background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(19, 19, 19), stop:1 rgb(161, 161, 161));
+    border: 1px solid lightgrey;
+    border-bottom:none;
+}
+#packagesNotActive {
+    background-color: rgba(0, 0, 0, 187);
+}
+#packagesAroraCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesAroraCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesAroraCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesChromiumCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesChromiumCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesChromiumCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesDelugeCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesDelugeCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesDelugeCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesFirefoxCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesFirefoxCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesFirefoxCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesMidoriCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesMidoriCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesMidoriCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesOperaCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesOperaCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesOperaCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesTransmissionCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesTransmissionCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesTransmissionCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesAudaciousCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesAudaciousCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesAudaciousCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesDeadbeefCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesDeadbeefCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesDeadbeefCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesClementineCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesClementineCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesClementineCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesSmplayerCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesSmplayerCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesSmplayerCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesVlcCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesVlcCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesVlcCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesBlenderCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesBlenderCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesBlenderCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesEvinceCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesEvinceCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesEvinceCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesGimpCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesGimpCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesGimpCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesGpicviewCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesGpicviewCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesGpicviewCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesViewniorCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesViewniorCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesViewniorCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesGeanyCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesGeanyCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesGeanyCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesHexchatCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}   
+#packagesHexchatCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesHexchatCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesLeafpadCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesLeafpadCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesLeafpadCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesPcmanfmCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesPcmanfmCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesPcmanfmCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesSpacefmCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesSpacefmCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesSpacefmCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesTerminatorCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesTerminatorCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesTerminatorCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesThunarCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesThunarCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesThunarCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesAurSupportCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesAurSupportCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesAurSupportCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesMultimediaSupportCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesMultimediaSupportCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesMultimediaSupportCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesPrinterSupportCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesPrinterSupportCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesPrinterSupportCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesCheckConnection {
+    color: rgb(220, 220, 220);
+    font: 14pt "Sans Serif";
+    background-color:none;
+    border: none;
+}
+#packagesCheckConnection:hover {
+    border: 1px solid #49525b;
+}
+#packagesInstallBack {
+    background-color: black;
+}
+#packagesInstallButton {
+    color: rgb(220, 220, 220);
+    font: 14pt "Sans Serif";
+    border: 1px solid #485B47;
+}
+#packagesInstallButton:hover {
+    border: 1px solid #49525b;
+}
+
+/*Fifth Page Elements*/
+#finishHeader {
     color: rgb(220, 220, 220);
     font: 20pt "Sans Serif";
 }
-#wallpapersMenu2 {
+#finishWallpaperMenu {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#finishWallpaperMenu:hover {
+    border: 1px solid #49525b;
 }
 #finishMenu {
     color: rgb(220, 220, 220);
     font: 13pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
 }
-#cancel5 {
-    color: rgb(220, 220, 220);
+#finishMenu:hover {
+    border: 1px solid #49525b;
 }
-#forward5 {
+#finishCancel {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
 }
-#previous4 {
+#finishCancel:hover {
+    border: 1px solid #49525b;
+}
+#finishForward {
     color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#finishForward:hover {
+    border: 1px solid #49525b;
+}
+#finishPrevious {
+    color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+}
+#finishPrevious:hover {
+    border: 1px solid #49525b;
 }
 #finishDesc {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
 }
-#systemSettings {
+#finishSystemSettings {
     color: rgb(220, 220, 220);
     font: 14pt "Sans Serif";
 }
-#systemSettingsDesc {
+#finishSystemSettingsDesc {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
 }
-#systemSettingsButton {
+#finishSystemSettingsButton {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: 1px solid #485B47;
 }
-#helpHead {
+#finishSystemSettingsButton:hover {
+    border: 1px solid #49525b;
+}
+#finishHelpHead {
     color: rgb(220, 220, 220);
     font: 14pt "Sans Serif";
 }
-#helpDesc {
+#finishHelpDesc {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
 }
-#helpButton {
+#finishHelpButton {
     color: rgb(220, 220, 220);
     font: 10pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: 1px solid #485B47;
+}
+#finishHelpButton:hover {
+    border: 1px solid #49525b;
 }

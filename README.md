@@ -41,9 +41,7 @@ sudo bash install.sh -r
 
 # Roadmap and TODO
 
-* Add better language support (very soon)
-* Merge this project and Turbulence-Evolution (Also very soon)
 * Add package selection support to KDE
 * Add a verify page, and have all settings applied then
-* Make terminal start with focus in packages page using wmctrl
-* Add multilingual support to folders. (Should happen soon)
+* Add Tullianas Kwin theme in place of .Ozone
+* Code Clean up and restructure

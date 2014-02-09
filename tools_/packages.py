@@ -3,6 +3,7 @@
 import urllib2
 import subprocess
 from sys import exit
+from os import system
 
 from tools_ import logger
 
@@ -21,9 +22,9 @@ def checkInternet():
     
     
 def getCurrentPackages():
-	packagesText = subprocess.check_output("pacman -Qq", shell=True)
-	packagesList = packagesText.split("\n")
-	return packagesList
+        packagesText = subprocess.check_output("pacman -Qq", shell=True)
+        packagesList = packagesText.split("\n")
+        return packagesList
 
 def handlePackages(packagesTBI, packagesTBR): #packagesTBI = packages to be installed #packagesTBR = packages to br removed
     currentPackages = getCurrentPackages()
@@ -36,3 +37,5 @@ def handlePackages(packagesTBI, packagesTBR): #packagesTBI = packages to be inst
     logger.writeLog("packagesToBeRemoved", packagesTBRStr)
     
     installPackages = subprocess.Popen(["lxterminal", "-e", "bash",  "/usr/share/turbulence/scripts/install-packages.sh", "\"" + ' '.join(packagesTBIList) + "\"", "-r", "\"" + ' '.join(packagesTBRList) + "\""])
+    installPackages.wait()
+    system("wmctrl -a LXTerminal")
