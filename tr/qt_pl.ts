@@ -4,7 +4,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1677"/>
         <source>Status: Active</source>
-        <translation>Stan: Aktywny</translation>
+        <translation>Stan: Aktywne</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="212"/>
@@ -44,7 +44,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1679"/>
         <source>Status: Deactivated</source>
-        <translation>Stan: Nieaktywny</translation>
+        <translation>Stan: Nieaktywne</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="427"/>
@@ -99,7 +99,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1397"/>
         <source>Finish</source>
-        <translation>Koniec</translation>
+        <translation>Zakończ</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="996"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="211"/>
         <source>Welcome To Manjaro!</source>
-        <translation type="unfinished"/>
+        <translation>Witaj w Manjaro!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="215"/>
@@ -155,7 +155,7 @@ Over these next few steps, Turbulence will guide you through customizing your ne
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1327"/>
         <source>Tint 2</source>
-        <translation type="unfinished"/>
+        <translation>Tint 2</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="418"/>
@@ -175,27 +175,27 @@ Over these next few steps, Turbulence will guide you through customizing your ne
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
         <source>Top</source>
-        <translation type="unfinished"/>
+        <translation>U góry</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="765"/>
         <source>Right</source>
-        <translation type="unfinished"/>
+        <translation>Po prawej</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="766"/>
         <source>Bottom</source>
-        <translation type="unfinished"/>
+        <translation>Na dole</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="767"/>
         <source>Left</source>
-        <translation type="unfinished"/>
+        <translation>Po lewej</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1323"/>
         <source>Packages</source>
-        <translation type="unfinished"/>
+        <translation>Pakiety</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1231"/>
@@ -207,174 +207,176 @@ When you are done, go to the Install tab, and click &quot;Install&quot;.</source
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1235"/>
         <source>Check For Internet Connection</source>
-        <translation type="unfinished"/>
+        <translation>Sprawdź połączenie internetowe</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1236"/>
         <source>Standalone web browser from mozilla.org</source>
-        <translation type="unfinished"/>
+        <translation>Samodzielna przeglądarka internetowa od mozilla.org</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1237"/>
         <source>Lightweight cross-platform Web browser</source>
-        <translation type="unfinished"/>
+        <translation>Lekka i wieloplatformowa przeglądarka internetowa</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1239"/>
         <source>The open-source project behind Google Chrome, an 
 attempt at creating a safer, faster, and more stable browser</source>
-        <translation type="unfinished"/>
+        <translation>Otwarto-źródłowy projekt stojący za Google Chrome, 
+próba stworzenia bezpiecznej, szybkiej i bardziej stabilnej przeglądarki</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1240"/>
         <source>Fast and secure web browser and Internet suite</source>
-        <translation type="unfinished"/>
+        <translation>Szybka i bezpieczna przeglądarka internetowa i komplet narzędzi do Internetu</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1241"/>
         <source>Fast, easy, and free BitTorrent client</source>
-        <translation type="unfinished"/>
+        <translation>Szybki, łatwy w obsłudze i wolny klient BitTorrent</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1243"/>
         <source>Lightweight web browser (GTK2)</source>
-        <translation type="unfinished"/>
+        <translation>Lekka przeglądarka internetowa (GTK2)</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1248"/>
         <source>A BitTorrent client with multiple user interfaces 
 in a client/server model</source>
-        <translation type="unfinished"/>
+        <translation>Klient BitTorrent z wieloma interfejsami użytkownika
+w modelu klient/serwer</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1250"/>
         <source>Network</source>
-        <translation type="unfinished"/>
+        <translation>Sieć</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1251"/>
         <source>A multi-platform MPEG, VCD/DVD, and DivX player</source>
-        <translation type="unfinished"/>
+        <translation>Wieloplatformowy odtwarzacz MPEG, VCD/DVD i DivX</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1253"/>
         <source>A complete front-end for MPlayer</source>
-        <translation type="unfinished"/>
+        <translation>Kompletna nakładka na MPlayer</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1255"/>
         <source>Lightweight, advanced audio player focused on audio quality</source>
-        <translation type="unfinished"/>
+        <translation>Lekki, ale zaawansowany odtwarzacz muzyczny skupiony na jakości dźwięku</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1257"/>
         <source>A music player and library organizer</source>
-        <translation type="unfinished"/>
+        <translation>Odtwarzacz muzyczny i organizer bibliotek</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1259"/>
         <source>An audio player for GNU/Linux based on GTK2.</source>
-        <translation type="unfinished"/>
+        <translation>Odtwarzacz muzyczny dla GNU/Linux oparty na GTK2.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1261"/>
         <source>Multimedia</source>
-        <translation type="unfinished"/>
+        <translation>Multimedia</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1262"/>
         <source>A fully integrated 3D graphics creation suite</source>
-        <translation type="unfinished"/>
+        <translation>W pełni zintegrowany zestaw do tworzenia grafiki 3D</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1264"/>
         <source>Simply a document viewer</source>
-        <translation type="unfinished"/>
+        <translation>Prosta przeglądarka dokumentów</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1266"/>
         <source>GNU Image Manipulation Program</source>
-        <translation type="unfinished"/>
+        <translation>Program manipulacji obrazem GNU</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1268"/>
         <source>Lightweight image viewer</source>
-        <translation type="unfinished"/>
+        <translation>Lekka przeglądarka obrazów</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1270"/>
         <source>A simple, fast and elegant image viewer program</source>
-        <translation type="unfinished"/>
+        <translation>Prosty, szybki i elegancki program do przeglądania obrazów</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1272"/>
         <source>Graphics</source>
-        <translation type="unfinished"/>
+        <translation>Grafika</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1273"/>
         <source>Fast and lightweight IDE</source>
-        <translation type="unfinished"/>
+        <translation>Szybkie i lekkie zintegrowane środowisko programistyczne</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1275"/>
         <source>A popular and easy to use graphical IRC (chat) client</source>
-        <translation type="unfinished"/>
+        <translation>Popularny i łatwy w użyciu graficzny klient IRC (czatów)</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1277"/>
         <source>A notepad clone for GTK+ 2.0</source>
-        <translation type="unfinished"/>
+        <translation>Klon notatnika dla GTK+ 2.0</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1279"/>
         <source>An extremely fast and lightweight file manager</source>
-        <translation type="unfinished"/>
+        <translation>Ekstremalnie szybki i lekki menedżer plików</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1281"/>
         <source>Multi-panel tabbed file manager</source>
-        <translation type="unfinished"/>
+        <translation>Wielopanelowy i obsługujący karty menedżer plików</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1283"/>
         <source>Terminal emulator that supports tabs and grids</source>
-        <translation type="unfinished"/>
+        <translation>Emulator terminala, który wspiera karty i przetwarzanie sieciowe</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1285"/>
         <source>Modern file manager for Xfce</source>
-        <translation type="unfinished"/>
+        <translation>Nowoczesny menedżer plików dla Xfce</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1287"/>
         <source>Accessories</source>
-        <translation type="unfinished"/>
+        <translation>Akcesoria</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1288"/>
         <source>Installs yaourt, and required dependencies to access the AUR</source>
-        <translation type="unfinished"/>
+        <translation>Instaluje yaourt i wymagane zależności, by móc korzystać z AUR</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1290"/>
         <source>Installs flashplugin, and required codecs for playing media</source>
-        <translation type="unfinished"/>
+        <translation>Instaluje wtyczkę flash i wymagane kodeki do odtwarzania mediów</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1292"/>
         <source>Installs manjaro-printer, and CUPS to enable printers</source>
-        <translation type="unfinished"/>
+        <translation>Instaluje manjaro-printer i CUPS, by umożliwić drukowanie</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1294"/>
         <source>Extras</source>
-        <translation type="unfinished"/>
+        <translation>Dodatki</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1296"/>
         <source>Install</source>
-        <translation type="unfinished"/>
+        <translation>Zainstaluj</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
@@ -394,12 +396,12 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1410"/>
         <source>Customize OpenBox</source>
-        <translation type="unfinished"/>
+        <translation>Dostosuj OpenBox</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1411"/>
         <source>Control panel to edit various aspects of OpenBox</source>
-        <translation type="unfinished"/>
+        <translation>Panel kontrolny do edycji różnych aspektów OpenBoxa</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1412"/>
@@ -409,7 +411,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1624"/>
         <source>Failed. Please Try Again.</source>
-        <translation type="unfinished"/>
+        <translation>Wystąpił błąd. Proszę spróbować ponownie.</translation>
     </message>
 </context>
 </TS>
