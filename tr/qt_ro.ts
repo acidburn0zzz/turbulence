@@ -49,7 +49,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="427"/>
         <source>Desktop</source>
-        <translation type="unfinished"/>
+        <translation>Desktop</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="428"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="432"/>
         <source>Public</source>
-        <translation type="unfinished"/>
+        <translation>Public</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="433"/>
@@ -99,7 +99,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1397"/>
         <source>Finish</source>
-        <translation type="unfinished"/>
+        <translation>Finish</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="996"/>
@@ -129,12 +129,12 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1402"/>
         <source>Launch Manjaro.org</source>
-        <translation>Lansează Manjaro.org</translation>
+        <translation>Lansează manjaro.org</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="211"/>
         <source>Welcome To Manjaro!</source>
-        <translation type="unfinished"/>
+        <translation>Bine ați venit la Manjaro!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="215"/>
@@ -150,266 +150,282 @@ Some of Manjaro's features are:
 For newcomers, a user-friendly installer is provided, and the system itself is designed to work fully straight out of the box. For more experienced, and adventurous users, Manjaro also offers the configurability and versatility to be shaped and moulded in every respect to suit personal taste and preference.
 &lt;br&gt;&lt;br&gt;
 Over these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Manjaro&lt;/b&gt; este o distribuție rapidă ce are beneficiile popularului Arch Linux, dar este și ușor de utilizat. Dezvoltat în Austria, Franța și Germania, Manjaro țintește atât utilizatori noi, cât și cei experimentați
+&lt;br&gt;&lt;br&gt;
+Printre calitățile distribuției se află:
+&lt;ul&gt;
+&lt;li&gt;Viteza, puterea și eficiența&lt;li&gt;
+&lt;li&gt;Accesul la cele mai noi versiuni disponibile de software&lt;/li&gt;
+&lt;li&gt;Un model „rolling release” ce permite un sistem la zi fără să fie nevoie de instalarea versiunilor noi&lt;/li&gt;
+&lt;li&gt;Acces la Arch User Repository (AUR)&lt;/li&gt;
+&lt;/ul&gt;
+Pentru noii veniți, există un instalator grafic prietenos, iar sistemul instalat are funcționalitate completă. Pentru cei mai experimentați sau aventuroși, Manjaro oferă cofigurabilitatea și versatilitatea de a fi mulat după gusturile și preferințele utilizatorului.
+&lt;br&gt;&lt;br&gt;
+În următorii pași, Turbulence vă va ghida prin personalizarea copiei dvs. de Manjaro,</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1327"/>
         <source>Tint 2</source>
-        <translation type="unfinished"/>
+        <translation>Tint 2</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="418"/>
         <source>Here, you can choose which folders you want in your home directory. You have a choice from some of the most commonly used folders.</source>
-        <translation type="unfinished"/>
+        <translation>Aici puteți alege dosarele pe care le doriți în /home. Aveți de ales dintre cele mai folosite dosare.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="605"/>
         <source>Here you can choose what type of theme you want for your window decorations.</source>
-        <translation type="unfinished"/>
+        <translation>Aici puteți alege tema dorită pentru decorațiile ferestrelor.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="763"/>
         <source>Here you can choose what position you want of your Tint 2 panel.</source>
-        <translation type="unfinished"/>
+        <translation>Aici puteți alege poziția panoului Tint 2.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
         <source>Top</source>
-        <translation type="unfinished"/>
+        <translation>Sus</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="765"/>
         <source>Right</source>
-        <translation type="unfinished"/>
+        <translation>Dreapta</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="766"/>
         <source>Bottom</source>
-        <translation type="unfinished"/>
+        <translation>Jos</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="767"/>
         <source>Left</source>
-        <translation type="unfinished"/>
+        <translation>Stânga</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1323"/>
         <source>Packages</source>
-        <translation type="unfinished"/>
+        <translation>Pachete</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1231"/>
         <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or unselect any packages you want to add or remove. Packages that are installed will be auto-selected.
 
 When you are done, go to the Install tab, and click &quot;Install&quot;.</source>
-        <translation type="unfinished"/>
+        <translation>Aici puteți alege ce pachete doriți instalate. Puneți cursorul deasupra orcărui pachet pentru a vedea o descriere și selectați/deselectați pachetele pe care le doriți adăugate/șterse. Pachetele selectate vor fi autoinstalate.
+
+Când ați terminat, întrați în tabul Instalează și apăsați „Instalează”.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1235"/>
         <source>Check For Internet Connection</source>
-        <translation type="unfinished"/>
+        <translation>Verifică conexiunea la Internet</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1236"/>
         <source>Standalone web browser from mozilla.org</source>
-        <translation type="unfinished"/>
+        <translation>Browser de la mozilla.org</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1237"/>
         <source>Lightweight cross-platform Web browser</source>
-        <translation type="unfinished"/>
+        <translation>Browser multi-platformă ușor</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1239"/>
         <source>The open-source project behind Google Chrome, an 
 attempt at creating a safer, faster, and more stable browser</source>
-        <translation type="unfinished"/>
+        <translation>Proiectul open source al Google Chrome care încearcă să
+creeze un browser mai sigur, rapid și stabil</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1240"/>
         <source>Fast and secure web browser and Internet suite</source>
-        <translation type="unfinished"/>
+        <translation>Browser rapid și sigur și suită de Internet</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1241"/>
         <source>Fast, easy, and free BitTorrent client</source>
-        <translation type="unfinished"/>
+        <translation>Client de torente rapid, ușor și liber</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1243"/>
         <source>Lightweight web browser (GTK2)</source>
-        <translation type="unfinished"/>
+        <translation>Browser ușor (GTK2)</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1248"/>
         <source>A BitTorrent client with multiple user interfaces 
 in a client/server model</source>
-        <translation type="unfinished"/>
+        <translation>Client de torente cu multiple interfețe într-un
+model client/server</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1250"/>
         <source>Network</source>
-        <translation type="unfinished"/>
+        <translation>Rețea</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1251"/>
         <source>A multi-platform MPEG, VCD/DVD, and DivX player</source>
-        <translation type="unfinished"/>
+        <translation>Un player multiplatformă MPEG, VCD/DVD și DivX </translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1253"/>
         <source>A complete front-end for MPlayer</source>
-        <translation type="unfinished"/>
+        <translation>O interfață completă pentru MPlayer</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1255"/>
         <source>Lightweight, advanced audio player focused on audio quality</source>
-        <translation type="unfinished"/>
+        <translation>Player audio ușor și avansat focusat pe calitatea audio.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1257"/>
         <source>A music player and library organizer</source>
-        <translation type="unfinished"/>
+        <translation>Player de muzică și organizator de librărie</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1259"/>
         <source>An audio player for GNU/Linux based on GTK2.</source>
-        <translation type="unfinished"/>
+        <translation>Player audio pentru GNU/Linux bazat pe GTK2.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1261"/>
         <source>Multimedia</source>
-        <translation type="unfinished"/>
+        <translation>Multimedia</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1262"/>
         <source>A fully integrated 3D graphics creation suite</source>
-        <translation type="unfinished"/>
+        <translation>O suită de grafică 3D complet integrată</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1264"/>
         <source>Simply a document viewer</source>
-        <translation type="unfinished"/>
+        <translation>Un simplu vizualizator de documente</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1266"/>
         <source>GNU Image Manipulation Program</source>
-        <translation type="unfinished"/>
+        <translation>GNU Image Manipulation Program</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1268"/>
         <source>Lightweight image viewer</source>
-        <translation type="unfinished"/>
+        <translation>Vizualizator de imagini ușor</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1270"/>
         <source>A simple, fast and elegant image viewer program</source>
-        <translation type="unfinished"/>
+        <translation>Un vizualizator de imagini ușor, simplu și elegant</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1272"/>
         <source>Graphics</source>
-        <translation type="unfinished"/>
+        <translation>Grafică</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1273"/>
         <source>Fast and lightweight IDE</source>
-        <translation type="unfinished"/>
+        <translation>IDE rapid și ușor</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1275"/>
         <source>A popular and easy to use graphical IRC (chat) client</source>
-        <translation type="unfinished"/>
+        <translation>Client IRC (chat) grafic popular și ușor de utilizat</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1277"/>
         <source>A notepad clone for GTK+ 2.0</source>
-        <translation type="unfinished"/>
+        <translation>Clonă de notepad pentru GTK+ 2.0</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1279"/>
         <source>An extremely fast and lightweight file manager</source>
-        <translation type="unfinished"/>
+        <translation>Manager de fișiere extrem de rapid și ușor</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1281"/>
         <source>Multi-panel tabbed file manager</source>
-        <translation type="unfinished"/>
+        <translation>Manager de fișiere cu taburi și multiple panouri</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1283"/>
         <source>Terminal emulator that supports tabs and grids</source>
-        <translation type="unfinished"/>
+        <translation>Emulator de terminal ce suportă taburi și griduri</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1285"/>
         <source>Modern file manager for Xfce</source>
-        <translation type="unfinished"/>
+        <translation>Manager de fișiere modern pentru Xfce</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1287"/>
         <source>Accessories</source>
-        <translation type="unfinished"/>
+        <translation>Accesorii</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1288"/>
         <source>Installs yaourt, and required dependencies to access the AUR</source>
-        <translation type="unfinished"/>
+        <translation>Instalează yaourt și dependențele necesare accesului la AUR</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1290"/>
         <source>Installs flashplugin, and required codecs for playing media</source>
-        <translation type="unfinished"/>
+        <translation>Instalează flashplugin și codecurile necesare formatelor media</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1292"/>
         <source>Installs manjaro-printer, and CUPS to enable printers</source>
-        <translation type="unfinished"/>
+        <translation>Instalează manjaro-printer și CUPS pentru imprimante</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1294"/>
         <source>Extras</source>
-        <translation type="unfinished"/>
+        <translation>Extra</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1296"/>
         <source>Install</source>
-        <translation type="unfinished"/>
+        <translation>Instalează</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
-        <translation type="unfinished"/>
+        <translation>Toate setările au fost aplicate. Acum puteți să vă bucurați de Manjaro sau uitați-vă la programele și legăturile de mai jos. Dacă n-ați făcut-o deja, alăturați-vă comunității Manjaro!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1401"/>
         <source>For help and support, you can visit Manjaro.org for access to a terrific forum, wiki, and IRC!</source>
-        <translation type="unfinished"/>
+        <translation>Pentru ajutor, puteți vizita manjaro.org pentru a accesa un forum terific, wiki și IRC!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1406"/>
         <source>Control panel to edit various aspects of the KDE desktop, and more.</source>
-        <translation type="unfinished"/>
+        <translation>Panoul de control pentru a edita diverse aspecte ale desktopului KDE și mai multe.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1410"/>
         <source>Customize OpenBox</source>
-        <translation type="unfinished"/>
+        <translation>Personalizează OpenBox</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1411"/>
         <source>Control panel to edit various aspects of OpenBox</source>
-        <translation type="unfinished"/>
+        <translation>Panou de control pentru a edita diverse aspecte ale
+desktopului OpenBox și altele.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1412"/>
         <source>Launch Customize Look and Feel</source>
-        <translation type="unfinished"/>
+        <translation>Lansează personalizarea aspectului</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1624"/>
         <source>Failed. Please Try Again.</source>
-        <translation type="unfinished"/>
+        <translation>Eșuat. Încercați din nou.</translation>
     </message>
 </context>
 </TS>

@@ -150,7 +150,18 @@ Some of Manjaro's features are:
 For newcomers, a user-friendly installer is provided, and the system itself is designed to work fully straight out of the box. For more experienced, and adventurous users, Manjaro also offers the configurability and versatility to be shaped and moulded in every respect to suit personal taste and preference.
 &lt;br&gt;&lt;br&gt;
 Over these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Manjaro&lt;/b&gt; to elegancka i szybka dystrybucja, łącząca w sobie zalety popularnego Arch OS z łatwością użytkowania. Rozwijane w Austrii, Francji i Niemczech, Manjaro skupia się na nowych użytkownikach, ale też i na tych doświadczonych.
+&lt;br&gt;&lt;br&gt;
+Niektórymi cechami Manjaro są:
+&lt;ul&gt;
+&lt;li&gt;Szybkość, moc i wydajność&lt;/li&gt;
+&lt;li&gt;Dostęp do najnowszego oprogramowania, także testowego i niestabilnego&lt;/li&gt;
+&lt;li&gt;Model rozwojowy typu âciągłej dystrybucjiâ, który zapewnia najbardziej aktualną wersję systemu bez potrzeby instalowania jego nowszych wersji&lt;/li&gt;
+&lt;li&gt;Dostęp do Repozytoriów Użytkownika Arch (AUR).&lt;/li&gt;
+&lt;/ul&gt;
+Dla początkujących dostarczono łatwy w obsłudze instalator, a sam system jest zaprojektowany, aby w pełni działać zaraz po zainstalowaniu. Dla bardziej doświadczonych i odważnych użytkowników, Manjaro oferuje również konfigurowalność i elastyczność, aby móc zostać uformowanym w kształcie i pod każdym względem, które dostosują go do osobistego smaku i preferencji.
+&lt;br&gt;&lt;br&gt;
+W kilku następnych krokach Turbulence poprowadzi Cię przez proces dostosowywania nowej kopii Manjaro.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1327"/>
@@ -160,17 +171,17 @@ Over these next few steps, Turbulence will guide you through customizing your ne
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="418"/>
         <source>Here, you can choose which folders you want in your home directory. You have a choice from some of the most commonly used folders.</source>
-        <translation type="unfinished"/>
+        <translation>Tutaj możesz ustalić, które katalogi chcesz znaleźć w swoim katalogu domowym. Możesz wybrać z listy najczęściej używanych katalogów.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="605"/>
         <source>Here you can choose what type of theme you want for your window decorations.</source>
-        <translation type="unfinished"/>
+        <translation>Tutaj możesz ustalić, jakiego rodzaju dekoracje okien chcesz używać.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="763"/>
         <source>Here you can choose what position you want of your Tint 2 panel.</source>
-        <translation type="unfinished"/>
+        <translation>Tutaj możesz ustalić, gdzie chcesz umieścić swój panel Tint 2.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
@@ -202,7 +213,9 @@ Over these next few steps, Turbulence will guide you through customizing your ne
         <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or unselect any packages you want to add or remove. Packages that are installed will be auto-selected.
 
 When you are done, go to the Install tab, and click &quot;Install&quot;.</source>
-        <translation type="unfinished"/>
+        <translation>Tutaj możesz ustalić, które pakiety chcesz zainstalować. Najedź na dowolny pakiet, aby zobaczyć jego opis; zaznacz lub odznacz dowolny pakiet, który chcesz dodać albo usunąć. Pakiety, które zostały zainstalowane, są automatycznie zaznaczone.
+
+Gdy już skończysz, przejdź na zakładkę instalacji, i kliknij &quot;Zainstaluj&quot;.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1235"/>
@@ -381,17 +394,17 @@ w modelu klient/serwer</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
-        <translation type="unfinished"/>
+        <translation>Wszystkie Twoje ustawienia zostały zastosowane. Teraz już możesz zacząć się cieszyć swoim Manjaro, albo rzucić jeszcze okiem na niektóre programy i odnośniki zamieszczone poniżej. A także, jeśli nie czujesz się jeszcze gotowy, warto dołączyć do społeczności Manjaro!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1401"/>
         <source>For help and support, you can visit Manjaro.org for access to a terrific forum, wiki, and IRC!</source>
-        <translation type="unfinished"/>
+        <translation>Celem uzyskania pomocy i wsparcia, możesz odwiedzić stronę Manjaro.org, na której znajdziesz świetne forum, strony wiki i IRC!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1406"/>
         <source>Control panel to edit various aspects of the KDE desktop, and more.</source>
-        <translation type="unfinished"/>
+        <translation>Panel kontrolny do edycji różnych aspektów pulpitu KDE i innych.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1410"/>
@@ -406,7 +419,7 @@ w modelu klient/serwer</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1412"/>
         <source>Launch Customize Look and Feel</source>
-        <translation type="unfinished"/>
+        <translation>Uruchom Dostosowanie wyglądu i zachowania</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1624"/>

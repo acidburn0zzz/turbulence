@@ -9,12 +9,12 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="212"/>
         <source>Welcome</source>
-        <translation>Welcome</translation>
+        <translation>Willkommen</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1331"/>
         <source>Folders</source>
-        <translation>Folders</translation>
+        <translation>Verzeichnisse</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="214"/>
@@ -34,7 +34,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1329"/>
         <source>Themes</source>
-        <translation>Themes</translation>
+        <translation>Erscheinungsbild</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1398"/>
@@ -49,37 +49,37 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="427"/>
         <source>Desktop</source>
-        <translation>Desktop</translation>
+        <translation>Schreibtisch</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="428"/>
         <source>Documents</source>
-        <translation>Documents</translation>
+        <translation>Dokumente</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="429"/>
         <source>Downloads</source>
-        <translation>Downloads</translation>
+        <translation>Heruntergeladene Dateien</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="430"/>
         <source>Music</source>
-        <translation>Music</translation>
+        <translation>Musik</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="431"/>
         <source>Pictures</source>
-        <translation>Pictures</translation>
+        <translation>Bilder</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="432"/>
         <source>Public</source>
-        <translation>Public</translation>
+        <translation>Öffentlich</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="433"/>
         <source>Templates</source>
-        <translation>Templates</translation>
+        <translation>Vorlagen</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="434"/>
@@ -94,17 +94,17 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1325"/>
         <source>Wallpapers</source>
-        <translation>Wallpapers</translation>
+        <translation>Schreibtischhintergründe</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1397"/>
         <source>Finish</source>
-        <translation>Finish</translation>
+        <translation>Beenden</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="996"/>
         <source>Here you can set which wallpaper you want.</source>
-        <translation>Hier können Sie Ihren Hintergrund auswählen.</translation>
+        <translation>Hier können Sie Ihren Schreibtischhintergrund auswählen.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1394"/>
@@ -119,8 +119,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1407"/>
         <source>Launch System Settings</source>
-        <translation>Systemeinstellungen 
-bearbeiten</translation>
+        <translation>Systemeinstellungen starten</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1400"/>
@@ -130,7 +129,7 @@ bearbeiten</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1402"/>
         <source>Launch Manjaro.org</source>
-        <translation>Öffne Manjaro.org</translation>
+        <translation>Zu Manjaro.org wechseln</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="211"/>
@@ -151,18 +150,18 @@ Some of Manjaro's features are:
 For newcomers, a user-friendly installer is provided, and the system itself is designed to work fully straight out of the box. For more experienced, and adventurous users, Manjaro also offers the configurability and versatility to be shaped and moulded in every respect to suit personal taste and preference.
 &lt;br&gt;&lt;br&gt;
 Over these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.</source>
-        <translation>&lt;b&gt;Manjaro&lt;/b&gt; ist eine schnelle und schnittige Distribution, welche leicht zu bedienen ist, sowie das Beste aus dem populären Arch Linux herausholt. Entwickelt in Deutschland, Frankreich und Österreich, Manjaro ist gedacht für Anfänger sowie Experten.
+        <translation>&lt;b&gt;Manjaro&lt;/b&gt; ist eine schnelle und schlanke Distribution, die leicht zu bedienen ist und die das Beste aus dem populären Arch Linux herausholt. Entwickelt in Deutschland, Frankreich und Österreich, Manjaro ist Manjaro sowohl für Anfänger als auch für Experten geeignet.
 &lt;br&gt;&lt;br&gt;
-Hier ein paar Funktionen von Manjaro:
+Herausragende Eigenschaften von Manjaro sind:
 &lt;ul&gt;
 &lt;li&gt;Geschwindigkeit, Leistung und Effizienz&lt;/li&gt;
-&lt;li&gt;Zugang zu aktuell verfügbarer Software&lt;/li&gt;
-&lt;li&gt;Ein &quot;Rolling Release&quot; Entwicklungsmodell welches aktuelles System bietet ohne das Betriebssystem neu installieren zu müssen.&lt;/li&gt;
+&lt;li&gt;Zugang zu brandaktueller Software&lt;/li&gt;
+&lt;li&gt;Ein &quot;Rolling Release&quot; Entwicklungsmodell welches ein immer aktuelles System gewährleistet, ohne dass das Betriebssystem neu installiet werden müsste.&lt;/li&gt;
 &lt;li&gt;Zugriff auf das Arch Benutzerrepositorium (AUR)&lt;/li&gt;
 &lt;/ul&gt;
-For newcomers, a user-friendly installer is provided, and the system itself is designed to work fully straight out of the box. For more experienced, and adventurous users, Manjaro also offers the configurability and versatility to be shaped and moulded in every respect to suit personal taste and preference.
+Für diejenigen, die neu zu Linux kommen, gibt es ein benutzerfreundliches Installationsprogramm. Das System selbst ist darauf ausgelegt, ohne weiteres Zutun des Benutzers zu funktionieren. Für fortgeschrittene oder abenteuerlustigere Benutzer bietet Manjaro aber auch die Konfigurierbarkeit und Vielseitigkeit um Manjaro in jeder Hinsicht an den persönlichen Geschmack und die Vorlieben anzupassen.
 &lt;br&gt;&lt;br&gt;
-Mit den nächsten Schritten wird Turbulence Ihnen helfen, Ihre neue Kopie von Manjaro nach Ihren Bedürfnissen anzupassen.</translation>
+Mit den nächsten Schritten wird Turbulence Ihnen helfen, Ihr neues Manjaro-Betriebssystem nach Ihren Bedürfnissen anzupassen.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1327"/>
@@ -172,18 +171,17 @@ Mit den nächsten Schritten wird Turbulence Ihnen helfen, Ihre neue Kopie von Ma
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="418"/>
         <source>Here, you can choose which folders you want in your home directory. You have a choice from some of the most commonly used folders.</source>
-        <translation>Hier können Sie die Ordner bestimmen, welche in Ihrem Home-Verzeichnis eingebunden
-werden sollen. Sie haben die Auswahl von allgemein üblichen Ordnern.</translation>
+        <translation>Hier können Sie die Ordner bestimmen, welche sich in Ihrem Heimat-Verzeichnis befinden sollen. Sie haben die Auswahl unter einigen häufig benutzten Ordnern.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="605"/>
         <source>Here you can choose what type of theme you want for your window decorations.</source>
-        <translation>Hier können Sie eine Auswahl für die Fensterdekoration treffen.</translation>
+        <translation>Hier können Sie auswählen, welche Fensterdekoration Sie benutzen wollen.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="763"/>
         <source>Here you can choose what position you want of your Tint 2 panel.</source>
-        <translation>Hier können Sie die Position für Ihr Tint 2 Panel definieren.</translation>
+        <translation>Hier können Sie die Position für Ihre Tint-2-Leiste auswählen.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
@@ -215,15 +213,14 @@ werden sollen. Sie haben die Auswahl von allgemein üblichen Ordnern.</translati
         <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or unselect any packages you want to add or remove. Packages that are installed will be auto-selected.
 
 When you are done, go to the Install tab, and click &quot;Install&quot;.</source>
-        <translation>Hier können Sie eine Auswahl der zu installierenden Pakete treffen. Bleiben Sie mit
-dem Mauszeiger eine längere Zeit über einem Paket, um eine Beschreibung zu sehen.
+        <translation>Hier können Sie die zu installierenden Pakete auswählen. Wenn Sie mit dem Mauszeiger eine längere Zeit über einem Paket bleiben, wird eine Beschreibung angezeigt.
 
-Wenn Sie Ihre Auswahl getroffen haben, klicken Sie im letzten Schritt auf &quot;Installieren&quot;.</translation>
+Wenn Sie Ihre Auswahl getroffen haben, klicken Sie auf &quot;Installieren&quot;.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1235"/>
         <source>Check For Internet Connection</source>
-        <translation>Überprüfe Internetverbindung</translation>
+        <translation>Internetverbindung überprüfen</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1236"/>
@@ -233,24 +230,24 @@ Wenn Sie Ihre Auswahl getroffen haben, klicken Sie im letzten Schritt auf &quot;
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1237"/>
         <source>Lightweight cross-platform Web browser</source>
-        <translation>Schlanker plattformübergreifender Web-Browser</translation>
+        <translation>Schlanker, plattformübergreifender Web-Browser</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1239"/>
         <source>The open-source project behind Google Chrome, an 
 attempt at creating a safer, faster, and more stable browser</source>
-        <translation>Das Open-Source Projekt hinter Google Chrome, um
-einen sicheren, schnellen sowie stabilen Browser zu erstellen</translation>
+        <translation>Das Open-Source Projekt hinter Google Chrome, geschaffen, um
+einen sicheren, schnellen sowie stabilen Browser zur Verfügung zu stellen</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1240"/>
         <source>Fast and secure web browser and Internet suite</source>
-        <translation>Schneller und sicherer Web-Browser mit Internet-Paket</translation>
+        <translation>Schneller und sicherer Web-Browser und Internet-Komplettpaket</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1241"/>
         <source>Fast, easy, and free BitTorrent client</source>
-        <translation>Schneller und einfacher Bit-Torrent Client</translation>
+        <translation>Schneller, einfacher und freier Bit-Torrent Client</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1243"/>
@@ -277,7 +274,7 @@ oberflächen in einem Client/Server-Modell</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1253"/>
         <source>A complete front-end for MPlayer</source>
-        <translation>Ein komplettes Frontend für MPlayer</translation>
+        <translation>Eine vollständige Benutzeroberfläche für MPlayer</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1255"/>
@@ -287,7 +284,7 @@ oberflächen in einem Client/Server-Modell</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1257"/>
         <source>A music player and library organizer</source>
-        <translation>Ein Musik-Player und Musik-Verwalter</translation>
+        <translation>Ein Musik-Player und Bibliotheks-Verwalter</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1259"/>
@@ -302,7 +299,7 @@ oberflächen in einem Client/Server-Modell</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1262"/>
         <source>A fully integrated 3D graphics creation suite</source>
-        <translation>Ein vollintegriertes 3D-Grafik- und Animationsprogramm</translation>
+        <translation>Ein vollständig integriertes 3D-Grafik- und Animationsprogramm</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1264"/>
@@ -342,7 +339,7 @@ oberflächen in einem Client/Server-Modell</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1277"/>
         <source>A notepad clone for GTK+ 2.0</source>
-        <translation>Ein Notepad Klon für GTK+ 2.0</translation>
+        <translation>Ein Notepad-Klon für GTK+ 2.0</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1279"/>
@@ -357,7 +354,7 @@ oberflächen in einem Client/Server-Modell</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1283"/>
         <source>Terminal emulator that supports tabs and grids</source>
-        <translation>Terminal Emulator mit Registerkarten und Raster</translation>
+        <translation>Terminalemulator mit Registerkarten und Raster</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1285"/>
@@ -372,12 +369,12 @@ oberflächen in einem Client/Server-Modell</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1288"/>
         <source>Installs yaourt, and required dependencies to access the AUR</source>
-        <translation>Installiert Yaourt und benötigte Abhängigkeiten für Zugriff auf AUR</translation>
+        <translation>Installiert Yaourt und benötigte Abhängigkeiten für den Zugriff auf das AUR</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1290"/>
         <source>Installs flashplugin, and required codecs for playing media</source>
-        <translation>Installiert Flash und die benötigten Codecs zur Medienabspielung</translation>
+        <translation>Installiert Flash und die für das Abspielen von Multimediadateien benötigten Codecs</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1292"/>
@@ -397,18 +394,17 @@ oberflächen in einem Client/Server-Modell</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
-        <translation>Alle Einstellungen wurden übernommen. Nun können Sie beginnen Manjaro zu benutzen. Es ist empfohlen
-der Manjaro-Gemeinschaft beitzutreten sowie sich die Programmverlinkungen weiter unten anzusehen.</translation>
+        <translation>Alle Einstellungen wurden übernommen. Wenn Sie wollen, können Sie jetzt anfangen, Manjaro zu genießen. Sie können sich die unten verlinkten Programme ansehen.Es empfiehlt sich darüberhinaus, der Manjaro-Gemeinschaft beizutreten wenn Sie dies noch nicht getan haben sollten.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1401"/>
         <source>For help and support, you can visit Manjaro.org for access to a terrific forum, wiki, and IRC!</source>
-        <translation>Für Hilfe und Unterstützung können Sie Manjaro.org besuchen. Sie finden ein Forum, ein Wiki sowie IRC Kanäle.</translation>
+        <translation>Sollten Sie Hilfe und Unterstützung benötigen, können Sie uns unter Manjaro.org besuchen. Dort haben Sie Zugang zu unserem Forum, Wiki sowie zu den IRC-Kanälen.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1406"/>
         <source>Control panel to edit various aspects of the KDE desktop, and more.</source>
-        <translation>Bedienfeld um verschiedene Aspekte des KDE Desktops anzupassen, sowie mehr.</translation>
+        <translation>Bedienfeld um unter Anderem verschiedene Einstellungen am KDE Desktop vorzunehmen.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1410"/>
@@ -418,18 +414,18 @@ der Manjaro-Gemeinschaft beitzutreten sowie sich die Programmverlinkungen weiter
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1411"/>
         <source>Control panel to edit various aspects of OpenBox</source>
-        <translation>Bedienfeld, um verschiedene Aspekte von OpenBox
-anzupassen.</translation>
+        <translation>Bedienfeld, um verschiedene Einstellungen an OpenBox
+vorzunehmen.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1412"/>
         <source>Launch Customize Look and Feel</source>
-        <translation>Passe Erscheinungsbild an</translation>
+        <translation>Erscheinungsbild anpassen</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1624"/>
         <source>Failed. Please Try Again.</source>
-        <translation>Fehlgeschlagen. Versuchen Sie&apos;s erneut.</translation>
+        <translation>Fehler. Bitte versuchen Sie es erneut.</translation>
     </message>
 </context>
 </TS>
