@@ -4,6 +4,7 @@ import os
 from sys import exit
 
 from tools_ import logger
+from tools_ import utils_detector
 
 #Stops people from running this program directly.
 if __name__ == "__main__":
@@ -27,7 +28,8 @@ for configFileName, configFile in neededFiles.items():
            elif configFileName == "conkyrc":
                conkyRC = homeDir + configFile
     except IOError:
-       print "I couldn't find the themefile: " + homeDir + configFile
+       if utils_detector.detectTint():
+           print "I couldn't find the themefile: " + homeDir + configFile
 
 #Changes the tint2 position
 def panelPosition(position):

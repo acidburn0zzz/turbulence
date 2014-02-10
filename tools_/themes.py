@@ -5,6 +5,7 @@ from sys import exit
 
 import folders
 from tools_ import logger
+from tools_ import utils_detector
 
 #Stops people from running this program directly.
 if __name__ == "__main__":
@@ -29,17 +30,18 @@ for themeFileName, themeFile in neededFiles.items():
            elif themeFileName == "auroraerc":
                auroraeRC = homeDir + themeFile
     except IOError:
-       print "I couldn't find the themefile: " + themeFileName
-       if themeFileName == "auroraerc":
-           if os.path.isdir(homeDir + '/.kde4/share/config'):
-               print "Creating " + themeFileName
-               auroraeRC = homeDir + themeFile
-               open(auroraeRC, "w")
-           else:
-               os.makedirs(homeDir + '/.kde4/share/config')
-               print "Creating " + themeFileName
-               auroraeRC = homeDir + themeFile
-               open(auroraeRC, "w")
+       if not utils_detector.detectOpenBox():
+           print "I couldn't find the themefile: " + themeFileName
+           if themeFileName == "auroraerc":
+               if os.path.isdir(homeDir + '/.kde4/share/config'):
+                  print "Creating " + themeFileName
+                  auroraeRC = homeDir + themeFile
+                  open(auroraeRC, "w")
+               else:
+                  os.makedirs(homeDir + '/.kde4/share/config')
+                  print "Creating " + themeFileName
+                  auroraeRC = homeDir + themeFile
+                  open(auroraeRC, "w")
 
 #Changes the kwin theme
 def kwinThemer(theme):
