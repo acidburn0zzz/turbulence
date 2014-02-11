@@ -4,137 +4,137 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1677"/>
         <source>Status: Active</source>
-        <translation type="unfinished"/>
+        <translation>Status: Aktif</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="212"/>
         <source>Welcome</source>
-        <translation type="unfinished"/>
+        <translation>Selamat Datang</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1331"/>
         <source>Folders</source>
-        <translation type="unfinished"/>
+        <translation>Folder</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="214"/>
         <source>What is Manjaro?</source>
-        <translation type="unfinished"/>
+        <translation>Apa itu Manjaro?</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1396"/>
         <source>Cancel</source>
-        <translation type="unfinished"/>
+        <translation>Batal</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1233"/>
         <source>Forward</source>
-        <translation type="unfinished"/>
+        <translation>Selanjutnya</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1329"/>
         <source>Themes</source>
-        <translation type="unfinished"/>
+        <translation>Tema</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1398"/>
         <source>Previous</source>
-        <translation type="unfinished"/>
+        <translation>Sebelumnya</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1679"/>
         <source>Status: Deactivated</source>
-        <translation type="unfinished"/>
+        <translation>Status: Tidak Aktif</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="427"/>
         <source>Desktop</source>
-        <translation type="unfinished"/>
+        <translation>Desktop</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="428"/>
         <source>Documents</source>
-        <translation type="unfinished"/>
+        <translation>Dokumen</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="429"/>
         <source>Downloads</source>
-        <translation type="unfinished"/>
+        <translation>Unduhan</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="430"/>
         <source>Music</source>
-        <translation type="unfinished"/>
+        <translation>Musik</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="431"/>
         <source>Pictures</source>
-        <translation type="unfinished"/>
+        <translation>Gambar</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="432"/>
         <source>Public</source>
-        <translation type="unfinished"/>
+        <translation>Publik</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="433"/>
         <source>Templates</source>
-        <translation type="unfinished"/>
+        <translation>Template</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="434"/>
         <source>Videos</source>
-        <translation type="unfinished"/>
+        <translation>Video</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="442"/>
         <source>Active</source>
-        <translation type="unfinished"/>
+        <translation>Aktif</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1325"/>
         <source>Wallpapers</source>
-        <translation type="unfinished"/>
+        <translation>Wallpaper</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1397"/>
         <source>Finish</source>
-        <translation type="unfinished"/>
+        <translation>Selesai</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="996"/>
         <source>Here you can set which wallpaper you want.</source>
-        <translation type="unfinished"/>
+        <translation>Disini kamu dapat mengatur wallpaper yang kamu inginkan.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1394"/>
         <source>Congratulations!</source>
-        <translation type="unfinished"/>
+        <translation>Selamat!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1405"/>
         <source>System Settings</source>
-        <translation type="unfinished"/>
+        <translation>Pengaturan Sistem</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1407"/>
         <source>Launch System Settings</source>
-        <translation type="unfinished"/>
+        <translation>Jalankan Pengaturan Sistem</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1400"/>
         <source>Help</source>
-        <translation type="unfinished"/>
+        <translation>Bantuan</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1402"/>
         <source>Launch Manjaro.org</source>
-        <translation type="unfinished"/>
+        <translation>Buka Manjaro.org</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="211"/>
         <source>Welcome To Manjaro!</source>
-        <translation type="unfinished"/>
+        <translation>Selamat Datang di Manjaro!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="215"/>
@@ -155,7 +155,7 @@ Over these next few steps, Turbulence will guide you through customizing your ne
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1327"/>
         <source>Tint 2</source>
-        <translation type="unfinished"/>
+        <translation>Tint 2</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="418"/>

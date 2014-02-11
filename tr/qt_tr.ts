@@ -397,7 +397,7 @@ Bir istemci/sunucu modeli</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
-        <translation>Tüm ayarları uygulanmıştır. Şimdi, Manjaro&apos;yu kullanmaya başlayabilirsiniz, ya da programlara veya aşağıda bazı bağlantılara bakabilirsiniz. Küresel ve yerel Manjaro Topluluklarına katıldınız mı?</translation>
+        <translation>Tüm ayarlar uygulanmıştır. Şimdi, Manjaro&apos;yu kullanmaya başlayabilirsiniz, ya da programlara veya aşağıda bazı bağlantılara bakabilirsiniz. Küresel ve yerel Manjaro Topluluklarına katıldınız mı?</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1401"/>

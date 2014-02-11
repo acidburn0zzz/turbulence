@@ -23,13 +23,14 @@ if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
     
     locale = getdefaultlocale()
+    print locale
     translator = QtCore.QTranslator(app)
-    translator.load('/usr/share/turbulence/tr/qt_%s.qm' % locale[0].split("_")[0])
+    translator.load('/usr/share/turbulence/tr/qt_%s.qm' % locale[0])
     app.installTranslator(translator)
     
     #To set force the use of a locale, uncomment the code below, and comment the code above.
     #translator = QtCore.QTranslator(app)
-    #translator.load('/usr/share/turbulence/tr/qt_tr.qm')
+    #translator.load('/usr/share/turbulence/tr/qt_zh_CN.qm')
     #app.installTranslator(translator)
     
     MainWindow = QtGui.QMainWindow()
