@@ -155,7 +155,13 @@ Over these next few steps, Turbulence will guide you through customizing your ne
 Några av Manjaros funktioner är:
 &lt;ul&gt;
 &lt;li&gt;Snabbhet, kraftfullhet och effektivitet&lt;/li&gt;
-</translation>
+&lt;li&gt;Tillgång till den allra senaste och färskaste programvaran&lt;/li&gt;
+&lt;li&gt;En rullande utvecklingsmodell som ger ett så uppdaterat system som möjligt utan att behöva installera en ny version. &lt;/li&gt;
+&lt;li&gt;Tillgång till Arch User Repository (AUR)&lt;/li&gt;
+&lt;/ul&gt;
+För nybörjare erbjuds en användarvänlig installationsguide och systemet är utformat för att fungerar direkt. För mer erfarna och äventyrliga användare erbjuder Manjaro förändringsmöjlighet och mångsidighet nog för att skapa och förändra så att Manjaro passar allas personliga smak och preferenser.
+&lt;br&gt;&lt;br&gt;
+Under nästkommande steg kommer Turbulence att leda dig genom anpassningen av Manjaro.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1327"/>
@@ -219,7 +225,7 @@ När du är klar, väljer du fliken för installation och klickar &quot;installe
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1236"/>
         <source>Standalone web browser from mozilla.org</source>
-        <translation type="unfinished"/>
+        <translation>Standalone webbläsare från mozilla.org</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1237"/>
@@ -230,7 +236,8 @@ När du är klar, väljer du fliken för installation och klickar &quot;installe
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1239"/>
         <source>The open-source project behind Google Chrome, an 
 attempt at creating a safer, faster, and more stable browser</source>
-        <translation>Open-source projektet bakom Google Chrome, ett försök att skapa en säkrare, snabbare och stabilare webbläsare</translation>
+        <translation>Open-source projektet bakom Google Chrome, ett 
+försök att skapa en säkrare, snabbare och stabilare webbläsare</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1240"/>
@@ -251,7 +258,8 @@ attempt at creating a safer, faster, and more stable browser</source>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1248"/>
         <source>A BitTorrent client with multiple user interfaces 
 in a client/server model</source>
-        <translation>En BitTorrent klient med multipla användargränssnitt i en klient/server modell.</translation>
+        <translation>En BitTorrent klient med multipla användargränssnitt
+i en klient/server modell.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1250"/>
@@ -301,7 +309,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1266"/>
         <source>GNU Image Manipulation Program</source>
-        <translation type="unfinished"/>
+        <translation>GNU bildbehandlingsprogram</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1268"/>
@@ -341,12 +349,12 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1281"/>
         <source>Multi-panel tabbed file manager</source>
-        <translation type="unfinished"/>
+        <translation>Flerpanels filhanterare med flikar</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1283"/>
         <source>Terminal emulator that supports tabs and grids</source>
-        <translation type="unfinished"/>
+        <translation>Terminal emulator som stöder flikar och rutnät</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1285"/>
@@ -361,17 +369,17 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1288"/>
         <source>Installs yaourt, and required dependencies to access the AUR</source>
-        <translation type="unfinished"/>
+        <translation>installera yaourt, och nödvändiga beroenden för att komma åt AUR</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1290"/>
         <source>Installs flashplugin, and required codecs for playing media</source>
-        <translation type="unfinished"/>
+        <translation>installera flashplugin, och nödvändiga codecs för att spela media</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1292"/>
         <source>Installs manjaro-printer, and CUPS to enable printers</source>
-        <translation type="unfinished"/>
+        <translation>installera manjaro-printer och CUPS för att aktivera skrivare</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1294"/>
@@ -386,37 +394,37 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
-        <translation type="unfinished"/>
+        <translation>Alla dina inställningar har tillämpats. Nu kan du börja njuta av Manjaro, eller titta på några av de program och länkarna nedan. Dessutom, om du inte redan har gjort det, se till att gå med i Manjaro gemenskapen!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1401"/>
         <source>For help and support, you can visit Manjaro.org for access to a terrific forum, wiki, and IRC!</source>
-        <translation type="unfinished"/>
+        <translation>För hjälp och stöd, kan du besöka Manjaro.org, för tillgång till ett fantastiskt forum, wiki, och IRC!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1406"/>
         <source>Control panel to edit various aspects of the KDE desktop, and more.</source>
-        <translation type="unfinished"/>
+        <translation>Kontrollpanel för att bland annat redigera KDE-skrivbordets utseende.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1410"/>
         <source>Customize OpenBox</source>
-        <translation type="unfinished"/>
+        <translation>Anpassa OpenBox</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1411"/>
         <source>Control panel to edit various aspects of OpenBox</source>
-        <translation type="unfinished"/>
+        <translation>Kontrollpanel för att redigera OpenBox utseende.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1412"/>
         <source>Launch Customize Look and Feel</source>
-        <translation type="unfinished"/>
+        <translation>Starta anpassat utseende</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1624"/>
         <source>Failed. Please Try Again.</source>
-        <translation type="unfinished"/>
+        <translation>Det gick inte. Försök igen.</translation>
     </message>
 </context>
 </TS>

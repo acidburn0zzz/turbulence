@@ -4,102 +4,102 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1677"/>
         <source>Status: Active</source>
-        <translation type="unfinished"/>
+        <translation>Статус: Активно</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="212"/>
         <source>Welcome</source>
-        <translation type="unfinished"/>
+        <translation>Добро пожаловать</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1331"/>
         <source>Folders</source>
-        <translation type="unfinished"/>
+        <translation>Папка</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="214"/>
         <source>What is Manjaro?</source>
-        <translation type="unfinished"/>
+        <translation>Что есть Manjaro?</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1396"/>
         <source>Cancel</source>
-        <translation type="unfinished"/>
+        <translation>Отмена</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1233"/>
         <source>Forward</source>
-        <translation type="unfinished"/>
+        <translation>Вперёд</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1329"/>
         <source>Themes</source>
-        <translation type="unfinished"/>
+        <translation>Темы</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1398"/>
         <source>Previous</source>
-        <translation type="unfinished"/>
+        <translation>Предидущее</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1679"/>
         <source>Status: Deactivated</source>
-        <translation type="unfinished"/>
+        <translation>Статус: Не активно</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="427"/>
         <source>Desktop</source>
-        <translation type="unfinished"/>
+        <translation>Рабочий стол</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="428"/>
         <source>Documents</source>
-        <translation type="unfinished"/>
+        <translation>Документы</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="429"/>
         <source>Downloads</source>
-        <translation type="unfinished"/>
+        <translation>Загрузки</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="430"/>
         <source>Music</source>
-        <translation type="unfinished"/>
+        <translation>Музыка</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="431"/>
         <source>Pictures</source>
-        <translation type="unfinished"/>
+        <translation>Изображения</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="432"/>
         <source>Public</source>
-        <translation type="unfinished"/>
+        <translation>Общее</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="433"/>
         <source>Templates</source>
-        <translation type="unfinished"/>
+        <translation>Шаблоны</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="434"/>
         <source>Videos</source>
-        <translation type="unfinished"/>
+        <translation>Видео</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="442"/>
         <source>Active</source>
-        <translation type="unfinished"/>
+        <translation>Активно</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1325"/>
         <source>Wallpapers</source>
-        <translation type="unfinished"/>
+        <translation>Обои</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1397"/>
         <source>Finish</source>
-        <translation type="unfinished"/>
+        <translation>Завершено</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="996"/>
@@ -109,32 +109,32 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1394"/>
         <source>Congratulations!</source>
-        <translation type="unfinished"/>
+        <translation>Поздравляем!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1405"/>
         <source>System Settings</source>
-        <translation type="unfinished"/>
+        <translation>Настройки системы</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1407"/>
         <source>Launch System Settings</source>
-        <translation type="unfinished"/>
+        <translation>Применить настройки системы</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1400"/>
         <source>Help</source>
-        <translation type="unfinished"/>
+        <translation>Помощ</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1402"/>
         <source>Launch Manjaro.org</source>
-        <translation type="unfinished"/>
+        <translation>На сайт Manjaro.org</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="211"/>
         <source>Welcome To Manjaro!</source>
-        <translation type="unfinished"/>
+        <translation>Добро пожаловать в Manjaro!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="215"/>
@@ -175,27 +175,27 @@ Over these next few steps, Turbulence will guide you through customizing your ne
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
         <source>Top</source>
-        <translation type="unfinished"/>
+        <translation>Верх</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="765"/>
         <source>Right</source>
-        <translation type="unfinished"/>
+        <translation>Право</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="766"/>
         <source>Bottom</source>
-        <translation type="unfinished"/>
+        <translation>Кнопка</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="767"/>
         <source>Left</source>
-        <translation type="unfinished"/>
+        <translation>Лево</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1323"/>
         <source>Packages</source>
-        <translation type="unfinished"/>
+        <translation>Пакеты</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1231"/>
@@ -207,7 +207,7 @@ When you are done, go to the Install tab, and click &quot;Install&quot;.</source
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1235"/>
         <source>Check For Internet Connection</source>
-        <translation type="unfinished"/>
+        <translation>Проверьте ваше интернет соединение</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1236"/>
@@ -249,7 +249,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1250"/>
         <source>Network</source>
-        <translation type="unfinished"/>
+        <translation>Сеть</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1251"/>
@@ -279,7 +279,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1261"/>
         <source>Multimedia</source>
-        <translation type="unfinished"/>
+        <translation>Мультимедия</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1262"/>
@@ -309,7 +309,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1272"/>
         <source>Graphics</source>
-        <translation type="unfinished"/>
+        <translation>Графика</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1273"/>
@@ -324,7 +324,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1277"/>
         <source>A notepad clone for GTK+ 2.0</source>
-        <translation type="unfinished"/>
+        <translation>Клон блокнота для GTK+ 2.0</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1279"/>
@@ -334,7 +334,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1281"/>
         <source>Multi-panel tabbed file manager</source>
-        <translation type="unfinished"/>
+        <translation>Мультипанельный файловый менеджер с поддержкой вкладок</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1283"/>
@@ -344,12 +344,12 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1285"/>
         <source>Modern file manager for Xfce</source>
-        <translation type="unfinished"/>
+        <translation>Современный файловый менеджер для Xfce</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1287"/>
         <source>Accessories</source>
-        <translation type="unfinished"/>
+        <translation>Аксессуары</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1288"/>
@@ -369,12 +369,12 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1294"/>
         <source>Extras</source>
-        <translation type="unfinished"/>
+        <translation>Дополнительно</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1296"/>
         <source>Install</source>
-        <translation type="unfinished"/>
+        <translation>Установка</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
@@ -394,7 +394,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1410"/>
         <source>Customize OpenBox</source>
-        <translation type="unfinished"/>
+        <translation>Настройка OpenBox</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1411"/>
@@ -409,7 +409,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1624"/>
         <source>Failed. Please Try Again.</source>
-        <translation type="unfinished"/>
+        <translation>Ошибка. Повторите попытку.</translation>
     </message>
 </context>
 </TS>

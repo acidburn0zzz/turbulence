@@ -134,7 +134,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="211"/>
         <source>Welcome To Manjaro!</source>
-        <translation type="unfinished"/>
+        <translation>Vitajte v Manjaro!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="215"/>
@@ -274,42 +274,42 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1259"/>
         <source>An audio player for GNU/Linux based on GTK2.</source>
-        <translation type="unfinished"/>
+        <translation>Hudobný prehrávač pre GNU/Linux založený na GTK2</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1261"/>
         <source>Multimedia</source>
-        <translation type="unfinished"/>
+        <translation>Multimédia</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1262"/>
         <source>A fully integrated 3D graphics creation suite</source>
-        <translation type="unfinished"/>
+        <translation>Plne integrovaný balík na tvorbu 3D grafiky</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1264"/>
         <source>Simply a document viewer</source>
-        <translation type="unfinished"/>
+        <translation>Prehliadač dokumentov</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1266"/>
         <source>GNU Image Manipulation Program</source>
-        <translation type="unfinished"/>
+        <translation>Nástroj na úpravu obrázkov</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1268"/>
         <source>Lightweight image viewer</source>
-        <translation type="unfinished"/>
+        <translation>Nenáročný prehliadač obrázkov</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1270"/>
         <source>A simple, fast and elegant image viewer program</source>
-        <translation type="unfinished"/>
+        <translation>Jednoduchý, rýchly a elegantný prehliadač obrázkov</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1272"/>
         <source>Graphics</source>
-        <translation type="unfinished"/>
+        <translation>Grafika</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1273"/>
@@ -334,7 +334,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1281"/>
         <source>Multi-panel tabbed file manager</source>
-        <translation type="unfinished"/>
+        <translation>Viac panelový správca súborov s podporou tabov</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1283"/>
@@ -344,7 +344,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1285"/>
         <source>Modern file manager for Xfce</source>
-        <translation type="unfinished"/>
+        <translation>Moderný správca súborov pre prostredie Xfce</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1287"/>
@@ -374,7 +374,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1296"/>
         <source>Install</source>
-        <translation type="unfinished"/>
+        <translation>Inštalovať</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
@@ -389,27 +389,27 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1406"/>
         <source>Control panel to edit various aspects of the KDE desktop, and more.</source>
-        <translation type="unfinished"/>
+        <translation>Ovládací panel pre úpravu rôznych aspektov KDE a iné.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1410"/>
         <source>Customize OpenBox</source>
-        <translation type="unfinished"/>
+        <translation>Prispôsobiť OpenBox</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1411"/>
         <source>Control panel to edit various aspects of OpenBox</source>
-        <translation type="unfinished"/>
+        <translation>Ovládací panel pre úpravu rôznych aspektov OpenBox</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1412"/>
         <source>Launch Customize Look and Feel</source>
-        <translation type="unfinished"/>
+        <translation>Spustiť Prispôsobenie vzhľadu</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1624"/>
         <source>Failed. Please Try Again.</source>
-        <translation type="unfinished"/>
+        <translation>Chyba. Prosím, skúste to znovu.</translation>
     </message>
 </context>
 </TS>

@@ -9,12 +9,12 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="212"/>
         <source>Welcome</source>
-        <translation>Bienllegáu</translation>
+        <translation>Welcome</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1331"/>
         <source>Folders</source>
-        <translation>Direutorios</translation>
+        <translation>Folders</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="214"/>
@@ -49,42 +49,42 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="427"/>
         <source>Desktop</source>
-        <translation>Escritoriu</translation>
+        <translation>Desktop</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="428"/>
         <source>Documents</source>
-        <translation>Documentos</translation>
+        <translation>Documents</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="429"/>
         <source>Downloads</source>
-        <translation>Descargues</translation>
+        <translation>Downloads</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="430"/>
         <source>Music</source>
-        <translation>Música</translation>
+        <translation>Music</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="431"/>
         <source>Pictures</source>
-        <translation>Semeyes</translation>
+        <translation>Pictures</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="432"/>
         <source>Public</source>
-        <translation>Público</translation>
+        <translation>Public</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="433"/>
         <source>Templates</source>
-        <translation>Plantíes</translation>
+        <translation>Templates</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="434"/>
         <source>Videos</source>
-        <translation type="unfinished"/>
+        <translation>Videos</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="442"/>
@@ -94,12 +94,12 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1325"/>
         <source>Wallpapers</source>
-        <translation>Fondos de pantalla</translation>
+        <translation>Wallpapers</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1397"/>
         <source>Finish</source>
-        <translation>Finar</translation>
+        <translation>Finish</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="996"/>
@@ -134,7 +134,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="211"/>
         <source>Welcome To Manjaro!</source>
-        <translation type="unfinished"/>
+        <translation>¡Bienllegáu a Manjaro!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="215"/>
@@ -155,7 +155,7 @@ Over these next few steps, Turbulence will guide you through customizing your ne
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1327"/>
         <source>Tint 2</source>
-        <translation type="unfinished"/>
+        <translation>Tint 2</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="418"/>
@@ -175,27 +175,27 @@ Over these next few steps, Turbulence will guide you through customizing your ne
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
         <source>Top</source>
-        <translation type="unfinished"/>
+        <translation>Arriba</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="765"/>
         <source>Right</source>
-        <translation type="unfinished"/>
+        <translation>Drecha</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="766"/>
         <source>Bottom</source>
-        <translation type="unfinished"/>
+        <translation>Abaxo</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="767"/>
         <source>Left</source>
-        <translation type="unfinished"/>
+        <translation>Izquierda</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1323"/>
         <source>Packages</source>
-        <translation type="unfinished"/>
+        <translation>Packages</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1231"/>
@@ -207,7 +207,7 @@ When you are done, go to the Install tab, and click &quot;Install&quot;.</source
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1235"/>
         <source>Check For Internet Connection</source>
-        <translation type="unfinished"/>
+        <translation>En comprobando conexón a la rede</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1236"/>
@@ -244,12 +244,13 @@ attempt at creating a safer, faster, and more stable browser</source>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1248"/>
         <source>A BitTorrent client with multiple user interfaces 
 in a client/server model</source>
-        <translation type="unfinished"/>
+        <translation>Un veceru BitTorrent con múltiples interfaces
+nun modelu veceru/sirvidor</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1250"/>
         <source>Network</source>
-        <translation type="unfinished"/>
+        <translation>Rede</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1251"/>
@@ -279,7 +280,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1261"/>
         <source>Multimedia</source>
-        <translation type="unfinished"/>
+        <translation>Multimedia</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1262"/>
@@ -309,7 +310,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1272"/>
         <source>Graphics</source>
-        <translation type="unfinished"/>
+        <translation>Gráficos</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1273"/>
@@ -344,12 +345,12 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1285"/>
         <source>Modern file manager for Xfce</source>
-        <translation type="unfinished"/>
+        <translation>Xestor modernu d&apos;archivos pa XFCE</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1287"/>
         <source>Accessories</source>
-        <translation type="unfinished"/>
+        <translation>Accesorios</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1288"/>
@@ -364,17 +365,17 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1292"/>
         <source>Installs manjaro-printer, and CUPS to enable printers</source>
-        <translation type="unfinished"/>
+        <translation>Instala manjaro-printer, ya CUPS p&apos;habilitar emprentadores</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1294"/>
         <source>Extras</source>
-        <translation type="unfinished"/>
+        <translation>Estres</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1296"/>
         <source>Install</source>
-        <translation type="unfinished"/>
+        <translation>Instalar</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
@@ -394,12 +395,13 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1410"/>
         <source>Customize OpenBox</source>
-        <translation type="unfinished"/>
+        <translation>Personalizar OpenBox</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1411"/>
         <source>Control panel to edit various aspects of OpenBox</source>
-        <translation type="unfinished"/>
+        <translation>Panel de control pa remanar dellos aspeutos del escritoriu 
+OpenBox, ya más.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1412"/>
