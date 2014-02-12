@@ -1,6 +1,5 @@
 [main]
 host = https://www.transifex.com
-lang_map = sr@latin:sr_RS
 
 [manjaro-turbulence.turbulencets]
 file_filter = tr/qt_<lang>.ts

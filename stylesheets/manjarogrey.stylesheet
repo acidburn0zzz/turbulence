@@ -607,6 +607,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    padding:0px 20px 0px 20px;
 }
 #packagesMenu:hover {
     border: 1px solid #49525b;
@@ -616,6 +617,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    padding:0px 20px 0px 20px;
 }
 #packagesMenuFinish:hover {
     border: 1px solid #49525b;
@@ -628,6 +630,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #packagesPrevious:hover {
     border: 1px solid #49525b;
@@ -636,6 +639,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #packagesForward:hover {
     border: 1px solid #49525b;
@@ -644,6 +648,7 @@
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #packagesCancel:hover {
     border: 1px solid #49525b;
@@ -1005,6 +1010,7 @@ QTabBar::tab:selected {
     font: 12pt "Sans Serif";
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 20px 0px 20px;
 }
 #finishWallpaperMenu:hover {
     border: 1px solid #49525b;
@@ -1014,6 +1020,7 @@ QTabBar::tab:selected {
     font: 13pt "Sans Serif";
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 20px 0px 20px;
 }
 #finishMenu:hover {
     border: 1px solid #49525b;
@@ -1022,6 +1029,7 @@ QTabBar::tab:selected {
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #finishCancel:hover {
     border: 1px solid #49525b;
@@ -1030,6 +1038,7 @@ QTabBar::tab:selected {
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #finishForward:hover {
     border: 1px solid #49525b;
@@ -1038,6 +1047,7 @@ QTabBar::tab:selected {
     color: rgb(220, 220, 220);
     background-color: rgba(0, 0, 0, 0,);
     border: none;
+    padding:0px 15px 0px 15px;
 }
 #finishPrevious:hover {
     border: 1px solid #49525b;

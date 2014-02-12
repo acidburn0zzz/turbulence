@@ -27,6 +27,9 @@ plasmaStatus = utils_detector.detectPlasma() #Plasma
 nitrogenStatus = utils_detector.detectNitrogen() #Nitrogen
 openboxStatus = utils_detector.detectOpenBox() #Openbox
 kdeStatus = utils_detector.detectKde() #Kde
+tintStatus = True
+nitrogenStatus = True
+openboxStatus = True
 
 #Configure normal widgets
 def widgetConfigurer(widgetType, xPos, yPos, xSize, ySize, name, image=None, styleSheet=None):
@@ -1010,14 +1013,20 @@ class Ui_MainWindow(QtCore.QObject):
             createStaticWidgets(self.Packages)
             
             self.packagesHeader = QtGui.QLabel(self.Packages)
-            self.packagesMenu = QtGui.QPushButton(self.Packages)
-            self.packagesArrow = QtGui.QLabel(self.Packages)
-            self.packagesMenuFinish = QtGui.QPushButton(self.Packages)
+            self.packagesMenuContainer = QtGui.QWidget(self.Packages)
+            self.packagesMenuContainerHLayout = QtGui.QHBoxLayout(self.packagesMenuContainer)
+            self.packagesMenu = QtGui.QPushButton(self.packagesMenuContainer)
+            self.packagesArrow = QtGui.QLabel(self.packagesMenuContainer)
+            self.packagesMenuFinish = QtGui.QPushButton(self.packagesMenuContainer)
+            self.packagesMenuSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
             self.packagesIcon = QtGui.QLabel(self.Packages)
             self.packagesDesc = QtGui.QLabel(self.Packages)
+            self.packagesFooterContainer = QtGui.QWidget(self.Packages)
+            self.packagesFooterContainerHLayout = QtGui.QHBoxLayout(self.packagesFooterContainer)
             self.packagesPrevious = QtGui.QPushButton(self.Packages)
             self.packagesForward = QtGui.QPushButton(self.Packages)
             self.packagesCancel = QtGui.QPushButton(self.Packages)
+            self.packagesFooterSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
             self.packagesTabs = QtGui.QTabWidget(self.Packages)
             self.packagesNetwork = QtGui.QWidget()
             self.packagesNetworkBack = QtGui.QLabel(self.packagesNetwork)
@@ -1091,14 +1100,8 @@ class Ui_MainWindow(QtCore.QObject):
         
             fifthPageWidgets = {
                 "packagesHeader": [self.packagesHeader, 80, 20, 600, 51, "packagesHeader", None],
-                "packagesMenu": [self.packagesMenu, 20, 90, 121, 41, "packagesMenu", None],
-                "packagesArrow": [self.packagesArrow, 150, 90, 31, 41, "packagesArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-                "packagesMenuFinish": [self.packagesMenuFinish, 180, 90, 71, 41, "packagesMenuFinish", None],
                 "packagesIcon": [self.packagesIcon, 40, 160, 61, 61, "packagesIcon", "/usr/share/turbulence/images/manjaro-grey/packages/packagesicon.png"],
                 "packagesDesc": [self.packagesDesc, 110, 140, 650, 100, "packagesDesc", None],
-                "packagesPrevious": [self.packagesPrevious, 620, 575, 101, 33, "packagesPrevious", None],
-                "packagesForward": [self.packagesForward, 730, 575, 111, 33, "packagesForward", None],
-                "packagesCancel": [self.packagesCancel, 20, 575, 110, 33, "packagesCancel", None],
                 "packagesTabs": [self.packagesTabs, 60, 290, 741, 251, "packagesTabs", None],
                 "packagesNetworkBack": [self.packagesNetworkBack, -14, -7, 761, 241, "packagesNetworkBack", "/usr/share/turbulence/images/manjaro-grey/packages/packages-back.png"],
                 "packagesAroraPic": [self.packagesAroraPic, 20, 10, 71, 71, "packagesAroraPic", "/usr/share/turbulence/images/manjaro-grey/packages/network/arora.png"],
@@ -1164,14 +1167,24 @@ class Ui_MainWindow(QtCore.QObject):
                 "packagesInstallButton": [self.packagesInstallButton, 270, 95, 150, 30, "packagesInstallButton", None],
                 "packagesCheckConnection": [self.packagesCheckConnection, 230, 400, 380, 60, "packagesCheckConnection", None]
             }
+            
+            fifthPageLayouts = {
+                "packagesMenu": [self.packagesMenu, 0, 39, None, None, True, True, False],
+                "packagesArrow": [self.packagesArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png"],
+                "packagesMenuFinish": [self.packagesMenuFinish, 0, 39, None, None, True, True, False],
+                "packagesForward": [self.packagesForward, 0, 34, None, None, True, True, False],
+                "packagesPrevious": [self.packagesPrevious, 0, 34, None, None, True, True, False],
+                "packagesCancel": [self.packagesCancel, 0, 34, None, None, True, True, False]
+            }
 
             #defines all the widget parameters
             for widgetName, widgetSettings in fifthPageWidgets.items():
                 widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
         
+            for widgetName, widgetSettings in fifthPageLayouts.items():
+                layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7])
+            
             #Adds any custom widgets.
-            self.packagesMenu.setFlat(True)
-            self.packagesMenuFinish.setFlat(True)
             self.packagesPrevious.setFlat(True)
             self.packagesForward.setFlat(True)
             self.packagesCancel.setFlat(True)
@@ -1180,8 +1193,6 @@ class Ui_MainWindow(QtCore.QObject):
             
             self.packagesDesc.setWordWrap(True)
         
-            self.packagesMenu.setFocusPolicy(QtCore.Qt.NoFocus)
-            self.packagesMenuFinish.setFocusPolicy(QtCore.Qt.NoFocus)
             self.packagesPrevious.setFocusPolicy(QtCore.Qt.NoFocus)
             self.packagesForward.setFocusPolicy(QtCore.Qt.NoFocus)
             self.packagesCancel.setFocusPolicy(QtCore.Qt.NoFocus)
@@ -1208,6 +1219,19 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesTabs.addTab(self.packagesAccessories, _fromUtf8(""))
             self.packagesTabs.addTab(self.packagesExtras, _fromUtf8(""))
             self.packagesTabs.addTab(self.packagesInstall, _fromUtf8(""))
+            
+            self.packagesMenuContainerHLayout.addWidget(self.packagesMenu)
+            self.packagesMenuContainerHLayout.addWidget(self.packagesArrow)
+            self.packagesMenuContainerHLayout.addWidget(self.packagesMenuFinish)
+            self.packagesMenuContainerHLayout.addItem(self.packagesMenuSpacer)
+            
+            self.packagesFooterContainerHLayout.addWidget(self.packagesCancel)
+            self.packagesFooterContainerHLayout.addItem(self.packagesFooterSpacer)
+            self.packagesFooterContainerHLayout.addWidget(self.packagesPrevious)
+            self.packagesFooterContainerHLayout.addWidget(self.packagesForward)
+            
+            self.packagesMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
+            self.packagesFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
         
             self.packagesTabs.tabBar().setEnabled(False)
             self.stackedWidget.addWidget(self.Packages)
@@ -1299,12 +1323,18 @@ class Ui_MainWindow(QtCore.QObject):
         createStaticWidgets(self.Finish)
         
         self.finishHeader = QtGui.QLabel(self.Finish)
-        self.finishWallpaperMenu = QtGui.QPushButton(self.Finish)
-        self.finishMenu = QtGui.QPushButton(self.Finish)
-        self.finishArrow = QtGui.QLabel(self.Finish)
-        self.finishCancel = QtGui.QPushButton(self.Finish)
-        self.finishForward = QtGui.QPushButton(self.Finish)
-        self.finishPrevious = QtGui.QPushButton(self.Finish)
+        self.finishMenuContainer = QtGui.QWidget(self.Finish)
+        self.finishMenuContainerHLayout = QtGui.QHBoxLayout(self.finishMenuContainer)
+        self.finishWallpaperMenu = QtGui.QPushButton(self.finishMenuContainer)
+        self.finishMenu = QtGui.QPushButton(self.finishMenuContainer)
+        self.finishArrow = QtGui.QLabel(self.finishMenuContainer)
+        self.finishMenuSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.finishFooterContainer = QtGui.QWidget(self.Finish)
+        self.finishFooterContainerHLayout = QtGui.QHBoxLayout(self.finishFooterContainer)
+        self.finishCancel = QtGui.QPushButton(self.finishFooterContainer)
+        self.finishForward = QtGui.QPushButton(self.finishFooterContainer)
+        self.finishPrevious = QtGui.QPushButton(self.finishFooterContainer)
+        self.finishFooterSpacer = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         self.finishDesc = QtGui.QLabel(self.Finish)
         self.finishSystemSettings = QtGui.QLabel(self.Finish)
         self.finishSystemSettingsPic = QtGui.QLabel(self.Finish)
@@ -1328,12 +1358,6 @@ class Ui_MainWindow(QtCore.QObject):
          
         finalPageWidgets = {
             "finishHeader": [self.finishHeader, 80, 20, 600, 51, "finishHeader", None],
-            "finishWallpaperMenu": [self.finishWallpaperMenu, 20, 90, 111, 41, "finishWallpaperMenu", None],
-            "finishArrow": [self.finishArrow, 140, 90, 31, 41, "finishArrow", "/usr/share/turbulence/images/manjaro-grey/arrow.png"],
-            "finishMenu": [self.finishMenu, 170, 90, 81, 41, "finishMenu", None],
-            "finishCancel": [self.finishCancel, 20, 575, 110, 33, "finishCancel", None],
-            "finishForward": [self.finishForward, 750, 575, 91, 33, "finishForward", None],
-            "finishPrevious": [self.finishPrevious, 640, 575, 101, 33, "finishPrevious", None],
             "finishDesc": [self.finishDesc, 30, 150, 781, 51, "finishDesc", None],
             "finishSystemSettings": [self.finishSystemSettings, 40, 220, 500, 31, "finishSystemSettings", None],
             "finishSystemSettingsPic": [self.finishSystemSettingsPic, 70, 260, 111, 101, "finishSystemSettingsPic", "/usr/share/turbulence/images/manjaro-grey/finish/preferences-system.png"],
@@ -1345,16 +1369,23 @@ class Ui_MainWindow(QtCore.QObject):
             "finishHelpButton": [self.finishHelpButton, 200, 490, 390, 41, "finishHelpButton", None]
         }
 
+        fifthPageLayouts = {
+            "finishWallpaperMenu": [self.finishWallpaperMenu, 0, 39, None, None, True, True, False],
+            "finishArrow": [self.finishArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png"],
+            "finishMenu": [self.finishMenu, 0, 39, None, None, True, True, False],
+            "finishForward": [self.finishForward, 0, 34, None, None, True, True, False],
+            "finishPrevious": [self.finishPrevious, 0, 34, None, None, True, True, False],
+            "finishCancel": [self.finishCancel, 0, 34, None, None, True, True, False]
+        }
+	
         #defines all the widget parameters
         for widgetName, widgetSettings in finalPageWidgets.items():
             widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
         
+        for widgetName, widgetSettings in fifthPageLayouts.items():
+            layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7])
+            
         #Defines the custom settings
-        self.finishWallpaperMenu.setFlat(True)
-        self.finishMenu.setFlat(True)
-        self.finishCancel.setFlat(True)
-        self.finishForward.setFlat(True)
-        self.finishPrevious.setFlat(True)
         self.finishSystemSettingsButton.setFlat(True)
         self.finishHelpButton.setFlat(True)
         
@@ -1362,11 +1393,6 @@ class Ui_MainWindow(QtCore.QObject):
         self.finishSystemSettingsDesc.setWordWrap(True)
         self.finishHelpDesc.setWordWrap(True)
         
-        self.finishWallpaperMenu.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.finishMenu.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.finishCancel.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.finishForward.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.finishPrevious.setFocusPolicy(QtCore.Qt.NoFocus)
         self.finishSystemSettingsButton.setFocusPolicy(QtCore.Qt.NoFocus)
         self.finishHelpButton.setFocusPolicy(QtCore.Qt.NoFocus)
         
@@ -1377,6 +1403,19 @@ class Ui_MainWindow(QtCore.QObject):
         self.finishPrevious.setIconSize(QtCore.QSize(28, 30))
         self.finishCancel.setIconSize(QtCore.QSize(16, 16))
         
+        self.finishMenuContainerHLayout.addWidget(self.finishMenu)
+        self.finishMenuContainerHLayout.addWidget(self.finishArrow)
+        self.finishMenuContainerHLayout.addWidget(self.finishWallpaperMenu)
+        self.finishMenuContainerHLayout.addItem(self.finishMenuSpacer)
+            
+        self.finishFooterContainerHLayout.addWidget(self.finishCancel)
+        self.finishFooterContainerHLayout.addItem(self.finishFooterSpacer)
+        self.finishFooterContainerHLayout.addWidget(self.finishPrevious)
+        self.finishFooterContainerHLayout.addWidget(self.finishForward)
+            
+        self.finishMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
+        self.finishFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
+            
         self.stackedWidget.addWidget(self.Finish)
         
         #Handles the button click

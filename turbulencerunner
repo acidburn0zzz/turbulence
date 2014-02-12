@@ -24,23 +24,8 @@ if __name__ == "__main__":
     
     locale = getdefaultlocale()
     
-    if path.isfile('/usr/share/turbulence/tr/qt_%s.qm' % locale[0]): 
-        try: 
-            with open('/usr/share/turbulence/tr/qt_%s.qm' % locale[0]):
-                trFile = '/usr/share/turbulence/tr/qt_%s.qm' % locale[0]
-        except IOError:
-            print 'File IO error on %s' % locale[0]
-    elif path.isfile('/usr/share/turbulence/tr/qt_%s.qm' % locale[0].split("_")[0]):
-        try: 
-            with open('/usr/share/turbulence/tr/qt_%s.qm' % locale[0].split("_")[0]):
-                trFile = '/usr/share/turbulence/tr/qt_%s.qm' % locale[0].split("_")[0]
-        except IOError:
-            print 'File IO error on %s' % locale[0].split("_")[0]
-    else:
-        trFile = '/usr/share/turbulence/tr/qt_en.qm'
-        
     translator = QtCore.QTranslator(app)
-    translator.load(trFile)
+    translator.load('/usr/share/turbulence/tr/qt_%s.qm' % locale[0])
     app.installTranslator(translator)
     
     #To set force the use of a locale, uncomment the code below, and comment the code above.
