@@ -44,14 +44,14 @@ sudo bash install.sh -r
 
 * Lxterminal
 * kdeplasma-theme-cupertino-ish
+* kde-theme-air-black-remix-green
 
 # Roadmap and TODO
 
 * Add package selection support to KDE
 * Add a verify page, and have all settings applied then
-* Add Tullianas Kwin theme in place of .Ozone
 * Code Clean up and restructure
 * Add a config file
 * Add more settings to configure KDE options as well as OpenBox
 * Figure out alternatives to opening a terminal with the pacman installer script
-* Move install button from install tab to next page
+* Move install button from install tab to future verify page
