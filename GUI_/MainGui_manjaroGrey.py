@@ -27,9 +27,6 @@ plasmaStatus = utils_detector.detectPlasma() #Plasma
 nitrogenStatus = utils_detector.detectNitrogen() #Nitrogen
 openboxStatus = utils_detector.detectOpenBox() #Openbox
 kdeStatus = utils_detector.detectKde() #Kde
-tintStatus = True
-nitrogenStatus = True
-openboxStatus = True
 
 #Configure normal widgets
 def widgetConfigurer(widgetType, xPos, yPos, xSize, ySize, name, image=None, styleSheet=None):
@@ -1233,7 +1230,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
             self.packagesFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
         
-            self.packagesTabs.tabBar().setEnabled(True) #Debug
+            self.packagesTabs.tabBar().setEnabled(False)
             self.stackedWidget.addWidget(self.Packages)
             
             #Handles button clicks
