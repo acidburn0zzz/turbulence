@@ -27,6 +27,9 @@ plasmaStatus = utils_detector.detectPlasma() #Plasma
 nitrogenStatus = utils_detector.detectNitrogen() #Nitrogen
 openboxStatus = utils_detector.detectOpenBox() #Openbox
 kdeStatus = utils_detector.detectKde() #Kde
+tintStatus = True
+nitrogenStatus = True
+openboxStatus = True
 
 #Configure normal widgets
 def widgetConfigurer(widgetType, xPos, yPos, xSize, ySize, name, image=None, styleSheet=None):
@@ -655,9 +658,9 @@ class Ui_MainWindow(QtCore.QObject):
             self.tintContentsPush6 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
             
             if nitrogenStatus or plasmaStatus:
-                self.tintMenuWallpapers.setText("Wallpapers")
+                self.tintMenuWallpapers.setText(_translate("MainWindow", "Wallpapers", None))
             else:
-                self.tintMenuWallpapers.setText("Finish")
+                self.tintMenuWallpapers.setText(_translate("MainWindow", "Finish", None))
             
             thirdPageWidgets = {
                 "tintHeader": [self.tintHeader, 80, 20, 600, 51, "tintHeader", None],
@@ -1162,7 +1165,7 @@ class Ui_MainWindow(QtCore.QObject):
                 "packagesPrinterSupportCheck": [self.packagesPrinterSupportCheck, 260, 90, 111, 41, "packagesPrinterSupportCheck", None],
                 "packagesInstallBack": [self.packagesInstallBack, -20, -10, 761, 241, "packagesInstallBack", None],
                 "packagesInstallButton": [self.packagesInstallButton, 270, 95, 150, 30, "packagesInstallButton", None],
-                "packagesCheckConnection": [self.packagesCheckConnection, 230, 400, 380, 60, "packagesCheckConnection", None]
+                "packagesCheckConnection": [self.packagesCheckConnection, 160, 400, 550, 60, "packagesCheckConnection", None]
             }
             
             fifthPageLayouts = {
@@ -1230,7 +1233,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
             self.packagesFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
         
-            self.packagesTabs.tabBar().setEnabled(False)
+            self.packagesTabs.tabBar().setEnabled(True) #Debug
             self.stackedWidget.addWidget(self.Packages)
             
             #Handles button clicks

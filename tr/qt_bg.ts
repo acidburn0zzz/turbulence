@@ -1,35 +1,35 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" sourcelanguage="" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="bg" sourcelanguage="" version="2.0">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1677"/>
         <source>Status: Active</source>
-        <translation>Status:Actief</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="212"/>
         <source>Welcome</source>
-        <translation>Welkom</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1331"/>
         <source>Folders</source>
-        <translation>Folders</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="214"/>
         <source>What is Manjaro?</source>
-        <translation>Wat is Manjaro?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1396"/>
         <source>Cancel</source>
-        <translation>Afbreken</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1233"/>
         <source>Forward</source>
-        <translation>Volgende</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1329"/>
@@ -39,102 +39,102 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1398"/>
         <source>Previous</source>
-        <translation>Vorige</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1679"/>
         <source>Status: Deactivated</source>
-        <translation>Status:Niet actief</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="427"/>
         <source>Desktop</source>
-        <translation>Bureaublad</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="428"/>
         <source>Documents</source>
-        <translation>Documenten</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="429"/>
         <source>Downloads</source>
-        <translation>Downloads</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="430"/>
         <source>Music</source>
-        <translation>Muziek</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="431"/>
         <source>Pictures</source>
-        <translation>Afbeeldingen</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="432"/>
         <source>Public</source>
-        <translation>Publiek</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="433"/>
         <source>Templates</source>
-        <translation>Templates</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="434"/>
         <source>Videos</source>
-        <translation>Videos</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="442"/>
         <source>Active</source>
-        <translation>Actief</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1325"/>
         <source>Wallpapers</source>
-        <translation>Wallpapers</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1397"/>
         <source>Finish</source>
-        <translation>Klaar</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="996"/>
         <source>Here you can set which wallpaper you want.</source>
-        <translation>Hier kan je je bureaubladachtergrond instellen.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1394"/>
         <source>Congratulations!</source>
-        <translation>Gefeliciteerd!</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1405"/>
         <source>System Settings</source>
-        <translation>Systeem Instellingen</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1407"/>
         <source>Launch System Settings</source>
-        <translation>Lanceer Systeem Instellingen.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1400"/>
         <source>Help</source>
-        <translation>Help</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1402"/>
         <source>Launch Manjaro.org</source>
-        <translation>Start Manjaro.org</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="211"/>
         <source>Welcome To Manjaro!</source>
-        <translation>Welkom Bij Manjaro!</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="215"/>
@@ -150,73 +150,59 @@ Some of Manjaro's features are:
 For newcomers, a user-friendly installer is provided, and the system itself is designed to work fully straight out of the box. For more experienced, and adventurous users, Manjaro also offers the configurability and versatility to be shaped and moulded in every respect to suit personal taste and preference.
 &lt;br&gt;&lt;br&gt;
 Over these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.</source>
-        <translation>&lt;b&gt; Manjaro &lt;/b&gt; is een slanke en snelle distro , met de voordelen van de populaire Arch OS , samen met gebruiksgemak . Ontwikkeld in Oostenrijk , Frankrijk en Duitsland , Manjaro gericht op nieuwe gebruikers en ervaren gebruikers . 
-&lt;br&gt; &lt;br&gt;
-Enkele van Manjaro &apos;s kenmerken zijn : 
-&lt;ul&gt;
-&lt;li&gt; Snelheid , kracht en efficiëntie &lt;/li&gt; 
-&lt;li&gt; De toegang tot de allernieuwste cutting edge en bleeding edge software &lt;/li&gt; 
-&lt;li&gt; Een rollende release! ontwikkelingsmodel dat de meest up-to - date mogelijk systeem biedt zonder de noodzaak om nieuwe versies te installeren &lt;/li&gt;
-&lt;li&gt; Toegang tot de Arch gebruiker Repository ( AUR ) . &lt;/li&gt;
-&lt;/ul&gt;
-Voor nieuwkomers is een gebruiksvriendelijke installateur verstrekt , en het systeem zelf is ontworpen om volledig recht uit de doos werken . Voor meer ervaren en avontuurlijke gebruikers , Manjaro biedt ook de configureerbaarheid en veelzijdigheid te worden gevormd en gegoten in alle opzichten aan persoonlijke smaak en voorkeur.
-&lt;br&gt;
-Over de komende paar stappen , zal Turbulence u door het aanpassen van uw nieuwe kopie van Manjaro .
-</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1327"/>
         <source>Tint 2</source>
-        <translation>Tint 2</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="418"/>
         <source>Here, you can choose which folders you want in your home directory. You have a choice from some of the most commonly used folders.</source>
-        <translation>Hier, kan je kiezen uit welke folder in je home directory wilt hebben. Je hebt een keuze uit een aantal van meest gebruikte folders.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="605"/>
         <source>Here you can choose what type of theme you want for your window decorations.</source>
-        <translation>Hier kan je kiezen uit type van een theme je wilt gebruiken voor uw window decoratie.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="763"/>
         <source>Here you can choose what position you want of your Tint 2 panel.</source>
-        <translation>Hier kan je kiezen welke positie Tint 2 Panel wilt hebben.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
         <source>Top</source>
-        <translation>Top</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="765"/>
         <source>Right</source>
-        <translation>Rechts</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="766"/>
         <source>Bottom</source>
-        <translation>Bodem</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="767"/>
         <source>Left</source>
-        <translation>Links</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1323"/>
         <source>Packages</source>
-        <translation>Pakketten</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1231"/>
         <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or unselect any packages you want to add or remove. Packages that are installed will be auto-selected.
 
 When you are done, go to the Install tab, and click &quot;Install&quot;.</source>
-        <translation>Hier, Je can kiezen welke pakketten je graag wilt installeren. Ga over elke pakket om de omschrijving , en selecteren en niet selecten van elk pakket je wilt toevoegen of verwijderen.Pakketten dat is geinstalleerd zal dmv Auto-selectie.
-
-Wanneer je klaar bent, ga naar install tab, en click &quot;install&quot;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1235"/>
@@ -413,8 +399,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1411"/>
         <source>Control panel to edit various aspects of OpenBox</source>
-        <translation>Beheerder paneel voor bewerken algemene aspecten van 
-de OpenBox desktop, En meer.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1412"/>

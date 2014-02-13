@@ -14,6 +14,7 @@ if __name__ == "__main__":
     
 
 def checkInternet():
+    return False #Debug
     try:
         response=urllib2.urlopen('http://74.125.228.100',timeout=20)
         return True

@@ -150,15 +150,15 @@ Some of Manjaro's features are:
 For newcomers, a user-friendly installer is provided, and the system itself is designed to work fully straight out of the box. For more experienced, and adventurous users, Manjaro also offers the configurability and versatility to be shaped and moulded in every respect to suit personal taste and preference.
 &lt;br&gt;&lt;br&gt;
 Over these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.</source>
-        <translation>&lt;b&gt;Manjaro&lt;/ b&gt; egy egyszerű és gyors disztribúció, amely egyszerre nyújtja az Arch OS előnyeit a felhasználó barátsággal és a könnyű kezelhetőséggel. Ausztriában, Franciaországban és Németországban fejlesztett Manjaro az kezdő és a tapasztalt felhasználókat célozza meg.
+        <translation>&lt;b&gt;Manjaro&lt;/b&gt; egy egyszerű és gyors disztribúció, amely egyszerre nyújtja az Arch OS előnyeit a felhasználó barátsággal és a könnyű kezelhetőséggel. Ausztriában, Franciaországban és Németországban fejlesztett Manjaro az kezdő és a tapasztalt felhasználókat célozza meg.
 &lt;br&gt;&lt;br&gt;
 Manjaro néhány jellemzője:
 &lt;ul&gt;
-&lt;li&gt;Gyorsaság, erő és hatékonyság&lt;/ li&gt;
-&lt;li&gt;A legújabb cutting és bleeding edge programok elérhetősége&lt;/ li&gt;
-&lt;li&gt;A &apos;gördülő kiadási modell&apos;, ami mindig a legújabb rendszert nyújtja&lt;/ li&gt;
-&lt;li&gt;Hozzáférés az Arch User Repository-hoz (AUR)&lt;/ li&gt;
-&lt;/ ul&gt;
+&lt;li&gt;Gyorsaság, erő és hatékonyság&lt;/li&gt;
+&lt;li&gt;A legújabb cutting és bleeding edge programok elérhetősége&lt;/li&gt;
+&lt;li&gt;A &apos;gördülő kiadási modell&apos;, ami mindig a legújabb rendszert nyújtja&lt;/li&gt;
+&lt;li&gt;Hozzáférés az Arch User Repository-hoz (AUR)&lt;/li&gt;
+&lt;/ul&gt;
 A kezdő felhasználóknak számára egy felhasználóbarát telepítő biztosított, valamint a rendszert is úgy tervezték, hogy telepítés után közvetlenül használható legyen. A tapasztalt és a felfedező kedvű felhasználok részére a Manjaro lehetővé teszi a rendszer saját igényeknek és céloknak megfelelő kialakítását és testre szabását.
 &lt;br&gt;&lt;br&gt;
 Az elkövetkezendő néhány lépésben a Turbulence végigvezeti a Manjaro új példányának testreszabásán.</translation>
