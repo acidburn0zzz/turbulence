@@ -28,11 +28,13 @@ def killPlasma():
         logger.writeLog('failedKillingPlasma')
         os.kill(pidOfPlasma, 9)
         logger.writeLog('killedPlasmaSIGKILL')
+    print "Started step one"
         
 #Revives plasma from the dead!
 def startPlasma():
     subprocess.Popen(["plasma-desktop"], stdout=subprocess.PIPE)
     logger.writeLog('startPlasma')
+    print "Started step Three"
     
 #Kills kwin
 def killKwin():

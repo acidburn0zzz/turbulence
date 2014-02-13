@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 
 from sys import exit
-from subprocess import call
+from subprocess import Popen
 from webbrowser import open as open_
 
 from tools_ import logger
@@ -14,12 +14,12 @@ if __name__ == "__main__":
     
 def launchSystemSettings():
     logger.writeLog("launchSystemSettings")
-    call(["systemsettings"])
+    Popen(["systemsettings"])
     return True
     
 def launchAppearance():
     logger.writeLog("launchCustomize")
-    call(["lxappearance"])
+    Popen(["lxappearance"])
     return True
     
 def launchHelp():

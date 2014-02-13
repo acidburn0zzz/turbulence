@@ -175,27 +175,27 @@ Over these next few steps, Turbulence will guide you through customizing your ne
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
         <source>Top</source>
-        <translation type="unfinished"/>
+        <translation>Atas</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="765"/>
         <source>Right</source>
-        <translation type="unfinished"/>
+        <translation>Kanan</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="766"/>
         <source>Bottom</source>
-        <translation type="unfinished"/>
+        <translation>Bawah</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="767"/>
         <source>Left</source>
-        <translation type="unfinished"/>
+        <translation>Kiri</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1323"/>
         <source>Packages</source>
-        <translation type="unfinished"/>
+        <translation>Paket</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1231"/>
@@ -207,59 +207,61 @@ When you are done, go to the Install tab, and click &quot;Install&quot;.</source
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1235"/>
         <source>Check For Internet Connection</source>
-        <translation type="unfinished"/>
+        <translation>Memeriksa Koneksi Internet</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1236"/>
         <source>Standalone web browser from mozilla.org</source>
-        <translation type="unfinished"/>
+        <translation>peramban web standalone dari mozilla.org</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1237"/>
         <source>Lightweight cross-platform Web browser</source>
-        <translation type="unfinished"/>
+        <translation>Peramban web multi-platform yang ringan</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1239"/>
         <source>The open-source project behind Google Chrome, an 
 attempt at creating a safer, faster, and more stable browser</source>
-        <translation type="unfinished"/>
+        <translation>Proyek sumber-terbuka dibalik Google Chrome, 
+berusaha membuat lebih aman, lebih cepat, dan peramban yang lebih stabil</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1240"/>
         <source>Fast and secure web browser and Internet suite</source>
-        <translation type="unfinished"/>
+        <translation>Peramban web dan rangkaian internet yang cepat dan aman</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1241"/>
         <source>Fast, easy, and free BitTorrent client</source>
-        <translation type="unfinished"/>
+        <translation>Cepat, mudah, dan bebas klien BitTorrent</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1243"/>
         <source>Lightweight web browser (GTK2)</source>
-        <translation type="unfinished"/>
+        <translation>Peramban web yang ringan (GTK2)</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1248"/>
         <source>A BitTorrent client with multiple user interfaces 
 in a client/server model</source>
-        <translation type="unfinished"/>
+        <translation>Klien BitTorrent dengan antarmuka multi pengguna
+di model klien/server</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1250"/>
         <source>Network</source>
-        <translation type="unfinished"/>
+        <translation>Jaringan</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1251"/>
         <source>A multi-platform MPEG, VCD/DVD, and DivX player</source>
-        <translation type="unfinished"/>
+        <translation>Player multi-platform MPEG, VCD/DVD, dan DivX</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1253"/>
         <source>A complete front-end for MPlayer</source>
-        <translation type="unfinished"/>
+        <translation>Front-end yang lengkap untuk MPlayer</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1255"/>
@@ -279,7 +281,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1261"/>
         <source>Multimedia</source>
-        <translation type="unfinished"/>
+        <translation>Multimedia</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1262"/>
@@ -289,17 +291,17 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1264"/>
         <source>Simply a document viewer</source>
-        <translation type="unfinished"/>
+        <translation>Penglihat dokumen yang simpel</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1266"/>
         <source>GNU Image Manipulation Program</source>
-        <translation type="unfinished"/>
+        <translation>GNU Image Manipulation Program</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1268"/>
         <source>Lightweight image viewer</source>
-        <translation type="unfinished"/>
+        <translation>Penglihat gambar yang ringan</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1270"/>
@@ -309,12 +311,12 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1272"/>
         <source>Graphics</source>
-        <translation type="unfinished"/>
+        <translation>Grafis</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1273"/>
         <source>Fast and lightweight IDE</source>
-        <translation type="unfinished"/>
+        <translation>IDE yang cepat dan ringan</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1275"/>
@@ -349,7 +351,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1287"/>
         <source>Accessories</source>
-        <translation type="unfinished"/>
+        <translation>Aksesoris</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1288"/>

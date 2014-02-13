@@ -46,7 +46,7 @@ for themeFileName, themeFile in neededFiles.items():
 #Changes the kwin theme
 def kwinThemer(theme):
     kwinThemes = {
-        "ozone": ["PluginLib=kwin3_aurorae", True, "[Engine]\nThemeName=ghost-deco-2_2"],
+        "air-black": ["PluginLib=kwin3_aurorae", True, "[Engine]\nThemeName=Air-black-remix-green"],
         "cupertino-ish": ["PluginLib=kwin3_aurorae", True, "[Engine]\nThemeName=cupertino-ish"],
         "oxygen": ["PluginLib=kwin3_oxygen", False, None],
         "plastik": ["PluginLib=kwin3_aurorae", True, "[Engine]\nEngineType=qml\nThemeName=kwin4_decoration_qml_plastik"],

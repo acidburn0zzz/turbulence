@@ -513,7 +513,7 @@ class Ui_MainWindow(QtCore.QObject):
                 "themeForward": [self.themeForward, 0, 34, None, None, True, True, False, False],
                 "themePrevious": [self.themePrevious, 0, 34, None, None, True, True, False, False],
                 "themeCancel": [self.themeCancel, 0, 34, None, None, True, True, False, False],
-                "themePreview1": [self.themePreview1, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/themes/ozone.png", True],
+                "themePreview1": [self.themePreview1, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/themes/air-black.png", True],
                 "themePreview2": [self.themePreview2, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/themes/cupertino-ish.png", True],
                 "themePreview3": [self.themePreview3, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/themes/oxygen.png", True],
                 "themePreview4": [self.themePreview4, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/themes/plastik.png", True],
@@ -599,7 +599,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.themeForward.setText(_translate("MainWindow", "Forward", None))
             self.themePrevious.setText(_translate("MainWindow", "Previous", None))
             self.themeDesc.setText(_translate("MainWindow", "Here you can choose what type of theme you want for your window decorations.", None))
-            self.themeRadio1.setText("Ozone")
+            self.themeRadio1.setText("Air Black Green")
             self.themeRadio2.setText("Cuptertino-ish")
             self.themeRadio3.setText("Oxygen")
             self.themeRadio4.setText("Plastik")
@@ -1513,7 +1513,7 @@ class Ui_MainWindow(QtCore.QObject):
     #Moves next a page, but also applies to settings for themes.
     def handleButtonNextThemes(self):
         kwinThemes = {
-            "ozone": self.themeRadio1,
+            "air-black": self.themeRadio1,
             "cupertino-ish": self.themeRadio2,
             "oxygen": self.themeRadio3,
             "plastik": self.themeRadio4,

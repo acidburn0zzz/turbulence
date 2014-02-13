@@ -96,6 +96,7 @@ def wallpaperChanger(wallpaperChoice, edition):
             "whiteTiger": "wallpaper=/usr/share/wallpapers/White Tiger"
         }
         changeWallpaperKde(wallpaperChoice, wallpaperOptions)
+    print "Started step Two"
 
 #Changes the wallpaper plus restarts plasma
 def changeWallpaperPlus(wallpaper, edition):

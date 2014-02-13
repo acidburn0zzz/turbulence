@@ -51,7 +51,6 @@ sudo bash install.sh -r
 * Add a verify page, and have all settings applied then
 * Add Tullianas Kwin theme in place of .Ozone
 * Code Clean up and restructure
-* Make buttons non blocking
 * Add a config file
 * Add more settings to configure KDE options as well as OpenBox
 * Figure out alternatives to opening a terminal with the pacman installer script
