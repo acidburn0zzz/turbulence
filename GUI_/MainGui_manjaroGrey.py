@@ -1368,7 +1368,7 @@ class Ui_MainWindow(QtCore.QObject):
 
         fifthPageLayouts = {
             "finishWallpaperMenu": [self.finishWallpaperMenu, 0, 39, None, None, True, True, False],
-            "finishArrow": [self.finishArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png"],
+            "finishArrow": [self.finishArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow-reverse.png"],
             "finishMenu": [self.finishMenu, 0, 39, None, None, True, True, False],
             "finishForward": [self.finishForward, 0, 34, None, None, True, True, False],
             "finishPrevious": [self.finishPrevious, 0, 34, None, None, True, True, False],
@@ -1400,9 +1400,9 @@ class Ui_MainWindow(QtCore.QObject):
         self.finishPrevious.setIconSize(QtCore.QSize(28, 30))
         self.finishCancel.setIconSize(QtCore.QSize(16, 16))
         
-        self.finishMenuContainerHLayout.addWidget(self.finishMenu)
-        self.finishMenuContainerHLayout.addWidget(self.finishArrow)
         self.finishMenuContainerHLayout.addWidget(self.finishWallpaperMenu)
+        self.finishMenuContainerHLayout.addWidget(self.finishArrow)
+        self.finishMenuContainerHLayout.addWidget(self.finishMenu)
         self.finishMenuContainerHLayout.addItem(self.finishMenuSpacer)
             
         self.finishFooterContainerHLayout.addWidget(self.finishCancel)
