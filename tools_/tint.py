@@ -34,23 +34,33 @@ for configFileName, configFile in neededFiles.items():
 #Changes the tint2 position
 def panelPosition(position):
     positionValues = {
-        "top": ["panel_position = top center horizontal"],
-        "bottom": ["panel_position = bottom center horizontal"],
-        "right": ["panel_position = center right vertical"],
-        "left": ["panel_position = center left vertical"],
+        "top": ["panel_position = top center horizontal", "task_text = 1"],
+        "bottom": ["panel_position = bottom center horizontal", "task_text = 1"],
+        "right": ["panel_position = center right vertical", "task_text = 0"],
+        "left": ["panel_position = center left vertical", "task_text = 0"],
     }
     
     for screenPosition, positionSettings in positionValues.items():
         if position == screenPosition:
             query = "panel_position"
             with open(tintTwo, 'rw') as search:
-                for line in search:
-                    line = line.rstrip()
-                    if line.startswith(query):
+                for panel_position in search:
+                    panel_position = panel_position.rstrip()
+                    if panel_position.startswith(query):
                         search.close()
                         break
+		      
+            query = "task_text"
+            with open(tintTwo, 'rw') as search:
+                for task_text in search:
+                    task_text = task_text.rstrip()
+                    if task_text.startswith(query):
+                        search.close()
+                        break
+                
             tintTwoRead = open(tintTwo).read()
-            tintTwoRead = tintTwoRead.replace(line, positionSettings[0])
+            tintTwoRead = tintTwoRead.replace(panel_position, positionSettings[0])
+            tintTwoRead = tintTwoRead.replace(task_text, positionSettings[1])
             tintTwoWrite = open(tintTwo, 'w')
             tintTwoWrite.write(tintTwoRead)
             tintTwoWrite.close()
