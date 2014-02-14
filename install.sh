@@ -70,6 +70,9 @@ echo "Copying the wallpapers into /usr/share/backgrounds..."
 mv /usr/share/turbulence/backgrounds/* /usr/share/backgrounds
 rm -r /usr/share/turbulence/backgrounds
 
+echo "Copying the turbulence executable..."
+mv /usr/share/turbulence/turbulence /usr/bin
+
 echo "Generating translations..."
 cd /usr/share/turbulence/tr
 lrelease-qt4 /usr/share/turbulence/tr/*
