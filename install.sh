@@ -21,6 +21,7 @@ if [ "$1" == "--remove" ] || [ "$1" == "-r" ]; then
     rm -rf '/usr/share/wallpapers/Cherry Japan'
     rm -rf '/usr/share/wallpapers/Dark Stairs'
     rm -rf '/usr/share/wallpapers/Earth In Space'
+    rm -rf '/usr/share/wallpapers/manjaro-style-turbulence'
     rm -rf '/usr/share/wallpapers/Mountain Lake'
     rm -rf '/usr/share/wallpapers/Orange Splash'
     rm -rf '/usr/share/wallpapers/Ozone-Turbulence'
@@ -69,20 +70,6 @@ echo "Copying the wallpapers into /usr/share/backgrounds..."
 mv /usr/share/turbulence/backgrounds/* /usr/share/backgrounds
 rm -r /usr/share/turbulence/backgrounds
 
-echo "Copying the turbulence executable..."
-mv /usr/share/turbulence/turbulence /usr/bin
-
-if [ -d "/usr/share/apps/aurorae/themes/ghost-deco-2_2" ]; then
-    echo "Ghost theme already installed. Skipping copying the Ghost theme."
-    sudo rm -r /usr/share/turbulence/themes/ghost-deco-2_2
-else
-    echo "Creating the themes directory for aurorae..."
-    mkdir -p /usr/share/apps/aurorae/themes
-    echo "Copying the Ghost theme..."
-    mv /usr/share/turbulence/themes/ghost-deco-2_2 /usr/share/apps/aurorae/themes
-    rm -r /usr/share/turbulence/themes/ghost-deco-2_2
-fi
-
 echo "Generating translations..."
 cd /usr/share/turbulence/tr
 lrelease-qt4 /usr/share/turbulence/tr/*
@@ -104,3 +91,4 @@ echo "-python2-pyqt4"
 echo "-pyqt4-common"
 echo "-qt4"
 echo "-kdeplasma-theme-cupertino-ish"
+echo "-kde-theme-air-black-remix-green"

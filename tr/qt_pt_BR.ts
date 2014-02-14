@@ -150,7 +150,18 @@ Some of Manjaro's features are:
 For newcomers, a user-friendly installer is provided, and the system itself is designed to work fully straight out of the box. For more experienced, and adventurous users, Manjaro also offers the configurability and versatility to be shaped and moulded in every respect to suit personal taste and preference.
 &lt;br&gt;&lt;br&gt;
 Over these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.</source>
-        <translation type="unfinished"/>
+        <translation>Manjaro é uma distro elegante e rápida, com benefícios do popula Arch OS, juntamente com a facilidade de uso. Desenvolvido na Áustria, França e Alemanha, Manjaro visa novos usuários e usuários experientes.
+
+Algumas das características do Manjaro são:
+
+velocidade , potência e eficiência.
+acesso ao mais recente softwares e tecnologia de ponta.
+rolling release, modelo de desenvolvimento que fornece o sistema sem a necessidade de instalar novas versões.
+acesso ao Arch User Repository (AUR).
+
+Para os recém-chegados , um instalador de fácil utilização é fornecida e o próprio sistema é projetado para funcionar totalmente na sua primeira inicialização. Para usuários mais experientes e aventureiros, Manjaro também oferece a capacidade de configuração e versatilidade para ser moldado em todos os aspectos para se adequar ao gosto pessoal e preferência. 
+
+Ao longo destes próximos passos, Turbulence irá guiá-lo através da personalização de sua nova cópia do Manjaro .</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1327"/>
@@ -170,7 +181,7 @@ Over these next few steps, Turbulence will guide you through customizing your ne
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="763"/>
         <source>Here you can choose what position you want of your Tint 2 panel.</source>
-        <translation type="unfinished"/>
+        <translation>Aqui você pode escolher a posição que você quer do seu painel de Tint 2.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
@@ -409,7 +420,7 @@ ambiente de trabalho OpenBox e muito mais.</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1412"/>
         <source>Launch Customize Look and Feel</source>
-        <translation type="unfinished"/>
+        <translation>Personalizar Aparência</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1624"/>

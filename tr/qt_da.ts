@@ -24,7 +24,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1396"/>
         <source>Cancel</source>
-        <translation>Annullere</translation>
+        <translation>Annuller</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1233"/>
@@ -99,7 +99,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1397"/>
         <source>Finish</source>
-        <translation>Færdig</translation>
+        <translation>Afslut</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="996"/>
@@ -187,12 +187,12 @@ Over de næste få trin vil Turbulence guide dig igennem for tilpasning af din n
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="605"/>
         <source>Here you can choose what type of theme you want for your window decorations.</source>
-        <translation>Her kan du vælge hvilken slags tema du ønsker at bruge til dine vinduesudsmykninger.</translation>
+        <translation>Her kan du vælge, hvilken slags tema du ønsker at bruge til dine vinduesudsmykninger.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="763"/>
         <source>Here you can choose what position you want of your Tint 2 panel.</source>
-        <translation>Her kan du vælge hvilken position du vil have Tint 2 panel placeret.</translation>
+        <translation>Her kan du vælge, hvor du vil have Tint 2-panelet placeret.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
@@ -224,14 +224,14 @@ Over de næste få trin vil Turbulence guide dig igennem for tilpasning af din n
         <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or unselect any packages you want to add or remove. Packages that are installed will be auto-selected.
 
 When you are done, go to the Install tab, and click &quot;Install&quot;.</source>
-        <translation>Her kan du vælge hvilke pakker du gerne vil installere. Før musepilen over pakkerne for at se en beskrivelse, og vælg eller fravælg enhver pakke du gerne vil tilføje eller fjerne.  Pakker der bliver installeret vil blive auto-udvalgte.
+        <translation>Her kan du vælge, hvilke pakker du gerne vil installere. Før musepilen over pakkerne for at se en beskrivelse, og vælg eller fravælg de pakker, du gerne vil tilføje eller fjerne.  Pakker, der er installeret, vil automatisk blive valgt.
 
-Når du er færdig, gå til Install-tab, og klik &quot;Install&quot;.</translation>
+Når du er færdig, så gå til Install-fanen og klik &quot;Install&quot;.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1235"/>
         <source>Check For Internet Connection</source>
-        <translation>Tjek for internet forbindelse</translation>
+        <translation>Tjek for internetforbindelse</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1236"/>
@@ -241,7 +241,7 @@ Når du er færdig, gå til Install-tab, og klik &quot;Install&quot;.</translati
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1237"/>
         <source>Lightweight cross-platform Web browser</source>
-        <translation>Letvægt cross-platform Web browser</translation>
+        <translation>Letvægts cross-platform Web browser</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1239"/>

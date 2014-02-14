@@ -54,7 +54,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="428"/>
         <source>Documents</source>
-        <translation>文書</translation>
+        <translation>ドキュメント</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="429"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="432"/>
         <source>Public</source>
-        <translation>公開の</translation>
+        <translation>公共</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="433"/>
@@ -304,12 +304,12 @@ BitTorrent クライアント</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1264"/>
         <source>Simply a document viewer</source>
-        <translation>シンプルなドキュメントビュワー</translation>
+        <translation>シンプルなドキュメントビューア</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1266"/>
         <source>GNU Image Manipulation Program</source>
-        <translation>GNU 画像取り扱いプログラム</translation>
+        <translation>GNU による画像編集プログラム</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1268"/>
@@ -354,7 +354,7 @@ BitTorrent クライアント</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1283"/>
         <source>Terminal emulator that supports tabs and grids</source>
-        <translation type="unfinished"/>
+        <translation>タブ及びグリッド表示をサポートするターミナルエミュレータ</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1285"/>
@@ -369,7 +369,7 @@ BitTorrent クライアント</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1288"/>
         <source>Installs yaourt, and required dependencies to access the AUR</source>
-        <translation type="unfinished"/>
+        <translation>yaourt、及びAURへのアクセスに必要な依存パッケージのインストール</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1290"/>
@@ -384,7 +384,7 @@ BitTorrent クライアント</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1294"/>
         <source>Extras</source>
-        <translation type="unfinished"/>
+        <translation>追加</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1296"/>
@@ -394,7 +394,7 @@ BitTorrent クライアント</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
-        <translation>全ての設定が適用されました。今から、Manjaroを楽しんでいただけます。また、下記のプログラムやリンクを見ることができます。さらに、お済みでなかったら、Manjaroのコミュニティにぜひ加入してください!</translation>
+        <translation>全ての設定が適用されました。今から、Manjaroを楽しんでいただけます。また、下記のプログラムやリンクを見ることができます。さらに、Manjaroのコミュニティにぜひ加入してください!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1401"/>
@@ -404,7 +404,7 @@ BitTorrent クライアント</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1406"/>
         <source>Control panel to edit various aspects of the KDE desktop, and more.</source>
-        <translation type="unfinished"/>
+        <translation>KDEデスクトップ等の多様な機能を編集するコントロールパネル</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1410"/>
@@ -414,17 +414,17 @@ BitTorrent クライアント</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1411"/>
         <source>Control panel to edit various aspects of OpenBox</source>
-        <translation type="unfinished"/>
+        <translation>OpenBoxの多様な機能を編集するコントロールパネル</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1412"/>
         <source>Launch Customize Look and Feel</source>
-        <translation type="unfinished"/>
+        <translation>カスタマイズを立ち上げ、見て、感じてください</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1624"/>
         <source>Failed. Please Try Again.</source>
-        <translation type="unfinished"/>
+        <translation>失敗しました。再度試行してください。</translation>
     </message>
 </context>
 </TS>

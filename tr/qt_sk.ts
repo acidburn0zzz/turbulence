@@ -155,121 +155,124 @@ Over these next few steps, Turbulence will guide you through customizing your ne
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1327"/>
         <source>Tint 2</source>
-        <translation type="unfinished"/>
+        <translation>Tint 2</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="418"/>
         <source>Here, you can choose which folders you want in your home directory. You have a choice from some of the most commonly used folders.</source>
-        <translation type="unfinished"/>
+        <translation>Tu si môžete zvoliť zložky, ktoré budete mať v domovskom priečinku. Na výber  máte najbežnejšie používané zložky.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="605"/>
         <source>Here you can choose what type of theme you want for your window decorations.</source>
-        <translation type="unfinished"/>
+        <translation>Tu si môžete zvoliť tému pre dekoráciu okien.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="763"/>
         <source>Here you can choose what position you want of your Tint 2 panel.</source>
-        <translation type="unfinished"/>
+        <translation>Tu si môžete zvoliť pozíciu pre váš Tint 2 panel.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
         <source>Top</source>
-        <translation type="unfinished"/>
+        <translation>Na vrchu </translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="765"/>
         <source>Right</source>
-        <translation type="unfinished"/>
+        <translation>Vpravo</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="766"/>
         <source>Bottom</source>
-        <translation type="unfinished"/>
+        <translation>Naspodu</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="767"/>
         <source>Left</source>
-        <translation type="unfinished"/>
+        <translation>Vľavo</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1323"/>
         <source>Packages</source>
-        <translation type="unfinished"/>
+        <translation>Balíčky</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1231"/>
         <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or unselect any packages you want to add or remove. Packages that are installed will be auto-selected.
 
 When you are done, go to the Install tab, and click &quot;Install&quot;.</source>
-        <translation type="unfinished"/>
+        <translation>Tu si môžete zvoliť balíčky na inštaláciu. Prezrite si popis každého z nich a rozhodnite sa, ktorý chcete nainštalovať, prípadne odinštalovať. Nainštalované balíčky budú zvolené automaticky.
+
+Keď budete hotový, kliknite na inštalačný tab a zvoľte &quot;nainštalovať&quot;.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1235"/>
         <source>Check For Internet Connection</source>
-        <translation type="unfinished"/>
+        <translation>Skontrolovať internetové pripojenie</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1236"/>
         <source>Standalone web browser from mozilla.org</source>
-        <translation type="unfinished"/>
+        <translation>Samostatný internetový prehliadač od mozilla.org</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1237"/>
         <source>Lightweight cross-platform Web browser</source>
-        <translation type="unfinished"/>
+        <translation>Nenáročný internetový prehliadač</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1239"/>
         <source>The open-source project behind Google Chrome, an 
 attempt at creating a safer, faster, and more stable browser</source>
-        <translation type="unfinished"/>
+        <translation>Open source projekt za Google Chrome, snaha o vytvorenie rýchleho, bezpečného a stabilného internetového prehliadača</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1240"/>
         <source>Fast and secure web browser and Internet suite</source>
-        <translation type="unfinished"/>
+        <translation>Rýchly, bezpečný internetový prehliadač a zároveň balíček internetových aplikácií</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1241"/>
         <source>Fast, easy, and free BitTorrent client</source>
-        <translation type="unfinished"/>
+        <translation>Rýchly, jednoduchý a slobodný BitTorrent klient</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1243"/>
         <source>Lightweight web browser (GTK2)</source>
-        <translation type="unfinished"/>
+        <translation>Nenáročný internetový prehliadač (GTK2)</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1248"/>
         <source>A BitTorrent client with multiple user interfaces 
 in a client/server model</source>
-        <translation type="unfinished"/>
+        <translation>BitTorrent klient s podporou viacerých používateľských rozhraní
+v klient/server modeli</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1250"/>
         <source>Network</source>
-        <translation type="unfinished"/>
+        <translation>Sieť</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1251"/>
         <source>A multi-platform MPEG, VCD/DVD, and DivX player</source>
-        <translation type="unfinished"/>
+        <translation>Multiplatformný MPEG, VCD/DVD a DivX prehrávač</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1253"/>
         <source>A complete front-end for MPlayer</source>
-        <translation type="unfinished"/>
+        <translation>Front-end pre MPlayer</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1255"/>
         <source>Lightweight, advanced audio player focused on audio quality</source>
-        <translation type="unfinished"/>
+        <translation>Nenáročný audio prehrávač s pokročilými funkciami zameraný na kvalitu zvuku</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1257"/>
         <source>A music player and library organizer</source>
-        <translation type="unfinished"/>
+        <translation>Hudobný prehrávač a organizátor zbierky</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1259"/>
@@ -314,22 +317,22 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1273"/>
         <source>Fast and lightweight IDE</source>
-        <translation type="unfinished"/>
+        <translation>Rýchle a nenáročné IDE</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1275"/>
         <source>A popular and easy to use graphical IRC (chat) client</source>
-        <translation type="unfinished"/>
+        <translation>Populárny a jednoduchý IRC (chat) klient</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1277"/>
         <source>A notepad clone for GTK+ 2.0</source>
-        <translation type="unfinished"/>
+        <translation>Klon poznámkového bloku pre GTK+ 2.0</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1279"/>
         <source>An extremely fast and lightweight file manager</source>
-        <translation type="unfinished"/>
+        <translation>Neuveriteľne rýchly a nenáročný správca súborov</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1281"/>
@@ -339,7 +342,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1283"/>
         <source>Terminal emulator that supports tabs and grids</source>
-        <translation type="unfinished"/>
+        <translation>Terminál emulátor s podporou tabov a mriežok</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1285"/>
@@ -349,27 +352,27 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1287"/>
         <source>Accessories</source>
-        <translation type="unfinished"/>
+        <translation>Príslušenstvo</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1288"/>
         <source>Installs yaourt, and required dependencies to access the AUR</source>
-        <translation type="unfinished"/>
+        <translation>Nainštaluje yaourt a potrebné závislosti pre prístup k AUR</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1290"/>
         <source>Installs flashplugin, and required codecs for playing media</source>
-        <translation type="unfinished"/>
+        <translation>Nainštaluje flashplugin a potrebné kodeky pre prehrávanie mediálneho obsahu</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1292"/>
         <source>Installs manjaro-printer, and CUPS to enable printers</source>
-        <translation type="unfinished"/>
+        <translation>Nainštaluje manjaro-printer a CUPS pre povolenie tlačiarní</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1294"/>
         <source>Extras</source>
-        <translation type="unfinished"/>
+        <translation>Doplnky</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1296"/>
@@ -379,12 +382,12 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
-        <translation type="unfinished"/>
+        <translation>Všetky vaše nastavenia boli úspešne aplikované. Teraz si už môžete začať užívať Manjaro alebo sa ešte predtým pozrieť na niektoré programy a odkazy nižšie. A ak ste ešte tak neučinili, pridajte sa ku komunite Manjaro</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1401"/>
         <source>For help and support, you can visit Manjaro.org for access to a terrific forum, wiki, and IRC!</source>
-        <translation type="unfinished"/>
+        <translation>Pre pomoc a podporu navštívte Manjaro. pre prístup k skvelému fóru, wiki a IRC!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1406"/>
