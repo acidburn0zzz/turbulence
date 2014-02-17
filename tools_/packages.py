@@ -7,6 +7,14 @@ from os import system
 
 from tools_ import logger
 
+packagesInstallAdditions = {
+    "yaourt": ["autoconf", "automake", "binutils", "bison", "fakeroot", "file", "findutils", "flex", "gawk", "gcc", "gettext", "grep", "groff", "gzip", "libtool", "m4", "make", "patch", "pkg-config", "sed", "sudo", "texinfo", "util-linux", "which", "locale-info"],
+    "flashplugin": ["a52dec", "faac", "faad2", "flac", "jasper", "lame", "libdca", "libdv", "libmad", "libmpeg2", "libtheora", "libvorbis", "libxv", "wavpack", "x264", "xvidcore", "gstreamer0.10-bad-plugins", "gstreamer0.10-base-plugins", "gstreamer0.10-ffmpeg", "gstreamer0.10-good-plugins", "gstreamer0.10-ugly-plugins",]
+}
+packagesRemoveAdditions = {
+    "thunar": ["thunar-volman", "thunar-archive-plugin"]
+}
+
 #Stops people from running this program directly.
 if __name__ == "__main__":
     print "This script should not be ran manually. It's apart of a package for the turbulence utility."
@@ -28,11 +36,23 @@ def getCurrentPackages():
 
 def handlePackages(packagesTBI, packagesTBR): #packagesTBI = packages to be installed #packagesTBR = packages to br removed
     currentPackages = getCurrentPackages()
-    packagesTBIList = list(set(packagesTBI) - set(currentPackages)) #Packages to be installed
+    
+    packagesTBIListUnedited = list(set(packagesTBI) - set(currentPackages)) #Packages to be installed
+    packagesTBIList = packagesTBIListUnedited
+    for packageName, packagesAdditions in packagesInstallAdditions.items():
+        if packageName in packagesTBIListUnedited:
+            packagesTBIList = packagesTBIList + packagesInstallAdditions[packageName]
+    
     packagesTBIStr = ' '.join(packagesTBIList)
     logger.writeLog("packagesToBeInstalled", packagesTBIStr)
     packagesTBNList = list(set(currentPackages) - set(packagesTBR)) #Packages that don't need to be removed or installed (neutral).
-    packagesTBRList = list(set(currentPackages) - set(packagesTBNList)) #Packages to be removed
+    
+    packagesTBRListUnedited = list(set(currentPackages) - set(packagesTBNList)) #Packages to be removed
+    packagesTBRList = packagesTBRListUnedited
+    for packageName, packagesAdditions in packagesInstallAdditions.items():
+        if packageName in packagesTBRListUnedited:
+            packagesTBRList = packagesTBRList + packagesRemoveAdditions[packageName]
+    
     packagesTBRStr = ' '.join(packagesTBRList)
     logger.writeLog("packagesToBeRemoved", packagesTBRStr)
     

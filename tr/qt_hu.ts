@@ -9,7 +9,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="212"/>
         <source>Welcome</source>
-        <translation type="unfinished"/>
+        <translation>Köszöntő</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1331"/>
@@ -119,7 +119,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1407"/>
         <source>Launch System Settings</source>
-        <translation type="unfinished"/>
+        <translation>Rendszer Beállítások megnyitása</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1400"/>
@@ -129,7 +129,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1402"/>
         <source>Launch Manjaro.org</source>
-        <translation type="unfinished"/>
+        <translation>Manjaro.org megnyitása</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="211"/>
@@ -166,12 +166,12 @@ Az elkövetkezendő néhány lépésben a Turbulence végigvezeti a Manjaro új 
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1327"/>
         <source>Tint 2</source>
-        <translation type="unfinished"/>
+        <translation>Tint 2</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="418"/>
         <source>Here, you can choose which folders you want in your home directory. You have a choice from some of the most commonly used folders.</source>
-        <translation type="unfinished"/>
+        <translation>Itt ki tudod választani milyen könyvtárakat akarsz a te home könyvtáradban. Választhatsz néhány általánosan használt könyvtárat.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="605"/>
@@ -181,7 +181,7 @@ Az elkövetkezendő néhány lépésben a Turbulence végigvezeti a Manjaro új 
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="763"/>
         <source>Here you can choose what position you want of your Tint 2 panel.</source>
-        <translation type="unfinished"/>
+        <translation>Itt ki tudod választani melyik pozícióba szeretnéd a Tint 2 panelt.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
@@ -225,23 +225,24 @@ Ha kész, menjen a Telepítés fülre, majd kattintson erre: &quot;Telepítés&q
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1236"/>
         <source>Standalone web browser from mozilla.org</source>
-        <translation type="unfinished"/>
+        <translation>Önálló web böngésző a mozilla.org -tól</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1237"/>
         <source>Lightweight cross-platform Web browser</source>
-        <translation type="unfinished"/>
+        <translation>Egyszerű több rendszeren elérhető web böngésző</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1239"/>
         <source>The open-source project behind Google Chrome, an 
 attempt at creating a safer, faster, and more stable browser</source>
-        <translation type="unfinished"/>
+        <translation>A Google Chrome mögött álló nyitott forrású project célja 
+létrehozni egy biztonságosabb, gyorsabb és stabilabb böngészőt</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1240"/>
         <source>Fast and secure web browser and Internet suite</source>
-        <translation type="unfinished"/>
+        <translation>Gyors és biztonságos web böngésző</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1241"/>
@@ -257,7 +258,8 @@ attempt at creating a safer, faster, and more stable browser</source>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1248"/>
         <source>A BitTorrent client with multiple user interfaces 
 in a client/server model</source>
-        <translation type="unfinished"/>
+        <translation>Egy BitTorrent kliens többfelhasználós felülettel 
+kliens-szerver modell</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1250"/>
@@ -282,7 +284,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1257"/>
         <source>A music player and library organizer</source>
-        <translation type="unfinished"/>
+        <translation>Zene lejátszó és média katalógus rendező</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1259"/>
@@ -297,7 +299,7 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1262"/>
         <source>A fully integrated 3D graphics creation suite</source>
-        <translation type="unfinished"/>
+        <translation>Integrált 3D grafikai csomag</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1264"/>
@@ -347,12 +349,12 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1281"/>
         <source>Multi-panel tabbed file manager</source>
-        <translation type="unfinished"/>
+        <translation>Több panelre osztható és füles fájlkezelő</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1283"/>
         <source>Terminal emulator that supports tabs and grids</source>
-        <translation type="unfinished"/>
+        <translation>Terminal emulátor ami támogatja a füleket és négyzetrács felosztást</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1285"/>
@@ -362,22 +364,22 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1287"/>
         <source>Accessories</source>
-        <translation type="unfinished"/>
+        <translation>Kellékek</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1288"/>
         <source>Installs yaourt, and required dependencies to access the AUR</source>
-        <translation type="unfinished"/>
+        <translation>Telepíti a yaourt programot és a megkövetelt függőségeket az AUR eléréséhez</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1290"/>
         <source>Installs flashplugin, and required codecs for playing media</source>
-        <translation type="unfinished"/>
+        <translation>Telepíti a flash plugint és a megkövetelt kodeket a média lejátszáshoz</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1292"/>
         <source>Installs manjaro-printer, and CUPS to enable printers</source>
-        <translation type="unfinished"/>
+        <translation>Telepíti a manjaro-printer és CUPS programot nyomtatók támogatásához</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1294"/>
@@ -392,17 +394,17 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
-        <translation type="unfinished"/>
+        <translation>Az összes beállítás alkalmazásra került. Elkezdhet használni a Manjaro-t vagy nézz meg néhány programot és linket alább. Ha még nem csatlakoztál volna Manjaro közösséghez tedd meg azt is!</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1401"/>
         <source>For help and support, you can visit Manjaro.org for access to a terrific forum, wiki, and IRC!</source>
-        <translation type="unfinished"/>
+        <translation>Segítségért és támogatásért látogass el a Manjaro.org oldalra, hogy elérd a nagyszerű fórumot, wikit és IRC-t</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1406"/>
         <source>Control panel to edit various aspects of the KDE desktop, and more.</source>
-        <translation type="unfinished"/>
+        <translation>Vezérlőpult különböző KDE asztal összetevők szerkesztésére és egyebek.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1410"/>
@@ -412,12 +414,12 @@ in a client/server model</source>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1411"/>
         <source>Control panel to edit various aspects of OpenBox</source>
-        <translation type="unfinished"/>
+        <translation>Vezérlőpult különböző OpenBox összetevők szerkesztésére</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1412"/>
         <source>Launch Customize Look and Feel</source>
-        <translation type="unfinished"/>
+        <translation>Megjelenés beálítások indítása</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1624"/>
