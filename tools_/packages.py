@@ -9,7 +9,8 @@ from tools_ import logger
 
 packagesInstallAdditions = {
     "yaourt": ["autoconf", "automake", "binutils", "bison", "fakeroot", "file", "findutils", "flex", "gawk", "gcc", "gettext", "grep", "groff", "gzip", "libtool", "m4", "make", "patch", "pkg-config", "sed", "sudo", "texinfo", "util-linux", "which", "locale-info"],
-    "flashplugin": ["a52dec", "faac", "faad2", "flac", "jasper", "lame", "libdca", "libdv", "libmad", "libmpeg2", "libtheora", "libvorbis", "libxv", "wavpack", "x264", "xvidcore", "gstreamer0.10-bad-plugins", "gstreamer0.10-base-plugins", "gstreamer0.10-ffmpeg", "gstreamer0.10-good-plugins", "gstreamer0.10-ugly-plugins",]
+    "flashplugin": ["a52dec", "faac", "faad2", "flac", "jasper", "lame", "libdca", "libdv", "libmad", "libmpeg2", "libtheora", "libvorbis", "libxv", "wavpack", "x264", "xvidcore", "gstreamer0.10-bad-plugins", "gstreamer0.10-base-plugins", "gstreamer0.10-ffmpeg", "gstreamer0.10-good-plugins", "gstreamer0.10-ugly-plugins"],
+    "thunar": ["thunar-volman", "thunar-archive-plugin"]
 }
 packagesRemoveAdditions = {
     "thunar": ["thunar-volman", "thunar-archive-plugin"]
@@ -28,7 +29,6 @@ def checkInternet():
     except urllib2.URLError as err: pass
     return False
     
-    
 def getCurrentPackages():
         packagesText = subprocess.check_output("pacman -Qq", shell=True)
         packagesList = packagesText.split("\n")
@@ -38,22 +38,22 @@ def handlePackages(packagesTBI, packagesTBR): #packagesTBI = packages to be inst
     currentPackages = getCurrentPackages()
     
     packagesTBIListUnedited = list(set(packagesTBI) - set(currentPackages)) #Packages to be installed
+    packagesTBNList = list(set(currentPackages) - set(packagesTBR)) #Packages that don't need to be removed or installed (neutral).
+    packagesTBRListUnedited = list(set(currentPackages) - set(packagesTBNList)) #Packages to be removed
+    
     packagesTBIList = packagesTBIListUnedited
     for packageName, packagesAdditions in packagesInstallAdditions.items():
         if packageName in packagesTBIListUnedited:
-            packagesTBIList = packagesTBIList + packagesInstallAdditions[packageName]
+            packagesTBIList = packagesTBIList + list(set(packagesInstallAdditions[packageName]) - set(packagesTBNList))
     
-    packagesTBIStr = ' '.join(packagesTBIList)
-    logger.writeLog("packagesToBeInstalled", packagesTBIStr)
-    packagesTBNList = list(set(currentPackages) - set(packagesTBR)) #Packages that don't need to be removed or installed (neutral).
-    
-    packagesTBRListUnedited = list(set(currentPackages) - set(packagesTBNList)) #Packages to be removed
     packagesTBRList = packagesTBRListUnedited
     for packageName, packagesAdditions in packagesRemoveAdditions.items():
         if packageName in packagesTBRListUnedited:
-            packagesTBRList = packagesTBRList + packagesRemoveAdditions[packageName]
+            packagesTBRList = packagesTBRList + list(set(packagesRemoveAdditions[packageName]) & set(packagesTBNList))
     
+    packagesTBIStr = ' '.join(packagesTBIList)
     packagesTBRStr = ' '.join(packagesTBRList)
+    logger.writeLog("packagesToBeInstalled", packagesTBIStr)
     logger.writeLog("packagesToBeRemoved", packagesTBRStr)
     
     installPackages = subprocess.Popen(["lxterminal", "-e", "bash",  "/usr/share/turbulence/scripts/install-packages.sh", "\"" + ' '.join(packagesTBIList) + "\"", "-r", "\"" + ' '.join(packagesTBRList) + "\""])
