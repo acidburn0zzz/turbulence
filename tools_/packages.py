@@ -49,7 +49,7 @@ def handlePackages(packagesTBI, packagesTBR): #packagesTBI = packages to be inst
     
     packagesTBRListUnedited = list(set(currentPackages) - set(packagesTBNList)) #Packages to be removed
     packagesTBRList = packagesTBRListUnedited
-    for packageName, packagesAdditions in packagesInstallAdditions.items():
+    for packageName, packagesAdditions in packagesRemoveAdditions.items():
         if packageName in packagesTBRListUnedited:
             packagesTBRList = packagesTBRList + packagesRemoveAdditions[packageName]
     

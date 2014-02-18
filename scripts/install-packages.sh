@@ -36,7 +36,7 @@ if [ "$argsInstall" != " " ] && [ "$argsInstall" != "" ]; then
     echo """
 Turbulence will sync your mirrors first, so if pacman
 tells you that you should update anything first, then
-it is reccomended that you accept. You're packages
+it is reccomended that you accept. Your packages
 will not be installed in that case, so after the update 
 has completed type \"install again\" when you're prompted.
 
