@@ -4,7 +4,7 @@
 trap ctrl_c INT
 
 function ctrl_c() {
-	clear
+    clear
     echo """
 Thank you for using the Turbulence package
 installation script.
@@ -29,8 +29,7 @@ echo """
   \\_/\\__,_|_|  |_.__/ \__,_|_|\___|_| |_|\\___\\___|
   
 Please enter your root password, and Turbulence will 
-start to install, or remove your selected packages.
-"""
+start to install, or remove your selected packages."""
 
 if [ "$argsInstall" != " " ] && [ "$argsInstall" != "" ]; then
     echo """
@@ -38,7 +37,8 @@ Turbulence will sync your mirrors first, so if pacman
 tells you that you should update anything first, then
 it is reccomended that you accept. Your packages
 will not be installed in that case, so after the update 
-has completed type \"install again\" when you're prompted.
+has completed, you will be prompted and given a chance to
+install the packages again.
 
 Installing packages...
 """
@@ -49,14 +49,12 @@ Installing packages...
     echo """
 Are you satisfied with your install? If your packages
 did not install due to a reccomended update first, then
-this is the time when you would input \"install again\"
-without the qoutes.
-
-Otherwise, hit enter to proceed.
+this is the time when you would answer \"n\".
 """
+    printf "Are you satisfied with your install? [Y/n]:"
     read proceed
 
-    if [ "$proceed" == "install again" ] || [ "$proceed" == "\"install again\"" ]; then
+    if [ "$proceed" != "y" ] && [ "$proceed" != "Y" ] && [ "$proceed" != "\"y\"" ] && [ "$proceed" != "\"Y\"" ]; then
         echo """
 Installing your selected packages again...
 
