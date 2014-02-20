@@ -42,7 +42,7 @@ sudo bash install.sh -r
 
 # Optional Dependencies
 
-* Lxterminal
+* lxterminal
 * kdeplasma-theme-cupertino-ish
 * kde-theme-air-black-remix-green
 
@@ -55,3 +55,4 @@ sudo bash install.sh -r
 * Add more settings to configure KDE options as well as OpenBox
 * Figure out alternatives to opening a terminal with the pacman installer script
 * Move install button from install tab to future verify page
+* Port code to Python 3 and QT 5
