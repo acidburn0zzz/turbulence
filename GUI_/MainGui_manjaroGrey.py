@@ -15,10 +15,6 @@ nitrogenStatus = utils_detector.detectNitrogen() #Nitrogen
 openboxStatus = utils_detector.detectOpenBox() #Openbox
 kdeStatus = utils_detector.detectKde() #Kde
 
-tintStatus = True
-nitrogenStatus = True
-openboxStatus = True
-
 #Configure normal widgets
 def widgetConfigurer(widgetType, xPos, yPos, xSize, ySize, name, image=None, styleSheet=None):
     widgetType.setGeometry(QtCore.QRect(xPos, yPos, xSize, ySize))
