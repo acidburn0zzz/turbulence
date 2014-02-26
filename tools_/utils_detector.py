@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 import subprocess
 import signal
@@ -8,7 +8,7 @@ from tools_ import logger
 from os.path import isfile
 
 if __name__ == "__main__":
-    print "This script should not be ran manually. It's apart of a package for the turbulence utility."
+    print("This script should not be ran manually. It's apart of a package for the turbulence utility.")
     exit()
 
 #Detect the existence of a running process
@@ -17,7 +17,7 @@ def detectProcess(processName):
     out, err = p.communicate()
 
     for line in out.splitlines():
-        if processName in line:
+        if processName.encode("utf-8") in line:
             active = True
             break
         else:

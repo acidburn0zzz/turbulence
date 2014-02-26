@@ -1,140 +1,140 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="nb" sourcelanguage="" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el_GR" sourcelanguage="" version="2.0">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1677"/>
         <source>Status: Active</source>
-        <translation>Status: Aktiv</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="212"/>
         <source>Welcome</source>
-        <translation>Velkommen</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1331"/>
         <source>Folders</source>
-        <translation>Mapper</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="214"/>
         <source>What is Manjaro?</source>
-        <translation>Hva er Manjaro?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1396"/>
         <source>Cancel</source>
-        <translation>Avbryt</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1233"/>
         <source>Forward</source>
-        <translation>Fremover</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1329"/>
         <source>Themes</source>
-        <translation>Temaer</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1398"/>
         <source>Previous</source>
-        <translation>Forrige</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1679"/>
         <source>Status: Deactivated</source>
-        <translation>Status: Deaktivert</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="427"/>
         <source>Desktop</source>
-        <translation>Skrivebord</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="428"/>
         <source>Documents</source>
-        <translation>Dokumenter</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="429"/>
         <source>Downloads</source>
-        <translation>Nedlastinger</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="430"/>
         <source>Music</source>
-        <translation>Musikk</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="431"/>
         <source>Pictures</source>
-        <translation>Bilder</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="432"/>
         <source>Public</source>
-        <translation>Offentlig</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="433"/>
         <source>Templates</source>
-        <translation>Maler</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="434"/>
         <source>Videos</source>
-        <translation>Videoer</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="442"/>
         <source>Active</source>
-        <translation>Aktiv</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1325"/>
         <source>Wallpapers</source>
-        <translation>Bakgrunner</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1397"/>
         <source>Finish</source>
-        <translation>Fullfør</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="996"/>
         <source>Here you can set which wallpaper you want.</source>
-        <translation>Her kan du angi hvilken bakgrunn du vil ha.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1394"/>
         <source>Congratulations!</source>
-        <translation>Gratulerer!</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1405"/>
         <source>System Settings</source>
-        <translation>Systeminnstillinger</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1407"/>
         <source>Launch System Settings</source>
-        <translation>Åpne Systeminnstillinger</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1400"/>
         <source>Help</source>
-        <translation>Hjelp</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1402"/>
         <source>Launch Manjaro.org</source>
-        <translation>Åpne Manjaro.org</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="211"/>
         <source>Welcome To Manjaro!</source>
-        <translation>Velkommen Til Manjaro!</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="215"/>
@@ -150,281 +150,266 @@ Some of Manjaro's features are:
 For newcomers, a user-friendly installer is provided, and the system itself is designed to work fully straight out of the box. For more experienced, and adventurous users, Manjaro also offers the configurability and versatility to be shaped and moulded in every respect to suit personal taste and preference.
 &lt;br&gt;&lt;br&gt;
 Over these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.</source>
-        <translation>&lt;b&gt;Manjaro&lt;/b&gt;er en elegant og rask distro, med ytelser fra den populære Arch OS, sammen med brukervennlighet. Utviklet i Østerrike, Frankrike og Tyskland, Manjaro sikter til nye brukere, og erfarne brukere.
-&lt;br&gt;&lt;br&gt;
-Noen av Manjaro&apos;s funksjoner er:
-&lt;ul&gt;
-&lt;li&gt;Fart, kraft og effektivitet&lt;/li&gt;
-&lt;li&gt;Tilgang til den aller nyeste programvare&lt;/li&gt;
-&lt;li&gt;En rullende utviklingsmodell som gir den mest up-to-date system som er mulig uten behov for å installere nye versjoner&lt;/li&gt;
-&lt;li&gt;Tilgang til Arch User Repository (AUR).&lt;/li&gt;
-&lt;/ul&gt;
-For nykommere, et brukervennlig installasjonsprogram, og selve systemet er utviklet for å fungere fullt ut rett ut av boksen. For de mer erfarne, og eventyrlystne brukere, tilbyr Manjaro også konfigurerbarhet og allsidighet til å bli formet og støpt på alle måter etter personlig smak og preferanse.
-&lt;br&gt;&lt;br&gt;
-Over de neste par skritt, vil Turbulence guide deg gjennom å tilpasse din nye kopi av Manjaro.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1327"/>
         <source>Tint 2</source>
-        <translation>Tint 2</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="418"/>
         <source>Here, you can choose which folders you want in your home directory. You have a choice from some of the most commonly used folders.</source>
-        <translation>Her kan du velge hvilke mapper du ønsker i ditt hjemmeområde. Du har et valg fra noen av de mest brukte mapper.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="605"/>
         <source>Here you can choose what type of theme you want for your window decorations.</source>
-        <translation>Her kan du velge hva slags tema du ønsker for dine vindusdekorasjoner.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="763"/>
         <source>Here you can choose what position you want of your Tint 2 panel.</source>
-        <translation>Her kan du velge hvilken posisjon du ønsker av ditt Tint 2 panel.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
         <source>Top</source>
-        <translation>Topp</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="765"/>
         <source>Right</source>
-        <translation>Høyre</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="766"/>
         <source>Bottom</source>
-        <translation>Nederst</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="767"/>
         <source>Left</source>
-        <translation>Venstre</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1323"/>
         <source>Packages</source>
-        <translation>Pakker</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1231"/>
         <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or unselect any packages you want to add or remove. Packages that are installed will be auto-selected.
 
 When you are done, go to the Install tab, and click &quot;Install&quot;.</source>
-        <translation>Her kan du velge hvilke pakker du ønsker å installere. Hold musepekeren over en av pakkene for å se en beskrivelse, og velg eller velge bort noen pakker du ønsker å legge til eller fjerne. Pakker som er installert vil bli automatisk valgt
-
-Når du er ferdig, gå til fanen Installer, og klikk &quot;Installer&quot;.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1235"/>
         <source>Check For Internet Connection</source>
-        <translation>Sjekk For Internett-tilkobling</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1236"/>
         <source>Standalone web browser from mozilla.org</source>
-        <translation>Frittstående nettleser fra mozilla.org</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1237"/>
         <source>Lightweight cross-platform Web browser</source>
-        <translation>Lettvekt cross-platform nettleser</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1239"/>
         <source>The open-source project behind Google Chrome, an 
 attempt at creating a safer, faster, and more stable browser</source>
-        <translation>Open-source-prosjekt bak Google Chrome, et
-forsøk på å skape en tryggere, raskere og mer stabil nettleser</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1240"/>
         <source>Fast and secure web browser and Internet suite</source>
-        <translation>Rask og sikker nettleser og Internett-suite</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1241"/>
         <source>Fast, easy, and free BitTorrent client</source>
-        <translation>Rask, enkel og gratis BitTorrent-klient</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1243"/>
         <source>Lightweight web browser (GTK2)</source>
-        <translation>Lettvekt nettleser (GTK2)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1248"/>
         <source>A BitTorrent client with multiple user interfaces 
 in a client/server model</source>
-        <translation>En BitTorrent-klient med flere brukergrensesnitt
-i en klient/servermodell</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1250"/>
         <source>Network</source>
-        <translation>Nettverk</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1251"/>
         <source>A multi-platform MPEG, VCD/DVD, and DivX player</source>
-        <translation>En multi-plattform MPEG, VCD / DVD, og DivX-spiller</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1253"/>
         <source>A complete front-end for MPlayer</source>
-        <translation>En komplett front-end for MPlayer</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1255"/>
         <source>Lightweight, advanced audio player focused on audio quality</source>
-        <translation>Lett, avansert lyd-spiller fokusert på lydkvalitet</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1257"/>
         <source>A music player and library organizer</source>
-        <translation>En musikkspiller og bibliotek organisator</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1259"/>
         <source>An audio player for GNU/Linux based on GTK2.</source>
-        <translation>En lydavspiller for GNU/Linux basert på GTK2.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1261"/>
         <source>Multimedia</source>
-        <translation>Multimedia</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1262"/>
         <source>A fully integrated 3D graphics creation suite</source>
-        <translation>En fullt integrert 3D-grafikk opprettelse suite</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1264"/>
         <source>Simply a document viewer</source>
-        <translation>Bare en dokumentleser</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1266"/>
         <source>GNU Image Manipulation Program</source>
-        <translation>GNU Bildebehandlings Program</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1268"/>
         <source>Lightweight image viewer</source>
-        <translation>Lettvekt bildeviser</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1270"/>
         <source>A simple, fast and elegant image viewer program</source>
-        <translation>En enkel, rask og elegant bilde visningsprogram</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1272"/>
         <source>Graphics</source>
-        <translation>Grafikk</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1273"/>
         <source>Fast and lightweight IDE</source>
-        <translation>Rask og lett IDE</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1275"/>
         <source>A popular and easy to use graphical IRC (chat) client</source>
-        <translation>En populær og enkel å bruke grafisk IRC (chat) klient</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1277"/>
         <source>A notepad clone for GTK+ 2.0</source>
-        <translation>En notepad klone for GTK+ 2.0</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1279"/>
         <source>An extremely fast and lightweight file manager</source>
-        <translation>En ekstremt rask og lett filbehandler</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1281"/>
         <source>Multi-panel tabbed file manager</source>
-        <translation>Multi-panel fanebasert filbehandler</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1283"/>
         <source>Terminal emulator that supports tabs and grids</source>
-        <translation>Terminal emulator som støtter faner og rutenett</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1285"/>
         <source>Modern file manager for Xfce</source>
-        <translation>Moderne filbehandler for Xfce</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1287"/>
         <source>Accessories</source>
-        <translation>Tilbehør</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1288"/>
         <source>Installs yaourt, and required dependencies to access the AUR</source>
-        <translation>Installerer yaourt, og nødvendige avhengigheter for å få tilgang til AUR</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1290"/>
         <source>Installs flashplugin, and required codecs for playing media</source>
-        <translation>Installerer flash, og nødvendige kodeker for å spille media</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1292"/>
         <source>Installs manjaro-printer, and CUPS to enable printers</source>
-        <translation>Installerer manjaro-skriveren, og CUPS for å aktivere skrivere</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1294"/>
         <source>Extras</source>
-        <translation>Tillegg</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1296"/>
         <source>Install</source>
-        <translation>Installer</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
-        <translation>Alle dine innstillinger har blitt brukt. Nå kan du begynne å nyte Manjaro, eller se på noen av programmene og linkene nedenfor. Også, hvis du ikke allerede har gjort det, sørg for å bli med i Manjaro fellesskapet også!</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1401"/>
         <source>For help and support, you can visit Manjaro.org for access to a terrific forum, wiki, and IRC!</source>
-        <translation>For hjelp og støtte, kan du besøke Manjaro.org for tilgang til et kjempefint forum, wiki, og IRC!</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1406"/>
         <source>Control panel to edit various aspects of the KDE desktop, and more.</source>
-        <translation>Kontrollpanel for å redigere ulike aspekter av KDE-skrivebordet, og mer.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1410"/>
         <source>Customize OpenBox</source>
-        <translation>Tilpass OpenBox</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1411"/>
         <source>Control panel to edit various aspects of OpenBox</source>
-        <translation>Kontrollpanel for å redigere ulike aspekter av Openbox</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1412"/>
         <source>Launch Customize Look and Feel</source>
-        <translation>Starte Skreddersy utseende og funksjonalitet</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1624"/>
         <source>Failed. Please Try Again.</source>
-        <translation>Mislyktes. Vennligst prøv igjen.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>

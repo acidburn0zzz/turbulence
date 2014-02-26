@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 import os
 import subprocess
@@ -9,32 +9,29 @@ from tools_ import logger
 
 #Stops users from running this manually
 if __name__ == "__main__":
-    print "This script should not be ran manually. It's apart of a package for the turbulence utility."
+    print("This script should not be ran manually. It's apart of a package for the turbulence utility.")
     exit()
   
-
-#Kills the no good freaking plasma ;)
+#Kills plasma
 def killPlasma():
     try:
         KQuitPlasma = subprocess.Popen(["kquitapp", "plasma-desktop"], stdout=subprocess.PIPE)
         out, err = KQuitPlasma.communicate()
         logger.writeLog('killedPlasma')
-    except OSError, e:
-        print 'WARNING: failed os.kill: %s' % e
-        print "Trying SIGKILL"
+    except OSError as e:
+        print('WARNING: failed os.kill: %s' % e)
+        print("Trying SIGKILL")
         plasmaPid = subprocess.Popen(["pidof", "-s", "plasma-desktop"], stdout=subprocess.PIPE)
         out, err = plasmaPid.communicate()
         pidOfPlasma = int(out)
         logger.writeLog('failedKillingPlasma')
         os.kill(pidOfPlasma, 9)
         logger.writeLog('killedPlasmaSIGKILL')
-    print "Started step one"
         
 #Revives plasma from the dead!
 def startPlasma():
     subprocess.Popen(["plasma-desktop"], stdout=subprocess.PIPE)
     logger.writeLog('startPlasma')
-    print "Started step Three"
     
 #Kills kwin
 def killKwin():
@@ -45,9 +42,9 @@ def killKwin():
     try:
         os.kill(pidOfKwin, 15)
         logger.writeLog('killedKwin')
-    except OSError, e:
-        print 'WARNING: failed os.kill: %s' % e
-        print "Trying SIGKILL"
+    except OSError as e:
+        print('WARNING: failed os.kill: %s' % e)
+        print("Trying SIGKILL")
         logger.writeLog('failedKillingKwin')
         os.kill(pidOfKwin, 9)
         logger.writeLog('killedPlasmaSIGKILL')

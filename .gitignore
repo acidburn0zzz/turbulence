@@ -1,6 +1,7 @@
 *~
 .gitignore
 .directory
+__pycache__
 work-*
 *.iso
 *-x86_64*

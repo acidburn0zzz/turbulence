@@ -1,6 +1,6 @@
-# What is Turbulence-Evolution?
+# What is Turbulence?
 
-Turbulence is an utility similar to Chakra's kapudan, that
+Turbulence is a utility similar to Chakra's kapudan, that
 configures multiple aspects of Openbox and KDE Desktop at 
 first boot. Some of it's features are:
 
@@ -13,7 +13,7 @@ first boot. Some of it's features are:
 * Allows users to select what packages they want and don't want (OpenBox only for now.)
 * Can also allow people to open system settings after they've ran through everything else to set any last minute details
 
-# How to install Turbulence-Evolution
+# How to install Turbulence
 
 To install Turbulence, just run the following commands.
 
@@ -24,7 +24,7 @@ chmod +x install.sh
 sudo bash install.sh
 ```
 
-# How to remove Turbulence-Evolution
+# How to remove Turbulence
 
 To remove Turbulence, just `cd` to the turbulence directory and run the following command.
 
@@ -34,10 +34,10 @@ sudo bash install.sh -r
 
 # Dependencies
 
-* python2
-* python2-pyqt4
-* pyqt4-common
-* qt4
+* python
+* python-pyqt5
+* pyqt5-common
+* qt5-base
 * wmctrl
 
 # Optional Dependencies
@@ -55,4 +55,3 @@ sudo bash install.sh -r
 * Add more settings to configure KDE options as well as OpenBox
 * Figure out alternatives to opening a terminal with the pacman installer script
 * Move install button from install tab to future verify page
-* Port code to Python 3 and QT 5

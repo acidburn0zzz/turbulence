@@ -1,7 +1,7 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
-import urllib2
 import subprocess
+import urllib.request, urllib.error
 from sys import exit
 from os import system
 
@@ -18,20 +18,20 @@ packagesRemoveAdditions = {
 
 #Stops people from running this program directly.
 if __name__ == "__main__":
-    print "This script should not be ran manually. It's apart of a package for the turbulence utility."
+    print("This script should not be ran manually. It's apart of a package for the turbulence utility.")
     exit()
     
 
 def checkInternet():
     try:
-        response=urllib2.urlopen('http://74.125.228.100',timeout=20)
+        response=urllib.request.urlopen('http://74.125.228.100',timeout=20)
         return True
-    except urllib2.URLError as err: pass
+    except urllib.error.URLError as err: pass
     return False
     
 def getCurrentPackages():
         packagesText = subprocess.check_output("pacman -Qq", shell=True)
-        packagesList = packagesText.split("\n")
+        packagesList = packagesText.decode("utf-8").split("\n")
         return packagesList
 
 def handlePackages(packagesTBI, packagesTBR): #packagesTBI = packages to be installed #packagesTBR = packages to br removed

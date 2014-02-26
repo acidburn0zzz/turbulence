@@ -1,4 +1,4 @@
-#!/usr/bin/env python2 
+#!/usr/bin/env python
 
 import os
 from sys import exit
@@ -7,7 +7,7 @@ from subprocess import check_output
 from tools_ import logger
 
 if __name__ == "__main__":
-    print "This script should not be ran manually. It's apart of a package for the turbulence utility."
+    print("This script should not be ran manually. It's apart of a package for the turbulence utility.")
     exit()
     
 
@@ -19,9 +19,8 @@ keyDirectories = ['DOWNLOAD', 'DESKTOP', 'DOCUMENTS', 'MUSIC', 'PICTURES', 'PUBL
 
 #remove all hidden directories, hidden files, and normal files
 def findKeyDir(needOrActive):
-    x = 0
     for folderName in keyDirectories:
-        folderCheck = check_output(['xdg-user-dir', folderName]).replace("\n", "").replace("\r", "")
+        folderCheck = check_output(['xdg-user-dir', folderName]).decode("utf-8").replace("\n", "").replace("\r", "")
         if folderCheck != homeDir and folderCheck != homeDir + "/":
             homeFolders.append(folderName)
             
@@ -37,7 +36,6 @@ def findKeyDir(needOrActive):
       
 #gets object name from set in bool value or name
 def getObject(setname, objectname, nameorbool):
-    x = 0
     for x in setname:
         if objectname == x:
             if nameorbool == "bool":
@@ -104,7 +102,7 @@ def deleteDir(directory):
               for dirName in homeDirsNames:
                   homeDirDic[dirName.split('=')[0]] = ''.join(dirName.split('=')[1:])
         except IOError:
-           print "Couldn't parse the " + fullPathXdg + " Configuration file."
+           print("Couldn't parse the " + fullPathXdg + " configuration file.")
            logger.writeLog('couldntParseXDG', fullPathXDG)
            
     for xdgVar, homeDirValue in homeDirDic.items():

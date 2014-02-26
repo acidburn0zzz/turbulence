@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 from sys import exit
 from subprocess import Popen
@@ -8,7 +8,7 @@ from tools_ import logger
 
 #Stops people from running this program directly.
 if __name__ == "__main__":
-    print "This script should not be ran manually. It's apart of a package for the turbulence utility."
+    print("This script should not be ran manually. It's apart of a package for the turbulence utility.")
     exit()
     
     

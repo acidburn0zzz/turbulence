@@ -1,15 +1,14 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 import os
 from sys import exit
 
-import folders
 from tools_ import logger
 from tools_ import utils_detector
 
-#Stops people from running this program directly.
+#Stops people from running this program directly. 
 if __name__ == "__main__":
-    print "This script should not be ran manually. It's apart of a package for the turbulence utility."
+    print("This script should not be ran manually. It's apart of a package for the turbulence utility.")
     exit()
     
 
@@ -31,15 +30,15 @@ for themeFileName, themeFile in neededFiles.items():
                auroraeRC = homeDir + themeFile
     except IOError:
        if not utils_detector.detectOpenBox():
-           print "I couldn't find the themefile: " + themeFileName
+           print("I couldn't find the themefile: " + themeFileName)
            if themeFileName == "auroraerc":
                if os.path.isdir(homeDir + '/.kde4/share/config'):
-                  print "Creating " + themeFileName
+                  print("Creating " + themeFileName)
                   auroraeRC = homeDir + themeFile
                   open(auroraeRC, "w")
                else:
                   os.makedirs(homeDir + '/.kde4/share/config')
-                  print "Creating " + themeFileName
+                  print("Creating " + themeFileName)
                   auroraeRC = homeDir + themeFile
                   open(auroraeRC, "w")
 
@@ -55,7 +54,7 @@ def kwinThemer(theme):
     for themeName, themeSettings in kwinThemes.items():
         if theme == themeName:
             query = "PluginLib"
-            with open(kwinRC, 'rw') as search:
+            with open(kwinRC, mode='r', encoding='utf-8') as search:
                 for line in search:
                     line = line.rstrip()
                     if line.startswith(query):
@@ -63,12 +62,12 @@ def kwinThemer(theme):
                         break
             kwinFileRead = open(kwinRC).read()
             kwinFileRead = kwinFileRead.replace(line, themeSettings[0])
-            kwinFileWrite = open(kwinRC, 'w')
+            kwinFileWrite = open(kwinRC, mode='w', encoding='utf-8')
             kwinFileWrite.write(kwinFileRead)
             kwinFileWrite.close()
         
             if themeSettings[1]:
-                openAuroraerc = open(auroraeRC, "w")
+                openAuroraerc = open(auroraeRC, mode='w', encoding='utf-8')
                 openAuroraerc.write(themeSettings[2])
                 openAuroraerc.close()
         

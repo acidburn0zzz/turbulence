@@ -1,5 +1,4 @@
-#!/usr/bin/env python2
-
+#!/usr/bin/env python
 import os
 from sys import exit
 
@@ -8,7 +7,7 @@ from tools_ import utils_detector
 
 #Stops people from running this program directly.
 if __name__ == "__main__":
-    print "This script should not be ran manually. It's apart of a package for the turbulence utility."
+    print("This script should not be ran manually. It's apart of a package for the turbulence utility.")
     exit()
     
 
@@ -29,7 +28,7 @@ for configFileName, configFile in neededFiles.items():
                conkyRC = homeDir + configFile
     except IOError:
        if utils_detector.detectTint():
-           print "I couldn't find the themefile: " + homeDir + configFile
+           print("I couldn't find the themefile: " + homeDir + configFile)
 
 #Changes the tint2 position
 def panelPosition(position):
@@ -43,15 +42,15 @@ def panelPosition(position):
     for screenPosition, positionSettings in positionValues.items():
         if position == screenPosition:
             query = "panel_position"
-            with open(tintTwo, 'rw') as search:
+            with open(tintTwo, mode='r', encoding='utf-8') as search:
                 for panel_position in search:
                     panel_position = panel_position.rstrip()
                     if panel_position.startswith(query):
                         search.close()
                         break
-		      
+            
             query = "task_text"
-            with open(tintTwo, 'rw') as search:
+            with open(tintTwo, mode='r', encoding='utf-8') as search:
                 for task_text in search:
                     task_text = task_text.rstrip()
                     if task_text.startswith(query):
@@ -61,7 +60,7 @@ def panelPosition(position):
             tintTwoRead = open(tintTwo).read()
             tintTwoRead = tintTwoRead.replace(panel_position, positionSettings[0])
             tintTwoRead = tintTwoRead.replace(task_text, positionSettings[1])
-            tintTwoWrite = open(tintTwo, 'w')
+            tintTwoWrite = open(tintTwo, mode='w', encoding='utf-8')
             tintTwoWrite.write(tintTwoRead)
             tintTwoWrite.close()
         
