@@ -10,5 +10,5 @@ Usage:
 turbulence
     """
 else
-    python2 /usr/share/turbulence/turbulencerunner
+    python /usr/share/turbulence/turbulencerunner
 fi
