@@ -14,6 +14,9 @@ plasmaStatus = utils_detector.detectPlasma() #Plasma
 nitrogenStatus = utils_detector.detectNitrogen() #Nitrogen
 openboxStatus = utils_detector.detectOpenBox() #Openbox
 kdeStatus = utils_detector.detectKde() #Kde
+nitrogenStatus = True
+tintStatus = True
+openboxStatus = True
 
 #Configure normal widgets
 def widgetConfigurer(widgetType, xPos, yPos, xSize, ySize, name, image=None, styleSheet=None):
@@ -60,8 +63,8 @@ def createStaticWidgets(parent):
         "blackBackground": [blackBackground, -14, 0, 891, 625, "blackBackground", "/usr/share/turbulence/images/manjaro-grey/background.jpg"],
         "headerBack": [headerBack, -20, 10, 921, 71, "headerBack", "/usr/share/turbulence/images/manjaro-grey/header.png"],
         "turbulenceLogo": [turbulenceLogo, 20, 20, 51, 51, "turbulenceLogo", "/usr/share/turbulence/images/manjaro-grey/turbulence.png"],
-        "menuBackg": [menuBackg, -20, 90, 901, 41, "menuBackg", None],
-        "footerBack": [footerBack, 0, 570, 861, 51, "footerBack", None]
+        "menuBackg": [menuBackg, -20, 91, 901, 41, "menuBackg", None],
+        "footerBack": [footerBack, 0, 572, 861, 51, "footerBack", None]
     }
     
     for widgetName, widgetSettings in staticWidgets.items():
@@ -72,25 +75,6 @@ def createStaticWidgets(parent):
 #Begins to main class
 class Ui_MainWindow(QtCore.QObject):
     def setupUi(self, MainWindow):
-        
-        #Determines the sizes of the menu container based on the DE/WM
-        #This is important due to the differences in font rendering.
-        #If neither KDE or Openbox, defaults to KDE Settings.
-        if kdeStatus:
-            lMinW = 20
-            lMinH = 87
-            lMaxW = 511
-            lMaxH = 43
-        elif openboxStatus:
-            lMinW = 20
-            lMinH = 83
-            lMaxW = 511
-            lMaxH = 50
-        else:
-            lMinW = 20
-            lMinH = 87
-            lMaxW = 511
-            lMaxH = 43
             
         #Grabs the stylesheet
         styleSheetFile = open("/usr/share/turbulence/stylesheets/manjarogrey.qss", "r")
@@ -179,7 +163,7 @@ class Ui_MainWindow(QtCore.QObject):
         self.welcomeFooterContainerHLayout.addItem(self.welcomeFooterSpacer)
         self.welcomeFooterContainerHLayout.addWidget(self.welcomeForward)
         
-        self.welcomeMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
+        self.welcomeMenuContainer.setGeometry(QtCore.QRect(20, 83, 511, 50))
         self.welcomeFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
         
         self.welcomeManjaroDesc.setTextFormat(QtCore.Qt.RichText)
@@ -382,7 +366,7 @@ class Ui_MainWindow(QtCore.QObject):
         self.folderContentsUpperLayout.addWidget(self.folderActive7, 7, 4, 1, 1)
         self.folderContentsUpperLayout.addWidget(self.folderActive8, 7, 6, 1, 1)
         
-        self.folderMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
+        self.folderMenuContainer.setGeometry(QtCore.QRect(20, 83, 511, 50))
         self.folderFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
         self.folderContentsUpper.setGeometry(QtCore.QRect(60, 230, 730, 320))
         
@@ -565,7 +549,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.themeContentsContainerLayout.addLayout(self.themePreviewContainerLayout4, 5, 3, 1, 1)
             self.themeContentsContainerLayout.addItem(self.themeContentsPush6, 6, 3, 1, 1)
             
-            self.themeMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
+            self.themeMenuContainer.setGeometry(QtCore.QRect(20, 83, 511, 50))
             self.themeFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
             self.themeContentsContainer.setGeometry(QtCore.QRect(10, 230, 840, 340))
         
@@ -723,7 +707,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.tintContentsContainerLayout.addLayout(self.tintPreviewContainerLayout4, 5, 3, 1, 1)
             self.tintContentsContainerLayout.addItem(self.tintContentsPush6, 6, 3, 1, 1)
             
-            self.tintMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
+            self.tintMenuContainer.setGeometry(QtCore.QRect(20, 83, 511, 50))
             self.tintFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
             self.tintContentsContainer.setGeometry(QtCore.QRect(10, 230, 840, 340))
         
@@ -960,7 +944,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.wallpaperContentsContainerLayout.addLayout(self.wallpaperPreviewContainerLayout8, 5, 7, 1, 1)
             self.wallpaperContentsContainerLayout.addItem(self.wallpaperContentsPush8, 6, 3, 1, 1)
             
-            self.wallpaperMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
+            self.wallpaperMenuContainer.setGeometry(QtCore.QRect(20, 83, 511, 50))
             self.wallpaperFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
             self.wallpaperContentsContainer.setGeometry(QtCore.QRect(10, 230, 840, 340))
             
@@ -1213,7 +1197,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesFooterContainerHLayout.addWidget(self.packagesPrevious)
             self.packagesFooterContainerHLayout.addWidget(self.packagesForward)
             
-            self.packagesMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
+            self.packagesMenuContainer.setGeometry(QtCore.QRect(20, 83, 511, 50))
             self.packagesFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
         
             self.packagesTabs.tabBar().setEnabled(False)
@@ -1396,7 +1380,7 @@ class Ui_MainWindow(QtCore.QObject):
         self.finishFooterContainerHLayout.addWidget(self.finishPrevious)
         self.finishFooterContainerHLayout.addWidget(self.finishForward)
             
-        self.finishMenuContainer.setGeometry(QtCore.QRect(lMinW, lMinH, lMaxW, lMaxH))
+        self.finishMenuContainer.setGeometry(QtCore.QRect(20, 83, 511, 50))
         self.finishFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
             
         self.stackedWidget.addWidget(self.Finish)
