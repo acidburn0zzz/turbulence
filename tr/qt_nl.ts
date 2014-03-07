@@ -34,7 +34,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1329"/>
         <source>Themes</source>
-        <translation type="unfinished"/>
+        <translation>Thema&apos;s</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1398"/>
