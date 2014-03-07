@@ -1,0 +1,1144 @@
+/*Static Elements*/
+#blackBackground {
+    background-color: rgb(9, 9, 9);
+}
+#menuBackg {
+    background-color: rgb(17, 17, 17);
+}
+#footerBack {
+    background-color: rgb(17, 17, 17);
+}
+
+/*First Page Elements*/
+#welcomeHeader {
+    font: 20pt "Sans Serif"; 
+    color: rgb(167, 167, 167);
+}
+#welcomeButton {
+    font: 13pt "Sans Serif"; 
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid #000000;
+    padding:0px 20px 0px 20px;
+}
+#welcomeButton:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#welcomeFolders {
+    font: 12pt "Sans Serif"; 
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid #000000;
+    padding:0px 20px 0px 20px;
+}
+#welcomeFolders:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#welcomeWhatIsManjaro {
+    font: 30pt "Sans Serif"; 
+    color: rgb(167, 167, 167);
+}
+#welcomeManjaroDesc {
+    font: 10pt "Sans Serif";
+    color: rgb(167, 167, 167);
+}
+#welcomeForward {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid #000000;
+    padding:0px 15px 0px 15px;
+}
+#welcomeForward:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#welcomeCancel {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid #000000;
+    padding:0px 15px 0px 15px;
+}
+#welcomeCancel:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+
+/*Second Page Elements*/
+#folderHeader {
+    font: 20pt "Sans Serif"; 
+    color: rgb(167, 167, 167);
+}
+#folderMenu {
+    font: 13pt "Sans Serif"; 
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#folderMenu:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#folderThemes {
+    font: 12pt "Sans Serif";
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#folderThemes:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#folderCancel {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#folderCancel:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#folderForward {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#folderForward:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#folderPrevious {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#folderPrevious:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#folderDesc {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#folderSubHeader {
+    color: rgb(167, 167, 167);
+    font: 16pt "Sans Serif";
+}
+#folderHeader1 {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#folderHeader2 {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#folderHeader3 {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#folderHeader4 {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#folderHeader5 {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#folderHeader6 {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#folderHeader7 {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#folderHeader8 {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#folderName1 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#folderName2 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#folderName3 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#folderName4 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#folderName5 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#folderName6 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#folderName7 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#folderName8 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#folderActive1 {
+    color: rgb(167, 167, 167);
+}
+#folderActive1::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#folderActive1::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#folderActive2 {
+    color: rgb(167, 167, 167);
+}
+#folderActive2::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#folderActive2::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#folderActive3 {
+    color: rgb(167, 167, 167);
+}
+#folderActive3::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#folderActive3::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#folderActive4 {
+    color: rgb(167, 167, 167);
+}
+#folderActive4::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#folderActive4::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#folderActive5 {
+    color: rgb(220, 220, 220);
+}
+#folderActive5::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#folderActive5::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#folderActive6 {
+    color: rgb(167, 167, 167);
+}
+#folderActive6::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#folderActive6::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#folderActive7 {
+    color: rgb(167, 167, 167);
+}
+#folderActive7::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#folderActive7::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#folderActive8 {
+    color: rgb(167, 167, 167);
+}
+#folderActive8::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#folderActive8::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+
+/*Third Page Elements*/
+#themeHeader {
+    font: 20pt "Sans Serif";
+    color: rgb(167, 167, 167);
+}
+#themeMenu {
+    font: 13pt "Sans Serif";
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#themeMenu:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#themeMenuWallpapers {
+    font: 12pt "Sans Serif";
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#themeMenuWallpapers:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#themeCancel {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#themeCancel:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#themeForward {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#themeForward:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#themePrevious {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#themePrevious:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#themeDesc {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#themeHeaderHead {
+    color: rgb(167, 167, 167);
+    font: 16pt "Sans Serif";
+}
+#themeRadio1 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#themeRadio1::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#themeRadio1::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+#themeRadio2 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#themeRadio2::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#themeRadio2::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+#themeRadio3 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#themeRadio3::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#themeRadio3::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+#themeRadio4 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#themeRadio4::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+
+#themeRadio4::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+
+/*Tint Page Elements*/
+#tintHeader {
+    font: 20pt "Sans Serif";
+    color: rgb(167, 167, 167);
+}
+#tintMenu {
+    font: 13pt "Sans Serif";
+    color: rgb(167, 167, 167);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#tintMenu:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#tintMenuWallpapers {
+    font: 12pt "Sans Serif";
+    color: rgb(167, 167, 167);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#tintMenuWallpapers:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#tintCancel {
+    color: rgb(167, 167, 167);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#tintCancel:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#tintForward {
+    color: rgb(167, 167, 167);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#tintForward:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#tintPrevious {
+    color: rgb(167, 167, 167);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#tintPrevious:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#tintPositionDesc {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#tintPositionHeader {
+    color: rgb(167, 167, 167);
+    font: 16pt "Sans Serif";
+}
+#tintPositionRadio1 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#tintPositionRadio1::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#tintPositionRadio1::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+#tintPositionRadio2 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#tintPositionRadio2::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#tintPositionRadio2::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+#tintPositionRadio3 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#tintPositionRadio3::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#tintPositionRadio3::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+#tintPositionRadio4 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#tintPositionRadio4::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#tintPositionRadio4::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+
+/*Fourth Page Elements*/
+#wallpaperHeader {
+    font: 20pt "Sans Serif";
+    color: rgb(167, 167, 167);
+}
+#wallpaperMenu {
+    font: 13pt "Sans Serif";
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#wallpaperMenu:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#wallpaperMenuFinish {
+    font: 12pt "Sans Serif";
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#wallpaperMenuFinish:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#wallpaperDesc {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#wallpaperCancel {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#wallpaperCancel:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#wallpaperForward {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#wallpaperForward:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#wallpaperPrevious {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#wallpaperPrevious:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#wallpaperHeaderHead {
+    color: rgb(167, 167, 167);
+    font: 16pt "Sans Serif";
+}
+#wallpaperChoice1 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#wallpaperChoice1::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#wallpaperChoice1::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+#wallpaperChoice2 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#wallpaperChoice2::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#wallpaperChoice2::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+#wallpaperChoice3 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#wallpaperChoice3::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#wallpaperChoice3::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+#wallpaperChoice4 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#wallpaperChoice4::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#wallpaperChoice4::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+#wallpaperChoice5 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#wallpaperChoice5::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#wallpaperChoice5::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+#wallpaperChoice6 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#wallpaperChoice6::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#wallpaperChoice6::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+#wallpaperChoice7 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#wallpaperChoice7::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#wallpaperChoice7::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+#wallpaperChoice8 {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+}
+#wallpaperChoice8::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-check.png);
+}
+#wallpaperChoice8::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/radio-un-check.png);
+}
+
+/*Fifth Page Elements*/
+#packagesHeader {
+    font: 20pt "Sans Serif";
+    color: rgb(167, 167, 167);
+}
+#packagesMenu {
+    font: 13pt "Sans Serif";
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#packagesMenu:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#packagesMenuFinish {
+    font: 12pt "Sans Serif";
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#packagesMenuFinish:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#packagesDesc {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#packagesPrevious {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#packagesPrevious:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#packagesForward {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#packagesForward:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#packagesCancel {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#packagesCancel:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#packagesHeaderHead {
+    color: rgb(167, 167, 167);
+    font: 16pt "Sans Serif";
+}
+#packagesTabs {
+    color: rgb(167, 167, 167);
+    border: 1px solid red;
+}
+QTabWidget::pane {
+    border: 1px solid grey;
+}
+QTabBar::tab {
+    color: rgb(167, 167, 167);
+    background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:0, y2:0.409, stop:0 rgb(20, 20, 20), stop:1 rgb(20, 20, 20));
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px solid grey;
+    border-bottom: none;
+    padding: 5px;
+    margin-left: 5px;
+}
+QTabBar::tab:selected {
+    background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgb(7, 7, 7), stop:1 rgb(7, 7, 7));
+    border: 1px solid grey;
+    border-bottom:none;
+    color: #4C7D24;
+}
+#packagesNotActive {
+    background-color: rgba(0, 0, 0, 190);
+}
+#packagesNetworkBack {
+    background-color: rgb(17, 17, 17);
+}
+#packagesAroraCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesAroraCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesAroraCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesChromiumCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesChromiumCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesChromiumCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesDelugeCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesDelugeCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesDelugeCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesFirefoxCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesFirefoxCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesFirefoxCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesMidoriCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesMidoriCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesMidoriCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesOperaCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesOperaCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesOperaCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesTransmissionCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesTransmissionCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesTransmissionCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesMultimediaBack {
+    background-color: rgb(17, 17, 17);
+}
+#packagesAudaciousCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesAudaciousCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesAudaciousCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesDeadbeefCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesDeadbeefCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesDeadbeefCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesClementineCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesClementineCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesClementineCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesSmplayerCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesSmplayerCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesSmplayerCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesVlcCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesVlcCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesVlcCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesGraphicsBack {
+    background-color: rgb(17, 17, 17);
+}
+#packagesBlenderCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesBlenderCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesBlenderCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesEvinceCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesEvinceCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesEvinceCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesGimpCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesGimpCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesGimpCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesGpicviewCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesGpicviewCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesGpicviewCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesViewniorCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesViewniorCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesViewniorCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesAccessoriesBack {
+    background-color: rgb(17, 17, 17);
+}
+#packagesGeanyCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesGeanyCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesGeanyCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesHexchatCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}   
+#packagesHexchatCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesHexchatCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesLeafpadCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesLeafpadCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesLeafpadCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesPcmanfmCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesPcmanfmCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesPcmanfmCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesSpacefmCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesSpacefmCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesSpacefmCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesTerminatorCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesTerminatorCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesTerminatorCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesThunarCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesThunarCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesThunarCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesExtrasBack {
+    background-color: rgb(17, 17, 17);
+}
+#packagesAurSupportCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesAurSupportCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesAurSupportCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesMultimediaSupportCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesMultimediaSupportCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesMultimediaSupportCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesPrinterSupportCheck {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesPrinterSupportCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
+}
+#packagesPrinterSupportCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
+}
+#packagesCheckConnection {
+    color: rgb(167, 167, 167);
+    font: 14pt "Sans Serif";
+    border: none;
+}
+#packagesCheckConnection:hover {
+    color: #4C7D24;
+}
+#packagesInstallBack {
+    background-color: black;
+}
+#packagesInstallButton {
+    color: rgb(167, 167, 167);
+    font: 14pt "Sans Serif";
+    border: 1px solid #485B47;
+}
+#packagesInstallButton:hover {
+    border: 1px solid #49525b;
+}
+
+/*Fifth Page Elements*/
+#finishHeader {
+    color: rgb(167, 167, 167);
+    font: 20pt "Sans Serif";
+}
+#finishWallpaperMenu {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#finishWallpaperMenu:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#finishMenu {
+    color: rgb(167, 167, 167);
+    font: 13pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#finishMenu:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#finishCancel {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#finishCancel:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#finishForward {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#finishForward:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#finishPrevious {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#finishPrevious:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#finishDesc {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#finishSystemSettings {
+    color: rgb(167, 167, 167);
+    font: 14pt "Sans Serif";
+}
+#finishSystemSettingsDesc {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#finishSystemSettingsButton {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: 1px solid #485B47;
+}
+#finishSystemSettingsButton:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#finishHelpHead {
+    color: rgb(167, 167, 167);
+    font: 14pt "Sans Serif";
+}
+#finishHelpDesc {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#finishHelpButton {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: 1px solid #485B47;
+}
+#finishHelpButton:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+

@@ -3,9 +3,11 @@
 import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
 from GUI_ import *
-from tools_ import *
+from tools_ import logger, utils_detector
 from os import geteuid, environ, path
 from locale import getdefaultlocale
+
+
 
 #Makes the log
 logger.makeLog()
@@ -16,7 +18,12 @@ if geteuid() == 0:
 
 #Start turbulence
 if __name__ == "__main__":
-    ui = MainGui_manjaroGrey.Ui_MainWindow()
+    if not utils_detector.detectTint() and not utils_detector.detectOpenBox() and not utils_detector.detectNitrogen(): 
+        ui = MainGui_manjaroGrey_flat.Ui_MainWindow()
+    elif utils_detector.detectPlasma() and utils_detector.detectKwin() and utils_detector.detectKde():
+        ui = MainGui_manjaroGrey.Ui_MainWindow()
+    else:
+        ui = MainGui_manjaroGrey.Ui_MainWindow()
   
     logger.writeLog('logHeader')
     app = QtWidgets.QApplication(sys.argv)

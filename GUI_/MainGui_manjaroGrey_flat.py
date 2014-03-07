@@ -57,9 +57,9 @@ def createStaticWidgets(parent):
     global footerBack; footerBack = QtWidgets.QLabel(parent)
     
     staticWidgets = {
-        "blackBackground": [blackBackground, -14, 0, 891, 625, "blackBackground", "/usr/share/turbulence/images/manjaro-grey/background.jpg"],
-        "headerBack": [headerBack, -20, 10, 921, 71, "headerBack", "/usr/share/turbulence/images/manjaro-grey/header.png"],
-        "turbulenceLogo": [turbulenceLogo, 20, 20, 51, 51, "turbulenceLogo", "/usr/share/turbulence/images/manjaro-grey/turbulence.png"],
+        "blackBackground": [blackBackground, -14, 0, 891, 625, "blackBackground", None], 
+        "headerBack": [headerBack, -20, 10, 921, 71, "headerBack", None],
+        "turbulenceLogo": [turbulenceLogo, 20, 20, 51, 51, "turbulenceLogo", "/usr/share/turbulence/images/manjaro-grey-flat/turbulence.png"],
         "menuBackg": [menuBackg, -20, 91, 901, 41, "menuBackg", None],
         "footerBack": [footerBack, 0, 572, 861, 51, "footerBack", None]
     }
@@ -74,7 +74,7 @@ class Ui_MainWindow(QtCore.QObject):
     def setupUi(self, MainWindow):
             
         #Grabs the stylesheet
-        styleSheetFile = open("/usr/share/turbulence/stylesheets/manjarogrey.qss", "r")
+        styleSheetFile = open("/usr/share/turbulence/stylesheets/manjarogrey-flat.qss", "r")
         self.styleData = styleSheetFile.read()
         styleSheetFile.close()
       
@@ -83,17 +83,17 @@ class Ui_MainWindow(QtCore.QObject):
         MainWindow.resize(839, 594)
         MainWindow.setMinimumSize(QtCore.QSize(839, 594))
         MainWindow.setMaximumSize(QtCore.QSize(839, 594))
-        MainWindow.setWindowIcon(QtGui.QIcon('/usr/share/turbulence/images/manjaro-grey/turbulence.png'))
+        MainWindow.setWindowIcon(QtGui.QIcon('/usr/share/turbulence/images/manjaro-grey-flat/turbulence.png'))
         MainWindow.setStyleSheet(self.styleData)
         
         forwardIcon = QtGui.QIcon()
-        forwardIcon.addPixmap(QtGui.QPixmap("/usr/share/turbulence/images/manjaro-grey/arrow.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        forwardIcon.addPixmap(QtGui.QPixmap("/usr/share/turbulence/images/manjaro-grey-flat/arrow.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         cancelIcon = QtGui.QIcon()
-        cancelIcon.addPixmap(QtGui.QPixmap("/usr/share/turbulence/images/manjaro-grey/cancel.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        cancelIcon.addPixmap(QtGui.QPixmap("/usr/share/turbulence/images/manjaro-grey-flat/cancel.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         previousIcon = QtGui.QIcon()
-        previousIcon.addPixmap(QtGui.QPixmap("/usr/share/turbulence/images/manjaro-grey/arrowreverse.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        previousIcon.addPixmap(QtGui.QPixmap("/usr/share/turbulence/images/manjaro-grey-flat/arrowreverse.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         finishIcon = QtGui.QIcon()
-        finishIcon.addPixmap(QtGui.QPixmap("/usr/share/turbulence/images/manjaro-grey/checkmark.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        finishIcon.addPixmap(QtGui.QPixmap("/usr/share/turbulence/images/manjaro-grey-flat/checkmark.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -132,7 +132,7 @@ class Ui_MainWindow(QtCore.QObject):
         
         firstPageLayouts = {
             "welcomeButton": [self.welcomeButton, 0, 39, None, None, True, True, False],
-            "welcomeArrow": [self.welcomeArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png"],
+            "welcomeArrow": [self.welcomeArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/menu-arrow.png"],
             "welcomeFolders": [self.welcomeFolders, 0, 39, None, None, True, True, False],
             "welcomeForward": [self.welcomeForward, 0, 34, None, None, True, True, False],
             "welcomeCancel": [self.welcomeCancel, 0, 34, None, None, True, True, False]
@@ -255,25 +255,25 @@ class Ui_MainWindow(QtCore.QObject):
         #widget dictionary.
         secondPageWidgets = {
             "folderHeader": [self.folderHeader, 80, 20, 600, 51, "folderHeader", None],
-            "folderIcon": [self.folderIcon, 40, 150, 61, 61, "folderIcon", "/usr/share/turbulence/images/manjaro-grey/foldericons/folder.png"],
+            "folderIcon": [self.folderIcon, 40, 155, 61, 61, "folderIcon", "/usr/share/turbulence/images/manjaro-grey-flat/foldericons/folder.png"],
             "folderDesc": [self.folderDesc, 110, 160, 591, 51, "folderDesc", None]
         }
         
         secondPageLayouts = {
             "folderMenu": [self.folderMenu, 0, 39, None, None, True, True, False, False],
-            "folderArrow": [self.folderArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png", False],
+            "folderArrow": [self.folderArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/menu-arrow.png", False],
             "folderThemes": [self.folderThemes, 0, 39, None, None, True, True, False, False],
             "folderForward": [self.folderForward, 0, 34, None, None, True, True, False, False],
             "folderPrevious": [self.folderPrevious, 0, 34, None, None, True, True, False, False],
             "folderCancel": [self.folderCancel, 0, 34, None, None, True, True, False, False],
-            "folderIcon1": [self.folderIcon1, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/desktop.png", True],
-            "folderIcon2": [self.folderIcon2, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/documents.png", True],
-            "folderIcon3": [self.folderIcon3, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/downloads.png", True],
-            "folderIcon4": [self.folderIcon4, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/music.png", True],
-            "folderIcon5": [self.folderIcon5, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/pictures.png", True],
-            "folderIcon6": [self.folderIcon6, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/public.png", True],
-            "folderIcon7": [self.folderIcon7, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/templates.png", True],
-            "folderIcon8": [self.folderIcon8, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/foldericons/videos.png", True],
+            "folderIcon1": [self.folderIcon1, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/foldericons/desktop.png", True],
+            "folderIcon2": [self.folderIcon2, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/foldericons/documents.png", True],
+            "folderIcon3": [self.folderIcon3, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/foldericons/downloads.png", True],
+            "folderIcon4": [self.folderIcon4, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/foldericons/music.png", True],
+            "folderIcon5": [self.folderIcon5, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/foldericons/pictures.png", True],
+            "folderIcon6": [self.folderIcon6, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/foldericons/public.png", True],
+            "folderIcon7": [self.folderIcon7, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/foldericons/templates.png", True],
+            "folderIcon8": [self.folderIcon8, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/foldericons/videos.png", True],
             "folderHeader1": [self.folderHeader1, None, None, None, None, False, False, False, False],
             "folderHeader2": [self.folderHeader2, None, None, None, None, False, False, False, False],
             "folderHeader3": [self.folderHeader3, None, None, None, None, False, False, False, False],
@@ -469,21 +469,21 @@ class Ui_MainWindow(QtCore.QObject):
                  
             thirdPageWidgets = {
                 "themeHeader": [self.themeHeader, 80, 20, 600, 51, "themeHeader", None],
-                "themeIcon": [self.themeIcon, 40, 160, 61, 61, "themeIcon", "/usr/share/turbulence/images/manjaro-grey/themes/theme.png"],
+                "themeIcon": [self.themeIcon, 40, 160, 61, 61, "themeIcon", "/usr/share/turbulence/images/manjaro-grey-flat/themes/theme.png"],
                 "themeDesc": [self.themeDesc, 110, 160, 591, 51, "themeDesc", None],
             }
              
             thirdPageLayouts = {
                 "themeMenu": [self.themeMenu, 0, 39, None, None, True, True, False, False],
-                "themeArrow": [self.themeArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png", False],
+                "themeArrow": [self.themeArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/menu-arrow.png", False],
                 "themeMenuWallpapers": [self.themeMenuWallpapers, 0, 39, None, None, True, True, False, False],
                 "themeForward": [self.themeForward, 0, 34, None, None, True, True, False, False],
                 "themePrevious": [self.themePrevious, 0, 34, None, None, True, True, False, False],
                 "themeCancel": [self.themeCancel, 0, 34, None, None, True, True, False, False],
-                "themePreview1": [self.themePreview1, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/themes/air-black.png", True],
-                "themePreview2": [self.themePreview2, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/themes/cupertino-ish.png", True],
-                "themePreview3": [self.themePreview3, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/themes/oxygen.png", True],
-                "themePreview4": [self.themePreview4, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/themes/plastik.png", True],
+                "themePreview1": [self.themePreview1, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/themes/air-black.png", True],
+                "themePreview2": [self.themePreview2, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/themes/cupertino-ish.png", True],
+                "themePreview3": [self.themePreview3, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/themes/oxygen.png", True],
+                "themePreview4": [self.themePreview4, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/themes/plastik.png", True],
                 "themeRadio1": [self.themeRadio1, None, None, None, None, False, False, False, False],
                 "themeRadio2": [self.themeRadio2, None, None, None, None, False, False, False, False],
                 "themeRadio3": [self.themeRadio3, None, None, None, None, False, False, False, False],
@@ -628,21 +628,21 @@ class Ui_MainWindow(QtCore.QObject):
             
             thirdPageWidgets = {
                 "tintHeader": [self.tintHeader, 80, 20, 600, 51, "tintHeader", None],
-                "tintPositionIcon": [self.tintPositionIcon, 40, 160, 61, 61, "tintPositionIcon", "/usr/share/turbulence/images/manjaro-grey/tint-previews/position.png"],
+                "tintPositionIcon": [self.tintPositionIcon, 40, 155, 61, 61, "tintPositionIcon", "/usr/share/turbulence/images/manjaro-grey-flat/tint-previews/position.png"],
                 "tintPositionDesc": [self.tintPositionDesc, 110, 160, 591, 51, "tintPositionDesc", None]
             }
         
             thirdPageLayouts  = {
                 "tintMenu": [self.tintMenu, 0, 39, None, None, True, True, False, False],
-                "tintArrow": [self.tintArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png", False],
+                "tintArrow": [self.tintArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/menu-arrow.png", False],
                 "tintMenuWallpapers": [self.tintMenuWallpapers, 0, 39, None, None, True, True, False, False],
                 "tintForward": [self.tintForward, 0, 34, None, None, True, True, False, False],
                 "tintPrevious": [self.tintPrevious, 0, 34, None, None, True, True, False, False],
                 "tintCancel": [self.tintCancel, 0, 34, None, None, True, True, False, False],
-                "tintPosition1": [self.tintPosition1, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/tint-previews/top.png", True],
-                "tintPosition2": [self.tintPosition2, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/tint-previews/right.png", True],
-                "tintPosition3": [self.tintPosition3, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/tint-previews/bottom.png", True],
-                "tintPosition4": [self.tintPosition4, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/tint-previews/left.png", True],
+                "tintPosition1": [self.tintPosition1, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/tint-previews/top.png", True],
+                "tintPosition2": [self.tintPosition2, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/tint-previews/right.png", True],
+                "tintPosition3": [self.tintPosition3, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/tint-previews/bottom.png", True],
+                "tintPosition4": [self.tintPosition4, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/tint-previews/left.png", True],
                 "tintPositionRadio1": [self.tintPositionRadio1, None, None, None, None, False, False, False, False],
                 "tintPositionRadio2": [self.tintPositionRadio2, None, None, None, None, False, False, False, False],
                 "tintPositionRadio3": [self.tintPositionRadio3, None, None, None, None, False, False, False, False],
@@ -805,18 +805,18 @@ class Ui_MainWindow(QtCore.QObject):
             
             #Sets the wallpaper release specific wallpapers.
             if openboxStatus:
-                releaseWallsOne = "/usr/share/turbulence/images/manjaro-grey/wallpapers/evodark.jpg"
-                releaseWallsTwo = "/usr/share/turbulence/images/manjaro-grey/wallpapers/evolight.jpg"
+                releaseWallsOne = "/usr/share/turbulence/images/manjaro-grey-flat/wallpapers/evodark.jpg"
+                releaseWallsTwo = "/usr/share/turbulence/images/manjaro-grey-flat/wallpapers/evolight.jpg"
                 self.wallpaperChoice1.setText("Evolution Dark")
                 self.wallpaperChoice2.setText("Evolution Light")
             elif kdeStatus:
-                releaseWallsOne = "/usr/share/turbulence/images/manjaro-grey/wallpapers/manjarostyle.jpg"
-                releaseWallsTwo = "/usr/share/turbulence/images/manjaro-grey/wallpapers/orangesplash.jpg"
+                releaseWallsOne = "/usr/share/turbulence/images/manjaro-grey-flat/wallpapers/manjarostyle.jpg"
+                releaseWallsTwo = "/usr/share/turbulence/images/manjaro-grey-flat/wallpapers/orangesplash.jpg"
                 self.wallpaperChoice1.setText("Manjaro Style")
                 self.wallpaperChoice2.setText("Orange Splash")
             else:
-                releaseWallsOne = "/usr/share/turbulence/images/manjaro-grey/wallpapers/ozone.jpg"
-                releaseWallsTwo = "/usr/share/turbulence/images/manjaro-grey/wallpapers/orangesplash.jpg"
+                releaseWallsOne = "/usr/share/turbulence/images/manjaro-grey-flat/wallpapers/ozone.jpg"
+                releaseWallsTwo = "/usr/share/turbulence/images/manjaro-grey-flat/wallpapers/orangesplash.jpg"
                 self.wallpaperChoice1.setText("Ozone")
                 self.wallpaperChoice2.setText("Orange Splash")
                 
@@ -827,7 +827,7 @@ class Ui_MainWindow(QtCore.QObject):
             
             fourthPageWidgets = {
                 "wallpaperHeader": [self.wallpaperHeader, 80, 20, 600, 51, "wallpaperHeader", None],
-                "wallpaperIcon": [self.wallpaperIcon, 40, 160, 61, 61, "wallpaperIcon", "/usr/share/turbulence/images/manjaro-grey/wallpapers/wallpapers.png"],
+                "wallpaperIcon": [self.wallpaperIcon, 40, 160, 61, 61, "wallpaperIcon", "/usr/share/turbulence/images/manjaro-grey-flat/wallpapers/wallpapers.png"],
                 "wallpaperDesc": [self.wallpaperDesc, 110, 160, 591, 51, "wallpaperDesc", None],
                 "wallpaperChoice1": [self.wallpaperChoice1, 70, 380, 81, 21, "wallpaperChoice1", None],
                 "wallpaperChoice2": [self.wallpaperChoice2, 250, 380, 141, 21, "wallpaperChoice2", None],
@@ -841,19 +841,19 @@ class Ui_MainWindow(QtCore.QObject):
 
             fourthPageLayouts = {
                 "wallpaperMenu": [self.wallpaperMenu, 0, 39, None, None, True, True, False, False],
-                "wallpaperArrow": [self.wallpaperArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png", False],
+                "wallpaperArrow": [self.wallpaperArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/menu-arrow.png", False],
                 "wallpaperMenuFinish": [self.wallpaperMenuFinish, 0, 39, None, None, True, True, False, False],
                 "wallpaperForward": [self.wallpaperForward, 0, 34, None, None, True, True, False, False],
                 "wallpaperPrevious": [self.wallpaperPrevious, 0, 34, None, None, True, True, False, False],
                 "wallpaperCancel": [self.wallpaperCancel, 0, 34, None, None, True, True, False, False],
                 "wallpaper1": [self.wallpaper1, None, None, None, None, False, False, releaseWallsOne, True],
                 "wallpaper2": [self.wallpaper2, None, None, None, None, False, False, releaseWallsTwo, True],
-                "wallpaper3": [self.wallpaper3, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/sunsetplane.jpg", True],
-                "wallpaper4": [self.wallpaper4, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/mountainlake.jpg", True],
-                "wallpaper5": [self.wallpaper5, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/earthinspace.jpg", True],
-                "wallpaper6": [self.wallpaper6, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/darkstairs.jpg", True],
-                "wallpaper7": [self.wallpaper7, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/cherryjapan.jpg", True],
-                "wallpaper8": [self.wallpaper8, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey/wallpapers/whitetiger.jpg", True],
+                "wallpaper3": [self.wallpaper3, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/wallpapers/sunsetplane.jpg", True],
+                "wallpaper4": [self.wallpaper4, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/wallpapers/mountainlake.jpg", True],
+                "wallpaper5": [self.wallpaper5, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/wallpapers/earthinspace.jpg", True],
+                "wallpaper6": [self.wallpaper6, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/wallpapers/darkstairs.jpg", True],
+                "wallpaper7": [self.wallpaper7, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/wallpapers/cherryjapan.jpg", True],
+                "wallpaper8": [self.wallpaper8, None, None, None, None, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/wallpapers/whitetiger.jpg", True],
                 "wallpaperChoice1": [self.wallpaperChoice1, None, None, None, None, False, False, False, False],
                 "wallpaperChoice2": [self.wallpaperChoice2, None, None, None, None, False, False, False, False],
                 "wallpaperChoice3": [self.wallpaperChoice3, None, None, None, None, False, False, False, False],
@@ -1064,77 +1064,77 @@ class Ui_MainWindow(QtCore.QObject):
         
             fifthPageWidgets = {
                 "packagesHeader": [self.packagesHeader, 80, 20, 600, 51, "packagesHeader", None],
-                "packagesIcon": [self.packagesIcon, 40, 160, 61, 61, "packagesIcon", "/usr/share/turbulence/images/manjaro-grey/packages/packagesicon.png"],
+                "packagesIcon": [self.packagesIcon, 40, 160, 61, 61, "packagesIcon", "/usr/share/turbulence/images/manjaro-grey-flat/packages/packagesicon.png"],
                 "packagesDesc": [self.packagesDesc, 110, 140, 650, 100, "packagesDesc", None],
                 "packagesTabs": [self.packagesTabs, 60, 290, 741, 251, "packagesTabs", None],
-                "packagesNetworkBack": [self.packagesNetworkBack, -14, -7, 761, 241, "packagesNetworkBack", "/usr/share/turbulence/images/manjaro-grey/packages/packages-back.png"],
-                "packagesAroraPic": [self.packagesAroraPic, 20, 10, 71, 71, "packagesAroraPic", "/usr/share/turbulence/images/manjaro-grey/packages/network/arora.png"],
+                "packagesNetworkBack": [self.packagesNetworkBack, -14, -7, 761, 241, "packagesNetworkBack", None],
+                "packagesAroraPic": [self.packagesAroraPic, 20, 10, 71, 71, "packagesAroraPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/network/arora.png"],
                 "packagesAroaCheck": [self.packagesAroraCheck, 10, 80, 111, 31, "packagesAroraCheck", None],
-                "packagesChromiumPic": [self.packagesChromiumPic, 140, 10, 71, 71, "packagesChromiumPic", "/usr/share/turbulence/images/manjaro-grey/packages/network/chromium.png"],
+                "packagesChromiumPic": [self.packagesChromiumPic, 140, 10, 71, 71, "packagesChromiumPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/network/chromium.png"],
                 "packagesChromiumCheck": [self.packagesChromiumCheck, 130, 80, 102, 31, "packagesChromiumCheck", None],
-                "packagesDelugePic": [self.packagesDelugePic, 270, 10, 71, 71, "packagesDelugePic", "/usr/share/turbulence/images/manjaro-grey/packages/network/deluge.png"],
+                "packagesDelugePic": [self.packagesDelugePic, 270, 10, 71, 71, "packagesDelugePic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/network/deluge.png"],
                 "packagesDelugeCheck": [self.packagesDelugeCheck, 260, 80, 102, 31, "packagesDelugeCheck", None],
-                "packagesFirefoxPic": [self.packagesFirefoxPic, 400, 10, 71, 71, "packagesFirefoxPic", "/usr/share/turbulence/images/manjaro-grey/packages/network/firefox.png"],
+                "packagesFirefoxPic": [self.packagesFirefoxPic, 400, 10, 71, 71, "packagesFirefoxPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/network/firefox.png"],
                 "packagesFirefoxCheck": [self.packagesFirefoxCheck, 390, 80, 102, 31, "packagesFirefoxCheck", None],
-                "packagesMidoriPic": [self.packagesMidoriPic, 520, 10, 71, 71, "packagesMidoriPic", "/usr/share/turbulence/images/manjaro-grey/packages/network/midori.png"],
+                "packagesMidoriPic": [self.packagesMidoriPic, 520, 10, 71, 71, "packagesMidoriPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/network/midori.png"],
                 "packagesMidoriCheck": [self.packagesMidoriCheck, 510, 80, 121, 31, "packagesMidoriCheck", None],
-                "packagesOperaPic": [self.packagesOperaPic, 640, 10, 71, 71, "packagesOperaPic", "/usr/share/turbulence/images/manjaro-grey/packages/network/opera.png"],
+                "packagesOperaPic": [self.packagesOperaPic, 640, 10, 71, 71, "packagesOperaPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/network/opera.png"],
                 "packagesOperaCheck": [self.packagesOperaCheck, 630, 80, 102, 31, "packagesOperaCheck", None],
-                "packagesTransmissionPic": [self.packagesTransmissionPic, 20, 110, 71, 71, "packagesTransmissionPic", "/usr/share/turbulence/images/manjaro-grey/packages/network/transmission.png"],
+                "packagesTransmissionPic": [self.packagesTransmissionPic, 20, 110, 71, 71, "packagesTransmissionPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/network/transmission.png"],
                 "packagesTransmissionCheck": [self.packagesTransmissionCheck, 10, 180, 121, 31, "packagesTransmissionCheck", None],
                 "packagesNotActive": [self.packagesNotActive, -10, -10, 751, 241, "packagesNotActive", None],
-                "packagesMultimediaBack": [self.packagesMultimediaBack, -20, -10, 761, 241, "packagesMultimediaBack", "/usr/share/turbulence/images/manjaro-grey/packages/packages-back.png"],
-                "packagesAudaciousPic": [self.packagesAudaciousPic, 20, 10, 71, 71, "packagesAudaciousPic", "/usr/share/turbulence/images/manjaro-grey/packages/multimedia/audacious.png"],
+                "packagesMultimediaBack": [self.packagesMultimediaBack, -20, -10, 761, 241, "packagesMultimediaBack", None],
+                "packagesAudaciousPic": [self.packagesAudaciousPic, 20, 10, 71, 71, "packagesAudaciousPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/multimedia/audacious.png"],
                 "packagesAudaciousCheck": [self.packagesAudaciousCheck, 10, 80, 111, 31, "packagesAudaciousCheck", None],
-                "packagesClementinePic": [self.packagesClemetinePic, 140, 10, 71, 71, "packagesClementinePic", "/usr/share/turbulence/images/manjaro-grey/packages/multimedia/clementine.png"],
+                "packagesClementinePic": [self.packagesClemetinePic, 140, 10, 71, 71, "packagesClementinePic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/multimedia/clementine.png"],
                 "packagesClementineCheck": [self.packagesClementineCheck, 130, 80, 111, 31, "packagesClementineCheck", None],
-                "packagesDeadbeefPic": [self.packagesDeadbeefPic, 270, 10, 71, 71, "packagesDeadbeefPic", "/usr/share/turbulence/images/manjaro-grey/packages/multimedia/deadbeef.png"],
+                "packagesDeadbeefPic": [self.packagesDeadbeefPic, 270, 10, 71, 71, "packagesDeadbeefPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/multimedia/deadbeef.png"],
                 "packagesDeadbeefCheck": [self.packagesDeadbeefCheck, 260, 80, 111, 31, "packagesDeadbeefCheck", None],
-                "packagesSmplayerPic": [self.packagesSmplayerPic, 400, 10, 71, 71, "packagesSmplayerPic", "/usr/share/turbulence/images/manjaro-grey/packages/multimedia/smplayer.png"],
+                "packagesSmplayerPic": [self.packagesSmplayerPic, 400, 10, 71, 71, "packagesSmplayerPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/multimedia/smplayer.png"],
                 "packagesSmplayerCheck": [self.packagesSmplayerCheck, 390, 80, 102, 31, "packagesSmplayerCheck", None],
-                "packagesVlcPic": [self.packagesVlcPic, 520, 10, 71, 71, "packagesVlcPic", "/usr/share/turbulence/images/manjaro-grey/packages/multimedia/vlc.png"],
+                "packagesVlcPic": [self.packagesVlcPic, 520, 10, 71, 71, "packagesVlcPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/multimedia/vlc.png"],
                 "packagesVlcCheck": [self.packagesVlcCheck, 510, 80, 102, 31, "packagesVlcCheck", None],
-                "packagesGraphicsBack": [self.packagesGraphicsBack, -20, -10, 761, 241, "packagesGraphicsBack", "/usr/share/turbulence/images/manjaro-grey/packages/packages-back.png"],
-                "packagesBlenderPic": [self.packagesBlenderPic, 20, 10, 71, 71, "packagesBlenderPic", "/usr/share/turbulence/images/manjaro-grey/packages/graphics/blender.png"],
+                "packagesGraphicsBack": [self.packagesGraphicsBack, -20, -10, 761, 241, "packagesGraphicsBack", None],
+                "packagesBlenderPic": [self.packagesBlenderPic, 20, 10, 71, 71, "packagesBlenderPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/graphics/blender.png"],
                 "packagesBlenderCheck": [self.packagesBlenderCheck, 10, 80, 111, 31, "packagesBlenderCheck", None],
-                "packagesEvincePic": [self.packagesEvincePic, 140, 10, 71, 71, "packagesEvincePic", "/usr/share/turbulence/images/manjaro-grey/packages/graphics/evince.png"],
+                "packagesEvincePic": [self.packagesEvincePic, 140, 10, 71, 71, "packagesEvincePic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/graphics/evince.png"],
                 "packagesEvinceCheck": [self.packagesEvinceCheck, 130, 80, 111, 31, "packagesEvinceCheck", None],
-                "packagesGimpPic": [self.packagesGimpPic, 270, 10, 71, 71, "packagesGimpPic", "/usr/share/turbulence/images/manjaro-grey/packages/graphics/gimp.png"],
+                "packagesGimpPic": [self.packagesGimpPic, 270, 10, 71, 71, "packagesGimpPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/graphics/gimp.png"],
                 "packagesGimpCheck": [self.packagesGimpCheck, 260, 80, 111, 31, "packagesGimpCheck", None],
-                "packagesGpicviewPic": [self.packagesGpicviewPic, 400, 10, 71, 71, "packagesGpicviewPic", "/usr/share/turbulence/images/manjaro-grey/packages/graphics/gpicview.png"],
+                "packagesGpicviewPic": [self.packagesGpicviewPic, 400, 10, 71, 71, "packagesGpicviewPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/graphics/gpicview.png"],
                 "packagesGpicviewCheck": [self.packagesGpicviewCheck, 390, 80, 111, 31, "packagesGpicviewCheck", None],
-                "packagesViewniorPic": [self.packagesViewniorPic, 520, 10, 71, 71, "packagesViewniorPic", "/usr/share/turbulence/images/manjaro-grey/packages/graphics/viewnior.png"],
+                "packagesViewniorPic": [self.packagesViewniorPic, 520, 10, 71, 71, "packagesViewniorPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/graphics/viewnior.png"],
                 "packagesViewniorCheck": [self.packagesViewniorCheck, 510, 80, 111, 31, "packagesViewniorCheck", None],
-                "packagesAccessoriesBack": [self.packagesAccessoriesBack, -20, -10, 761, 241, "packagesAccessoriesBack", "/usr/share/turbulence/images/manjaro-grey/packages/packages-back.png"],
-                "packagesGeanyPic": [self.packagesGeanyPic, 20, 10, 71, 71, "packagesGeanyPic", "/usr/share/turbulence/images/manjaro-grey/packages/accessories/geany.png"],
+                "packagesAccessoriesBack": [self.packagesAccessoriesBack, -20, -10, 761, 241, "packagesAccessoriesBack", None],
+                "packagesGeanyPic": [self.packagesGeanyPic, 20, 10, 71, 71, "packagesGeanyPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/accessories/geany.png"],
                 "packagesGeanyCheck": [self.packagesGeanyCheck, 10, 80, 111, 31, "packagesGeanyCheck", None],
-                "packagesHexchatPic": [self.packagesHexchatPic, 140, 10, 71, 71, "packagesHexchatPic", "/usr/share/turbulence/images/manjaro-grey/packages/accessories/hexchat.png"],
+                "packagesHexchatPic": [self.packagesHexchatPic, 140, 10, 71, 71, "packagesHexchatPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/accessories/hexchat.png"],
                 "packagesHexchatCheck": [self.packagesHexchatCheck, 130, 80, 111, 31, "packagesHexchatCheck", None],
-                "packagesLeafpadPic": [self.packagesLeafpadPic, 270, 10, 71, 71, "packagesLeafpadPic", "/usr/share/turbulence/images/manjaro-grey/packages/accessories/leafpad.png"],
+                "packagesLeafpadPic": [self.packagesLeafpadPic, 270, 10, 71, 71, "packagesLeafpadPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/accessories/leafpad.png"],
                 "packagesLeafpadCheck": [self.packagesLeafpadCheck, 260, 80, 111, 31, "packagesLeafpadCheck", None],
-                "packagesPcmanfmPic": [self.packagesPcmanfmPic, 400, 10, 71, 71, "packagesPcmanfmPic", "/usr/share/turbulence/images/manjaro-grey/packages/accessories/pcmanfm.png"],
+                "packagesPcmanfmPic": [self.packagesPcmanfmPic, 400, 10, 71, 71, "packagesPcmanfmPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/accessories/pcmanfm.png"],
                 "packagesPcmanfmCheck": [self.packagesPcmanfmCheck, 390, 80, 111, 31, "packagesPcmanfmCheck", None],
-                "packagesSpacefmPic": [self.packagesSpacefmPic, 520, 10, 71, 71, "packagesSpacefmPic", "/usr/share/turbulence/images/manjaro-grey/packages/accessories/spacefm.png"],
+                "packagesSpacefmPic": [self.packagesSpacefmPic, 520, 10, 71, 71, "packagesSpacefmPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/accessories/spacefm.png"],
                 "packagesSpacefmCheck": [self.packagesSpacefmCheck, 510, 80, 111, 31, "packagesSpacefmCheck", None],
-                "packagesTerminatorPic": [self.packagesTerminatorPic, 640, 10, 71, 71, "packagesTerminatorPic", "/usr/share/turbulence/images/manjaro-grey/packages/accessories/terminator.png"],
+                "packagesTerminatorPic": [self.packagesTerminatorPic, 640, 10, 71, 71, "packagesTerminatorPic", "/usr/share/turbulence/images/manjaro-grey-flat/packages/accessories/terminator.png"],
                 "packagesTerminatorCheck": [self.packagesTerminatorCheck, 630, 80, 111, 31, "packagesTerminatorCheck", None],
-                "packagesThunarPic": [self.packagesThunarPic, 20, 110, 71, 71, "packagesThunarPic" , "/usr/share/turbulence/images/manjaro-grey/packages/accessories/thunar.png"],
+                "packagesThunarPic": [self.packagesThunarPic, 20, 110, 71, 71, "packagesThunarPic" , "/usr/share/turbulence/images/manjaro-grey-flat/packages/accessories/thunar.png"],
                 "packagesThunarCheck": [self.packagesThunarCheck, 10, 180, 111, 31, "packagesThunarCheck", None],
-                "packagesExtrasBack": [self.packagesExtrasBack, -20, -10, 761, 241, "packagesExtrasBack", "/usr/share/turbulence/images/manjaro-grey/packages/packages-back.png"],
-                "packagesAurSupportPic": [self.packagesAurSupportPic, 20, 10, 71, 71, "packagesAurSupportPic" , "/usr/share/turbulence/images/manjaro-grey/packages/extras/aursupport.png"],
+                "packagesExtrasBack": [self.packagesExtrasBack, -20, -10, 761, 241, "packagesExtrasBack", None],
+                "packagesAurSupportPic": [self.packagesAurSupportPic, 20, 10, 71, 71, "packagesAurSupportPic" , "/usr/share/turbulence/images/manjaro-grey-flat/packages/extras/aursupport.png"],
                 "packagesAurSupportCheck": [self.packagesAurSupportCheck, 10, 90, 111, 41, "packagesAurSupportCheck", None],
-                "packagesMultimediaSupportPic": [self.packagesMultimediaSupportPic, 140, 10, 71, 71, "packagesMultimediaSupportPic" , "/usr/share/turbulence/images/manjaro-grey/packages/extras/multimediasupport.png"],
+                "packagesMultimediaSupportPic": [self.packagesMultimediaSupportPic, 140, 10, 71, 71, "packagesMultimediaSupportPic" , "/usr/share/turbulence/images/manjaro-grey-flat/packages/extras/multimediasupport.png"],
                 "packagesMultimediaSupportCheck": [self.packagesMultimediaSupportCheck, 130, 90, 111, 34, "packagesMultimediaSupportCheck", None],
-                "packagesPrinterSupportPic": [self.packagesPrinterSupportPic, 270, 10, 71, 71, "packagesPrinterSupportPic" , "/usr/share/turbulence/images/manjaro-grey/packages/extras/printersupport.png"],
+                "packagesPrinterSupportPic": [self.packagesPrinterSupportPic, 270, 10, 71, 71, "packagesPrinterSupportPic" , "/usr/share/turbulence/images/manjaro-grey-flat/packages/extras/printersupport.png"],
                 "packagesPrinterSupportCheck": [self.packagesPrinterSupportCheck, 260, 90, 111, 41, "packagesPrinterSupportCheck", None],
                 "packagesInstallBack": [self.packagesInstallBack, -20, -10, 761, 241, "packagesInstallBack", None],
                 "packagesInstallButton": [self.packagesInstallButton, 270, 95, 150, 30, "packagesInstallButton", None],
-                "packagesCheckConnection": [self.packagesCheckConnection, 160, 400, 550, 60, "packagesCheckConnection", None]
+                "packagesCheckConnection": [self.packagesCheckConnection, 160, 400, 550, 60, "packagesCheckConnection", None] 
             }
             
             fifthPageLayouts = {
                 "packagesMenu": [self.packagesMenu, 0, 39, None, None, True, True, False],
-                "packagesArrow": [self.packagesArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png"],
+                "packagesArrow": [self.packagesArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/menu-arrow.png"],
                 "packagesMenuFinish": [self.packagesMenuFinish, 0, 39, None, None, True, True, False],
                 "packagesForward": [self.packagesForward, 0, 34, None, None, True, True, False],
                 "packagesPrevious": [self.packagesPrevious, 0, 34, None, None, True, True, False],
@@ -1324,18 +1324,18 @@ class Ui_MainWindow(QtCore.QObject):
             "finishHeader": [self.finishHeader, 80, 20, 600, 51, "finishHeader", None],
             "finishDesc": [self.finishDesc, 30, 150, 781, 51, "finishDesc", None],
             "finishSystemSettings": [self.finishSystemSettings, 40, 220, 500, 31, "finishSystemSettings", None],
-            "finishSystemSettingsPic": [self.finishSystemSettingsPic, 70, 260, 111, 101, "finishSystemSettingsPic", "/usr/share/turbulence/images/manjaro-grey/finish/preferences-system.png"],
+            "finishSystemSettingsPic": [self.finishSystemSettingsPic, 70, 260, 111, 101, "finishSystemSettingsPic", "/usr/share/turbulence/images/manjaro-grey-flat/finish/preferences-system.png"],
             "finishSystemSettingsDesc": [self.finishSystemSettingsDesc, 200, 280, 390, 31, "finishSystemSettingsDesc", None],
             "finishSystemSettingsButton": [self.finishSystemSettingsButton, 200, 310, 390, 41, "finishSystemSettingsButton", None],
             "finishHelpHead": [self.finishHelpHead, 40, 400, 500, 31, "finishHelpHead", None, None],
-            "finishHelpPic": [self.finishHelpPic, 70, 440, 111, 101, "finishHelpPic", "/usr/share/turbulence/images/manjaro-grey/finish/help-icon.png"],
+            "finishHelpPic": [self.finishHelpPic, 70, 440, 111, 101, "finishHelpPic", "/usr/share/turbulence/images/manjaro-grey-flat/finish/help-icon.png"],
             "finishHelpDesc": [self.finishHelpDesc, 200, 440, 390, 51, "finishHelpDesc", None],
             "finishHelpButton": [self.finishHelpButton, 200, 490, 390, 41, "finishHelpButton", None]
         }
 
         fifthPageLayouts = {
             "finishWallpaperMenu": [self.finishWallpaperMenu, 0, 39, None, None, True, True, False],
-            "finishArrow": [self.finishArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow-reverse.png"],
+            "finishArrow": [self.finishArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey-flat/menu-arrow-reverse.png"],
             "finishMenu": [self.finishMenu, 0, 39, None, None, True, True, False],
             "finishForward": [self.finishForward, 0, 34, None, None, True, True, False],
             "finishPrevious": [self.finishPrevious, 0, 34, None, None, True, True, False],
