@@ -18,7 +18,7 @@ if geteuid() == 0:
 
 #Start turbulence
 if __name__ == "__main__":
-    if not utils_detector.detectTint() and not utils_detector.detectOpenBox() and not utils_detector.detectNitrogen(): 
+    if utils_detector.detectTint() and utils_detector.detectOpenBox() and utils_detector.detectNitrogen(): 
         ui = MainGui_manjaroGrey_flat.Ui_MainWindow()
     elif utils_detector.detectPlasma() and utils_detector.detectKwin() and utils_detector.detectKde():
         ui = MainGui_manjaroGrey.Ui_MainWindow()
