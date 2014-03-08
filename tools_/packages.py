@@ -4,6 +4,7 @@ import subprocess
 import urllib.request, urllib.error
 from sys import exit
 from os import system
+from time import sleep
 
 from tools_ import logger
 
@@ -57,5 +58,5 @@ def handlePackages(packagesTBI, packagesTBR): #packagesTBI = packages to be inst
     logger.writeLog("packagesToBeRemoved", packagesTBRStr)
     
     installPackages = subprocess.Popen(["lxterminal", "-e", "bash",  "/usr/share/turbulence/scripts/install-packages.sh", "\"" + ' '.join(packagesTBIList) + "\"", "-r", "\"" + ' '.join(packagesTBRList) + "\""])
-    installPackages.wait()
+    sleep(2)
     system("wmctrl -a LXTerminal")
