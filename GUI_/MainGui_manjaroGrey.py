@@ -250,7 +250,7 @@ class Ui_MainWindow(QtCore.QObject):
         elif tintStatus:
             self.folderThemes.setText(_translate("MainWindow", "Tint 2"))
         else:
-            self.folderThemes.setText(_translate("MainWindow", "Finish"))
+            self.folderThemes.setText(_translate("MainWindow", "Verify"))
 
         #widget dictionary.
         secondPageWidgets = {
@@ -465,7 +465,7 @@ class Ui_MainWindow(QtCore.QObject):
             elif plasmaStatus:
                  self.themeMenuWallpapers.setText(_translate("MainWindow", "Wallpapers"))
             else:
-                 self.themeMenuWallpapers.setText(_translate("MainWindow", "Finish"))
+                 self.themeMenuWallpapers.setText(_translate("MainWindow", "Verify"))
                  
             thirdPageWidgets = {
                 "themeHeader": [self.themeHeader, 80, 20, 600, 51, "themeHeader", None],
@@ -624,7 +624,7 @@ class Ui_MainWindow(QtCore.QObject):
             if nitrogenStatus or plasmaStatus:
                 self.tintMenuWallpapers.setText(_translate("MainWindow", "Wallpapers"))
             else:
-                self.tintMenuWallpapers.setText(_translate("MainWindow", "Finish"))
+                self.tintMenuWallpapers.setText(_translate("MainWindow", "Verify"))
             
             thirdPageWidgets = {
                 "tintHeader": [self.tintHeader, 80, 20, 600, 51, "tintHeader", None],
@@ -823,7 +823,7 @@ class Ui_MainWindow(QtCore.QObject):
             if openboxStatus:
                 self.wallpaperMenuFinish.setText(_translate("MainWindow", "Packages"))
             else:
-                self.wallpaperMenuFinish.setText(_translate("MainWindow", "Finish"))
+                self.wallpaperMenuFinish.setText(_translate("MainWindow", "Verify"))
             
             fourthPageWidgets = {
                 "wallpaperHeader": [self.wallpaperHeader, 80, 20, 600, 51, "wallpaperHeader", None],
@@ -1211,7 +1211,7 @@ class Ui_MainWindow(QtCore.QObject):
             #Fifth page            
             self.packagesHeader.setText(_translate("MainWindow", "Packages"))
             self.packagesMenu.setText(_translate("MainWindow", "Packages"))
-            self.packagesMenuFinish.setText(_translate("MainWindow", "Finish"))
+            self.packagesMenuFinish.setText(_translate("MainWindow", "Verify"))
             self.packagesDesc.setText(_translate("MainWindow", "Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or unselect any packages you want to add or remove. Packages that are installed will be auto-selected.\n\nWhen you are done, go to the Install tab, and click \"Install\"."))
             self.packagesPrevious.setText(_translate("MainWindow", "Previous"))
             self.packagesForward.setText(_translate("MainWindow", "Forward"))
@@ -1279,6 +1279,81 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesInstall), _translate("MainWindow", "Install"))
             self.packagesInstallButton.setText(_translate("MainWindow", "Install"))
         
+        
+        #Adds the verify page
+        self.Verify = QtWidgets.QWidget()
+        self.Verify.setObjectName("Verify")
+        
+        createStaticWidgets(self.Verify)
+        
+        self.verifyHeader = QtWidgets.QLabel(self.Verify)
+        self.verifyMenuContainer = QtWidgets.QWidget(self.Verify)
+        self.verifyMenuContainerHLayout = QtWidgets.QHBoxLayout(self.verifyMenuContainer)
+        self.verifyFinishMenu = QtWidgets.QPushButton(self.verifyMenuContainer)
+        self.verifyMenu = QtWidgets.QPushButton(self.verifyMenuContainer)
+        self.verifyArrow = QtWidgets.QLabel(self.verifyMenuContainer)
+        self.verifyMenuSpacer = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.verifyFooterContainer = QtWidgets.QWidget(self.Verify)
+        self.verifyFooterContainerHLayout = QtWidgets.QHBoxLayout(self.verifyFooterContainer)
+        self.verifyCancel = QtWidgets.QPushButton(self.verifyFooterContainer)
+        self.verifyForward = QtWidgets.QPushButton(self.verifyFooterContainer)
+        self.verifyPrevious = QtWidgets.QPushButton(self.verifyFooterContainer)
+        self.verifyFooterSpacer = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.verifyIcon = QtWidgets.QLabel(self.Verify)
+        self.verifyDesc = QtWidgets.QLabel(self.Verify)
+        
+        verifyPageWidgets = {
+            "verifyHeader": [self.verifyHeader, 80, 20, 600, 51, "verifyHeader", None],
+            "verifyIcon": [self.verifyIcon, 40, 160, 61, 61, "verifyIcon", "/usr/share/turbulence/images/manjaro-grey/verify/verify.png"],
+            "verifyDesc": [self.verifyDesc, 110, 140, 650, 100, "verifyDesc", None]
+        }
+
+        verifyPageLayouts = {
+            "verifyMenu": [self.verifyMenu, 0, 39, None, None, True, True, False],
+            "verifyArrow": [self.verifyArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow.png"],
+            "verifyFinishMenu": [self.verifyFinishMenu, 0, 39, None, None, True, True, False],
+            "verifyForward": [self.verifyForward, 0, 34, None, None, True, True, False],
+            "verifyPrevious": [self.verifyPrevious, 0, 34, None, None, True, True, False],
+            "verifyCancel": [self.verifyCancel, 0, 34, None, None, True, True, False]
+        }
+	
+        #defines all the widget parameters
+        for widgetName, widgetSettings in verifyPageWidgets.items():
+            widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
+        
+        for widgetName, widgetSettings in verifyPageLayouts.items():
+            layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7])
+        
+        self.verifyCancel.setIcon(cancelIcon)
+        self.verifyForward.setIcon(finishIcon)
+        self.verifyPrevious.setIcon(previousIcon)
+        self.verifyForward.setIconSize(QtCore.QSize(16, 18))
+        self.verifyPrevious.setIconSize(QtCore.QSize(28, 30))
+        self.verifyCancel.setIconSize(QtCore.QSize(16, 16))
+        
+        self.verifyMenuContainerHLayout.addWidget(self.verifyMenu)
+        self.verifyMenuContainerHLayout.addWidget(self.verifyArrow)
+        self.verifyMenuContainerHLayout.addWidget(self.verifyFinishMenu)
+        self.verifyMenuContainerHLayout.addItem(self.verifyMenuSpacer)
+        
+        self.verifyFooterContainerHLayout.addWidget(self.verifyCancel)
+        self.verifyFooterContainerHLayout.addItem(self.verifyFooterSpacer)
+        self.verifyFooterContainerHLayout.addWidget(self.verifyPrevious)
+        self.verifyFooterContainerHLayout.addWidget(self.verifyForward)
+        
+        self.verifyMenuContainer.setGeometry(QtCore.QRect(20, 83, 511, 50))
+        self.verifyFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
+        
+        #Translates the widgets, or sets text
+        self.verifyHeader.setText(_translate("MainWindow", "Verify your settings"))
+        self.verifyMenu.setText(_translate("MainWindow", "Verify"))
+        self.verifyFinishMenu.setText(_translate("MainWindow", "Finish"))
+        self.verifyCancel.setText(_translate("MainWindow", "Cancel"))
+        self.verifyForward.setText(_translate("MainWindow", "Verify"))
+        self.verifyPrevious.setText(_translate("MainWindow", "Previous"))
+        self.verifyDesc.setText(_translate("MainWindow", "Please review your changes now. If you agree, then proceed by clicking verify, otherwise click the edit next to the setting you would like to change."))
+        
+        self.stackedWidget.addWidget(self.Verify)
         
         #Adds the fifth and final page
         self.Finish = QtWidgets.QWidget()
