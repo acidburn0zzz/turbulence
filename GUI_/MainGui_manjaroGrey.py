@@ -373,7 +373,7 @@ class Ui_MainWindow(QtCore.QObject):
         #Handles the button clicks.
         self.folderThemes.clicked.connect(self.handleButtonNext)
         self.folderPrevious.clicked.connect(self.handleButtonPrev)
-        self.folderForward.clicked.connect(self.handleButtonNextFolders)
+        self.folderForward.clicked.connect(self.handleButtonNext)
         self.folderCancel.clicked.connect(MainWindow.close)
         
         #Translates, or sets the text for all the widgets
@@ -554,10 +554,10 @@ class Ui_MainWindow(QtCore.QObject):
             self.stackedWidget.addWidget(self.Theme)
             
             #Hooks up the button handlers
-            self.themeMenuWallpapers.clicked.connect(self.handleButtonNextThemes)
+            self.themeMenuWallpapers.clicked.connect(self.handleButtonNext)
             self.themeCancel.clicked.connect(MainWindow.close)
-            self.themeForward.clicked.connect(self.handleButtonNextThemes)
-            self.themePrevious.clicked.connect(self.handleButtonPrevFolders)
+            self.themeForward.clicked.connect(self.handleButtonNext)
+            self.themePrevious.clicked.connect(self.handleButtonPrev)
             
             #Translates the text
             self.themeHeader.setText(_translate("MainWindow", "Themes"))
@@ -712,9 +712,9 @@ class Ui_MainWindow(QtCore.QObject):
             self.stackedWidget.addWidget(self.Tint)
             
             #Handles button clicks
-            self.tintMenuWallpapers.clicked.connect(self.handleButtonNextTint)
-            self.tintPrevious.clicked.connect(self.handleButtonPrevFolders)
-            self.tintForward.clicked.connect(self.handleButtonNextTint)
+            self.tintMenuWallpapers.clicked.connect(self.handleButtonNext)
+            self.tintPrevious.clicked.connect(self.handleButtonPrev)
+            self.tintForward.clicked.connect(self.handleButtonNext)
             self.tintCancel.clicked.connect(MainWindow.close)
             
             #Sets text and translates widgets
@@ -948,10 +948,10 @@ class Ui_MainWindow(QtCore.QObject):
             self.stackedWidget.addWidget(self.Wallpaper)
             
             #Handles the button clicks
-            self.wallpaperMenuFinish.clicked.connect(self.handleButtonNextWallpapers)
+            self.wallpaperMenuFinish.clicked.connect(self.handleButtonNext
             self.wallpaperCancel.clicked.connect(MainWindow.close)
             self.wallpaperPrevious.clicked.connect(self.handleButtonPrev)
-            self.wallpaperForward.clicked.connect(self.handleButtonNextWallpapers)
+            self.wallpaperForward.clicked.connect(self.handleButtonNext)
        
             #Sets text, or translates widgets
             self.wallpaperHeader.setText(_translate("MainWindow", "Wallpapers"))
@@ -1203,8 +1203,8 @@ class Ui_MainWindow(QtCore.QObject):
             #Handles button clicks
             self.packagesCancel.clicked.connect(MainWindow.close)
             self.packagesPrevious.clicked.connect(self.handleButtonPrev)
-            self.packagesForward.clicked.connect(self.handleButtonNextPackages)
-            self.packagesMenuFinish.clicked.connect(self.handleButtonNextPackages)
+            self.packagesForward.clicked.connect(self.handleButtonNext)
+            self.packagesMenuFinish.clicked.connect(self.handleButtonNext)
             self.packagesCheckConnection.clicked.connect(self.checkInternetStatus)
             self.packagesInstallButton.clicked.connect(self.handleButtonInstallPackages)
             
@@ -1301,11 +1301,141 @@ class Ui_MainWindow(QtCore.QObject):
         self.verifyFooterSpacer = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.verifyIcon = QtWidgets.QLabel(self.Verify)
         self.verifyDesc = QtWidgets.QLabel(self.Verify)
+        self.verifySettings = QtWidgets.QScrollArea(self.Verify)
+        self.verifySettingsContents = QtWidgets.QWidget()
+        self.verifySettingsLayout = QtWidgets.QGridLayout(self.verifySettingsContents)
+        self.verifySpacer5 = QtWidgets.QSpacerItem(0, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding) #Bottom spacer
+        self.verifySpacer6 = QtWidgets.QSpacerItem(10, 0, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum) #Left spacer
+        self.verifySpacer7 = QtWidgets.QSpacerItem(5, 0, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum) #Right spacer
+        self.verifyFolders = QtWidgets.QLabel(self.verifySettingsContents)
+        self.verifyFoldersEdit = QtWidgets.QPushButton(self.verifySettingsContents)
+        self.verifyFoldersDesktop = QtWidgets.QLabel(self.verifySettingsContents)
+        self.verifyFoldersDocuments = QtWidgets.QLabel(self.verifySettingsContents)
+        self.verifyFoldersDownloads = QtWidgets.QLabel(self.verifySettingsContents)
+        self.verifyFoldersMusic = QtWidgets.QLabel(self.verifySettingsContents)
+        self.verifyFoldersPictures = QtWidgets.QLabel(self.verifySettingsContents)
+        self.verifyFoldersPublic = QtWidgets.QLabel(self.verifySettingsContents)
+        self.verifyFoldersTemplates = QtWidgets.QLabel(self.verifySettingsContents)
+        self.verifyFoldersVideo = QtWidgets.QLabel(self.verifySettingsContents)
+        
+        if kwinStatus:
+            self.verifyThemesSpacer = QtWidgets.QSpacerItem(0, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+            self.verifyThemes = QtWidgets.QLabel(self.verifySettingsContents)
+            self.verifyThemesEdit = QtWidgets.QPushButton(self.verifySettingsContents)
+            self.verifyThemesTheme = QtWidgets.QLabel(self.verifySettingsContents)
+            
+            self.verifyThemes.setObjectName("verifyThemes")
+            self.verifyThemesEdit.setObjectName("verifyThemesEdit")
+            self.verifyThemesTheme.setObjectName("verifyThemesTheme")
+            
+            self.verifyThemesEdit.setFlat(True)
+            self.verifyThemesEdit.setFocusPolicy(QtCore.Qt.NoFocus)
+            
+            self.verifySettingsLayout.addItem(self.verifyThemesSpacer, 9, 3, 1, 1)
+            self.verifySettingsLayout.addWidget(self.verifyThemesEdit, 10, 2, 1, 1)
+            self.verifySettingsLayout.addWidget(self.verifyThemes, 10, 3, 1, 1)
+            self.verifySettingsLayout.addWidget(self.verifyThemesTheme, 11, 3, 1, 1)
+            
+            self.verifyThemesEdit.setText(_translate("MainWindow", "[Edit]"))
+            self.verifyThemes.setText(_translate("MainWindow", "Themes"))
+            self.verifyThemesTheme.setText(_translate("MainWindow", "KWIN Theme:"))
+            
+            self.verifyThemesEdit.clicked.connect(self.handleButtonChangeTwo)
+        if tintStatus:
+            self.verifyTintSpacer = QtWidgets.QSpacerItem(0, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+            self.verifyTint = QtWidgets.QLabel(self.verifySettingsContents)
+            self.verifyTintEdit = QtWidgets.QPushButton(self.verifySettingsContents)
+            self.verifyTintPosition = QtWidgets.QLabel(self.verifySettingsContents)
+            
+            self.verifyTint.setObjectName("verifyTint")
+            self.verifyTintEdit.setObjectName("verifyTintEdit")
+            self.verifyTintPosition.setObjectName("verifyTintPosition")
+            
+            self.verifyTintEdit.setFlat(True)
+            self.verifyTintEdit.setFocusPolicy(QtCore.Qt.NoFocus)
+            
+            self.verifySettingsLayout.addItem(self.verifyTintSpacer, 12, 3, 1, 1)
+            self.verifySettingsLayout.addWidget(self.verifyTintEdit, 13, 2, 1, 1)
+            self.verifySettingsLayout.addWidget(self.verifyTint, 13, 3, 1, 1)
+            self.verifySettingsLayout.addWidget(self.verifyTintPosition, 14, 3, 1, 1)
+            
+            self.verifyTintEdit.setText(_translate("MainWindow", "[Edit]"))
+            self.verifyTint.setText(_translate("MainWindow", "Tint"))
+            self.verifyTintPosition.setText(_translate("MainWindow", "Position:"))
+            
+            if kwinStatus:
+                self.verifyTintEdit.clicked.connect(self.handleButtonChangeThree)
+            else:
+                self.verifyTintEdit.clicked.connect(self.handleButtonChangeTwo)
+        if nitrogenStatus or plasmaStatus:
+            self.verifyWallpaperSpacer = QtWidgets.QSpacerItem(0, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+            self.verifyWallpaper = QtWidgets.QLabel(self.verifySettingsContents)
+            self.verifyWallpaperEdit = QtWidgets.QPushButton(self.verifySettingsContents)
+            self.verifyWallpaperName = QtWidgets.QLabel(self.verifySettingsContents)
+            
+            self.verifyWallpaper.setObjectName("verifyWallpaper")
+            self.verifyWallpaperEdit.setObjectName("verifyWallpaperEdit")
+            self.verifyWallpaperName.setObjectName("verifyWallpaperName")
+            
+            self.verifyWallpaperEdit.setFlat(True)
+            self.verifyWallpaperEdit.setFocusPolicy(QtCore.Qt.NoFocus)
+            
+            self.verifySettingsLayout.addItem(self.verifyWallpaperSpacer, 15, 3, 1, 1)
+            self.verifySettingsLayout.addWidget(self.verifyWallpaperEdit, 16, 2, 1, 1)
+            self.verifySettingsLayout.addWidget(self.verifyWallpaper, 16, 3, 1, 1)
+            self.verifySettingsLayout.addWidget(self.verifyWallpaperName, 17, 3, 1, 1)
+            
+            self.verifyWallpaperEdit.setText(_translate("MainWindow", "[Edit]"))
+            self.verifyWallpaper.setText(_translate("MainWindow", "Wallpaper"))
+            self.verifyWallpaperName.setText(_translate("MainWindow", "Name:"))
+            
+            if kwinStatus and tintStatus:
+                self.verifyWallpaperEdit.clicked.connect(self.handleButtonChangeFour)
+            elif kwinStatus or tintStatus:
+                self.verifyWallpaperEdit.clicked.connect(self.handleButtonChangeThree)
+            else:
+                self.verifyWallpaperEdit.clicked.connect(self.handleButtonChangeTwo)
+        if openboxStatus:
+            self.verifyPackagesSpacer = QtWidgets.QSpacerItem(0, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+            self.verifyPackages = QtWidgets.QLabel(self.verifySettingsContents)
+            self.verifyPackagesEdit = QtWidgets.QPushButton(self.verifySettingsContents)
+            self.verifyPackagesTBI = QtWidgets.QLabel(self.verifySettingsContents)
+            self.verifyPackagesTBR = QtWidgets.QLabel(self.verifySettingsContents)
+            
+            self.verifyPackages.setObjectName("verifyPackages")
+            self.verifyPackagesEdit.setObjectName("verifyPackagesEdit")
+            self.verifyPackagesTBI.setObjectName("verifyPackagesTBI")
+            self.verifyPackagesTBR.setObjectName("verifyPackagesTBR")
+            
+            self.verifyPackagesEdit.setFlat(True)
+            self.verifyPackagesEdit.setFocusPolicy(QtCore.Qt.NoFocus)
+            
+            self.verifySettingsLayout.addItem(self.verifyPackagesSpacer, 18, 3, 1, 1)
+            self.verifySettingsLayout.addWidget(self.verifyPackagesEdit, 19, 2, 1, 1)
+            self.verifySettingsLayout.addWidget(self.verifyPackages, 19, 3, 1, 1)
+            self.verifySettingsLayout.addWidget(self.verifyPackagesTBI, 20, 3, 1, 1)
+            self.verifySettingsLayout.addWidget(self.verifyPackagesTBR, 21, 3, 1, 1)
+            
+            self.verifyPackagesEdit.setText(_translate("MainWindow", "[Edit]"))
+            self.verifyPackages.setText(_translate("MainWindow", "Packages"))
+            self.verifyPackagesTBI.setText(_translate("MainWindow", "To be installed:"))
+            self.verifyPackagesTBR.setText(_translate("MainWindow", "To be removed:"))
+            if nitrogenStatus or plasmaStatus and kwinStatus and tintStatus:
+                self.verifyPackagesEdit.clicked.connect(self.handleButtonChangeFive)
+            elif nitrogenStatus or plasmaStatus and kwinStatus or tintStatus:
+                self.verifyPackagesEdit.clicked.connect(self.handleButtonChangeFour)
+            elif nitrogenStatus or plasmaStatus or kwinStatus or tintStatus:
+                self.verifyPackagesEdit.clicked.connect(self.handleButtonChangeThree)
+            else:
+                self.verifyPackagesEdit.clicked.connect(self.handleButtonChangeTwo)
+        
         
         verifyPageWidgets = {
             "verifyHeader": [self.verifyHeader, 80, 20, 600, 51, "verifyHeader", None],
             "verifyIcon": [self.verifyIcon, 40, 160, 61, 61, "verifyIcon", "/usr/share/turbulence/images/manjaro-grey/verify/verify.png"],
-            "verifyDesc": [self.verifyDesc, 110, 140, 650, 100, "verifyDesc", None]
+            "verifyDesc": [self.verifyDesc, 110, 140, 650, 100, "verifyDesc", None],
+            "verifySettings": [self.verifySettings, 40, 230, 780, 330, "verifySettings", None],
+            "veriySettingsContents": [self.verifySettingsContents, 0, 0, 685, 330, "verifySettingsContents", None]
         }
 
         verifyPageLayouts = {
@@ -1314,15 +1444,31 @@ class Ui_MainWindow(QtCore.QObject):
             "verifyFinishMenu": [self.verifyFinishMenu, 0, 39, None, None, True, True, False],
             "verifyForward": [self.verifyForward, 0, 34, None, None, True, True, False],
             "verifyPrevious": [self.verifyPrevious, 0, 34, None, None, True, True, False],
-            "verifyCancel": [self.verifyCancel, 0, 34, None, None, True, True, False]
+            "verifyCancel": [self.verifyCancel, 0, 34, None, None, True, True, False],
+            "verifyFolders": [self.verifyFolders, None, None, None, None, False, False, False],
+            "verifyFoldersEdit": [self.verifyFoldersEdit, None, None, None, None, True, True, False],
+            "verifyFoldersDesktop": [self.verifyFoldersDesktop, None, None, None, None, False, False, False],
+            "verifyFoldersDocuments": [self.verifyFoldersDocuments, None, None, None, None, False, False, False],
+            "verifyFoldersDownloads": [self.verifyFoldersDownloads, None, None, None, None, False, False, False],
+            "verifyFoldersMusic": [self.verifyFoldersMusic, None, None, None, None, False, False, False],
+            "verifyFoldersPictures": [self.verifyFoldersPictures, None, None, None, None, False, False, False],
+            "verifyFoldersPublic": [self.verifyFoldersPublic, None, None, None, None, False, False, False],
+            "verifyFoldersTemplates": [self.verifyFoldersTemplates, None, None, None, None, False, False, False],
+            "verifyFoldersVideo": [self.verifyFoldersVideo, None, None, None, None, False, False, False]
         }
-	
+        
         #defines all the widget parameters
         for widgetName, widgetSettings in verifyPageWidgets.items():
             widgetConfigurer(widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6])
         
         for widgetName, widgetSettings in verifyPageLayouts.items():
             layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7])
+        
+        self.verifyDesc.setWordWrap(True)
+        
+        self.verifySettings.setWidgetResizable(True)
+        self.verifySettings.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.verifySettings.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAsNeeded)
         
         self.verifyCancel.setIcon(cancelIcon)
         self.verifyForward.setIcon(finishIcon)
@@ -1341,8 +1487,32 @@ class Ui_MainWindow(QtCore.QObject):
         self.verifyFooterContainerHLayout.addWidget(self.verifyPrevious)
         self.verifyFooterContainerHLayout.addWidget(self.verifyForward)
         
+        self.verifySettingsLayout.addItem(self.verifySpacer5, 23, 3, 1, 1)
+        self.verifySettingsLayout.addItem(self.verifySpacer6, 0, 0, 1, 1)
+        self.verifySettingsLayout.addItem(self.verifySpacer7, 0, 5, 1, 1)
+        
+        self.verifySettingsLayout.addWidget(self.verifyFolders, 0, 3, 1, 1)
+        self.verifySettingsLayout.addWidget(self.verifyFoldersEdit, 0, 2, 1, 1)
+        self.verifySettingsLayout.addWidget(self.verifyFoldersDesktop, 1, 3, 1, 1)
+        self.verifySettingsLayout.addWidget(self.verifyFoldersDocuments, 2, 3, 1, 1)
+        self.verifySettingsLayout.addWidget(self.verifyFoldersDownloads, 3, 3, 1, 1)
+        self.verifySettingsLayout.addWidget(self.verifyFoldersMusic, 4, 3, 1, 1)
+        self.verifySettingsLayout.addWidget(self.verifyFoldersPictures, 5, 3, 1, 1)
+        self.verifySettingsLayout.addWidget(self.verifyFoldersPublic, 6, 3, 1, 1)
+        self.verifySettingsLayout.addWidget(self.verifyFoldersTemplates, 7, 3, 1, 1)
+        self.verifySettingsLayout.addWidget(self.verifyFoldersVideo,8, 3, 1, 1)
+        
         self.verifyMenuContainer.setGeometry(QtCore.QRect(20, 83, 511, 50))
         self.verifyFooterContainer.setGeometry(QtCore.QRect(15, 567, 830, 51))
+        
+        self.verifySettings.setWidget(self.verifySettingsContents)
+        
+        self.stackedWidget.addWidget(self.Verify)
+        
+        #Handles the button click
+        self.verifyPrevious.clicked.connect(self.handleButtonPrev)
+        self.verifyCancel.clicked.connect(MainWindow.close)
+        self.verifyFoldersEdit.clicked.connect(self.handleButtonChangeOne)
         
         #Translates the widgets, or sets text
         self.verifyHeader.setText(_translate("MainWindow", "Verify your settings"))
@@ -1351,9 +1521,18 @@ class Ui_MainWindow(QtCore.QObject):
         self.verifyCancel.setText(_translate("MainWindow", "Cancel"))
         self.verifyForward.setText(_translate("MainWindow", "Verify"))
         self.verifyPrevious.setText(_translate("MainWindow", "Previous"))
-        self.verifyDesc.setText(_translate("MainWindow", "Please review your changes now. If you agree, then proceed by clicking verify, otherwise click the edit next to the setting you would like to change."))
+        self.verifyDesc.setText(_translate("MainWindow", "Please review your changes now. If you agree, then proceed by clicking verify, otherwise click the edit button next to the setting you would like to change."))
+        self.verifyFolders.setText(_translate("MainWindow", "Folders"))
+        self.verifyFoldersEdit.setText(_translate("MainWindow", "[Edit]"))
+        self.verifyFoldersDesktop.setText(_translate("MainWindow", "Desktop:"))
+        self.verifyFoldersDocuments.setText(_translate("MainWindow", "Documents:"))
+        self.verifyFoldersDownloads.setText(_translate("MainWindow", "Downloads:"))
+        self.verifyFoldersMusic.setText(_translate("MainWindow", "Music:"))
+        self.verifyFoldersPictures.setText(_translate("MainWindow", "Pictures:"))
+        self.verifyFoldersPublic.setText(_translate("MainWindow", "Public:"))
+        self.verifyFoldersTemplates.setText(_translate("MainWindow", "Templates:"))
+        self.verifyFoldersVideo.setText(_translate("MainWindow", "Videos:"))
         
-        self.stackedWidget.addWidget(self.Verify)
         
         #Adds the fifth and final page
         self.Finish = QtWidgets.QWidget()
@@ -1770,3 +1949,16 @@ class Ui_MainWindow(QtCore.QObject):
         index = self.stackedWidget.currentIndex() - 1
         if index >= 0:
             self.stackedWidget.setCurrentIndex(index)
+            
+    #Changes to the selected page.
+    def handleButtonChangeOne(self):
+        self.stackedWidget.setCurrentIndex(1)
+    def handleButtonChangeTwo(self):
+        self.stackedWidget.setCurrentIndex(2)
+    def handleButtonChangeThree(self):
+        self.stackedWidget.setCurrentIndex(3)
+    def handleButtonChangeFour(self):
+        self.stackedWidget.setCurrentIndex(4)
+    def handleButtonChangeFive(self):
+        self.stackedWidget.setCurrentIndex(5)
+        

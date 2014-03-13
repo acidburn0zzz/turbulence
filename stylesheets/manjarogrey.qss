@@ -1000,6 +1000,156 @@ QTabBar::tab:selected {
     border: 1px solid #49525b;
 }
 
+/*Verify page Elements*/
+#verifyHeader {
+    color: rgb(220, 220, 220);
+    font: 20pt "Sans Serif";
+}
+#verifyFinishMenu {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#verifyFinishMenu:hover {
+    border: 1px solid #49525b;
+}
+#verifyMenu {
+    color: rgb(220, 220, 220);
+    font: 13pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#verifyMenu:hover {
+    border: 1px solid #49525b;
+}
+#verifyCancel {
+    color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#verifyCancel:hover {
+    border: 1px solid #49525b;
+}
+#verifyForward {
+    color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#verifyForward:hover {
+    border: 1px solid #49525b;
+}
+#verifyPrevious {
+    color: rgb(220, 220, 220);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#verifyPrevious:hover {
+    border: 1px solid #49525b;
+}
+#verifyDesc {
+    color: rgb(220, 220, 220);
+    font: 10pt "Sans Serif";
+}
+#verifySettingsContents {
+    background-color: #555555;
+}
+#verifyFoldersEdit {
+    padding: 0px;
+    margin: 0px;
+    color: #6ad0ff;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#verifyFoldersEdit:hover{
+    color: #598ba2;
+}
+#verifyFoldersDesktop {
+    padding-left: 20px;
+}
+#verifyFoldersDocuments {
+    padding-left: 20px;
+}
+#verifyFoldersDownloads {
+    padding-left: 20px;
+}
+#verifyFoldersMusic {
+    padding-left: 20px;
+}
+#verifyFoldersPublic {
+    padding-left: 20px;
+}
+#verifyFoldersPictures {
+    padding-left: 20px;
+}
+#verifyFoldersTemplates {
+    padding-left: 20px;
+}
+#verifyFoldersVideo {
+    padding-left: 20px;
+}
+#verifyThemesEdit {
+    padding: 0px;
+    margin: 0px;
+    color: #6ad0ff;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#verifyThemesEdit:hover{
+    color: #598ba2;
+}
+#verifyThemesTheme {
+    padding-left: 20px;
+}
+#verifyTintEdit {
+    padding: 0px;
+    margin: 0px;
+    color: #6ad0ff;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#verifyTintEdit:hover{
+    color: #598ba2;
+}
+#verifyTintPosition {
+    padding-left: 20px;
+}
+#verifyWallpaperEdit {
+    padding: 0px;
+    margin: 0px;
+    color: #6ad0ff;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#verifyWallpaperEdit:hover{
+    color: #598ba2;
+}
+#verifyWallpaperName {
+    padding-left: 20px;
+}
+#verifyPackagesEdit {
+    padding: 0px;
+    margin: 0px;
+    color: #6ad0ff;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#verifyPackagesEdit:hover{
+    color: #598ba2;
+}
+#verifyPackagesTBI {
+    padding-left: 20px;
+}
+#verifyPackagesTBR {
+    padding-left: 20px;
+}
+
+
 /*Fifth Page Elements*/
 #finishHeader {
     color: rgb(220, 220, 220);

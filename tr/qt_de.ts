@@ -49,7 +49,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="427"/>
         <source>Desktop</source>
-        <translation>Schreibtisch</translation>
+        <translation>Desktop</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="428"/>
@@ -59,7 +59,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="429"/>
         <source>Downloads</source>
-        <translation>Heruntergeladene Dateien</translation>
+        <translation>Downloads</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="430"/>
@@ -104,7 +104,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="996"/>
         <source>Here you can set which wallpaper you want.</source>
-        <translation>Hier können Sie Ihren Schreibtischhintergrund auswählen.</translation>
+        <translation>Hier können Sie Ihren Hintergrund auswählen.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1394"/>
@@ -119,7 +119,8 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1407"/>
         <source>Launch System Settings</source>
-        <translation>Systemeinstellungen starten</translation>
+        <translation>Systemeinstellungen 
+bearbeiten</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1400"/>
@@ -150,7 +151,7 @@ Some of Manjaro's features are:
 For newcomers, a user-friendly installer is provided, and the system itself is designed to work fully straight out of the box. For more experienced, and adventurous users, Manjaro also offers the configurability and versatility to be shaped and moulded in every respect to suit personal taste and preference.
 &lt;br&gt;&lt;br&gt;
 Over these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.</source>
-        <translation>&lt;b&gt;Manjaro&lt;/b&gt; ist eine schnelle und schlanke Distribution, die leicht zu bedienen ist und die das Beste aus dem populären Arch Linux herausholt. Entwickelt in Deutschland, Frankreich und Österreich, Manjaro ist Manjaro sowohl für Anfänger als auch für Experten geeignet.
+        <translation>&lt;b&gt;Manjaro&lt;/b&gt; ist eine schnelle und schlanke Distribution, die leicht zu bedienen ist und die das Beste aus dem populären Arch Linux herausholt. Entwickelt in Deutschland, Frankreich und Österreich, ist Manjaro sowohl für Anfänger als auch für Experten geeignet.
 &lt;br&gt;&lt;br&gt;
 Herausragende Eigenschaften von Manjaro sind:
 &lt;ul&gt;
