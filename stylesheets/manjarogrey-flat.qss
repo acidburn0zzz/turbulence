@@ -1044,6 +1044,189 @@ QTabBar::tab:selected {
     border: 1px solid #49525b;
 }
 
+/*Verify page Elements*/
+#verifyHeader {
+    color: rgb(167, 167, 167);
+    font: 20pt "Sans Serif";
+}
+#verifyFinishMenu {
+    color: rgb(167, 167, 167);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#verifyFinishMenu:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#verifyMenu {
+    color: rgb(167, 167, 167);
+    font: 13pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 20px 0px 20px;
+}
+#verifyMenu:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#verifyCancel {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#verifyCancel:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#verifyForward {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#verifyForward:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#verifyPrevious {
+    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0,);
+    border: none;
+    padding:0px 15px 0px 15px;
+}
+#verifyPrevious:hover {
+    background-color: rgb(7, 7, 7);
+    color: #4C7D24;
+}
+#verifyDesc {
+    color: rgb(167, 167, 167);
+    font: 10pt "Sans Serif";
+}
+#verifySettingsContents {
+    background-color: rgb(17, 17, 17);
+    color: rgb(167, 167, 167);
+}
+#verifyFoldersEdit {
+    padding: 0px;
+    margin: 0px;
+    color: #4C7D24;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#verifyFoldersEdit:hover{
+    color: #71B53A;
+}
+#verifyFolders {
+    color: rgb(167, 167, 167);
+}
+#verifyFoldersDesktop {
+    padding-left: 20px;
+    color: rgb(167, 167, 167);
+}
+#verifyFoldersDocuments {
+    padding-left: 20px;
+    color: rgb(167, 167, 167);
+}
+#verifyFoldersDownloads {
+    padding-left: 20px;
+    color: rgb(167, 167, 167);
+}
+#verifyFoldersMusic {
+    padding-left: 20px;
+    color: rgb(167, 167, 167);
+}
+#verifyFoldersPublic {
+    padding-left: 20px;
+    color: rgb(167, 167, 167);
+}
+#verifyFoldersPictures {
+    padding-left: 20px;
+    color: rgb(167, 167, 167);
+}
+#verifyFoldersTemplates {
+    padding-left: 20px;
+    color: rgb(167, 167, 167);
+}
+#verifyFoldersVideo {
+    padding-left: 20px;
+    color: rgb(167, 167, 167);
+}
+#verifyThemes {
+    color: rgb(167, 167, 167);
+}
+#verifyThemesEdit {
+    padding: 0px;
+    margin: 0px;
+    color: #4C7D24;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#verifyThemesEdit:hover{
+    color: #71B53A;
+}
+#verifyThemesTheme {
+    padding-left: 20px;
+    color: rgb(167, 167, 167);
+}
+#verifyTint {
+    color: rgb(167, 167, 167);
+}
+#verifyTintEdit {
+    padding: 0px;
+    margin: 0px;
+    color: #4C7D24;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#verifyTintEdit:hover{
+    color: #71B53A;
+}
+#verifyTintPosition {
+    padding-left: 20px;
+    color: rgb(167, 167, 167);
+}
+#verifyWallpaper {
+    color: rgb(167, 167, 167);
+}
+#verifyWallpaperEdit {
+    padding: 0px;
+    margin: 0px;
+    color: #4C7D24;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#verifyWallpaperEdit:hover{
+    color: #71B53A;
+}
+#verifyWallpaperName {
+    padding-left: 20px;
+    color: rgb(167, 167, 167);
+}
+#verifyPackages {
+    color: rgb(167, 167, 167);
+}
+#verifyPackagesEdit {
+    padding: 0px;
+    margin: 0px;
+    color: #4C7D24;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#verifyPackagesEdit:hover{
+    color: #71B53A;
+}
+#verifyPackagesTBI {
+    padding-left: 20px;
+    color: rgb(167, 167, 167);
+}
+#verifyPackagesTBR {
+    padding-left: 20px;
+    color: rgb(167, 167, 167);
+}
+
 /*Fifth Page Elements*/
 #finishHeader {
     color: rgb(167, 167, 167);

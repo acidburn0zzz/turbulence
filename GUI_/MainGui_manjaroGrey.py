@@ -1085,9 +1085,6 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesMultimediaSupportCheck = QtWidgets.QCheckBox(self.packagesExtras)
             self.packagesPrinterSupportPic = QtWidgets.QLabel(self.packagesExtras)
             self.packagesPrinterSupportCheck = QtWidgets.QCheckBox(self.packagesExtras)
-            self.packagesInstall = QtWidgets.QWidget()
-            self.packagesInstallBack = QtWidgets.QLabel(self.packagesInstall)
-            self.packagesInstallButton = QtWidgets.QPushButton(self.packagesInstall)
             self.packagesCheckConnection = QtWidgets.QPushButton(self.Packages)
         
             fifthPageWidgets = {
@@ -1155,8 +1152,6 @@ class Ui_MainWindow(QtCore.QObject):
                 "packagesMultimediaSupportCheck": [self.packagesMultimediaSupportCheck, 130, 90, 111, 34, "packagesMultimediaSupportCheck", None],
                 "packagesPrinterSupportPic": [self.packagesPrinterSupportPic, 270, 10, 71, 71, "packagesPrinterSupportPic" , "/usr/share/turbulence/images/manjaro-grey/packages/extras/printersupport.png"],
                 "packagesPrinterSupportCheck": [self.packagesPrinterSupportCheck, 260, 90, 111, 41, "packagesPrinterSupportCheck", None],
-                "packagesInstallBack": [self.packagesInstallBack, -20, -10, 761, 241, "packagesInstallBack", None],
-                "packagesInstallButton": [self.packagesInstallButton, 270, 95, 150, 30, "packagesInstallButton", None],
                 "packagesCheckConnection": [self.packagesCheckConnection, 160, 400, 550, 60, "packagesCheckConnection", None]
             }
             
@@ -1175,13 +1170,14 @@ class Ui_MainWindow(QtCore.QObject):
         
             for widgetName, widgetSettings in fifthPageLayouts.items():
                 layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7])
-            
+
+            self.internetAccess = False #This is the default. It will be changed to true if the user has an internet connection
+
             #Adds any custom widgets.
             self.packagesPrevious.setFlat(True)
             self.packagesForward.setFlat(True)
             self.packagesCancel.setFlat(True)
             self.packagesCheckConnection.setFlat(True)
-            self.packagesInstallButton.setFlat(True)
             
             self.packagesDesc.setWordWrap(True)
         
@@ -1189,7 +1185,6 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesForward.setFocusPolicy(QtCore.Qt.NoFocus)
             self.packagesCancel.setFocusPolicy(QtCore.Qt.NoFocus)
             self.packagesCheckConnection.setFocusPolicy(QtCore.Qt.NoFocus)
-            self.packagesInstallButton.setFocusPolicy(QtCore.Qt.NoFocus)
         
             self.packagesPrevious.setIcon(previousIcon)
             self.packagesForward.setIcon(forwardIcon)
@@ -1203,14 +1198,12 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesGraphics.setObjectName("Graphics")
             self.packagesAccessories.setObjectName("Accessories")
             self.packagesExtras.setObjectName("Extras")
-            self.packagesInstall.setObjectName("Install")
         
             self.packagesTabs.addTab(self.packagesNetwork, "")
             self.packagesTabs.addTab(self.packagesMultimedia, "")
             self.packagesTabs.addTab(self.packagesGraphics, "")
             self.packagesTabs.addTab(self.packagesAccessories, "")
             self.packagesTabs.addTab(self.packagesExtras, "")
-            self.packagesTabs.addTab(self.packagesInstall, "")
             
             self.packagesMenuContainerHLayout.addWidget(self.packagesMenu)
             self.packagesMenuContainerHLayout.addWidget(self.packagesArrow)
@@ -1234,13 +1227,12 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesForward.clicked.connect(self.handleButtonNextVerify)
             self.packagesMenuFinish.clicked.connect(self.handleButtonNextVerify)
             self.packagesCheckConnection.clicked.connect(self.checkInternetStatus)
-            self.packagesInstallButton.clicked.connect(self.handleButtonInstallPackages)
             
             #Fifth page            
             self.packagesHeader.setText(_translate("MainWindow", "Packages"))
             self.packagesMenu.setText(_translate("MainWindow", "Packages"))
             self.packagesMenuFinish.setText(_translate("MainWindow", "Verify"))
-            self.packagesDesc.setText(_translate("MainWindow", "Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or unselect any packages you want to add or remove. Packages that are installed will be auto-selected.\n\nWhen you are done, go to the Install tab, and click \"Install\"."))
+            self.packagesDesc.setText(_translate("MainWindow", "Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or unselect any packages you want to add or remove. Packages that are installed will be auto-selected."))
             self.packagesPrevious.setText(_translate("MainWindow", "Previous"))
             self.packagesForward.setText(_translate("MainWindow", "Forward"))
             self.packagesCancel.setText(_translate("MainWindow", "Cancel"))
@@ -1304,8 +1296,6 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesPrinterSupportPic.setToolTip(_translate("MainWindow", "Installs manjaro-printer, and CUPS to enable printers"))
             self.packagesPrinterSupportCheck.setText("Printer \nSupport")
             self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesExtras), _translate("MainWindow", "Extras"))
-            self.packagesTabs.setTabText(self.packagesTabs.indexOf(self.packagesInstall), _translate("MainWindow", "Install"))
-            self.packagesInstallButton.setText(_translate("MainWindow", "Install"))
         
         
         #Adds the verify page
@@ -1774,6 +1764,7 @@ class Ui_MainWindow(QtCore.QObject):
                 self.verifyWallpaperName.setText(_translate("MainWindow", "Name: Nothing to do"))
                 
         if openboxStatus:
+                    
             packagesMFI = {
                 "arora": self.packagesAroraCheck, 
                 "chromium": self.packagesChromiumCheck, 
@@ -1806,6 +1797,9 @@ class Ui_MainWindow(QtCore.QObject):
             }
             packagesTBIList = []
             packagesTBRList = []
+            packagesTBIListCleaned = []
+            packagesTBNList = []
+            packagesTBRListCleaned = []
             for packageName, packageCheck in packagesMFI.items():
                 if packageCheck.isChecked():
                     packagesTBIList.append(packageName)
@@ -1816,8 +1810,19 @@ class Ui_MainWindow(QtCore.QObject):
             packagesTBNList = list(set(packagesList) - set(packagesTBRList)) #Packages that don't need to be removed or installed (neutral).
             packagesTBRListCleaned = list(set(packagesList) - set(packagesTBNList)) #Packages to be removed        
             
-            self.verifyPackagesTBI.setText(_translate("MainWindow", "To be installed: ") + " ".join(str(packageName) for packageName in packagesTBIListCleaned))
-            self.verifyPackagesTBR.setText(_translate("MainWindow", "To be removed: ") + " ".join(str(packageName) for packageName in packagesTBRListCleaned))
+            if self.internetAccess:
+                if packagesTBIListCleaned:
+                    self.verifyPackagesTBI.setText(_translate("MainWindow", "To be installed: ") + ", ".join(str(packageName) for packageName in packagesTBIListCleaned))
+                else:
+                    self.verifyPackagesTBI.setText(_translate("MainWindow", "To be installed: Nothing to do"))
+                if packagesTBRListCleaned:
+                    self.verifyPackagesTBR.setText(_translate("MainWindow", "To be removed: ") + ", ".join(str(packageName) for packageName in packagesTBRListCleaned))
+                else:
+                    self.verifyPackagesTBR.setText(_translate("MainWindow", "To be removed: Nothing to do"))
+            else: 
+                self.verifyPackagesTBI.setText(_translate("MainWindow", "To be installed: Nothing to do"))
+                self.verifyPackagesTBR.setText(_translate("MainWindow", "To be removed: Nothing to do"))
+                    
         
         index = self.stackedWidget.currentIndex() + 1
         if index < self.stackedWidget.count():
@@ -1968,9 +1973,10 @@ class Ui_MainWindow(QtCore.QObject):
         if index < self.stackedWidget.count():
             self.stackedWidget.setCurrentIndex(index)
             logger.writeLog('proceedToFolders')
-	    
+            
     def checkInternetStatus(self):
         if packages.checkInternet():
+            self.internetAccess = True
             self.packagesTabs.tabBar().setEnabled(True)
             self.packagesCheckConnection.lower()
             self.packagesNotActive.lower()
@@ -1978,6 +1984,8 @@ class Ui_MainWindow(QtCore.QObject):
         else:
             self.packagesCheckConnection.setText(_translate("MainWindow", "Failed. Please Try Again.", None))
             logger.writeLog("checkInternetStatusFailed")
+            self.internetAccess = False
+            return 0
         
         packagesMFI = {
             "arora": self.packagesAroraCheck, 
