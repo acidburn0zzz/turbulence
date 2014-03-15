@@ -34,7 +34,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1329"/>
         <source>Themes</source>
-        <translation>Erscheinungsbild</translation>
+        <translation>Themes</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1398"/>
@@ -94,7 +94,7 @@
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1325"/>
         <source>Wallpapers</source>
-        <translation>Schreibtischhintergründe</translation>
+        <translation>Wallpapers</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1397"/>
@@ -157,10 +157,10 @@ Herausragende Eigenschaften von Manjaro sind:
 &lt;ul&gt;
 &lt;li&gt;Geschwindigkeit, Leistung und Effizienz&lt;/li&gt;
 &lt;li&gt;Zugang zu brandaktueller Software&lt;/li&gt;
-&lt;li&gt;Ein &quot;Rolling Release&quot; Entwicklungsmodell welches ein immer aktuelles System gewährleistet, ohne dass das Betriebssystem neu installiet werden müsste.&lt;/li&gt;
+&lt;li&gt;Ein &quot;Rolling Release&quot; Entwicklungsmodell, welches ein immer aktuelles System gewährleistet, ohne dass das Betriebssystem neu installiert werden muss.&lt;/li&gt;
 &lt;li&gt;Zugriff auf das Arch Benutzerrepositorium (AUR)&lt;/li&gt;
 &lt;/ul&gt;
-Für diejenigen, die neu zu Linux kommen, gibt es ein benutzerfreundliches Installationsprogramm. Das System selbst ist darauf ausgelegt, ohne weiteres Zutun des Benutzers zu funktionieren. Für fortgeschrittene oder abenteuerlustigere Benutzer bietet Manjaro aber auch die Konfigurierbarkeit und Vielseitigkeit um Manjaro in jeder Hinsicht an den persönlichen Geschmack und die Vorlieben anzupassen.
+Für diejenigen, die neu zu Linux kommen, gibt es ein benutzerfreundliches Installationsprogramm. Das System selbst ist darauf ausgelegt, ohne weiteres Zutun des Benutzers zu funktionieren. Für fortgeschrittene oder abenteuerlustigere Benutzer bietet Manjaro aber auch die Konfigurierbarkeit und Vielseitigkeit, um Manjaro in jeder Hinsicht an den persönlichen Geschmack und die Vorlieben anzupassen.
 &lt;br&gt;&lt;br&gt;
 Mit den nächsten Schritten wird Turbulence Ihnen helfen, Ihr neues Manjaro-Betriebssystem nach Ihren Bedürfnissen anzupassen.</translation>
     </message>
@@ -172,7 +172,7 @@ Mit den nächsten Schritten wird Turbulence Ihnen helfen, Ihr neues Manjaro-Betr
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="418"/>
         <source>Here, you can choose which folders you want in your home directory. You have a choice from some of the most commonly used folders.</source>
-        <translation>Hier können Sie die Ordner bestimmen, welche sich in Ihrem Heimat-Verzeichnis befinden sollen. Sie haben die Auswahl unter einigen häufig benutzten Ordnern.</translation>
+        <translation>Hier können Sie die Ordner bestimmen, welche sich in Ihrem Home-Verzeichnis befinden sollen. Sie haben die Auswahl unter einigen häufig benutzten Ordnern.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="605"/>
@@ -395,7 +395,7 @@ oberflächen in einem Client/Server-Modell</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
-        <translation>Alle Einstellungen wurden übernommen. Wenn Sie wollen, können Sie jetzt anfangen, Manjaro zu genießen. Sie können sich die unten verlinkten Programme ansehen.Es empfiehlt sich darüberhinaus, der Manjaro-Gemeinschaft beizutreten wenn Sie dies noch nicht getan haben sollten.</translation>
+        <translation>Alle Einstellungen wurden übernommen. Wenn Sie wollen, können Sie jetzt anfangen, Manjaro zu genießen. Sie können sich die unten verlinkten Programme ansehen. Es empfiehlt sich darüber hinaus, der Manjaro-Gemeinschaft beizutreten, wenn Sie dies noch nicht getan haben sollten.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1401"/>
@@ -405,7 +405,7 @@ oberflächen in einem Client/Server-Modell</translation>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1406"/>
         <source>Control panel to edit various aspects of the KDE desktop, and more.</source>
-        <translation>Bedienfeld um unter Anderem verschiedene Einstellungen am KDE Desktop vorzunehmen.</translation>
+        <translation>Bedienfeld, um unter Anderem verschiedene Einstellungen am KDE Desktop vorzunehmen.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1410"/>

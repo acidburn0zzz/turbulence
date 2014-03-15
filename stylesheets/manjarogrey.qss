@@ -1155,16 +1155,6 @@ QTabBar::tab:selected {
     color: rgb(220, 220, 220);
     font: 20pt "Sans Serif";
 }
-#finishWallpaperMenu {
-    color: rgb(220, 220, 220);
-    font: 12pt "Sans Serif";
-    background-color: rgba(0, 0, 0, 0,);
-    border: none;
-    padding:0px 20px 0px 20px;
-}
-#finishWallpaperMenu:hover {
-    border: 1px solid #49525b;
-}
 #finishMenu {
     color: rgb(220, 220, 220);
     font: 13pt "Sans Serif";
@@ -1191,15 +1181,6 @@ QTabBar::tab:selected {
     padding:0px 15px 0px 15px;
 }
 #finishForward:hover {
-    border: 1px solid #49525b;
-}
-#finishPrevious {
-    color: rgb(220, 220, 220);
-    background-color: rgba(0, 0, 0, 0,);
-    border: none;
-    padding:0px 15px 0px 15px;
-}
-#finishPrevious:hover {
     border: 1px solid #49525b;
 }
 #finishDesc {

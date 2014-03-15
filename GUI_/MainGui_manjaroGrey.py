@@ -251,6 +251,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.folderThemes.setText(_translate("MainWindow", "Tint 2"))
         else:
             self.folderThemes.setText(_translate("MainWindow", "Verify"))
+            
 
         #widget dictionary.
         secondPageWidgets = {
@@ -307,6 +308,7 @@ class Ui_MainWindow(QtCore.QObject):
         for widgetName, widgetSettings in secondPageLayouts.items():
             layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7], widgetSettings[8])
         
+            
         #defines the custom settings
         self.folderPrevious.setIcon(previousIcon)
         self.folderCancel.setIcon(cancelIcon)
@@ -371,10 +373,16 @@ class Ui_MainWindow(QtCore.QObject):
         self.stackedWidget.addWidget(self.folders)
         
         #Handles the button clicks.
-        self.folderThemes.clicked.connect(self.handleButtonNext)
         self.folderPrevious.clicked.connect(self.handleButtonPrev)
-        self.folderForward.clicked.connect(self.handleButtonNext)
         self.folderCancel.clicked.connect(MainWindow.close)
+        
+        #Checks if you need the verify function yet. Hopefully not, because otherwise you're not on OB or KDE.... ;)
+        if not kwinStatus and not tintStatus and not nitrogenStatus and not plasmaStatus and not openboxStatus:
+            self.folderThemes.clicked.connect(self.handleButtonNextVerify)
+            self.folderForward.clicked.connect(self.handleButtonNextVerify)
+        else:
+            self.folderThemes.clicked.connect(self.handleButtonNext)
+            self.folderForward.clicked.connect(self.handleButtonNext)
         
         #Translates, or sets the text for all the widgets
         self.folderHeader.setText(_translate("MainWindow", "Folders"))
@@ -554,10 +562,18 @@ class Ui_MainWindow(QtCore.QObject):
             self.stackedWidget.addWidget(self.Theme)
             
             #Hooks up the button handlers
-            self.themeMenuWallpapers.clicked.connect(self.handleButtonNext)
+            
             self.themeCancel.clicked.connect(MainWindow.close)
-            self.themeForward.clicked.connect(self.handleButtonNext)
             self.themePrevious.clicked.connect(self.handleButtonPrev)
+            
+            #Checks if you need the verify function yet. Hopefully not, because otherwise you're not on OB or KDE.... ;)
+            if not tintStatus and not nitrogenStatus and not plasmaStatus and not openboxStatus:
+                self.themeMenuWallpapers.clicked.connect(self.handleButtonNextVerify)
+                self.themeForward.clicked.connect(self.handleButtonNextVerify)
+            else:
+                self.themeMenuWallpapers.clicked.connect(self.handleButtonNext)
+                self.themeForward.clicked.connect(self.handleButtonNext)
+                
             
             #Translates the text
             self.themeHeader.setText(_translate("MainWindow", "Themes"))
@@ -712,10 +728,16 @@ class Ui_MainWindow(QtCore.QObject):
             self.stackedWidget.addWidget(self.Tint)
             
             #Handles button clicks
-            self.tintMenuWallpapers.clicked.connect(self.handleButtonNext)
             self.tintPrevious.clicked.connect(self.handleButtonPrev)
-            self.tintForward.clicked.connect(self.handleButtonNext)
             self.tintCancel.clicked.connect(MainWindow.close)
+            
+            #Checks if you need the verify function yet. Hopefully not, because otherwise you're not on OB or KDE.... ;)
+            if not nitrogenStatus and not plasmaStatus and not openboxStatus:
+                self.tintMenuWallpapers.clicked.connect(self.handleButtonNextVerify)
+                self.tintForward.clicked.connect(self.handleButtonNextVerify)
+            else:
+                self.tintMenuWallpapers.clicked.connect(self.handleButtonNext)
+                self.tintForward.clicked.connect(self.handleButtonNext)
             
             #Sets text and translates widgets
             self.tintHeader.setText(_translate("MainWindow", "Tint 2"))
@@ -948,10 +970,16 @@ class Ui_MainWindow(QtCore.QObject):
             self.stackedWidget.addWidget(self.Wallpaper)
             
             #Handles the button clicks
-            self.wallpaperMenuFinish.clicked.connect(self.handleButtonNext
             self.wallpaperCancel.clicked.connect(MainWindow.close)
             self.wallpaperPrevious.clicked.connect(self.handleButtonPrev)
-            self.wallpaperForward.clicked.connect(self.handleButtonNext)
+            
+            #Checks if you need the verify function yet. Hopefully not, because otherwise you're not on OB or KDE.... ;)
+            if not openboxStatus:
+                self.wallpaperMenuFinish.clicked.connect(self.handleButtonNextVerify)
+                self.wallpaperForward.clicked.connect(self.handleButtonNextVerify)
+            else:
+                self.wallpaperMenuFinish.clicked.connect(self.handleButtonNext)
+                self.wallpaperForward.clicked.connect(self.handleButtonNext)
        
             #Sets text, or translates widgets
             self.wallpaperHeader.setText(_translate("MainWindow", "Wallpapers"))
@@ -1203,8 +1231,8 @@ class Ui_MainWindow(QtCore.QObject):
             #Handles button clicks
             self.packagesCancel.clicked.connect(MainWindow.close)
             self.packagesPrevious.clicked.connect(self.handleButtonPrev)
-            self.packagesForward.clicked.connect(self.handleButtonNext)
-            self.packagesMenuFinish.clicked.connect(self.handleButtonNext)
+            self.packagesForward.clicked.connect(self.handleButtonNextVerify)
+            self.packagesMenuFinish.clicked.connect(self.handleButtonNextVerify)
             self.packagesCheckConnection.clicked.connect(self.checkInternetStatus)
             self.packagesInstallButton.clicked.connect(self.handleButtonInstallPackages)
             
@@ -1338,7 +1366,7 @@ class Ui_MainWindow(QtCore.QObject):
             
             self.verifyThemesEdit.setText(_translate("MainWindow", "[Edit]"))
             self.verifyThemes.setText(_translate("MainWindow", "Themes"))
-            self.verifyThemesTheme.setText(_translate("MainWindow", "KWIN Theme:"))
+            self.verifyThemesTheme.setText(_translate("MainWindow", "KWIN Theme: "))
             
             self.verifyThemesEdit.clicked.connect(self.handleButtonChangeTwo)
         if tintStatus:
@@ -1361,7 +1389,7 @@ class Ui_MainWindow(QtCore.QObject):
             
             self.verifyTintEdit.setText(_translate("MainWindow", "[Edit]"))
             self.verifyTint.setText(_translate("MainWindow", "Tint"))
-            self.verifyTintPosition.setText(_translate("MainWindow", "Position:"))
+            self.verifyTintPosition.setText(_translate("MainWindow", "Position: "))
             
             if kwinStatus:
                 self.verifyTintEdit.clicked.connect(self.handleButtonChangeThree)
@@ -1387,7 +1415,7 @@ class Ui_MainWindow(QtCore.QObject):
             
             self.verifyWallpaperEdit.setText(_translate("MainWindow", "[Edit]"))
             self.verifyWallpaper.setText(_translate("MainWindow", "Wallpaper"))
-            self.verifyWallpaperName.setText(_translate("MainWindow", "Name:"))
+            self.verifyWallpaperName.setText(_translate("MainWindow", "Name: "))
             
             if kwinStatus and tintStatus:
                 self.verifyWallpaperEdit.clicked.connect(self.handleButtonChangeFour)
@@ -1418,8 +1446,9 @@ class Ui_MainWindow(QtCore.QObject):
             
             self.verifyPackagesEdit.setText(_translate("MainWindow", "[Edit]"))
             self.verifyPackages.setText(_translate("MainWindow", "Packages"))
-            self.verifyPackagesTBI.setText(_translate("MainWindow", "To be installed:"))
-            self.verifyPackagesTBR.setText(_translate("MainWindow", "To be removed:"))
+            self.verifyPackagesTBI.setText(_translate("MainWindow", "To be installed: "))
+            self.verifyPackagesTBR.setText(_translate("MainWindow", "To be removed: "))
+            
             if nitrogenStatus or plasmaStatus and kwinStatus and tintStatus:
                 self.verifyPackagesEdit.clicked.connect(self.handleButtonChangeFive)
             elif nitrogenStatus or plasmaStatus and kwinStatus or tintStatus:
@@ -1513,6 +1542,7 @@ class Ui_MainWindow(QtCore.QObject):
         self.verifyPrevious.clicked.connect(self.handleButtonPrev)
         self.verifyCancel.clicked.connect(MainWindow.close)
         self.verifyFoldersEdit.clicked.connect(self.handleButtonChangeOne)
+        self.verifyForward.clicked.connect(self.handleButtonFinish)
         
         #Translates the widgets, or sets text
         self.verifyHeader.setText(_translate("MainWindow", "Verify your settings"))
@@ -1543,15 +1573,12 @@ class Ui_MainWindow(QtCore.QObject):
         self.finishHeader = QtWidgets.QLabel(self.Finish)
         self.finishMenuContainer = QtWidgets.QWidget(self.Finish)
         self.finishMenuContainerHLayout = QtWidgets.QHBoxLayout(self.finishMenuContainer)
-        self.finishWallpaperMenu = QtWidgets.QPushButton(self.finishMenuContainer)
         self.finishMenu = QtWidgets.QPushButton(self.finishMenuContainer)
-        self.finishArrow = QtWidgets.QLabel(self.finishMenuContainer)
         self.finishMenuSpacer = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.finishFooterContainer = QtWidgets.QWidget(self.Finish)
         self.finishFooterContainerHLayout = QtWidgets.QHBoxLayout(self.finishFooterContainer)
         self.finishCancel = QtWidgets.QPushButton(self.finishFooterContainer)
         self.finishForward = QtWidgets.QPushButton(self.finishFooterContainer)
-        self.finishPrevious = QtWidgets.QPushButton(self.finishFooterContainer)
         self.finishFooterSpacer = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.finishDesc = QtWidgets.QLabel(self.Finish)
         self.finishSystemSettings = QtWidgets.QLabel(self.Finish)
@@ -1562,17 +1589,6 @@ class Ui_MainWindow(QtCore.QObject):
         self.finishHelpPic = QtWidgets.QLabel(self.Finish)
         self.finishHelpDesc = QtWidgets.QLabel(self.Finish)
         self.finishHelpButton = QtWidgets.QPushButton(self.Finish)
-        
-        if openboxStatus:
-            self.finishWallpaperMenu.setText(_translate("MainWindow", "Packages"))
-        elif nitrogenStatus or plasmaStatus:
-            self.finishWallpaperMenu.setText(_translate("MainWindow", "Wallpapers"))
-        elif tintStatus:
-            self.finishWallpaperMenu.setText(_translate("MainWindow", "Tint 2"))
-        elif kwinStatus:
-            self.finishWallpaperMenu.setText(_translate("MainWindow", "Themes"))
-        else:
-            self.finishWallpaperMenu.setText(_translate("MainWindow", "Folders"))
          
         finalPageWidgets = {
             "finishHeader": [self.finishHeader, 80, 20, 600, 51, "finishHeader", None],
@@ -1588,11 +1604,8 @@ class Ui_MainWindow(QtCore.QObject):
         }
 
         fifthPageLayouts = {
-            "finishWallpaperMenu": [self.finishWallpaperMenu, 0, 39, None, None, True, True, False],
-            "finishArrow": [self.finishArrow, None, None, 21, 500, False, False, "/usr/share/turbulence/images/manjaro-grey/menu-arrow-reverse.png"],
             "finishMenu": [self.finishMenu, 0, 39, None, None, True, True, False],
             "finishForward": [self.finishForward, 0, 34, None, None, True, True, False],
-            "finishPrevious": [self.finishPrevious, 0, 34, None, None, True, True, False],
             "finishCancel": [self.finishCancel, 0, 34, None, None, True, True, False]
         }
 	
@@ -1616,19 +1629,14 @@ class Ui_MainWindow(QtCore.QObject):
         
         self.finishCancel.setIcon(cancelIcon)
         self.finishForward.setIcon(finishIcon)
-        self.finishPrevious.setIcon(previousIcon)
         self.finishForward.setIconSize(QtCore.QSize(16, 18))
-        self.finishPrevious.setIconSize(QtCore.QSize(28, 30))
         self.finishCancel.setIconSize(QtCore.QSize(16, 16))
         
-        self.finishMenuContainerHLayout.addWidget(self.finishWallpaperMenu)
-        self.finishMenuContainerHLayout.addWidget(self.finishArrow)
         self.finishMenuContainerHLayout.addWidget(self.finishMenu)
         self.finishMenuContainerHLayout.addItem(self.finishMenuSpacer)
             
         self.finishFooterContainerHLayout.addWidget(self.finishCancel)
         self.finishFooterContainerHLayout.addItem(self.finishFooterSpacer)
-        self.finishFooterContainerHLayout.addWidget(self.finishPrevious)
         self.finishFooterContainerHLayout.addWidget(self.finishForward)
             
         self.finishMenuContainer.setGeometry(QtCore.QRect(20, 83, 511, 50))
@@ -1637,10 +1645,8 @@ class Ui_MainWindow(QtCore.QObject):
         self.stackedWidget.addWidget(self.Finish)
         
         #Handles the button click
-        self.finishWallpaperMenu.clicked.connect(self.handleButtonPrev)
         self.finishHelpButton.clicked.connect(self.handleButtonLaunchHelp)
         self.finishCancel.clicked.connect(MainWindow.close)
-        self.finishPrevious.clicked.connect(self.handleButtonPrev)
         self.finishForward.clicked.connect(MainWindow.close)
         
         #Translates the widgets, or sets text
@@ -1648,7 +1654,6 @@ class Ui_MainWindow(QtCore.QObject):
         self.finishMenu.setText(_translate("MainWindow", "Finish"))
         self.finishCancel.setText(_translate("MainWindow", "Cancel"))
         self.finishForward.setText(_translate("MainWindow", "Finish"))
-        self.finishPrevious.setText(_translate("MainWindow", "Previous"))
         self.finishDesc.setText(_translate("MainWindow", "All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs and links below. Also, if you haven\'t already, make sure to join the Manjaro community as well!"))
         self.finishHelpHead.setText(_translate("MainWindow", "Help"))
         self.finishHelpDesc.setText(_translate("MainWindow", "For help and support, you can visit Manjaro.org for access to a terrific forum, wiki, and IRC!"))
@@ -1674,6 +1679,7 @@ class Ui_MainWindow(QtCore.QObject):
 
 
         #sets the current checked boxes and status. It's at the bottom to be out of the way.
+        global neededDirs #This needs to be global because it's later used in handleButtonNextVerify
         neededDirs = folders.findKeyDir('active')
         neededFolders = {
             "DESKTOP": [self.folderActive1, self.folderHeader1],
@@ -1696,17 +1702,130 @@ class Ui_MainWindow(QtCore.QObject):
                             folderWidgets[1].setText(_translate("MainWindow", "Status: Active", None))
                             break
         
+        global packagesList #Snags the current list of packages.
+        packagesList = packages.getCurrentPackages()
         
-    #Moves to next page in the stacked widget.
-    def handleButtonNext(self):
+        
+    def handleButtonNextVerify(self):
+        checkboxDirectoryPairs = {
+            self.folderActive1: ["DESKTOP", "Desktop:", self.verifyFoldersDesktop],
+            self.folderActive2: ["DOCUMENTS", "Documents:", self.verifyFoldersDocuments],
+            self.folderActive3: ["DOWNLOAD", "Download:", self.verifyFoldersDownloads],
+            self.folderActive4: ["MUSIC", "Music:", self.verifyFoldersMusic],
+            self.folderActive5: ["PICTURES", "Pictures:", self.verifyFoldersPictures],
+            self.folderActive6: ["PUBLICSHARE", "Public:", self.verifyFoldersPublic],
+            self.folderActive7: ["TEMPLATES", "Templates:", self.verifyFoldersTemplates],
+            self.folderActive8: ["VIDEOS", "Videos:", self.verifyFoldersVideo]
+        }
+        
+        for checkbox, directoryPoint in checkboxDirectoryPairs.items():
+            if checkbox.isChecked() and directoryPoint[0] not in neededDirs:
+                directoryPoint[2].setText(_translate("MainWindow", directoryPoint[1] + " Create"))
+            elif checkbox.isChecked() and directoryPoint[0] in neededDirs:
+                directoryPoint[2].setText(_translate("MainWindow", directoryPoint[1] + " Nothing to do"))
+            elif not checkbox.isChecked() and directoryPoint[0] in neededDirs:
+                directoryPoint[2].setText(_translate("MainWindow", directoryPoint[1] + " Delete"))
+            elif not checkbox.isChecked() and directoryPoint[0] not in neededDirs:
+                directoryPoint[2].setText(_translate("MainWindow", directoryPoint[1] + " Nothing to do"))
+        
+        if kwinStatus:
+            if self.themeRadio1.isChecked():
+                self.verifyThemesTheme.setText(_translate("MainWindow", "KWIN Theme: ") + str(self.themeRadio1.text()))
+            elif self.themeRadio2.isChecked():
+                self.verifyThemesTheme.setText(_translate("MainWindow", "KWIN Theme: ") + str(self.themeRadio2.text()))
+            elif self.themeRadio3.isChecked():
+                self.verifyThemesTheme.setText(_translate("MainWindow", "KWIN Theme: ") + str(self.themeRadio3.text()))
+            elif self.themeRadio4.isChecked():
+                self.verifyThemesTheme.setText(_translate("MainWindow", "KWIN Theme: ") + str(self.themeRadio4.text()))
+            else:
+                self.verifyThemesTheme.setText(_translate("MainWindow", "KWIN Theme: Nothing to do"))
+                
+        if tintStatus:
+            if self.tintPositionRadio1.isChecked():
+                self.verifyTintPosition.setText(_translate("MainWindow", "Position: ") + str(self.tintPositionRadio1.text()))
+            elif self.tintPositionRadio2.isChecked():
+                self.verifyTintPosition.setText(_translate("MainWindow", "Position: ") + str(self.tintPositionRadio2.text()))
+            elif self.tintPositionRadio3.isChecked():
+                self.verifyTintPosition.setText(_translate("MainWindow", "Position: ") + str(self.tintPositionRadio3.text()))
+            elif self.tintPositionRadio4.isChecked():
+                self.verifyTintPosition.setText(_translate("MainWindow", "Position: ") + str(self.tintPositionRadio4.text()))
+            else:
+                self.verifyTintPosition.setText(_translate("MainWindow", "Position: Nothing to do"))
+                
+        if nitrogenStatus or plasmaStatus:
+            if self.wallpaperChoice1.isChecked():
+                self.verifyWallpaperName.setText(_translate("MainWindow", "Name: ") + str(self.wallpaperChoice1.text()))
+            elif self.wallpaperChoice2.isChecked():
+                self.verifyWallpaperName.setText(_translate("MainWindow", "Name: ") + str(self.wallpaperChoice2.text()))
+            elif self.wallpaperChoice3.isChecked():
+                self.verifyWallpaperName.setText(_translate("MainWindow", "Name: ") + str(self.wallpaperChoice3.text()))
+            elif self.wallpaperChoice4.isChecked():
+                self.verifyWallpaperName.setText(_translate("MainWindow", "Name: ") + str(self.wallpaperChoice4.text()))
+            elif self.wallpaperChoice5.isChecked():
+                self.verifyWallpaperName.setText(_translate("MainWindow", "Name: ") + str(self.wallpaperChoice5.text()))
+            elif self.wallpaperChoice6.isChecked():
+                self.verifyWallpaperName.setText(_translate("MainWindow", "Name: ") + str(self.wallpaperChoice6.text()))
+            elif self.wallpaperChoice7.isChecked():
+                self.verifyWallpaperName.setText(_translate("MainWindow", "Name: ") + str(self.wallpaperChoice7.text()))
+            elif self.wallpaperChoice8.isChecked():
+                self.verifyWallpaperName.setText(_translate("MainWindow", "Name: ") + str(self.wallpaperChoice8.text()))
+            else:
+                self.verifyWallpaperName.setText(_translate("MainWindow", "Name: Nothing to do"))
+                
+        if openboxStatus:
+            packagesMFI = {
+                "arora": self.packagesAroraCheck, 
+                "chromium": self.packagesChromiumCheck, 
+                "deluge": self.packagesDelugeCheck,
+                "firefox": self.packagesFirefoxCheck,
+                "midori": self.packagesMidoriCheck,
+                "opera": self.packagesOperaCheck, 
+                "transmission-gtk": self.packagesTransmissionCheck,
+                "audacious": self.packagesAudaciousCheck,
+                "clementine": self.packagesClementineCheck,
+                "deadbeef": self.packagesDeadbeefCheck, 
+                "smplayer": self.packagesSmplayerCheck,
+                "vlc": self.packagesVlcCheck,
+                "blender": self.packagesBlenderCheck,
+                "evince": self.packagesEvinceCheck,
+                "gimp": self.packagesGimpCheck,
+                "gpicview": self.packagesGpicviewCheck,
+                "viewnior": self.packagesViewniorCheck,
+                "geany": self.packagesGeanyCheck,
+                "hexchat": self.packagesHexchatCheck,
+                "leafpad": self.packagesLeafpadCheck,
+                "pcmanfm": self.packagesPcmanfmCheck,
+                "spacefm": self.packagesSpacefmCheck,
+                "terminator": self.packagesTerminatorCheck,
+                "thunar": self.packagesThunarCheck,
+                "yaourt": self.packagesAurSupportCheck, #Aur support
+                "flashplugin": self.packagesMultimediaSupportCheck, #Multimedia support
+                "manjaro-printer": self.packagesPrinterSupportCheck #Printing support
+            
+            }
+            packagesTBIList = []
+            packagesTBRList = []
+            for packageName, packageCheck in packagesMFI.items():
+                if packageCheck.isChecked():
+                    packagesTBIList.append(packageName)
+                else:
+                    packagesTBRList.append(packageName)
+                    
+            packagesTBIListCleaned = list(set(packagesTBIList) - set(packagesList)) #Packages to be installed
+            packagesTBNList = list(set(packagesList) - set(packagesTBRList)) #Packages that don't need to be removed or installed (neutral).
+            packagesTBRListCleaned = list(set(packagesList) - set(packagesTBNList)) #Packages to be removed        
+            
+            self.verifyPackagesTBI.setText(_translate("MainWindow", "To be installed: ") + " ".join(str(packageName) for packageName in packagesTBIListCleaned))
+            self.verifyPackagesTBR.setText(_translate("MainWindow", "To be removed: ") + " ".join(str(packageName) for packageName in packagesTBRListCleaned))
+        
         index = self.stackedWidget.currentIndex() + 1
         if index < self.stackedWidget.count():
             self.stackedWidget.setCurrentIndex(index)
-            logger.writeLog('proceedToFolders')
-            
-            
-    #Moved to the next page, but also applies to settings for folders.
-    def handleButtonNextFolders(self):
+            logger.writeLog('proceedToVerify')
+                
+    
+    
+    def handleButtonFinish(self):
         checkboxDirectoryPairs = {
             self.folderActive1: ["Desktop", "XDG_DESKTOP_DIR"],
             self.folderActive2: ["Documents", "XDG_DOCUMENTS_DIR"],
@@ -1725,149 +1844,131 @@ class Ui_MainWindow(QtCore.QObject):
             else:
                 folders.deleteDir(directoryPoint[1])
                 logger.writeLog('folderNotChosen', directoryPoint[1])
-            
-        index = self.stackedWidget.currentIndex() + 1
-        if index < self.stackedWidget.count():
-            self.stackedWidget.setCurrentIndex(index)
-            logger.writeLog('proceedToThemes')
-
-    #Moves next a page, but also applies to settings for themes.
-    def handleButtonNextThemes(self):
-        kwinThemes = {
-            "air-black": self.themeRadio1,
-            "cupertino-ish": self.themeRadio2,
-            "oxygen": self.themeRadio3,
-            "plastik": self.themeRadio4,
-        }
-            
-        for themeName, themeRadio in kwinThemes.items():
-            if themeRadio.isChecked():
-                themes.kwinThemer(themeName)
-                plasma_control.startKwin()
-
-        index = self.stackedWidget.currentIndex() + 1
-        if index < self.stackedWidget.count():
-            self.stackedWidget.setCurrentIndex(index)
-            logger.writeLog('proceedToWallpapers')
-            
-    #Moves next a page, but also applies to settings for tint.
-    def handleButtonNextTint(self):
-        Tint = {
-            "top": self.tintPositionRadio1,
-            "right": self.tintPositionRadio2,
-            "bottom": self.tintPositionRadio3,
-            "left": self.tintPositionRadio4,
-        }
-        
-        for tintPosition, tintRadio in Tint.items():
-            if tintRadio.isChecked():
-                tint.panelPosition(tintPosition)
-                ob_control.killTintTwoPlus()
-
-        index = self.stackedWidget.currentIndex() + 1
-        if index < self.stackedWidget.count():
-            self.stackedWidget.setCurrentIndex(index)
-            logger.writeLog('proceedToWallpapers')
-    
-    #Moves next a page, but also applies the wallpaper settings.
-    def handleButtonNextWallpapers(self):
-        if kdeStatus:
-            wallpapersDict = {
-                "manjarostyle": self.wallpaperChoice1,
-                "orangeSplash": self.wallpaperChoice2,
-                "sunsetPlane": self.wallpaperChoice3,
-                "mountainLake": self.wallpaperChoice4,
-                "earthInSpace": self.wallpaperChoice5,
-                "darkStairs": self.wallpaperChoice6,
-                "cherryJapan": self.wallpaperChoice7,
-                "whiteTiger": self.wallpaperChoice8
-            }
-            edition = "kde"
-        elif nitrogenStatus:
-            wallpapersDict = {
-                "evodark": self.wallpaperChoice1,
-                "evolight": self.wallpaperChoice2,
-                "sunsetPlane": self.wallpaperChoice3,
-                "mountainLake": self.wallpaperChoice4,
-                "earthInSpace": self.wallpaperChoice5,
-                "darkStairs": self.wallpaperChoice6,
-                "cherryJapan": self.wallpaperChoice7,
-                "whiteTiger": self.wallpaperChoice8
-            }
-            edition = "openbox"
-        else:
-            wallpapersDict = {
-                "ozoneTurbulence": self.wallpaperChoice1,
-                "orangeSplash": self.wallpaperChoice2,
-                "sunsetPlane": self.wallpaperChoice3,
-                "mountainLake": self.wallpaperChoice4,
-                "earthInSpace": self.wallpaperChoice5,
-                "darkStairs": self.wallpaperChoice6,
-                "cherryJapan": self.wallpaperChoice7,
-                "whiteTiger": self.wallpaperChoice8
-            }
-            edition = "kde"
-        
-        for wallpaperName, wallpaperRadio in wallpapersDict.items():
-            if wallpaperRadio.isChecked():
-                wallpapers.changeWallpaperPlus(wallpaperName, edition)
                 
-        index = self.stackedWidget.currentIndex() + 1
-        if index < self.stackedWidget.count():
-            self.stackedWidget.setCurrentIndex(index)
-            logger.writeLog('proceedToPackages')
-
+        if kwinStatus:
+            kwinThemes = {
+                "air-black": self.themeRadio1,
+                "cupertino-ish": self.themeRadio2,
+                "oxygen": self.themeRadio3,
+                "plastik": self.themeRadio4,
+            }
             
-    def handleButtonNextPackages(self):
+            for themeName, themeRadio in kwinThemes.items():
+                if themeRadio.isChecked():
+                    themes.kwinThemer(themeName)
+                    plasma_control.startKwin()
+        
+        if tintStatus:    
+            Tint = {
+                "top": self.tintPositionRadio1,
+                "right": self.tintPositionRadio2,
+                "bottom": self.tintPositionRadio3,
+                "left": self.tintPositionRadio4,
+            }
+        
+            for tintPosition, tintRadio in Tint.items():
+                if tintRadio.isChecked():
+                    tint.panelPosition(tintPosition)
+                    ob_control.killTintTwoPlus()
+                    
+        if nitrogenStatus or plasmaStatus:
+            if kdeStatus:
+                wallpapersDict = {
+                    "manjarostyle": self.wallpaperChoice1,
+                    "orangeSplash": self.wallpaperChoice2,
+                    "sunsetPlane": self.wallpaperChoice3,
+                    "mountainLake": self.wallpaperChoice4,
+                    "earthInSpace": self.wallpaperChoice5,
+                    "darkStairs": self.wallpaperChoice6,
+                    "cherryJapan": self.wallpaperChoice7,
+                    "whiteTiger": self.wallpaperChoice8
+                }
+                edition = "kde"
+            elif nitrogenStatus:
+                wallpapersDict = {
+                    "evodark": self.wallpaperChoice1,
+                    "evolight": self.wallpaperChoice2,
+                    "sunsetPlane": self.wallpaperChoice3,
+                    "mountainLake": self.wallpaperChoice4,
+                    "earthInSpace": self.wallpaperChoice5,
+                    "darkStairs": self.wallpaperChoice6,
+                    "cherryJapan": self.wallpaperChoice7,
+                    "whiteTiger": self.wallpaperChoice8
+                }
+                edition = "openbox"
+            else:
+                wallpapersDict = {
+                    "ozoneTurbulence": self.wallpaperChoice1,
+                    "orangeSplash": self.wallpaperChoice2,
+                    "sunsetPlane": self.wallpaperChoice3,
+                    "mountainLake": self.wallpaperChoice4,
+                    "earthInSpace": self.wallpaperChoice5,
+                    "darkStairs": self.wallpaperChoice6,
+                    "cherryJapan": self.wallpaperChoice7,
+                    "whiteTiger": self.wallpaperChoice8
+                }
+                edition = "kde"
+        
+            for wallpaperName, wallpaperRadio in wallpapersDict.items():
+                if wallpaperRadio.isChecked():
+                    wallpapers.changeWallpaperPlus(wallpaperName, edition)
+            
+        if openboxStatus:
+            packagesMFI = {
+                "arora": self.packagesAroraCheck, 
+                "chromium": self.packagesChromiumCheck, 
+                "deluge": self.packagesDelugeCheck,
+                "firefox": self.packagesFirefoxCheck,
+                "midori": self.packagesMidoriCheck,
+                "opera": self.packagesOperaCheck, 
+                "transmission-gtk": self.packagesTransmissionCheck,
+                "audacious": self.packagesAudaciousCheck,
+                "clementine": self.packagesClementineCheck,
+                "deadbeef": self.packagesDeadbeefCheck, 
+                "smplayer": self.packagesSmplayerCheck,
+                "vlc": self.packagesVlcCheck,
+                "blender": self.packagesBlenderCheck,
+                "evince": self.packagesEvinceCheck,
+                "gimp": self.packagesGimpCheck,
+                "gpicview": self.packagesGpicviewCheck,
+                "viewnior": self.packagesViewniorCheck,
+                "geany": self.packagesGeanyCheck,
+                "hexchat": self.packagesHexchatCheck,
+                "leafpad": self.packagesLeafpadCheck,
+                "pcmanfm": self.packagesPcmanfmCheck,
+                "spacefm": self.packagesSpacefmCheck,
+                "terminator": self.packagesTerminatorCheck,
+                "thunar": self.packagesThunarCheck,
+                "yaourt": self.packagesAurSupportCheck, #Aur support
+                "flashplugin": self.packagesMultimediaSupportCheck, #Multimedia support
+                "manjaro-printer": self.packagesPrinterSupportCheck #Printing support
+            
+            }
+            packagesTBIList = []
+            packagesTBRList = []
+            for packageName, packageCheck in packagesMFI.items():
+                if packageCheck.isChecked():
+                    packagesTBIList.append(packageName)
+                else:
+                    packagesTBRList.append(packageName)
+                    
+            packages.handlePackages(packagesTBIList, packagesTBRList)
+            
         index = self.stackedWidget.currentIndex() + 1
         if index < self.stackedWidget.count():
             self.stackedWidget.setCurrentIndex(index)
             logger.writeLog('proceedToFinal')
     
-    #Moves from the folder slide toward the package installer.
-    def handleButtonInstallPackages(self):
-        packagesMFI = {
-            "arora": self.packagesAroraCheck, 
-            "chromium": self.packagesChromiumCheck, 
-            "deluge": self.packagesDelugeCheck,
-            "firefox": self.packagesFirefoxCheck,
-            "midori": self.packagesMidoriCheck,
-            "opera": self.packagesOperaCheck, 
-            "transmission-gtk": self.packagesTransmissionCheck,
-            "audacious": self.packagesAudaciousCheck,
-            "clementine": self.packagesClementineCheck,
-            "deadbeef": self.packagesDeadbeefCheck, 
-            "smplayer": self.packagesSmplayerCheck,
-            "vlc": self.packagesVlcCheck,
-            "blender": self.packagesBlenderCheck,
-            "evince": self.packagesEvinceCheck,
-            "gimp": self.packagesGimpCheck,
-            "gpicview": self.packagesGpicviewCheck,
-            "viewnior": self.packagesViewniorCheck,
-            "geany": self.packagesGeanyCheck,
-            "hexchat": self.packagesHexchatCheck,
-            "leafpad": self.packagesLeafpadCheck,
-            "pcmanfm": self.packagesPcmanfmCheck,
-            "spacefm": self.packagesSpacefmCheck,
-            "terminator": self.packagesTerminatorCheck,
-            "thunar": self.packagesThunarCheck,
-            "yaourt": self.packagesAurSupportCheck, #Aur support
-            "flashplugin": self.packagesMultimediaSupportCheck, #Multimedia support
-            "manjaro-printer": self.packagesPrinterSupportCheck #Printing support
-            
-        }
-        #self.installButton.lower()
-        packagesTBIList = []
-        packagesTBRList = []
-        for packageName, packageCheck in packagesMFI.items():
-            if packageCheck.isChecked():
-                packagesTBIList.append(packageName)
-            else:
-                packagesTBRList.append(packageName)
-        packages.handlePackages(packagesTBIList, packagesTBRList)
+    
+    
+    #Moves to next page in the stacked widget.
+    def handleButtonNext(self):
+        index = self.stackedWidget.currentIndex() + 1
+        if index < self.stackedWidget.count():
+            self.stackedWidget.setCurrentIndex(index)
+            logger.writeLog('proceedToFolders')
 	    
     def checkInternetStatus(self):
-        packagesList = packages.getCurrentPackages()
         if packages.checkInternet():
             self.packagesTabs.tabBar().setEnabled(True)
             self.packagesCheckConnection.lower()
@@ -1910,30 +2011,7 @@ class Ui_MainWindow(QtCore.QObject):
         packagesAIList = list(packagesAI)
         
         for packagesItem in packagesAIList:
-            packagesMFI[packagesItem].setChecked(True)	
-            
-    #Moves back from the themes to folders, and reloads the settings for folders.
-    def handleButtonPrevFolders(self):
-        checkboxDirectoryPairs = {
-            "Desktop": [self.folderActive1, self.folderHeader1],
-            "Documents": [self.folderActive2, self.folderHeader2],
-            "Downloads": [self.folderActive3, self.folderHeader3],
-            "Music": [self.folderActive4, self.folderHeader4],
-            "Pictures": [self.folderActive5, self.folderHeader5],
-            "Public": [self.folderActive6, self.folderHeader6],
-            "Templates": [self.folderActive7, self.folderHeader7],
-            "Videos": [self.folderActive8, self.folderHeader8]
-        }
-
-        for directoryPoint, folderWidgets in checkboxDirectoryPairs.items():
-            if folderWidgets[0].isChecked():
-                folderWidgets[1].setText(_translate("MainWindow", "Status: Active", None))
-            else:
-                folderWidgets[1].setText(_translate("MainWindow", "Status: Deactivated", None))
-                
-        index = self.stackedWidget.currentIndex() - 1
-        if index >= 0:
-            self.stackedWidget.setCurrentIndex(index)
+            packagesMFI[packagesItem].setChecked(True)
             
     def handleButtonSystemSettings(self):
         final.launchSystemSettings()
@@ -1961,4 +2039,3 @@ class Ui_MainWindow(QtCore.QObject):
         self.stackedWidget.setCurrentIndex(4)
     def handleButtonChangeFive(self):
         self.stackedWidget.setCurrentIndex(5)
-        
