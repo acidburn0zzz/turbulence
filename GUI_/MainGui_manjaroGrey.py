@@ -1543,6 +1543,7 @@ class Ui_MainWindow(QtCore.QObject):
         self.verifyCancel.clicked.connect(MainWindow.close)
         self.verifyFoldersEdit.clicked.connect(self.handleButtonChangeOne)
         self.verifyForward.clicked.connect(self.handleButtonFinish)
+        self.verifyFinishMenu.clicked.connect(self.handleButtonFinish)
         
         #Translates the widgets, or sets text
         self.verifyHeader.setText(_translate("MainWindow", "Verify your settings"))
