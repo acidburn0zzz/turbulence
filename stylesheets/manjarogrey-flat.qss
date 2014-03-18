@@ -1109,6 +1109,39 @@ QTabBar::tab:selected {
     background-color: rgb(17, 17, 17);
     color: rgb(167, 167, 167);
 }
+QScrollBar:vertical  {
+    border: 1px solid #1d1d1d;
+    background: #111111;
+    width: 15px;
+    margin: 22px 0 22px 0;
+}
+QScrollBar::handle:vertical  {
+    background: #1f1f1f;
+    min-height: 20px;
+}
+QScrollBar::add-line:vertical  {
+    border: 1px solid #1d1d1d;
+    background: #111111;
+    height: 20px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}    
+QScrollBar::sub-line:vertical  {
+    border: 1px solid #1d1d1d;
+    background: #111111;
+    height: 20px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical  {
+    border: 1px solid #1d1d1d;
+    width: 3px;
+    height: 3px;
+    background: #1f1f1f;
+}     
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical  {
+    background: none;
+}
 #verifyFoldersEdit {
     padding: 0px;
     margin: 0px;

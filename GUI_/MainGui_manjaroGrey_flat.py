@@ -1915,7 +1915,7 @@ class Ui_MainWindow(QtCore.QObject):
                 if wallpaperRadio.isChecked():
                     wallpapers.changeWallpaperPlus(wallpaperName, edition)
             
-        if openboxStatus:
+        if openboxStatus and internetStatus:
             packagesMFI = {
                 "arora": self.packagesAroraCheck, 
                 "chromium": self.packagesChromiumCheck, 
@@ -1968,7 +1968,6 @@ class Ui_MainWindow(QtCore.QObject):
         index = self.stackedWidget.currentIndex() + 1
         if index < self.stackedWidget.count():
             self.stackedWidget.setCurrentIndex(index)
-            logger.writeLog('proceedToFolders')
             
     def checkInternetStatus(self):
         if packages.checkInternet():
