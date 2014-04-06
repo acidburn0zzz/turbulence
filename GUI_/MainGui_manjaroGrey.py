@@ -14,11 +14,6 @@ plasmaStatus = utils_detector.detectPlasma() #Plasma
 nitrogenStatus = utils_detector.detectNitrogen() #Nitrogen
 openboxStatus = utils_detector.detectOpenBox() #Openbox
 kdeStatus = utils_detector.detectKde() #Kde
-openboxStatus = True
-
-#This is set to false by default, but it will changed different later.
-global internetStatus 
-internetStatus = False
 
 #Configure normal widgets
 def widgetConfigurer(widgetType, xPos, yPos, xSize, ySize, name, image=None, styleSheet=None):
