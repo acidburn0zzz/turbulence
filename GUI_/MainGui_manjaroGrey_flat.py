@@ -2003,12 +2003,15 @@ class Ui_MainWindow(QtCore.QObject):
             
         if openboxStatus and self.internetAccess:
             packagesMFI = {
-                "arora": self.packagesAroraCheck, 
                 "chromium": self.packagesChromiumCheck, 
                 "deluge": self.packagesDelugeCheck,
+                "ekiga": self.packagesEkigaCheck,
+                "filezilla": self.packagesFilezillaCheck,
                 "firefox": self.packagesFirefoxCheck,
                 "midori": self.packagesMidoriCheck,
                 "opera": self.packagesOperaCheck, 
+                "qbittorrent": self.packagesQbittorrentCheck,
+                "thunderbird": self.packagesThunderbirdCheck,
                 "transmission-gtk": self.packagesTransmissionCheck,
                 "audacious": self.packagesAudaciousCheck,
                 "clementine": self.packagesClementineCheck,
@@ -2019,18 +2022,21 @@ class Ui_MainWindow(QtCore.QObject):
                 "evince": self.packagesEvinceCheck,
                 "gimp": self.packagesGimpCheck,
                 "gpicview": self.packagesGpicviewCheck,
+                "pinta": self.packagesPintaCheck,
                 "viewnior": self.packagesViewniorCheck,
                 "geany": self.packagesGeanyCheck,
                 "hexchat": self.packagesHexchatCheck,
                 "leafpad": self.packagesLeafpadCheck,
+                "octopi": self.packagesOctopiCheck,
+                "pamac": self.packagesPamacCheck,
                 "pcmanfm": self.packagesPcmanfmCheck,
                 "spacefm": self.packagesSpacefmCheck,
                 "terminator": self.packagesTerminatorCheck,
                 "thunar": self.packagesThunarCheck,
                 "yaourt": self.packagesAurSupportCheck, #Aur support
+                "libreoffice-installer": self.packagesLibreOfficeInstallerCheck, #Libre Office Installer
                 "flashplugin": self.packagesMultimediaSupportCheck, #Multimedia support
                 "manjaro-printer": self.packagesPrinterSupportCheck #Printing support
-            
             }
             packagesTBIList = []
             packagesTBRList = []
