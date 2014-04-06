@@ -1182,6 +1182,9 @@ QTabBar::tab:selected {
     color: rgb(167, 167, 167);
     font: 10pt "Sans Serif";
 }
+#verifySettings {
+    border: none;
+}
 #verifySettingsContents {
     background-color: rgb(17, 17, 17);
     color: rgb(167, 167, 167);
