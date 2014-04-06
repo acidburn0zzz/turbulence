@@ -10,8 +10,9 @@ from tools_ import logger
 
 packagesInstallAdditions = {
     "yaourt": ["autoconf", "automake", "binutils", "bison", "fakeroot", "file", "findutils", "flex", "gawk", "gcc", "gettext", "grep", "groff", "gzip", "libtool", "m4", "make", "patch", "pkg-config", "sed", "sudo", "texinfo", "util-linux", "which", "locale-info"],
-    "flashplugin": ["a52dec", "faac", "faad2", "flac", "jasper", "lame", "libdca", "libdv", "libmad", "libmpeg2", "libtheora", "libvorbis", "libxv", "wavpack", "x264", "xvidcore", "gstreamer0.10-bad-plugins", "gstreamer0.10-base-plugins", "gstreamer0.10-ffmpeg", "gstreamer0.10-good-plugins", "gstreamer0.10-ugly-plugins"],
-    "thunar": ["thunar-volman", "thunar-archive-plugin"]
+    "flashplugin": ["a52dec", "faac", "faad2", "flac", "jasper", "lame", "libdca", "libdv", "libmad", "libmpeg2", "libtheora", "libvorbis", "libxv", "wavpack", "x264", "xvidcore", "gst-plugins-bad", "gst-plugins-base", "gst-plugins-base-libs", "gst-plugins-good", "gst-plugins-ugly", "gstreamer0.10-bad-plugins", "gstreamer0.10-base-plugins", "gstreamer0.10-ffmpeg", "gstreamer0.10-good-plugins", "gstreamer0.10-ugly-plugins"],
+    "thunar": ["thunar-volman", "thunar-archive-plugin"],
+    "transmission-gtk": ["transmission-cli"]
 }
 packagesRemoveAdditions = {
     "thunar": ["thunar-volman", "thunar-archive-plugin"]

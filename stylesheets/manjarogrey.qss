@@ -682,17 +682,6 @@ QTabBar::tab:selected {
 #packagesNotActive {
     background-color: rgba(0, 0, 0, 187);
 }
-#packagesAroraCheck {
-    color: rgb(220, 220, 220);
-    font: 12pt "Sans Serif";
-    background-color: rgba(0, 0, 0, 0);
-}
-#packagesAroraCheck::indicator:checked {
-    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
-}
-#packagesAroraCheck::indicator:unchecked {
-    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
-}
 #packagesChromiumCheck {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
@@ -713,6 +702,28 @@ QTabBar::tab:selected {
     image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
 }
 #packagesDelugeCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesEkigaCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesEkigaCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesEkigaCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesFilezillaCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesFilezillaCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesFilezillaCheck::indicator:unchecked {
     image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
 }
 #packagesFirefoxCheck {
@@ -746,6 +757,28 @@ QTabBar::tab:selected {
     image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
 }
 #packagesOperaCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesQbittorrentCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesQbittorrentCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesQbittorrentCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesThunderbirdCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesThunderbirdCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesThunderbirdCheck::indicator:unchecked {
     image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
 }
 #packagesTransmissionCheck {
@@ -858,6 +891,17 @@ QTabBar::tab:selected {
 #packagesGpicviewCheck::indicator:unchecked {
     image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
 }
+#packagesPintaCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}
+#packagesPintaCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesPintaCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
 #packagesViewniorCheck {
     color: rgb(220, 220, 220);
     font: 12pt "Sans Serif";
@@ -900,6 +944,28 @@ QTabBar::tab:selected {
     image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
 }
 #packagesLeafpadCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesOctopiCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}   
+#packagesOctopiCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesOctopiCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesPamacCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}   
+#packagesPamacCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesPamacCheck::indicator:unchecked {
     image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
 }
 #packagesPcmanfmCheck {
@@ -955,6 +1021,17 @@ QTabBar::tab:selected {
     image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
 }
 #packagesAurSupportCheck::indicator:unchecked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
+}
+#packagesLibreOfficeInstallerCheck {
+    color: rgb(220, 220, 220);
+    font: 12pt "Sans Serif";
+    background-color: rgba(0, 0, 0, 0);
+}   
+#packagesLibreOfficeInstallerCheck::indicator:checked {
+    image: url(/usr/share/turbulence/images/manjaro-grey/check.png);
+}
+#packagesLibreOfficeInstallerCheck::indicator:unchecked {
     image: url(/usr/share/turbulence/images/manjaro-grey/un-check.png);
 }
 #packagesMultimediaSupportCheck {
