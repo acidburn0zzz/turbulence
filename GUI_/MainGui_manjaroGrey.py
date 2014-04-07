@@ -513,7 +513,10 @@ class Ui_MainWindow(QtCore.QObject):
             self.themeCancel.setIconSize(QtCore.QSize(16, 16))
             
             self.themeDesc.setWordWrap(True)
-        
+            
+            #Sets the default item
+            self.themeRadio1.setChecked(True)
+            
             self.themeMenuContainerHLayout.addWidget(self.themeMenu)
             self.themeMenuContainerHLayout.addWidget(self.themeArrow)
             self.themeMenuContainerHLayout.addWidget(self.themeMenuWallpapers)
@@ -677,6 +680,9 @@ class Ui_MainWindow(QtCore.QObject):
             self.tintPrevious.setIconSize(QtCore.QSize(28, 30))
             
             self.tintPositionDesc.setWordWrap(True)
+            
+            #Sets the default item
+            self.tintPositionRadio1.setChecked(True)
             
             self.tintMenuContainerHLayout.addWidget(self.tintMenu)
             self.tintMenuContainerHLayout.addWidget(self.tintArrow)
@@ -898,6 +904,9 @@ class Ui_MainWindow(QtCore.QObject):
             self.wallpaperCancel.setIconSize(QtCore.QSize(16, 16))
             
             self.wallpaperDesc.setWordWrap(True)
+            
+            #Sets the default item
+            self.wallpaperChoice1.setChecked(True)
             
             self.wallpaperMenuContainerHLayout.addWidget(self.wallpaperMenu)
             self.wallpaperMenuContainerHLayout.addWidget(self.wallpaperArrow)
