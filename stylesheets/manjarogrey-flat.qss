@@ -231,7 +231,7 @@
     image: url(/usr/share/turbulence/images/manjaro-grey-flat/un-check.png);
 }
 #folderActive5 {
-    color: rgb(220, 220, 220);
+    color: rgb(167, 167, 167);
 }
 #folderActive5::indicator:checked {
     image: url(/usr/share/turbulence/images/manjaro-grey-flat/check.png);
