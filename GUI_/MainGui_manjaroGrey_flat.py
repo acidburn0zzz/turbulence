@@ -1299,7 +1299,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesHeader.setText(_translate("MainWindow", "Packages"))
             self.packagesMenu.setText(_translate("MainWindow", "Packages"))
             self.packagesMenuFinish.setText(_translate("MainWindow", "Verify"))
-            self.packagesDesc.setText(_translate("MainWindow", "Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or unselect any packages you want to add or remove. Packages that are installed will be auto-selected."))
+            self.packagesDesc.setText(_translate("MainWindow", "Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or deselect any packages you want to add or remove. Packages that are installed will be auto-selected."))
             self.packagesPrevious.setText(_translate("MainWindow", "Previous"))
             self.packagesForward.setText(_translate("MainWindow", "Forward"))
             self.packagesCancel.setText(_translate("MainWindow", "Cancel"))
