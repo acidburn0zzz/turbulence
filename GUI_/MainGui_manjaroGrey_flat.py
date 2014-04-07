@@ -251,7 +251,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.folderThemes.setText(_translate("MainWindow", "Tint 2"))
         else:
             self.folderThemes.setText(_translate("MainWindow", "Verify"))
-
+            
         #widget dictionary.
         secondPageWidgets = {
             "folderHeader": [self.folderHeader, 80, 20, 600, 51, "folderHeader", None],
@@ -570,7 +570,7 @@ class Ui_MainWindow(QtCore.QObject):
             else:
                 self.themeMenuWallpapers.clicked.connect(self.handleButtonNext)
                 self.themeForward.clicked.connect(self.handleButtonNext)
-            
+                
             #Translates the text
             self.themeHeader.setText(_translate("MainWindow", "Themes"))
             self.themeMenu.setText(_translate("MainWindow", "Themes"))
@@ -1229,6 +1229,8 @@ class Ui_MainWindow(QtCore.QObject):
             for widgetName, widgetSettings in fifthPageLayouts.items():
                 layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7])
             
+            self.internetAccess = False #This is the default. It will be changed to true if the user has an internet connection
+
             #Adds any custom widgets.
             self.packagesPrevious.setFlat(True)
             self.packagesForward.setFlat(True)

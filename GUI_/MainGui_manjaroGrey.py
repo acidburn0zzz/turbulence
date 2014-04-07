@@ -252,7 +252,6 @@ class Ui_MainWindow(QtCore.QObject):
         else:
             self.folderThemes.setText(_translate("MainWindow", "Verify"))
             
-
         #widget dictionary.
         secondPageWidgets = {
             "folderHeader": [self.folderHeader, 80, 20, 600, 51, "folderHeader", None],
@@ -308,7 +307,6 @@ class Ui_MainWindow(QtCore.QObject):
         for widgetName, widgetSettings in secondPageLayouts.items():
             layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7], widgetSettings[8])
         
-            
         #defines the custom settings
         self.folderPrevious.setIcon(previousIcon)
         self.folderCancel.setIcon(cancelIcon)
@@ -562,7 +560,6 @@ class Ui_MainWindow(QtCore.QObject):
             self.stackedWidget.addWidget(self.Theme)
             
             #Hooks up the button handlers
-            
             self.themeCancel.clicked.connect(MainWindow.close)
             self.themePrevious.clicked.connect(self.handleButtonPrev)
             
@@ -574,7 +571,6 @@ class Ui_MainWindow(QtCore.QObject):
                 self.themeMenuWallpapers.clicked.connect(self.handleButtonNext)
                 self.themeForward.clicked.connect(self.handleButtonNext)
                 
-            
             #Translates the text
             self.themeHeader.setText(_translate("MainWindow", "Themes"))
             self.themeMenu.setText(_translate("MainWindow", "Themes"))
@@ -1128,7 +1124,7 @@ class Ui_MainWindow(QtCore.QObject):
             # 11 #     520, 110, 71, 71     510, 180, 111, 31       #   
             # 12 #     640, 110, 71, 71     630, 180, 111, 31       #   
             #########################################################
-        
+            
             fifthPageWidgets = {
                 "packagesHeader": [self.packagesHeader, 80, 20, 600, 51, "packagesHeader", None],
                 "packagesIcon": [self.packagesIcon, 40, 160, 61, 61, "packagesIcon", "/usr/share/turbulence/images/manjaro-grey/packages/packagesicon.png"],
@@ -1232,7 +1228,7 @@ class Ui_MainWindow(QtCore.QObject):
         
             for widgetName, widgetSettings in fifthPageLayouts.items():
                 layoutConfigurer(widgetName, widgetSettings[0], widgetSettings[1], widgetSettings[2], widgetSettings[3], widgetSettings[4], widgetSettings[5], widgetSettings[6], widgetSettings[7])
-
+            
             self.internetAccess = False #This is the default. It will be changed to true if the user has an internet connection
 
             #Adds any custom widgets.
@@ -1377,7 +1373,7 @@ class Ui_MainWindow(QtCore.QObject):
             self.packagesMultimediaSupportCheck.setText("Multimedia \nSupport")
             self.packagesPrinterSupportPic.setToolTip(_translate("MainWindow", "Installs manjaro-printer, and CUPS to enable printers"))
             self.packagesPrinterSupportCheck.setText("Printer \nSupport")
-        
+            
         
         #Adds the verify page
         self.Verify = QtWidgets.QWidget()
@@ -2009,12 +2005,15 @@ class Ui_MainWindow(QtCore.QObject):
             
         if openboxStatus and self.internetAccess:
             packagesMFI = {
-                "arora": self.packagesAroraCheck, 
                 "chromium": self.packagesChromiumCheck, 
                 "deluge": self.packagesDelugeCheck,
+                "ekiga": self.packagesEkigaCheck,
+                "filezilla": self.packagesFilezillaCheck,
                 "firefox": self.packagesFirefoxCheck,
                 "midori": self.packagesMidoriCheck,
                 "opera": self.packagesOperaCheck, 
+                "qbittorrent": self.packagesQbittorrentCheck,
+                "thunderbird": self.packagesThunderbirdCheck,
                 "transmission-gtk": self.packagesTransmissionCheck,
                 "audacious": self.packagesAudaciousCheck,
                 "clementine": self.packagesClementineCheck,
@@ -2025,18 +2024,21 @@ class Ui_MainWindow(QtCore.QObject):
                 "evince": self.packagesEvinceCheck,
                 "gimp": self.packagesGimpCheck,
                 "gpicview": self.packagesGpicviewCheck,
+                "pinta": self.packagesPintaCheck,
                 "viewnior": self.packagesViewniorCheck,
                 "geany": self.packagesGeanyCheck,
                 "hexchat": self.packagesHexchatCheck,
                 "leafpad": self.packagesLeafpadCheck,
+                "octopi": self.packagesOctopiCheck,
+                "pamac": self.packagesPamacCheck,
                 "pcmanfm": self.packagesPcmanfmCheck,
                 "spacefm": self.packagesSpacefmCheck,
                 "terminator": self.packagesTerminatorCheck,
                 "thunar": self.packagesThunarCheck,
                 "yaourt": self.packagesAurSupportCheck, #Aur support
+                "libreoffice-installer": self.packagesLibreOfficeInstallerCheck, #Libre Office Installer
                 "flashplugin": self.packagesMultimediaSupportCheck, #Multimedia support
                 "manjaro-printer": self.packagesPrinterSupportCheck #Printing support
-            
             }
             packagesTBIList = []
             packagesTBRList = []
