@@ -1525,9 +1525,9 @@ class Ui_MainWindow(QtCore.QObject):
             self.verifyPackagesTBI.setText(_translate("MainWindow", "To be installed: "))
             self.verifyPackagesTBR.setText(_translate("MainWindow", "To be removed: "))
             
-            if nitrogenStatus or plasmaStatus and kwinStatus and tintStatus:
+            if (nitrogenStatus or plasmaStatus) and kwinStatus and tintStatus:
                 self.verifyPackagesEdit.clicked.connect(self.handleButtonChangeFive)
-            elif nitrogenStatus or plasmaStatus and kwinStatus or tintStatus:
+            elif (nitrogenStatus or plasmaStatus) and (kwinStatus or tintStatus):
                 self.verifyPackagesEdit.clicked.connect(self.handleButtonChangeFour)
             elif nitrogenStatus or plasmaStatus or kwinStatus or tintStatus:
                 self.verifyPackagesEdit.clicked.connect(self.handleButtonChangeThree)
