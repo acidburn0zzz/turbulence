@@ -49,9 +49,7 @@ sudo bash install.sh -r
 # Roadmap and TODO
 
 * Add package selection support to KDE
-* Add a verify page, and have all settings applied then
 * Code Clean up and restructure
 * Add a config file
 * Add more settings to configure KDE options as well as OpenBox
 * Figure out alternatives to opening a terminal with the pacman installer script
-* Move install button from install tab to future verify page
