@@ -1541,7 +1541,7 @@ class Ui_MainWindow(QtCore.QObject):
             "verifyDesc": [self.verifyDesc, 110, 140, 650, 100, "verifyDesc", None],
             "verifySettings": [self.verifySettings, 40, 230, 780, 330, "verifySettings", None],
             "veriySettingsContents": [self.verifySettingsContents, 0, 0, 685, 330, "verifySettingsContents", None]
-        } 
+        }
 
         verifyPageLayouts = {
             "verifyMenu": [self.verifyMenu, 0, 39, None, None, True, True, False],
