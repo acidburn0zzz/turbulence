@@ -2,142 +2,142 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1677"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1779"/>
         <source>Status: Active</source>
         <translation>Status: Aktívny</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="212"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="179"/>
         <source>Welcome</source>
         <translation>Vitajte</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1331"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1632"/>
         <source>Folders</source>
         <translation>Zložky</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="214"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="181"/>
         <source>What is Manjaro?</source>
         <translation>Čo je Manjaro?</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1396"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1732"/>
         <source>Cancel</source>
         <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1233"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1304"/>
         <source>Forward</source>
         <translation>Ďalej</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1329"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1444"/>
         <source>Themes</source>
         <translation>Témy</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1398"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1630"/>
         <source>Previous</source>
         <translation>Predchádzajúci</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1679"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="399"/>
         <source>Status: Deactivated</source>
         <translation>Status: Neaktívny</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="427"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="400"/>
         <source>Desktop</source>
         <translation>Plocha</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="428"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="401"/>
         <source>Documents</source>
         <translation>Dokumenty</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="429"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="402"/>
         <source>Downloads</source>
         <translation>Stiahnuté</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="430"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="403"/>
         <source>Music</source>
         <translation>Hudba</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="431"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="404"/>
         <source>Pictures</source>
         <translation>Obrázky</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="432"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="405"/>
         <source>Public</source>
         <translation>Verejné</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="433"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="406"/>
         <source>Templates</source>
         <translation>Šablóny</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="434"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="407"/>
         <source>Videos</source>
         <translation>Videá</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="442"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="415"/>
         <source>Active</source>
         <translation>Aktívny</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1325"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="991"/>
         <source>Wallpapers</source>
         <translation>Pozadia</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1397"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1733"/>
         <source>Finish</source>
         <translation>Dokončiť</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="996"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="992"/>
         <source>Here you can set which wallpaper you want.</source>
         <translation>Tu si môžete zvoliť pozadie.</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1394"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1730"/>
         <source>Congratulations!</source>
         <translation>Gratulujeme!</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1405"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1740"/>
         <source>System Settings</source>
         <translation>Nastavenia systému</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1407"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1742"/>
         <source>Launch System Settings</source>
         <translation>Otvoriť nastavenia systému</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1400"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1735"/>
         <source>Help</source>
         <translation>Pomoc</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1402"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1737"/>
         <source>Launch Manjaro.org</source>
         <translation>Otvoriť Manjaro.org</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="211"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="178"/>
         <source>Welcome To Manjaro!</source>
         <translation>Vitajte v Manjaro!</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="215"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="182"/>
         <source>&lt;b&gt;Manjaro&lt;/b&gt; is a sleek and fast distro, featuring benefits from the popular Arch OS, along with ease of use. Developed in Austria, France, and Germany, Manjaro aims at new users, and experienced users.
 &lt;br&gt;&lt;br&gt;
 Some of Manjaro's features are:
@@ -150,269 +150,253 @@ Some of Manjaro's features are:
 For newcomers, a user-friendly installer is provided, and the system itself is designed to work fully straight out of the box. For more experienced, and adventurous users, Manjaro also offers the configurability and versatility to be shaped and moulded in every respect to suit personal taste and preference.
 &lt;br&gt;&lt;br&gt;
 Over these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Manjaro&lt;/b&gt;je elegantná a rýchla linuxová distribúcia ponúkajúca všetky výhody populárneho Arch Linuxu. Vyvíjané v Rakúsku, Francúzku a Nemecku, Manjaro sa orientuje tak ako na nových používateľov Linuxu, tak aj na skúsených.
+&lt;br&gt;&lt;br&gt;
+Niektoré z vlastností Manjaro:
+&lt;ul&gt;
+&lt;li&gt;Rýchlosť, výkon, efektívnosť&lt;/li&gt;
+&lt;li&gt;Prístup k najnovšiemu softvéru&lt;/li&gt;
+&lt;li&gt;&quot;Rolling release&quot; vývojoví model, vďaka ktorému budete mať vždy najaktuálnejší systém bez nutnosti reinštalácie&lt;/li&gt;
+&lt;li&gt;Prístup k používateľským repozitárom Archu (AUR).&lt;/li&gt;
+&lt;/ul&gt;
+Pre nových používateľov je k dispozícii jednoduchý a prívetivý inštalátor. Samotný nainštalovaný operačný systém je navrhnutý k okamžitému používaniu bez nutnosti zmien a iných inštalácií. Skúsení a náročnejší používatelia však môžu využiť absolutnú konfigurovateľnosť systému v každom jednom aspekte podľa predstáv používateľa  .
+&lt;br&gt;&lt;br&gt;
+V nasledujucích krokoch vás prevedie Turbulence nastavením novej inštalácie.</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1327"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="746"/>
         <source>Tint 2</source>
         <translation>Tint 2</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="418"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="391"/>
         <source>Here, you can choose which folders you want in your home directory. You have a choice from some of the most commonly used folders.</source>
         <translation>Tu si môžete zvoliť zložky, ktoré budete mať v domovskom priečinku. Na výber  máte najbežnejšie používané zložky.</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="605"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="583"/>
         <source>Here you can choose what type of theme you want for your window decorations.</source>
         <translation>Tu si môžete zvoliť tému pre dekoráciu okien.</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="763"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="750"/>
         <source>Here you can choose what position you want of your Tint 2 panel.</source>
         <translation>Tu si môžete zvoliť pozíciu pre váš Tint 2 panel.</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="751"/>
         <source>Top</source>
         <translation>Na vrchu </translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="765"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="752"/>
         <source>Right</source>
         <translation>Vpravo</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="766"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="753"/>
         <source>Bottom</source>
         <translation>Naspodu</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="767"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="754"/>
         <source>Left</source>
         <translation>Vľavo</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1323"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1524"/>
         <source>Packages</source>
         <translation>Balíčky</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1231"/>
-        <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or unselect any packages you want to add or remove. Packages that are installed will be auto-selected.
-
-When you are done, go to the Install tab, and click &quot;Install&quot;.</source>
-        <translation>Tu si môžete zvoliť balíčky na inštaláciu. Prezrite si popis každého z nich a rozhodnite sa, ktorý chcete nainštalovať, prípadne odinštalovať. Nainštalované balíčky budú zvolené automaticky.
-
-Keď budete hotový, kliknite na inštalačný tab a zvoľte &quot;nainštalovať&quot;.</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1235"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1306"/>
         <source>Check For Internet Connection</source>
         <translation>Skontrolovať internetové pripojenie</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1236"/>
-        <source>Standalone web browser from mozilla.org</source>
-        <translation>Samostatný internetový prehliadač od mozilla.org</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1237"/>
-        <source>Lightweight cross-platform Web browser</source>
-        <translation>Nenáročný internetový prehliadač</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1239"/>
-        <source>The open-source project behind Google Chrome, an 
-attempt at creating a safer, faster, and more stable browser</source>
-        <translation>Open source projekt za Google Chrome, snaha o vytvorenie rýchleho, bezpečného a stabilného internetového prehliadača</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1240"/>
-        <source>Fast and secure web browser and Internet suite</source>
-        <translation>Rýchly, bezpečný internetový prehliadač a zároveň balíček internetových aplikácií</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1241"/>
-        <source>Fast, easy, and free BitTorrent client</source>
-        <translation>Rýchly, jednoduchý a slobodný BitTorrent klient</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1243"/>
-        <source>Lightweight web browser (GTK2)</source>
-        <translation>Nenáročný internetový prehliadač (GTK2)</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1248"/>
-        <source>A BitTorrent client with multiple user interfaces 
-in a client/server model</source>
-        <translation>BitTorrent klient s podporou viacerých používateľských rozhraní
-v klient/server modeli</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1250"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1308"/>
         <source>Network</source>
         <translation>Sieť</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1251"/>
-        <source>A multi-platform MPEG, VCD/DVD, and DivX player</source>
-        <translation>Multiplatformný MPEG, VCD/DVD a DivX prehrávač</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1253"/>
-        <source>A complete front-end for MPlayer</source>
-        <translation>Front-end pre MPlayer</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1255"/>
-        <source>Lightweight, advanced audio player focused on audio quality</source>
-        <translation>Nenáročný audio prehrávač s pokročilými funkciami zameraný na kvalitu zvuku</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1257"/>
-        <source>A music player and library organizer</source>
-        <translation>Hudobný prehrávač a organizátor zbierky</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1259"/>
-        <source>An audio player for GNU/Linux based on GTK2.</source>
-        <translation>Hudobný prehrávač pre GNU/Linux založený na GTK2</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1261"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1330"/>
         <source>Multimedia</source>
         <translation>Multimédia</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1262"/>
-        <source>A fully integrated 3D graphics creation suite</source>
-        <translation>Plne integrovaný balík na tvorbu 3D grafiky</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1264"/>
-        <source>Simply a document viewer</source>
-        <translation>Prehliadač dokumentov</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1266"/>
-        <source>GNU Image Manipulation Program</source>
-        <translation>Nástroj na úpravu obrázkov</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1268"/>
-        <source>Lightweight image viewer</source>
-        <translation>Nenáročný prehliadač obrázkov</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1270"/>
-        <source>A simple, fast and elegant image viewer program</source>
-        <translation>Jednoduchý, rýchly a elegantný prehliadač obrázkov</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1272"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1342"/>
         <source>Graphics</source>
         <translation>Grafika</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1273"/>
-        <source>Fast and lightweight IDE</source>
-        <translation>Rýchle a nenáročné IDE</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1275"/>
-        <source>A popular and easy to use graphical IRC (chat) client</source>
-        <translation>Populárny a jednoduchý IRC (chat) klient</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1277"/>
-        <source>A notepad clone for GTK+ 2.0</source>
-        <translation>Klon poznámkového bloku pre GTK+ 2.0</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1279"/>
-        <source>An extremely fast and lightweight file manager</source>
-        <translation>Neuveriteľne rýchly a nenáročný správca súborov</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1281"/>
-        <source>Multi-panel tabbed file manager</source>
-        <translation>Viac panelový správca súborov s podporou tabov</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1283"/>
-        <source>Terminal emulator that supports tabs and grids</source>
-        <translation>Terminál emulátor s podporou tabov a mriežok</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1285"/>
-        <source>Modern file manager for Xfce</source>
-        <translation>Moderný správca súborov pre prostredie Xfce</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1287"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1356"/>
         <source>Accessories</source>
         <translation>Príslušenstvo</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1288"/>
-        <source>Installs yaourt, and required dependencies to access the AUR</source>
-        <translation>Nainštaluje yaourt a potrebné závislosti pre prístup k AUR</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1290"/>
-        <source>Installs flashplugin, and required codecs for playing media</source>
-        <translation>Nainštaluje flashplugin a potrebné kodeky pre prehrávanie mediálneho obsahu</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1292"/>
-        <source>Installs manjaro-printer, and CUPS to enable printers</source>
-        <translation>Nainštaluje manjaro-printer a CUPS pre povolenie tlačiarní</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1294"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1376"/>
         <source>Extras</source>
         <translation>Doplnky</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1296"/>
-        <source>Install</source>
-        <translation>Inštalovať</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1734"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
         <translation>Všetky vaše nastavenia boli úspešne aplikované. Teraz si už môžete začať užívať Manjaro alebo sa ešte predtým pozrieť na niektoré programy a odkazy nižšie. A ak ste ešte tak neučinili, pridajte sa ku komunite Manjaro</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1401"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1736"/>
         <source>For help and support, you can visit Manjaro.org for access to a terrific forum, wiki, and IRC!</source>
         <translation>Pre pomoc a podporu navštívte Manjaro. pre prístup k skvelému fóru, wiki a IRC!</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1406"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1741"/>
         <source>Control panel to edit various aspects of the KDE desktop, and more.</source>
         <translation>Ovládací panel pre úpravu rôznych aspektov KDE a iné.</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1410"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1745"/>
         <source>Customize OpenBox</source>
         <translation>Prispôsobiť OpenBox</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1411"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1746"/>
         <source>Control panel to edit various aspects of OpenBox</source>
         <translation>Ovládací panel pre úpravu rôznych aspektov OpenBox</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1412"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1747"/>
         <source>Launch Customize Look and Feel</source>
         <translation>Spustiť Prispôsobenie vzhľadu</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1624"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="2083"/>
         <source>Failed. Please Try Again.</source>
         <translation>Chyba. Prosím, skúste to znovu.</translation>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1629"/>
+        <source>Verify</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1302"/>
+        <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or deselect any packages you want to add or remove. Packages that are installed will be auto-selected.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1633"/>
+        <source>[Edit]</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1816"/>
+        <source>KWIN Theme: </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1467"/>
+        <source>Tint</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1828"/>
+        <source>Position: </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1493"/>
+        <source>Wallpaper</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1848"/>
+        <source>Name: </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1908"/>
+        <source>To be installed: </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1912"/>
+        <source>To be removed: </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1625"/>
+        <source>Verify your settings</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1631"/>
+        <source>Please review your changes now. If you agree, then proceed by clicking verify, otherwise click the edit button next to the setting you would like to change.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1634"/>
+        <source>Desktop:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1635"/>
+        <source>Documents:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1636"/>
+        <source>Downloads:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1637"/>
+        <source>Music:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1638"/>
+        <source>Pictures:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1639"/>
+        <source>Public:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1640"/>
+        <source>Templates:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1641"/>
+        <source>Videos:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1818"/>
+        <source>KWIN Theme: Nothing to do</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1830"/>
+        <source>Position: Nothing to do</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1850"/>
+        <source>Name: Nothing to do</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1916"/>
+        <source>To be installed: Nothing to do</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1917"/>
+        <source>To be removed: Nothing to do</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>

@@ -2,142 +2,142 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1677"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1779"/>
         <source>Status: Active</source>
         <translation>Tình trạng: Hoạt động</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="212"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="179"/>
         <source>Welcome</source>
         <translation>Chào mừng</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1331"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1632"/>
         <source>Folders</source>
         <translation>Các thư mục</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="214"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="181"/>
         <source>What is Manjaro?</source>
         <translation>Manjaro là gì?</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1396"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1732"/>
         <source>Cancel</source>
         <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1233"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1304"/>
         <source>Forward</source>
         <translation>Tiếp</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1329"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1444"/>
         <source>Themes</source>
         <translation>Chủ đề</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1398"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1630"/>
         <source>Previous</source>
         <translation>Lùi</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1679"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="399"/>
         <source>Status: Deactivated</source>
         <translation>Tình trạng: không hoạt động</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="427"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="400"/>
         <source>Desktop</source>
         <translation>Màn hình</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="428"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="401"/>
         <source>Documents</source>
         <translation>Tài liệu</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="429"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="402"/>
         <source>Downloads</source>
         <translation>Tải về</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="430"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="403"/>
         <source>Music</source>
         <translation>Âm nhạc</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="431"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="404"/>
         <source>Pictures</source>
         <translation>Hình ảnh</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="432"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="405"/>
         <source>Public</source>
         <translation>Công cộng</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="433"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="406"/>
         <source>Templates</source>
         <translation>Mẫu</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="434"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="407"/>
         <source>Videos</source>
         <translation>Video</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="442"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="415"/>
         <source>Active</source>
         <translation>Hoạt động</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1325"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="991"/>
         <source>Wallpapers</source>
         <translation>Hình nền</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1397"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1733"/>
         <source>Finish</source>
         <translation>Kết thúc</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="996"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="992"/>
         <source>Here you can set which wallpaper you want.</source>
         <translation>Ở đây bạn có thể chọn hình nền mà bạn muốn.</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1394"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1730"/>
         <source>Congratulations!</source>
         <translation>Chúc mừng!</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1405"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1740"/>
         <source>System Settings</source>
         <translation>Cài đặt hệ thống</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1407"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1742"/>
         <source>Launch System Settings</source>
         <translation>Bật Cài đặt hệ thống</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1400"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1735"/>
         <source>Help</source>
         <translation>Trợ giúp</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1402"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1737"/>
         <source>Launch Manjaro.org</source>
         <translation>Truy cập Manjaro.org</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="211"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="178"/>
         <source>Welcome To Manjaro!</source>
         <translation>Chào mừng đến với Manjaro!</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="215"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="182"/>
         <source>&lt;b&gt;Manjaro&lt;/b&gt; is a sleek and fast distro, featuring benefits from the popular Arch OS, along with ease of use. Developed in Austria, France, and Germany, Manjaro aims at new users, and experienced users.
 &lt;br&gt;&lt;br&gt;
 Some of Manjaro's features are:
@@ -164,267 +164,239 @@ Cho người mới dùng, trình cài đặt với giao diện thân thiện đ�
 Qua những bước tiếp theo, Turbulence sẽ giúp bạn tùy chỉnh bản sao chép mới của Manjaro.</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1327"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="746"/>
         <source>Tint 2</source>
         <translation>Tint 2</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="418"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="391"/>
         <source>Here, you can choose which folders you want in your home directory. You have a choice from some of the most commonly used folders.</source>
         <translation>Ở đây, bạn có thể chọn các thư mục mà bạn muốn trong thư mục cá nhân. Bạn có quyền lựa chọn một số hay toàn bộ thư mục được đề nghị.</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="605"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="583"/>
         <source>Here you can choose what type of theme you want for your window decorations.</source>
         <translation>Ở đây bạn có thể lựa chọn loại chủ đề mà bạn muốn cho viền cửa sổ của bạn.</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="763"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="750"/>
         <source>Here you can choose what position you want of your Tint 2 panel.</source>
         <translation>Ở đây bạn có thể lựa chọn vị trí mà bạn muốn cho thanh Tint 2.</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="764"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="751"/>
         <source>Top</source>
         <translation>Trên</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="765"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="752"/>
         <source>Right</source>
         <translation>Phải</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="766"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="753"/>
         <source>Bottom</source>
         <translation>Đáy</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="767"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="754"/>
         <source>Left</source>
         <translation>Trái</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1323"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1524"/>
         <source>Packages</source>
         <translation>Các gói</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1231"/>
-        <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or unselect any packages you want to add or remove. Packages that are installed will be auto-selected.
-
-When you are done, go to the Install tab, and click &quot;Install&quot;.</source>
-        <translation>Ở đây bạn có thể chọn các gói mà bạn muốn cài đặt. Di chuột qua một gói bất kỳ để thấy chú thích, và chọn hay bỏ chọn bất cứ gói nào mà bạn muốn thêm vào hay gỡ bỏ. Các gói đã được cài đặt sẽ tự động được chọn.
-
-Khi hoàn thành, chọn thẻ Cài đặt và nhấn vào &quot;Cài đặt&quot;. </translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1235"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1306"/>
         <source>Check For Internet Connection</source>
         <translation>Kiểm tra kết nối mạng</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1236"/>
-        <source>Standalone web browser from mozilla.org</source>
-        <translation>Trình duyệt độc lập từ mozilla.org</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1237"/>
-        <source>Lightweight cross-platform Web browser</source>
-        <translation>Trình duyệt đa nền tảng gọn nhẹ</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1239"/>
-        <source>The open-source project behind Google Chrome, an 
-attempt at creating a safer, faster, and more stable browser</source>
-        <translation>Dự án nguồn mở đứng sau Google Chrome, một 
-nỗ lực để kiến tạo một trình duyệt an toàn, nhanh và ổ định hơn</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1240"/>
-        <source>Fast and secure web browser and Internet suite</source>
-        <translation>Trình duyệt nhanh và an toàn và bộ phần mềm Internet</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1241"/>
-        <source>Fast, easy, and free BitTorrent client</source>
-        <translation>Trình tải Torrent nhanh, dễ dùng và miễn phí</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1243"/>
-        <source>Lightweight web browser (GTK2)</source>
-        <translation>Trình duyệt (GTK2) gọn nhẹ</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1248"/>
-        <source>A BitTorrent client with multiple user interfaces 
-in a client/server model</source>
-        <translation>Trình tải Torrent với giao diện đa người dùng
-ở chế độ khách/chủ</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1250"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1308"/>
         <source>Network</source>
         <translation>Mạng</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1251"/>
-        <source>A multi-platform MPEG, VCD/DVD, and DivX player</source>
-        <translation>Trình chơi MPEG, VCD/DVD và DivX đa nền tảng</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1253"/>
-        <source>A complete front-end for MPlayer</source>
-        <translation>Giao diện hoàn thiện cho MPlayer</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1255"/>
-        <source>Lightweight, advanced audio player focused on audio quality</source>
-        <translation>Trình chơi nhạc gọn nhẹ, nâng cao tập trung vào chất lượng âm thanh</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1257"/>
-        <source>A music player and library organizer</source>
-        <translation>Trình chơi nhạc và quản lý thư viện</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1259"/>
-        <source>An audio player for GNU/Linux based on GTK2.</source>
-        <translation>Trình chơi nhạc cho GNU/Linux dựa trên GTK2</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1261"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1330"/>
         <source>Multimedia</source>
         <translation>Đa phương tiện</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1262"/>
-        <source>A fully integrated 3D graphics creation suite</source>
-        <translation>Bộ phần mềm dựng đồ họa 3D được tích hợp đầy đủ</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1264"/>
-        <source>Simply a document viewer</source>
-        <translation>Trình xem tài liệu</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1266"/>
-        <source>GNU Image Manipulation Program</source>
-        <translation>Chương trình xử lý ảnh GNU</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1268"/>
-        <source>Lightweight image viewer</source>
-        <translation>Trình xem ảnh gọn nhẹ</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1270"/>
-        <source>A simple, fast and elegant image viewer program</source>
-        <translation>Chương trình xem ảnh đơn giản, nhanh, và tao nhã</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1272"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1342"/>
         <source>Graphics</source>
         <translation>Đồ họa</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1273"/>
-        <source>Fast and lightweight IDE</source>
-        <translation>IDE nhanh và gọn nhẹ</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1275"/>
-        <source>A popular and easy to use graphical IRC (chat) client</source>
-        <translation>Một trình (tán gẫu) IRC giao diện đồ họa phổ biến và dễ dùng</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1277"/>
-        <source>A notepad clone for GTK+ 2.0</source>
-        <translation>Chương trình tương tự notepad cho GTK+ 2.0</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1279"/>
-        <source>An extremely fast and lightweight file manager</source>
-        <translation>Trình quản lý tệp tin rất nhanh và gọn nhẹ</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1281"/>
-        <source>Multi-panel tabbed file manager</source>
-        <translation>Trình quản lý tệp tin sử dụng thẻ</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1283"/>
-        <source>Terminal emulator that supports tabs and grids</source>
-        <translation>Trình giả lập dòng lệnh hỗ trợ thẻ và chia ô</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1285"/>
-        <source>Modern file manager for Xfce</source>
-        <translation>Trình quản lý tệp tin hiện đại cho Xfce</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1287"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1356"/>
         <source>Accessories</source>
         <translation>Tiện ích</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1288"/>
-        <source>Installs yaourt, and required dependencies to access the AUR</source>
-        <translation>Cài đặt yaourt, và các phần phụ thuộc để truy cập vào AUR</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1290"/>
-        <source>Installs flashplugin, and required codecs for playing media</source>
-        <translation>Cài đặt Flash và các bộ giải mã để chơi đa phương tiện</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1292"/>
-        <source>Installs manjaro-printer, and CUPS to enable printers</source>
-        <translation>Cài đặt manjaro-printer, và CUPS để kích hoạt máy in</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1294"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1376"/>
         <source>Extras</source>
         <translation>Phần thêm</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1296"/>
-        <source>Install</source>
-        <translation>Cài đặt</translation>
-    </message>
-    <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1399"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1734"/>
         <source>All of your settings have been applied. Now, you can start enjoying Manjaro, or look at some of the programs and links below. Also, if you haven&apos;t already, make sure to join the Manjaro community as well!</source>
         <translation>Mọi cài đặt của bạn đã được áp dụng. Bây giờ, bạn có thể tận hưởng Manjaro, hay xem qua một vài chương trình và đường dẫn bên dưới. Cũng có thể, nếu bạn chưa sẵn sàng, hãy nhớ tham gia vào cộng đồng Manjaro nhé!</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1401"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1736"/>
         <source>For help and support, you can visit Manjaro.org for access to a terrific forum, wiki, and IRC!</source>
         <translation>Để được trợ giúp và hỗ trợ, bạn có thể ghé thăm Manjaro.org để truy cập đến diễn đàn, wiki và IRC!</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1406"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1741"/>
         <source>Control panel to edit various aspects of the KDE desktop, and more.</source>
         <translation>Bảng điều khiển giúp chỉnh sửa nhiều mặt của giao diện KDE và còn hơn thế nữa.</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1410"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1745"/>
         <source>Customize OpenBox</source>
         <translation>Tùy biến Openbox</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1411"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1746"/>
         <source>Control panel to edit various aspects of OpenBox</source>
         <translation>Bảng điều khiển giúp chỉnh sửa nhiều mặt của Openbox</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1412"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1747"/>
         <source>Launch Customize Look and Feel</source>
         <translation>Bật tùy biến giao diện</translation>
     </message>
     <message>
-        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1624"/>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="2083"/>
         <source>Failed. Please Try Again.</source>
         <translation>Thất bại. Hãy thử lại lần nữa.</translation>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1629"/>
+        <source>Verify</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1302"/>
+        <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or deselect any packages you want to add or remove. Packages that are installed will be auto-selected.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1633"/>
+        <source>[Edit]</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1816"/>
+        <source>KWIN Theme: </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1467"/>
+        <source>Tint</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1828"/>
+        <source>Position: </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1493"/>
+        <source>Wallpaper</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1848"/>
+        <source>Name: </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1908"/>
+        <source>To be installed: </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1912"/>
+        <source>To be removed: </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1625"/>
+        <source>Verify your settings</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1631"/>
+        <source>Please review your changes now. If you agree, then proceed by clicking verify, otherwise click the edit button next to the setting you would like to change.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1634"/>
+        <source>Desktop:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1635"/>
+        <source>Documents:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1636"/>
+        <source>Downloads:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1637"/>
+        <source>Music:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1638"/>
+        <source>Pictures:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1639"/>
+        <source>Public:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1640"/>
+        <source>Templates:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1641"/>
+        <source>Videos:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1818"/>
+        <source>KWIN Theme: Nothing to do</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1830"/>
+        <source>Position: Nothing to do</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1850"/>
+        <source>Name: Nothing to do</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1916"/>
+        <source>To be installed: Nothing to do</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../GUI_/MainGui_manjaroGrey.py" line="1917"/>
+        <source>To be removed: Nothing to do</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
