@@ -276,127 +276,127 @@ Turbulence 將會在下面幾個步驟指導您自訂新安裝好的 Manjaro。<
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1629"/>
         <source>Verify</source>
-        <translation type="unfinished"/>
+        <translation>驗證</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1302"/>
         <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or deselect any packages you want to add or remove. Packages that are installed will be auto-selected.</source>
-        <translation type="unfinished"/>
+        <translation>在這裡，您可以選擇您想要安裝的軟體包。您可以使用滑鼠懸停在每個軟體包上來觀看描述，並選擇或取消選擇任何您想要加入或移除的軟體包。已經安裝的軟體包會被自動選取。</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1633"/>
         <source>[Edit]</source>
-        <translation type="unfinished"/>
+        <translation>[編輯]</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1816"/>
         <source>KWIN Theme: </source>
-        <translation type="unfinished"/>
+        <translation>KWIN 主題：</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1467"/>
         <source>Tint</source>
-        <translation type="unfinished"/>
+        <translation>Tint</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1828"/>
         <source>Position: </source>
-        <translation type="unfinished"/>
+        <translation>位置：</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1493"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"/>
+        <translation>桌布</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1848"/>
         <source>Name: </source>
-        <translation type="unfinished"/>
+        <translation>名稱：</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1908"/>
         <source>To be installed: </source>
-        <translation type="unfinished"/>
+        <translation>將要安裝：</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1912"/>
         <source>To be removed: </source>
-        <translation type="unfinished"/>
+        <translation>將要移除：</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1625"/>
         <source>Verify your settings</source>
-        <translation type="unfinished"/>
+        <translation>確認您的設定</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1631"/>
         <source>Please review your changes now. If you agree, then proceed by clicking verify, otherwise click the edit button next to the setting you would like to change.</source>
-        <translation type="unfinished"/>
+        <translation>請再次確認您的變更，如果您想要的話。然候點擊驗證鈕，或是點擊在您想要更改的設定旁的編輯鈕。</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1634"/>
         <source>Desktop:</source>
-        <translation type="unfinished"/>
+        <translation>桌面：</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1635"/>
         <source>Documents:</source>
-        <translation type="unfinished"/>
+        <translation>文件：</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1636"/>
         <source>Downloads:</source>
-        <translation type="unfinished"/>
+        <translation>下載：</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1637"/>
         <source>Music:</source>
-        <translation type="unfinished"/>
+        <translation>音樂：</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1638"/>
         <source>Pictures:</source>
-        <translation type="unfinished"/>
+        <translation>圖片：</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1639"/>
         <source>Public:</source>
-        <translation type="unfinished"/>
+        <translation>公共：</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1640"/>
         <source>Templates:</source>
-        <translation type="unfinished"/>
+        <translation>模板：</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1641"/>
         <source>Videos:</source>
-        <translation type="unfinished"/>
+        <translation>影片：</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1818"/>
         <source>KWIN Theme: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>KWIN 主題：不作任何事</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1830"/>
         <source>Position: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>位置：不作任何事</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1850"/>
         <source>Name: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>名稱：不作任何事</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1916"/>
         <source>To be installed: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>將要安裝：不作任何事</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1917"/>
         <source>To be removed: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>將要移除：不作任何事</translation>
     </message>
 </context>
 </TS>

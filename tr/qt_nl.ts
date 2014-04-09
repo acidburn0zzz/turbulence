@@ -265,127 +265,127 @@ Over these next few steps, Turbulence will guide you through customizing your ne
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1629"/>
         <source>Verify</source>
-        <translation type="unfinished"/>
+        <translation>Bevestigen</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1302"/>
         <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or deselect any packages you want to add or remove. Packages that are installed will be auto-selected.</source>
-        <translation type="unfinished"/>
+        <translation>Hier kan je kiezen welke pakketten je wil installeren. Beweeg je muis over een pakket voor een beschrijving en selecteer het pakket dat je wil toevoegen of verwijderen. Geïnstalleerde pakketten worden automatisch geselecteerd.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1633"/>
         <source>[Edit]</source>
-        <translation type="unfinished"/>
+        <translation>[Edit]</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1816"/>
         <source>KWIN Theme: </source>
-        <translation type="unfinished"/>
+        <translation>KWIN Thema: </translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1467"/>
         <source>Tint</source>
-        <translation type="unfinished"/>
+        <translation>Tint</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1828"/>
         <source>Position: </source>
-        <translation type="unfinished"/>
+        <translation>Positie: </translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1493"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"/>
+        <translation>Bureaubladachtergrond</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1848"/>
         <source>Name: </source>
-        <translation type="unfinished"/>
+        <translation>Naam:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1908"/>
         <source>To be installed: </source>
-        <translation type="unfinished"/>
+        <translation>Te installeren:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1912"/>
         <source>To be removed: </source>
-        <translation type="unfinished"/>
+        <translation>Te verwijderen:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1625"/>
         <source>Verify your settings</source>
-        <translation type="unfinished"/>
+        <translation>Verifieër uw instellingen</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1631"/>
         <source>Please review your changes now. If you agree, then proceed by clicking verify, otherwise click the edit button next to the setting you would like to change.</source>
-        <translation type="unfinished"/>
+        <translation>Bekijk nu uw aanpassingen. Klik op Bevestigen om door te gaan of ga verder met het aanpassen van uw instellingen.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1634"/>
         <source>Desktop:</source>
-        <translation type="unfinished"/>
+        <translation>Desktop:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1635"/>
         <source>Documents:</source>
-        <translation type="unfinished"/>
+        <translation>Documenten:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1636"/>
         <source>Downloads:</source>
-        <translation type="unfinished"/>
+        <translation>Downloads:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1637"/>
         <source>Music:</source>
-        <translation type="unfinished"/>
+        <translation>Muziek:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1638"/>
         <source>Pictures:</source>
-        <translation type="unfinished"/>
+        <translation>Afbeeldingen:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1639"/>
         <source>Public:</source>
-        <translation type="unfinished"/>
+        <translation>Openbaar:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1640"/>
         <source>Templates:</source>
-        <translation type="unfinished"/>
+        <translation>Sjablonen:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1641"/>
         <source>Videos:</source>
-        <translation type="unfinished"/>
+        <translation>Video&apos;s:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1818"/>
         <source>KWIN Theme: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>KWIN Thema: Niets te doen</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1830"/>
         <source>Position: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>Positie: Niets te doen</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1850"/>
         <source>Name: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>Naam: Niets te doen</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1916"/>
         <source>To be installed: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>Te installeren: Niets te doen</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1917"/>
         <source>To be removed: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>Te verwijderen: Niets te doen</translation>
     </message>
 </context>
 </TS>
