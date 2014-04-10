@@ -276,7 +276,7 @@ Několika následujícími kroky Vás Turbulence provede vlastním nastavením V
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1629"/>
         <source>Verify</source>
-        <translation type="unfinished"/>
+        <translation>Ověřit</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1302"/>
