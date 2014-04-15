@@ -150,7 +150,7 @@ Some of Manjaro's features are:
 For newcomers, a user-friendly installer is provided, and the system itself is designed to work fully straight out of the box. For more experienced, and adventurous users, Manjaro also offers the configurability and versatility to be shaped and moulded in every respect to suit personal taste and preference.
 &lt;br&gt;&lt;br&gt;
 Over these next few steps, Turbulence will guide you through customizing your new copy of Manjaro.</source>
-        <translation>&lt;b&gt;Manjaro&lt;/b&gt; - надёжный и быстрый дистрибутив, предоставляющий преимущества популярной ОС Arch наряду с простотой использования. Разработанный в Австрии, Франции и Германии, Manjaro нацелен как ​​на новичков, так и на опытных пользователей.
+        <translation>&lt;b&gt;Manjaro&lt;/b&gt; это надёжный и быстрый дистрибутив, предоставляющий преимущества популярной Arch ОС наряду с простотой использования. Разработанный в Австрии, Франции и Германии, Manjaro нацелен как ​​на новичков, так и на опытных пользователей.
 &lt;br&gt;&lt;br&gt;
 Некоторые из возможностей Manjaro:
 &lt;ul&gt;
@@ -276,127 +276,127 @@ Turbulence поможет настроить вашу свежеустановл
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1629"/>
         <source>Verify</source>
-        <translation type="unfinished"/>
+        <translation>Проверить</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1302"/>
         <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or deselect any packages you want to add or remove. Packages that are installed will be auto-selected.</source>
-        <translation type="unfinished"/>
+        <translation>Здесь вы можете выбрать, какие пакеты вы хотели бы установить. Наведите указатель мыши на любой из пакетов, чтобы увидеть описание, и выбрать или отменить выбор любых пакетов, по вашему желанию. Пакеты, которые уже установлены будут отмечены автоматически.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1633"/>
         <source>[Edit]</source>
-        <translation type="unfinished"/>
+        <translation>[Правка]</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1816"/>
         <source>KWIN Theme: </source>
-        <translation type="unfinished"/>
+        <translation>Тема KWIN:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1467"/>
         <source>Tint</source>
-        <translation type="unfinished"/>
+        <translation>Tint</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1828"/>
         <source>Position: </source>
-        <translation type="unfinished"/>
+        <translation>Положение:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1493"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"/>
+        <translation>Обои:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1848"/>
         <source>Name: </source>
-        <translation type="unfinished"/>
+        <translation>Имя:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1908"/>
         <source>To be installed: </source>
-        <translation type="unfinished"/>
+        <translation>Для установки:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1912"/>
         <source>To be removed: </source>
-        <translation type="unfinished"/>
+        <translation>Будет удалено:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1625"/>
         <source>Verify your settings</source>
-        <translation type="unfinished"/>
+        <translation>Проверьте свои настройки</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1631"/>
         <source>Please review your changes now. If you agree, then proceed by clicking verify, otherwise click the edit button next to the setting you would like to change.</source>
-        <translation type="unfinished"/>
+        <translation>Просмотрите Ваши изменения. Если Вы согласны, то нажмите  кнопку проверки, если нет, то пункт правки рядом с настройками, которые Вы хотели бы изменить.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1634"/>
         <source>Desktop:</source>
-        <translation type="unfinished"/>
+        <translation>Рабочий стол:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1635"/>
         <source>Documents:</source>
-        <translation type="unfinished"/>
+        <translation>Документы:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1636"/>
         <source>Downloads:</source>
-        <translation type="unfinished"/>
+        <translation>Загрузки:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1637"/>
         <source>Music:</source>
-        <translation type="unfinished"/>
+        <translation>Музыка:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1638"/>
         <source>Pictures:</source>
-        <translation type="unfinished"/>
+        <translation>Картинки:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1639"/>
         <source>Public:</source>
-        <translation type="unfinished"/>
+        <translation>Общие:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1640"/>
         <source>Templates:</source>
-        <translation type="unfinished"/>
+        <translation>Временные:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1641"/>
         <source>Videos:</source>
-        <translation type="unfinished"/>
+        <translation>Видео:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1818"/>
         <source>KWIN Theme: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>Тема KWIN: Ничего не делать</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1830"/>
         <source>Position: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>Положение: Ничего не делать</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1850"/>
         <source>Name: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>Имя: Ничего не делать</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1916"/>
         <source>To be installed: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>Будет установлено: Ничего не делать</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1917"/>
         <source>To be removed: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>Будет удалено: Ничего не делать</translation>
     </message>
 </context>
 </TS>

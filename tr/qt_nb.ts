@@ -276,127 +276,127 @@ Over de neste par skritt, vil Turbulence guide deg gjennom å tilpasse din nye k
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1629"/>
         <source>Verify</source>
-        <translation type="unfinished"/>
+        <translation>Bekreft</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1302"/>
         <source>Here, you can choose what packages you would like to install. Hover over any of the packages to see a description, and select or deselect any packages you want to add or remove. Packages that are installed will be auto-selected.</source>
-        <translation type="unfinished"/>
+        <translation>Her kan du velge hvilke pakker du ønsker å installere. Hold musepekeren over en av pakkene for å se en beskrivelse, og velge eller velge bort noen pakker du ønsker å legge til eller fjerne. Pakker som er installert vil bli automatisk valgt.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1633"/>
         <source>[Edit]</source>
-        <translation type="unfinished"/>
+        <translation>[Rediger]</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1816"/>
         <source>KWIN Theme: </source>
-        <translation type="unfinished"/>
+        <translation>KWIN Tema:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1467"/>
         <source>Tint</source>
-        <translation type="unfinished"/>
+        <translation>Tint</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1828"/>
         <source>Position: </source>
-        <translation type="unfinished"/>
+        <translation>Posisjon:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1493"/>
         <source>Wallpaper</source>
-        <translation type="unfinished"/>
+        <translation>Bakgrunn</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1848"/>
         <source>Name: </source>
-        <translation type="unfinished"/>
+        <translation>Navn:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1908"/>
         <source>To be installed: </source>
-        <translation type="unfinished"/>
+        <translation>Som skal installeres:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1912"/>
         <source>To be removed: </source>
-        <translation type="unfinished"/>
+        <translation>Som skal bli fjernet:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1625"/>
         <source>Verify your settings</source>
-        <translation type="unfinished"/>
+        <translation>Bekreft innstillingene dine</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1631"/>
         <source>Please review your changes now. If you agree, then proceed by clicking verify, otherwise click the edit button next to the setting you would like to change.</source>
-        <translation type="unfinished"/>
+        <translation>Vennligst se gjennom endringene nå. Hvis du er enig, og deretter fortsette ved å klikke bekrefte, ellers klikker du på Rediger-knappen ved siden av innstillingen du ønsker å endre.</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1634"/>
         <source>Desktop:</source>
-        <translation type="unfinished"/>
+        <translation>Desktop:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1635"/>
         <source>Documents:</source>
-        <translation type="unfinished"/>
+        <translation>Dokumenter:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1636"/>
         <source>Downloads:</source>
-        <translation type="unfinished"/>
+        <translation>Nedlastinger:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1637"/>
         <source>Music:</source>
-        <translation type="unfinished"/>
+        <translation>Musikk:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1638"/>
         <source>Pictures:</source>
-        <translation type="unfinished"/>
+        <translation>Bilder:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1639"/>
         <source>Public:</source>
-        <translation type="unfinished"/>
+        <translation>Offentlig:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1640"/>
         <source>Templates:</source>
-        <translation type="unfinished"/>
+        <translation>Maler:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1641"/>
         <source>Videos:</source>
-        <translation type="unfinished"/>
+        <translation>Videoer:</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1818"/>
         <source>KWIN Theme: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>KWIN Tema: Ingenting å gjøre</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1830"/>
         <source>Position: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>Posisjon: Ingenting å gjøre</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1850"/>
         <source>Name: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>Navn: Ingenting å gjøre</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1916"/>
         <source>To be installed: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>Som skal installeres: Ingenting å gjøre</translation>
     </message>
     <message>
         <location filename="../GUI_/MainGui_manjaroGrey.py" line="1917"/>
         <source>To be removed: Nothing to do</source>
-        <translation type="unfinished"/>
+        <translation>Som skal fjernes: Ingenting å gjøre</translation>
     </message>
 </context>
 </TS>
